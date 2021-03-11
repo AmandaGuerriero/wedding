@@ -1,0 +1,15 @@
+
+/* Global Styles Start */
+:root {
+  --primary-color: #FF206E;
+  --secondary-color: #CBFF8C;
+  --tertiary-color: #231651;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #39393A;
+  --black-rgb: 0, 0, 0;
+  --white-rgb: 255, 255, 255;
+}
+
+* {
+  font-family: 'RALEWAY', serif, 'Times New Roman', Times, serif;
+}
