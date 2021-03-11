@@ -2,11 +2,11 @@ import axios from "axios";
 
 export default {
   // Gets all rsvps
-  getBooks: function() {
+  getRsvp: function() {
     return axios.get("/api/rsvp");
   },
   // Gets the rsvp with the given id
-  getBook: function(id) {
+  getRsvp: function(id) {
     return axios.get("/api/rsvp" + id);
   },
   // Updates an rsvp with the given id - Not sure if this will work
@@ -14,7 +14,7 @@ export default {
   //   return axios.put("/api/rsvp" + rsvpData);
   // },
   // Saves an rsvp to the database
-  saveBook: function(rsvpData) {
+  saveRsvp: function(rsvpData) {
     return axios.post("/api/rsvp", rsvpData);
   }
 };
