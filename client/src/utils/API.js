@@ -1,20 +1,20 @@
 import axios from "axios";
 
 export default {
-  // Gets all books
+  // Gets all rsvps
   getBooks: function() {
-    return axios.get("/api/books");
+    return axios.get("/api/rsvp");
   },
-  // Gets the book with the given id
+  // Gets the rsvp with the given id
   getBook: function(id) {
-    return axios.get("/api/books/" + id);
+    return axios.get("/api/rsvp" + id);
   },
-  // Deletes the book with the given id
-  deleteBook: function(id) {
-    return axios.delete("/api/books/" + id);
-  },
-  // Saves a book to the database
-  saveBook: function(bookData) {
-    return axios.post("/api/books", bookData);
+  // Updates an rsvp with the given id - Not sure if this will work
+  // updateBook: function(rsvpData) {
+  //   return axios.put("/api/rsvp" + rsvpData);
+  // },
+  // Saves an rsvp to the database
+  saveBook: function(rsvpData) {
+    return axios.post("/api/rsvp", rsvpData);
   }
 };

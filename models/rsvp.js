@@ -22,6 +22,9 @@ const rsvpSchema = new Schema({
   food: {
     type: String
   },
+  diet: {
+    type: String
+  }
 });
 
 const rsvp = mongoose.model("RSVP", rsvpSchema);
