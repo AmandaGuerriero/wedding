@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Rsvp from "./pages/Rsvp";
 import Home from "./pages/Home"
 import Nav from "./components/Nav";
+import 'font-awesome/css/font-awesome.min.css';
 
 function App() {
   return (

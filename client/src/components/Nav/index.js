@@ -1,50 +1,37 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import Dropdown from 'react-bootstrap/Dropdown'
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg">
-      <a href="/">
-        GuerrierOlen Wedding
-      </a>
-      <ul>
-        <p>OUR STORY</p>
-      </ul>
-      {/* LOGISTICS DROPDOWN */}
-      <ul>
-      <Dropdown>
-        <Dropdown.Toggle variant="custom" className="menu-dropdown dropdown-btn">
-          LOGISTICS
-        </Dropdown.Toggle>
-
-        <Dropdown.Menu>
-          <Dropdown.Item href="#/action-1">TRAVEL</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">LODGING</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">ADVENTURE</Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
-      </ul>
-      {/* WEDDING DROPDOWN */}
-      <ul>
-      <Dropdown>
-      <Dropdown.Toggle variant="custom" className="menu-dropdown dropdown-btn">
-          WEDDING
-        </Dropdown.Toggle>
-
-        <Dropdown.Menu>
-          <Dropdown.Item href="#/action-1">DETAILS</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">SCHEDULE</Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
-      </ul>
-      <ul>
-        <p>REGISTRY</p>
-      </ul>
-      <ul>
-        <p>RSVP</p>
-      </ul>
-    </nav>
+    <div className="navbar">
+      <FontAwesomeIcon icon={faHome} />
+      <div className="navbar-right">
+        <a href="#">OUR STORY</a>
+        <div className="dropdown">
+          <button className="dropbtn">LOGISTICS	&nbsp;
+          <i className="fa fa-caret-down"></i>
+          </button>
+          <div className="dropdown-content">
+            <a href="#">TRAVEL</a>
+            <a href="#">LODGING</a>
+            <a href="#">ADVENTURE</a>
+          </div>
+        </div>
+        <div className="dropdown">
+          <button className="dropbtn">WEDDING &nbsp;
+            <i className="fa fa-caret-down"></i>
+          </button>
+          <div className="dropdown-content">
+            <a href="#">DETAILS</a>
+            <a href="#">SCHEDULE</a>
+          </div>
+        </div> 
+        <a href="/registry">REGISTRY</a>
+        <a href="/rsvp">RSVP</a>
+      </div>
+    </div> 
   );
 }
 
