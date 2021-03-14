@@ -7,6 +7,8 @@
 * {
   font-family: 'RALEWAY', serif, 'Times New Roman', Times, serif;
 }
+
+/* Navigation Bar Styles Start */
 .navbar {
   background-color: #333;
   justify-content: right;
@@ -70,4 +72,16 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Image Header Styles Start */
+#logo {
+  height: 12vw;
+  width: 14vw;
+}
+
+#background {
+  max-width: 80%;
+  height: auto;
+  width: auto;
 }
