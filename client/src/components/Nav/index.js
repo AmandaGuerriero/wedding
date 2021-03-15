@@ -7,8 +7,9 @@ function Nav() {
   return (
     <div>
       <div className="navbar">
-        <FontAwesomeIcon icon={faHome} />
+        <p></p>
         <div className="navbar-right">
+          <a href="/">HOME</a>
           <NavLink 
             to="/story"
             activeClassName="active"
@@ -23,7 +24,7 @@ function Nav() {
               <a href="#">ADVENTURE</a>
             </div>
           </div>
-          <div className="dropdown">
+          {/* <div className="dropdown">
             <button className="dropbtn">WEDDING &nbsp;
               <i className="fa fa-caret-down"></i>
             </button>
@@ -31,15 +32,11 @@ function Nav() {
               <a href="#">DETAILS</a>
               <a href="#">SCHEDULE</a>
             </div>
-          </div> 
-          <NavLink 
+          </div>  */}
+          {/* <NavLink 
             to="/registry"
             activeClassName="active"
-            >REGISTRY</NavLink>
-          <NavLink 
-            to="/rsvp"
-            activeClassName="active"
-            >RSVP</NavLink>
+            >REGISTRY</NavLink> */}
         </div>
       </div>
       <div>

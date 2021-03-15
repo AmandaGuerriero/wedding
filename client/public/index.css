@@ -21,7 +21,8 @@ div > .navbar > .navbar-right > a.active {
 }
 
 .navbar-right {
-  float: right
+  display: flex;
+  align-items: flex-end;
 }
 
 .navbar a {
@@ -90,4 +91,9 @@ div > .navbar > .navbar-right > a.active {
   max-width: 80%;
   height: auto;
   width: auto;
+}
+
+/* Tabs Styling */
+.tab-style {
+  color: var(--primary-color)!important;
 }
