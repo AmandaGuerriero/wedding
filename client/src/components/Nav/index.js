@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -9,7 +9,10 @@ function Nav() {
       <div className="navbar">
         <FontAwesomeIcon icon={faHome} />
         <div className="navbar-right">
-          <a href="#">OUR STORY</a>
+          <NavLink 
+            to="/story"
+            activeClassName="active"
+            >OUR STORY</NavLink>
           <div className="dropdown">
             <button className="dropbtn">LOGISTICS	&nbsp;
             <i className="fa fa-caret-down"></i>
@@ -29,8 +32,14 @@ function Nav() {
               <a href="#">SCHEDULE</a>
             </div>
           </div> 
-          <a href="/registry">REGISTRY</a>
-          <a href="/rsvp">RSVP</a>
+          <NavLink 
+            to="/registry"
+            activeClassName="active"
+            >REGISTRY</NavLink>
+          <NavLink 
+            to="/rsvp"
+            activeClassName="active"
+            >RSVP</NavLink>
         </div>
       </div>
       <div>
