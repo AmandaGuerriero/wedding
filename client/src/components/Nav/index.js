@@ -39,9 +39,8 @@ function Nav() {
             >REGISTRY</NavLink> */}
         </div>
       </div>
-      <div>
-      <img id="logo" src="../images/LOGO-01.png"/>
-      <img id="background" src="../images/LOGO-01.png"/>
+      <div className="header-container">
+        <div id="background"/>
       </div>
     </div>
   );

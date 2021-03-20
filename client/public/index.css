@@ -1,7 +1,9 @@
 
 /* Global Styles Start */
 :root {
-  --primary-color: #4E2526;
+  --marroon: #4e2526;
+  --gold: #d8be85;
+  --orange: #CC802E;
 }
 
 * {
@@ -10,14 +12,9 @@
 
 /* Navigation Bar Styles Start */
 .navbar {
-  background-color: #333;
+  background-color: var(--gold);
   justify-content: right;
-}
-
-div > .navbar > .navbar-right > a.active {
-  color: var(--primary-color);
-  background-color: white;
-  text-decoration: underline;
+  height: 50px;
 }
 
 .navbar-right {
@@ -28,7 +25,7 @@ div > .navbar > .navbar-right > a.active {
 .navbar a {
   float: left;
   font-size: 16px;
-  color: white;
+  color: var(--marroon);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -42,21 +39,38 @@ div > .navbar > .navbar-right > a.active {
   font-size: 16px;  
   border: none;
   outline: none;
-  color: white;
+  color: var(--marroon);
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+.navbar a:hover {
+  color: var(--orange);
+  background-color: var(--marroon);
+  text-decoration: none;
+  transition: 0.3s;
+  border-radius: 10%;
+  background-size: 100px;
+}
+
+.dropdown:hover, .dropbtn:hover, .dropbtn a:hover, .dropdown a {
+  color: var(--orange);
+  background-color: var(--marroon);
+  transition: 0.3s;
+}
+
+.dropdown:hover > .dropbtn {
+  color: var(--orange);
+  background-color: var(--marroon);
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  color: var(--orange);
+  background-color: var(--marroon);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -65,7 +79,7 @@ div > .navbar > .navbar-right > a.active {
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: var(--gold);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -74,26 +88,38 @@ div > .navbar > .navbar-right > a.active {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: var(--gold);
+  text-decoration: none;
+  color: var(--marroon);
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+
+
 /* Image Header Styles Start */
-#logo {
-  height: 12vw;
-  width: 14vw;
+.header-container {
+  display: flex;
 }
 
 #background {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   width: auto;
+  /* padding-right: 1px; */
+  content:url("../images/BANNER-IMAGE_BROWSER.svg");
 }
 
 /* Tabs Styling */
 .tab-style {
-  color: var(--primary-color)!important;
+  color: var(--marroon)!important;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  #background {
+   content: url("../images/BANNER-IMAGE_MOBILE.svg"); 
+  }
 }
