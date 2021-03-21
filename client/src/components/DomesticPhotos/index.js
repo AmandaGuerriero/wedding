@@ -6,7 +6,9 @@ function EngagementPhotos() {
     <div className="row">
       <div className="column">
         <img src="../images/domestic/20200705_181138.jpg" />
+        <p>This is a photo</p>
         <img src="../images/domestic/20200719_164456.jpg" />
+        <p>This is a photo</p>
         <img src="../images/domestic/FB_IMG_1543580640097.jpg" />
         <img src="../images/paris.jpg" />
         <img src="../images/nature.jpg" />
