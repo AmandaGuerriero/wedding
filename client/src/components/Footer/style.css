@@ -1,0 +1,19 @@
+
+/* Global Styling */
+:root {
+  --marroon: #4e2526;
+  --gold: #d8be85;
+}
+
+/* Footer Styling */
+footer {
+  clear: both;
+  height: 40px;
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
+  background-color: var(--gold);
+  color: var(--marroon);
+  font-style: bold;
+  text-align: center;
+}

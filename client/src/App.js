@@ -5,6 +5,7 @@ import Rsvp from "./pages/Rsvp";
 import Home from "./pages/Home"
 import Story from "./pages/Story"
 import Nav from "./components/Nav";
+import Footer from "./components/Footer"
 import 'font-awesome/css/font-awesome.min.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/rsvp" component={Rsvp} />
           <Route exact path="/story" component={Story} />
         </Switch>
+        <Footer/>
       </div>
     </Router>
   );

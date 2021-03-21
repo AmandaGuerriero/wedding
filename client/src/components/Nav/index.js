@@ -37,6 +37,10 @@ function Nav() {
             to="/registry"
             activeClassName="active"
             >REGISTRY</NavLink> */}
+            <NavLink 
+            to="/rsvp"
+            activeClassName="active"
+            >RSVP</NavLink>
         </div>
       </div>
       <div className="header-container">
