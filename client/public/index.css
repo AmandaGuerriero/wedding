@@ -13,21 +13,20 @@
 /* Navigation Bar Styles Start */
 .navbar {
   background-color: var(--gold);
-  justify-content: right;
   height: 50px;
 }
 
 .navbar-right {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
+  justify-items: flex-start;
 }
 
 .navbar a {
   float: left;
   font-size: 16px;
   color: var(--marroon);
-  text-align: center;
-  padding: 14px 16px;
+  padding: 7px 16px;
   text-decoration: none;
 }
 
@@ -40,10 +39,11 @@
   border: none;
   outline: none;
   color: var(--marroon);
-  padding: 14px 16px;
+  padding: 7px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  
 }
 
 .navbar a:hover {
@@ -51,8 +51,6 @@
   background-color: var(--marroon);
   text-decoration: none;
   transition: 0.3s;
-  border-radius: 10%;
-  background-size: 100px;
 }
 
 .dropdown:hover, .dropbtn:hover, .dropbtn a:hover, .dropdown a {
@@ -80,7 +78,7 @@
 .dropdown-content a {
   float: none;
   color: var(--gold);
-  padding: 12px 16px;
+  padding: 7px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
