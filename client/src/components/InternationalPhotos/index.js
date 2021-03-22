@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css';
 
-function DomesticPhotos() {
+function InternationalPhotos() {
   return(
     <div className="row">
       <div className="column">
@@ -115,4 +115,4 @@ function DomesticPhotos() {
   )
 }
 
-export default DomesticPhotos;
+export default InternationalPhotos;

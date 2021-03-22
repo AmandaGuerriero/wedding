@@ -19,9 +19,9 @@ function Nav() {
             <i className="fa fa-caret-down"></i>
             </button>
             <div className="dropdown-content">
-              <a href="#">TRAVEL</a>
-              <a href="#">LODGING</a>
-              <a href="#">ADVENTURE</a>
+              <a href="/travel">TRAVEL</a>
+              <a href="/lodging">LODGING</a>
+              <a href="/lodging">ADVENTURE</a>
             </div>
           </div>
           {/* <div className="dropdown">

@@ -16,6 +16,10 @@
   height: 50px;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 .navbar-right {
   display: flex;
   align-items: flex-start;

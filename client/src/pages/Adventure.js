@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Story = () => {
+const Adventure = () => {
 
   return (
     <main>
-      <h1> Our Story </h1>
+      <h1> Adventure </h1>
       <h2> Coming Soon </h2>
     </main>
   );
 };
 
-export default Story;
+export default Adventure;

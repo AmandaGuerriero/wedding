@@ -42,7 +42,8 @@ function RsvpForm() {
 
   return (
     <section>
-      <h1>Please respond by</h1>
+      <h1> Coming Soon </h1>
+      {/* <h1>Please respond by</h1>
       <h2>the 31st of March</h2>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
@@ -54,7 +55,7 @@ function RsvpForm() {
           <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
         </div>
         <button data-testid="button" type="submit">Submit</button>
-      </form>
+      </form> */}
     </section>
   );
 }
