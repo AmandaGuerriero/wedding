@@ -5,10 +5,10 @@
   margin: 10px 20px 10px 20px;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Create three equal columns that sits next to each other */
 .column {
-  flex: 25%;
-  max-width: 25%;
+  flex: 33%;
+  max-width: 33%;
   padding: 0 4px;
 }
 
