@@ -3,8 +3,8 @@ import './style.css';
 
 function DomesticPhotos() {
   return(
-    <div className="row">
-      <div className="column">
+    <div className="domestic-row">
+      <div className="domestic-column">
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20200615_150537.jpg' /><p>Knoch Knolls Bridge</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20190407_095357.jpg' /><p>Mammoth Mountain, CA</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20170325_120102.jpg' /><p>Channel Islands, CA</p>
@@ -29,7 +29,7 @@ function DomesticPhotos() {
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20191102_140536.jpg' /><p>Oktoberfest in Big Bear</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20171202_151807.jpg' /><p>Disneyland, CA</p>
       </div>
-      <div className="column">
+      <div className="domestic-column">
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20180623_194717.jpg' /><p>Chicago Lakeshore</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20200717_153656.jpg' /><p>Canyonlands National Park</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/FB_IMG_1543580667630.jpg' /><p>Las Vegas, NV</p>
@@ -58,7 +58,7 @@ function DomesticPhotos() {
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/FB_IMG_1543580656599.jpg' /><p>1st Holiday Season Together</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20191125_130354.jpg' /><p>Joshua Tree Natioal Park</p>
       </div>
-      <div className="column">
+      <div className="domestic-column">
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20180624_000410.jpg' /><p>Eric Turns 30</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/IMG_6353.JPG' /><p>1st New Years Together</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20200716_194929.jpg' /><p>Arches National Park</p>
@@ -73,18 +73,16 @@ function DomesticPhotos() {
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20180706_201928.jpg' /><p>Upstate NY Wedding</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20200715_160815.jpg' /><p>Rocky Mountain National Park</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/62447681_10102102717793619_5078462797868695552_o.jpg' /><p>"Winery" in South Carolina</p>
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/62047305_10102102720418359_6141714284507299840_o.jpg' /><p>Wedding in Baltimore</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/IMG_9355.JPG' /><p>Boating in Big Bear</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20190707_073856.jpg' /><p>Arcadia National Park</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20210210_111602.jpg' /><p>Hanging with General Sherman</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/FB_IMG_1543580683649.jpg' /><p>1st New Years Together</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20180428_104037.jpg' /><p>Depoe Bay, OR</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20190617_103233.jpg' /><p>Pebble Beach, CA</p>
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/62338424_10102102719215769_2006634726718177280_o.jpg' /><p>Wedding in Baltimore</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20190525_120231.jpg' /><p>Oldest Tree in South Carolina</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20200222_185441.jpg' /><p>The Harbor Room</p>
       </div>
-      <div className="column">
+      <div className="domestic-column">
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20181001_152448.jpg' /><p>Crying Waterfalls - Ithaca, NY</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/20200719_164456.jpg' /><p>Bryce Canyon National Park</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/domestic/66593887_10102141490018769_6516275367324418048_o.jpg' /><p>US Open at Pebble Beach</p>

@@ -1,0 +1,107 @@
+.navbar {
+  background-color: var(--gold);
+  height: 50px;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: flex-start;
+  justify-items: flex-start;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: var(--marroon);
+  padding: 7px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: var(--marroon);
+  padding: 7px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  
+}
+
+.navbar a:hover {
+  color: var(--orange);
+  background-color: var(--marroon);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.dropdown:hover, .dropbtn:hover, .dropbtn a:hover, .dropdown a {
+  color: var(--orange);
+  background-color: var(--marroon);
+  transition: 0.3s;
+}
+
+.dropdown:hover > .dropbtn {
+  color: var(--orange);
+  background-color: var(--marroon);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color: var(--orange);
+  background-color: var(--marroon);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  visibility: visible;
+}
+
+.dropdown-content a {
+  float: none;
+  color: var(--gold);
+  padding: 7px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  visibility: visible;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--gold);
+  text-decoration: none;
+  color: var(--marroon);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Image Header Styles Start */
+.header-container {
+  display: flex;
+}
+
+#background {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  /* padding-right: 1px; */
+  content:url("https://res.cloudinary.com/amandaeric/image/upload/site-assets/BANNER-IMAGE_BROWSER.png");
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  #background {
+   content: url("https://res.cloudinary.com/amandaeric/image/upload/site-assets/BANNER-IMAGE_MOBILE.png"); 
+  }
+}

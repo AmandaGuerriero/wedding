@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import Detail from "./pages/Detail";
 import Rsvp from "./pages/Rsvp";
 import Home from "./pages/Home"
 import Story from "./pages/Story"
