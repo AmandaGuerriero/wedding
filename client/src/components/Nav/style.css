@@ -103,6 +103,11 @@
   #background {
    content: url("https://res.cloudinary.com/amandaeric/image/upload/site-assets/BANNER-IMAGE_MOBILE.png"); 
   }
+
+  .navbar {
+    justify-content: flex-start;
+  }
+
   .navbar-right {
     display: none;
   }
