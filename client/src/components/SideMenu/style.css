@@ -1,0 +1,59 @@
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .toggle-button {
+    height: 24px;
+    width: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: var(--marroon);
+    padding: 7px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .toggle-button-line {
+    width: 30px;
+    height: 3px;
+    background: maroon;
+  }
+  .toggle-button:focus {
+    outline: none;
+  }
+
+}
+
+
+@media screen and (min-width: 759px) {
+  .toggle-button {
+    height: 24px;
+    width: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+
+  
+}
+
+
+

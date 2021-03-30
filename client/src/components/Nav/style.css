@@ -34,7 +34,6 @@
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-  
 }
 
 .navbar a:hover {
@@ -103,5 +102,8 @@
 @media screen and (max-width: 768px) {
   #background {
    content: url("https://res.cloudinary.com/amandaeric/image/upload/site-assets/BANNER-IMAGE_MOBILE.png"); 
+  }
+  .navbar-right {
+    display: none;
   }
 }

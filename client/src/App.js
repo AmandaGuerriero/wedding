@@ -9,12 +9,37 @@ import Lodging from "./pages/Lodging"
 import Nav from "./components/Nav";
 import Footer from "./components/Footer"
 import 'font-awesome/css/font-awesome.min.css';
+import SideDrawer from "./components/SideDrawer";
+import BackDrop from "./components/BackDrop";
 
-function App() {
-  return (
+class App extends React.Component {
+  state = {
+    sideDrawerOpen: false
+  };
+
+  drawerToggleClickHandler = () => {
+    this.setState(prevState => {
+      return { sideDrawerOpen: !prevState.sideDrawerOpen };
+    });
+  };
+  backDropClickHandler = () => {
+    this.setState({ sideDrawerOpen: false });
+  };
+
+  render() {
+    // let sideDrawer;
+    let backdrop;
+
+    if (this.state.sideDrawerOpen) {
+      // sideDrawer = <SideDrawer />;
+      backdrop = <BackDrop click={this.backDropClickHandler} />;
+    }
+    return (
     <Router>
-      <div>
-        <Nav />
+      <div style={{ height: "100%" }}>
+        <Nav drawerToggleClickHandler={this.drawerToggleClickHandler} />
+        <SideDrawer show={this.state.sideDrawerOpen} />
+        {backdrop}
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/rsvp" component={Rsvp} />
@@ -27,6 +52,7 @@ function App() {
       </div>
     </Router>
   );
+}
 }
 
 export default App;

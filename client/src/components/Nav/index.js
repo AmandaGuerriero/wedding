@@ -1,12 +1,16 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
+import SideMenu from "../SideMenu";
 import './style.css';
 
-function Nav() {
+const Nav = props => {
   return (
     <div>
       <div className="navbar">
         <p></p>
+        <div className="toggle-btn">
+          <SideMenu click={props.drawerToggleClickHandler} />
+        </div>
         <div className="navbar-right">
           <a href="/">HOME</a>
           <NavLink 
