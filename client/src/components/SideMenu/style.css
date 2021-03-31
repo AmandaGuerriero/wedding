@@ -1,3 +1,7 @@
+.toggle-button {
+  display: none;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .toggle-button {

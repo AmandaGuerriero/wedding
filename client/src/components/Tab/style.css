@@ -1,16 +1,18 @@
-.tab-list {  border-bottom: 1px solid #ccc;
+.tab-list {  
   padding-left: 0;
 }
 
 .tab-list-item {
   display: inline-block;
   list-style: none;
+  color: var(--marroon);
   margin-bottom: -1px;
   padding: 0.5rem 0.75rem;
 }
 
 .tab-list-active {
-  background-color: white;
-  border: solid #ccc;
-  border-width: 1px 1px 0 1px;
+  background-color: var(--marroon);
+  color: var(--marroon);
+  font-weight: bold;
+  border: solid var(--marroon);
 }
