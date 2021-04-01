@@ -26,7 +26,8 @@
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 16px;
+  font-weight: bold;
   border: none;
   outline: none;
   color: var(--marroon);
