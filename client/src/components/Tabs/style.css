@@ -11,8 +11,8 @@
 }
 
 .tab-list-active {
-  background-color: var(--gold);
-  border: solid var(--marroon);
+  background-color: var(--rieslingcolor);
+  border: solid var(--pinotcolor);
   border-width: 3px 3px 0 3px;
   border-bottom: none;
 }

@@ -5,14 +5,14 @@
 .tab-list-item {
   display: inline-block;
   list-style: none;
-  color: var(--marroon);
+  color: var(--pinotcolor);
   margin-bottom: -1px;
   padding: 0.5rem 0.75rem;
 }
 
 .tab-list-active {
-  background-color: var(--marroon);
-  color: var(--marroon);
+  background-color: var(--pinotcolor);
+  color: var(--pinotcolor);
   font-weight: bold;
-  border: solid var(--marroon);
+  border: solid var(--pinotcolor);
 }

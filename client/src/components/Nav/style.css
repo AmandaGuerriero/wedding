@@ -1,5 +1,5 @@
 .navbar {
-  background-color: var(--gold);
+  background-color: var(--rieslingcolor);
   height: 50px;
 }
 
@@ -16,7 +16,7 @@
 .navbar a {
   float: left;
   font-size: 16px;
-  color: var(--marroon);
+  color: var(--pinotcolor);
   padding: 7px 16px;
   text-decoration: none;
 }
@@ -30,7 +30,7 @@
   font-weight: bold;
   border: none;
   outline: none;
-  color: var(--marroon);
+  color: var(--pinotcolor);
   padding: 7px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -38,28 +38,28 @@
 }
 
 .navbar a:hover {
-  color: var(--orange);
-  background-color: var(--marroon);
+  color: var(--rieslingcolor);
+  background-color: var(--pinotcolor);
   text-decoration: none;
   transition: 0.3s;
 }
 
 .dropdown:hover, .dropbtn:hover, .dropbtn a:hover, .dropdown a {
-  color: var(--orange);
-  background-color: var(--marroon);
+  color: var(--rieslingcolor);
+  background-color: var(--pinotcolor);
   transition: 0.3s;
 }
 
 .dropdown:hover > .dropbtn {
-  color: var(--orange);
-  background-color: var(--marroon);
+  color: var(--rieslingcolor);
+  background-color: var(--pinotcolor);
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  color: var(--orange);
-  background-color: var(--marroon);
+  color: var(--rieslingcolor);
+  background-color: var(--rieslingcolor);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -68,7 +68,7 @@
 
 .dropdown-content a {
   float: none;
-  color: var(--gold);
+  color: var(--rieslingcolor);
   padding: 7px 16px;
   text-decoration: none;
   display: block;
@@ -77,9 +77,9 @@
 }
 
 .dropdown-content a:hover {
-  background-color: var(--gold);
+  background-color: var(--rieslingcolor);
   text-decoration: none;
-  color: var(--marroon);
+  color: var(--pinotcolor);
 }
 
 .dropdown:hover .dropdown-content {

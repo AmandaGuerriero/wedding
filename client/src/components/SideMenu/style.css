@@ -20,7 +20,7 @@
   .toggle-button-line {
     width: 30px;
     height: 3px;
-    background: maroon;
+    background: var(--pinotcolor);
   }
   .toggle-button:focus {
     outline: none;

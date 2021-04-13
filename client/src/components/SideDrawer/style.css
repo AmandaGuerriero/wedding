@@ -1,6 +1,6 @@
 .side-drawer {
   height: 50%;
-  background: var(--gold);
+  background: var(--rieslingcolor);
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
@@ -35,13 +35,13 @@
 
 .side-drawer a {
   text-decoration: none;
-  color: var(--marroon);
+  color: var(--pinotcolor);
   font-size: 1.2rem;
 }
 
 .side-drawer a:hover,
 .side-drawer a:active {
-  color: var(--orange);
+  color: var(--pinotcolor);
 }
 
 @media screen and (min-width: 759px) {
