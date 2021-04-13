@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
-  margin: 10px 20px 10px 20px;
+  margin: 2px 10px 2px 10px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -13,7 +13,6 @@
 }
 
 .domestic-column img {
-  margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }

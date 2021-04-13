@@ -95,14 +95,15 @@
   max-width: 100%;
   height: auto;
   width: auto;
-  /* padding-right: 1px; */
-  content:url("https://res.cloudinary.com/amandaeric/image/upload/site-assets/BANNER-IMAGE_BROWSER.png");
+  padding-bottom: 5px;
+  content:url("https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/Banner_Desktop_1.png");
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   #background {
-   content: url("https://res.cloudinary.com/amandaeric/image/upload/site-assets/BANNER-IMAGE_MOBILE.png"); 
+  padding-bottom: 3px;
+   content: url("https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/Banner_Mobile_1.png"); 
   }
 
   .navbar {
