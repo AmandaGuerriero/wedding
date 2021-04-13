@@ -28,5 +28,11 @@ module.exports = {
       .findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
+  },
+  delete: function(req, res) {
+    db.rsvp
+      .findOneAndDelete(req.params.name)
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
   }
 };
