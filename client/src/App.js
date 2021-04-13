@@ -6,6 +6,7 @@ import Story from "./pages/Story"
 import Adventure from "./pages/Adventure"
 import Travel from "./pages/Travel"
 import Lodging from "./pages/Lodging"
+import Updates from "./pages/Register"
 import Nav from "./components/Nav";
 import Footer from "./components/Footer"
 import 'font-awesome/css/font-awesome.min.css';
@@ -47,6 +48,7 @@ class App extends React.Component {
           <Route exact path="/lodging" component={Lodging} />
           <Route exact path="/travel" component={Travel} />
           <Route exact path="/adventure" component={Adventure} />
+          <Route exact path="/register-for-updates" component={Updates} />
         </Switch>
         <Footer/>
       </div>

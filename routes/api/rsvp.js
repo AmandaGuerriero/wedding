@@ -6,7 +6,7 @@ router.route("/")
   .get(rsvpController.findAll)
   .post(rsvpController.create);
 
-// Matches with "/api/books/:id"
+// Matches with "/api/rsvp/:id"
 router
   .route("/:id")
   .get(rsvpController.findById)

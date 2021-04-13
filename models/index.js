@@ -1,3 +1,4 @@
 module.exports = {
-  rsvp: require("./rsvp")
+  rsvp: require("./rsvp"),
+  updates: require("./updates")
 };

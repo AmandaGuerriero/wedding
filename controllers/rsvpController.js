@@ -2,6 +2,8 @@ const db = require("../models");
 
 // Defining methods for the rsvpController
 module.exports = {
+  
+  // RSVP Controllers
   findAll: function(req, res) {
     db.rsvp
       .find(req.query)

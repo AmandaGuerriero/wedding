@@ -16,7 +16,8 @@ const rsvpSchema = new Schema({
     type: String
   },
   emailAddress: {
-    type: String
+    type: String,
+    required: true
   },
   food: {
     type: String
