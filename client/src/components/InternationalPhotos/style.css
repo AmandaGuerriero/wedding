@@ -1,17 +1,18 @@
-.row {
+.international-row {
   display: flex;
   flex-wrap: wrap;
-  margin: 2px 10px 2px 10px;
-  min-width: 97%;
+  padding: 0 4px;
+  margin: 5px 5px 5px 5px;
 }
 
 /* Create three equal columns that sits next to each other */
-.column {
+.international-column {
   flex: 33%;
   max-width: 33%;
+  padding: 0 7px;
 }
 
-.column img {
+.international-column img {
   vertical-align: middle;
   width: 100%;
 }
@@ -20,6 +21,7 @@ p {
   background-color: var(--pinotcolor);
   color: var(--rieslingcolor);
   text-align: center;
+  padding: 2px 0px 2px 0px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

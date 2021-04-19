@@ -1,21 +1,26 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
-  margin: 10px 20px 10px 20px;
+  margin: 2px 10px 2px 10px;
+  min-width: 97%;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Create three equal columns that sits next to each other */
 .column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+  flex: 33%;
+  max-width: 33%;
 }
 
 .column img {
-  margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  padding: 5px 0px 5px 0px;
+}
+
+p {
+  background-color: var(--pinotcolor);
+  color: var(--rieslingcolor);
+  text-align: center;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

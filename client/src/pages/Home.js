@@ -10,14 +10,14 @@ const Home = () => {
   return (
     <main>
       <Tabs> 
+      <div label="Engagement Photos"> 
+         <EngagementPhotos />
+       </div> 
        <div label="Domestic Photos"> 
          <DomesticPhotos />
        </div> 
        <div label="International Photos"> 
          <InternationalPhotos />
-       </div> 
-       <div label="Engagement Photos"> 
-         <EngagementPhotos />
        </div> 
      </Tabs> 
     </main>
