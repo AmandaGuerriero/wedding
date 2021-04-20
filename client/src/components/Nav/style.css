@@ -96,14 +96,14 @@
   height: auto;
   width: auto;
   padding-bottom: 5px;
-  content:url("https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/Banner_Desktop_1.png");
+  content:url("https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/Banner_Desktop_2.png");
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   #background {
   padding-bottom: 3px;
-   content: url("https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/Banner_Mobile_1.png"); 
+   content: url("https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/Banner_Mobile_2.png"); 
   }
 
   .navbar {

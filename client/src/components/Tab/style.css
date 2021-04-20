@@ -11,10 +11,10 @@
 }
 
 .tab-list-active {
-  background-color: var(--pinotcolor);
+  /* background-color: var(--pinotcolor); */
   color: var(--pinotcolor);
   font-weight: bold;
-  border: solid var(--pinotcolor);
+  /* border: solid var(--pinotcolor); */
 }
 
 
