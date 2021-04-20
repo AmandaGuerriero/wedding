@@ -16,3 +16,10 @@
   font-weight: bold;
   border: solid var(--pinotcolor);
 }
+
+
+@media screen and (max-width: 768px) {
+  .tab-list-item {
+    font-size: 3vw;
+  }
+}

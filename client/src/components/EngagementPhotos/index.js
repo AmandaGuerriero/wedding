@@ -4,7 +4,7 @@ import './style.css';
 function EngagementPhotos() {
   return(
     <div>
-      
+      <p className="engagement-shoot-credit-mobile">A blend of photos from our actual engagement day in New York & our engagement photo shoot around LA (courtesy of our friends Joe Warwick & Erin Schaffner)</p>
       <div className="row">
       <div className="column">
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg' alt='Amanda & Eric' />

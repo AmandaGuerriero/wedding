@@ -41,7 +41,36 @@ body {
   height: 34vw;
 }
 
-/* Iframe Styles */
+/* Our Story Page Styles */
+.story, .story-photo, .story-logo {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  color: var(--pinotcolor);
+  background-color: transparent;
+  text-align: center;
+  padding: 20px 0px 10px 0px;
+}
+
+/* .story-photo {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0px 10px 0px;
+}
+
+.story-logo {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+} */
+
+/* Travel Page Styles */
 .iframe-container {
   position: relative;
   overflow: hidden;
@@ -57,9 +86,19 @@ body {
 
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+  .story, .story-photo, .story-logo {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    color: var(--pinotcolor);
+    background-color: transparent;
+    text-align: center;
   }
 }

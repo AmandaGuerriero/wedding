@@ -18,10 +18,14 @@
 }
 
 .engagement-shoot-credit {
-  font-size: 20px;
+  font-size: 1.85vw;
   color: var(--pinotcolor);
   background-color: transparent;
   text-align: center;
+}
+
+.engagement-shoot-credit-mobile {
+  display: none;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -37,5 +41,15 @@
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+  .engagement-shoot-credit {
+    display: none;
+  }
+  .engagement-shoot-credit-mobile {
+    visibility: visible;
+    font-size: 20px;
+    color: var(--pinotcolor);
+    background-color: transparent;
+    text-align: center;
   }
 }

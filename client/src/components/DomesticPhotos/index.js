@@ -48,7 +48,7 @@ function DomesticPhotos() {
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/domestic/20190617_100539.jpg' alt="Amanda & Eric" /><p>Pebble Beach, CA</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/domestic/IMG_9224.JPG' alt="Amanda & Eric" /><p>Marina del Rey, CA</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/domestic/20180701_145821.jpg' alt="Amanda & Eric" /><p>Winery in Agua Dulce, CA</p>
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/domestic/ice_cream.jpg' alt="Amanda & Eric" /><p>Excited for Ice Cream in Minneapolis</p>
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/domestic/Screenshot_20190504-195235_Video_Player.jpg' alt="Amanda & Eric" /><p>Excited for Ice Cream in Minneapolis</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/domestic/FB_IMG_1543580543430.jpg' alt="Amanda & Eric" /><p>Upstate NY Wedding</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/domestic/20190617_142321.jpg' alt="Amanda & Eric" /><p>Big Sur, CA</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/domestic/20180901_111415.jpg' alt="Amanda & Eric" /><p>Winery in Sonoma</p>
