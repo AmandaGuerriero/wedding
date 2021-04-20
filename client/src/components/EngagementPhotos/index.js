@@ -30,7 +30,7 @@ function EngagementPhotos() {
         
       </div>
       <div className="column">
-        <h4>A blend of photos from our actual Engagement Day & our LA shoot courtesy of 2 of our favorite people Joe Warwick & Erin Schaffner</h4>
+        <p className="engagement-shoot-credit">A blend of photos from our actual engagement day in New York & our engagement photo shoot around LA (courtesy of our friends Joe Warwick & Erin Schaffner)</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/20200705_181326-v.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9821-h.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9139-h.jpg' alt='Amanda & Eric' />
