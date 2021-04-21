@@ -4,7 +4,7 @@ import Rsvp from "./pages/Rsvp";
 import Home from "./pages/Home"
 import Story from "./pages/Story"
 import Adventure from "./pages/Adventure"
-import Travel from "./pages/Travel"
+import Travel from "./pages/Travel/index"
 import Lodging from "./pages/Lodging"
 import Updates from "./pages/Register"
 import Nav from "./components/Nav";

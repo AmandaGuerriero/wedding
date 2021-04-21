@@ -1,0 +1,118 @@
+/* Travel Page Styles */
+.note {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  color: var(--pinotcolor);
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.section-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  font-family: 'Barcelony', serif, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--pinotcolor);
+  padding-left: 10px;
+}
+
+.olive-branch {
+  padding-left: 20px;
+  margin-top: 10px;
+  height: 50px;
+  width: 100px;
+}
+
+.travel-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin: 5px 5px 5px 5px;
+}
+
+.travel-col {
+  flex: 50%;
+  max-width: 45%;
+  padding: 0 7px;
+}
+
+.trains-autos {
+  flex: 95%;
+  max-width: 85%;
+  padding: 0 7px;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 2px solid var(--rieslingcolor);
+  padding-bottom: 20px;
+}
+
+.text {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 40%;
+  border-top: 2px solid var(--rieslingcolor);
+  padding-bottom: 20px;
+}
+
+.info {
+  display: block;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.bullet-icon {
+  height: 25px;
+  margin-top: 5px;
+  width: 25px;
+}
+
+.travel-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.airport {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.airport, .driving-time {
+  background-color: transparent;
+  color: var(--pinotcolor);
+  text-align: left;
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+}
+
+.responsive-iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1045px) {
+  .iframe-container {
+    display: none;
+  }
+  
+  .responsive-iframe {
+   display: none;
+  }
+
+  .travel-col {
+    flex: 95%;
+    max-width: 95%;
+    padding: 0 7px;
+  }
+
+}

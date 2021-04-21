@@ -1,10 +1,9 @@
-:root {
-  font-family: 'RALEWAY', serif, 'Times New Roman', Times, serif;
-  --rose: #D6B7B6;
-  --olive: #8DAB15;
-  --rieslingcolor: #E9CB6D;
-  --pinotcolor: #42003E;  
+@font-face {
+  font-family: 'Barcelony';
+  src: url('https://res.cloudinary.com/amandaeric/raw/upload/v1618962863/site-assets/font/barcelony.woff') format("woff"),
+  url('https://res.cloudinary.com/amandaeric/raw/upload/v1618962863/site-assets/font/barcelony.woff2') format('woff2');
 }
+
 * {
   font-family: 'RALEWAY', serif, 'Times New Roman', Times, serif;
   --rose: #D6B7B6;
@@ -54,43 +53,14 @@ body {
   padding: 20px 0px 10px 0px;
 }
 
-/* .story-photo {
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 0px 10px 0px;
-}
-
-.story-logo {
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
-} */
-
-/* Travel Page Styles */
-.iframe-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 66%;
-}
-
-.responsive-iframe {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .column {
     flex: 100%;
     max-width: 100%;
   }
+
+  /* Our Story Styles */
   .story, .story-photo, .story-logo {
     width: 80%;
     display: block;
@@ -101,4 +71,5 @@ body {
     background-color: transparent;
     text-align: center;
   }
+
 }
