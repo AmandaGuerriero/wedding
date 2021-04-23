@@ -24,7 +24,7 @@ const Nav = props => {
             <div className="dropdown-content">
               <a href="/travel">TRAVEL</a>
               <a href="/lodging">LODGING</a>
-              <a href="/lodging">ADVENTURE</a>
+              <a href="/adventure">ADVENTURE</a>
             </div>
           </div>
           {/* <div className="dropdown">
