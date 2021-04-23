@@ -1,0 +1,33 @@
+.register-body {
+  display: flex;
+  flex: 90%;
+  max-width: 85%;
+  text-align: left;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.updates-submit {
+  background-color: var(--rieslingcolor);
+  color: var(--pinotcolor);
+}
+
+.updates-header {
+  padding: 25px 0px 25px 0px;
+  color: var(--pinotcolor);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.updates-field-name {
+  color: var(--pinotcolor);
+  font-weight: 600;
+  padding-right: 10px;
+  padding-bottom: 12px;
+}
+
+.updates-field {
+  border-color: var(--rieslingcolor);
+  width: 350px;
+}

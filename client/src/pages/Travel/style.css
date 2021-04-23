@@ -1,7 +1,6 @@
 /* Travel Page Styles */
 .note {
   padding-top: 30px;
-  padding-bottom: 40px;
   color: var(--pinotcolor);
   font-size: 18px;
   padding-left: 20px;
@@ -10,6 +9,7 @@
 .section-header {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 40px;
 }
 
 .section-title {
@@ -115,4 +115,7 @@
     padding: 0 7px;
   }
 
+  .info {
+    font-size: 12px;
+  }
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import API from "../utils/API";
+import API from "../../utils/API";
+import './style.css';
 
 function UpdatesForm() {
   const [formState, setFormState] = useState({ name: '', email: ''});
@@ -16,7 +17,8 @@ function UpdatesForm() {
       })
         .then(response => response.json())
         .catch(err => console.log(err));
-      console.log('Submit Form', formState);    
+      console.log('Submit Form', formState);
+      triggerSuccess(name)
   };
 
   const handleChange = (e) => {
@@ -40,20 +42,23 @@ function UpdatesForm() {
     }
   };
 
+  function triggerSuccess(name) {
+    window.alert("Thanks" + name + "you are successfully registered ")
+  }
+
   return (
-    <section>
-      {/* <h1> Coming Soon </h1> */}
-      <h1>Register for Updates!</h1>
+    <section className="register-body">
+      <div className="updates-header">Please register your email address for updates on lodging and detailed instructions closer to the wedding. (we promise to not spam you with emails!)</div>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+          <label htmlFor="name" className="updates-field-name">Name:</label>
+          <input type="text" className="updates-field" name="name" defaultValue={name} onBlur={handleChange} />
         </div>
         <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+          <label htmlFor="email" className="updates-field-name">Email address:</label>
+          <input type="email" className="updates-field" name="email" defaultValue={email} onBlur={handleChange} />
         </div>
-        <button data-testid="button" type="submit">Submit</button>
+        <button data-testid="button" type="submit" className="updates-submit">Submit</button>
       </form>
     </section>
   );
