@@ -1,24 +1,9 @@
 import React from 'react';
 import './style.css';
-
-
+import Accordion  from '../../components/Accordion/index';
+import AccordionItem  from '../../components/AccordionItem/index';
 
 const Lodging = () => {
-  var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
-
   return (
     <main>
       <div className="note">We recommend booking your accomodations sometime this year to ensure the best price and selection. Hotels tend to bea little more expensive so if you are traveling with other friends/family we encourage you to look at Airbnb/VRBO houses.</div>
@@ -35,6 +20,14 @@ for (i = 0; i < acc.length; i++) {
             <div className="info">
               <div className="shuttle-lot">1 minute from shuttle lot</div>
               <div className="blurb">A tiny, quaint downtown area with a couple of bars and restaurants including Mason Bar where wewill be holding an after party for those who wishto attend. Is a little more “townie” than touristy.</div>
+              <Accordion defaultIndex="1" onItemClick={console.log}>
+    <AccordionItem label="A" index="1">
+      Lorem ipsum
+    </AccordionItem>
+    <AccordionItem label="B" index="2">
+      Dolor sit amet
+    </AccordionItem>
+  </Accordion>
               <div className="accordion">&nbsp;<i className="fa fa-caret-right"></i>&nbsp;RECOMMENDATIONS</div>
             </div>
           </div>
@@ -46,9 +39,9 @@ for (i = 0; i < acc.length; i++) {
               <div className="shuttle-lot">10 minutes from shuttle lot</div>
               <div className="blurb">A part swanky, part grungy/touristy beach town atop cliffs that overlook the ocean. There is a pier and a decent amount of dining options that attract a large variety of guests. </div>
               <div className="accordion">&nbsp;<i className="fa fa-caret-right"></i>&nbsp;RECOMMENDATIONS</div>
-              <div className="panel">
+              <div class="panel">
                 <p>Lorem ipsum...</p>
-              </div>  
+              </div>
             </div>
           </div>
         {/* Avila Beach */}
@@ -98,7 +91,7 @@ for (i = 0; i < acc.length; i++) {
           <div className="section-title">Automobiles</div>
         <div className="travel-row ">
         <div className="trains-autos">
-        
+
           {/* Rental Cars */}
           <div className="travel-section">
             {/* <img className="bullet-icon" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/bullet-point.png" alt="Star icon as bullet point" /> */}
