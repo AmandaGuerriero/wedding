@@ -11,7 +11,7 @@ const Travel = () => {
         <div className="travel-section-title">Planes</div>
       </div>
       <div className="travel-row">
-        <div className="travel-col text">
+        <div className="travel-col travel-text">
           {/* Slo */}
           <div className="travel-section">
             <img className="travel-bullet-icon" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/bullet-point.png" alt="Star icon as bullet point" />
@@ -88,7 +88,7 @@ const Travel = () => {
           <img className="travel-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
           <div className="travel-section-title">Automobiles</div>
         <div className="travel-row ">
-        <div className="trains-autos">
+        <div className="travel-trains-autos">
         
           {/* Rental Cars */}
           <div className="travel-section">
