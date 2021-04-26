@@ -82,8 +82,8 @@ const Lodging = () => {
           </div>
           <div className="lodging-info-bnb">
               <div className="lodging-links">
-                <div className="lodging-link"><a href="/">AIRBNB LIST</a></div>
-                <div className="lodging-link"><a href="/">VRBO LIST</a></div>
+                <div className="lodging-link"><a href="https://www.airbnb.com/wishlists/899337396?s=67&unique_share_id=53508b47-2ab9-463d-a8d0-d8d770c03425">AIRBNB LIST</a></div>
+                <div className="lodging-link"><a href="https://www.vrbo.com/tripboard/i/0b3d7027-b7ac-48dd-be2d-6c1e23748718?client=web&oc=flMXw9RpFzWkSnN46s6g3">VRBO LIST</a></div>
               </div>
               <div className="lodging-paragraph">**Note that some Airbnbs haven’t opened up their availability for next summer yet so if you don’t see anywhere you are ready to commit to today, there might be more might open up later in the year.</div>
             </div>
