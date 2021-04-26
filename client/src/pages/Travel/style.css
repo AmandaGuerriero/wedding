@@ -40,16 +40,6 @@
   padding: 0 7px;
 }
 
-.trains-autos {
-  flex: 95%;
-  max-width: 85%;
-  padding: 0 7px;
-  margin-right: auto;
-  margin-left: auto;
-  border-top: 2px solid var(--rieslingcolor);
-  padding-bottom: 20px;
-}
-
 .text {
   margin-right: auto;
   margin-left: auto;
@@ -58,10 +48,8 @@
   padding-bottom: 20px;
 }
 
-.info {
+.travel-info {
   display: block;
-  text-align: left;
-  padding-left: 10px;
 }
 
 .bullet-icon {
@@ -81,10 +69,42 @@
   font-weight: 600;
 }
 
+.driving-time {
+  padding-left: 20px;
+}
+
 .airport, .driving-time {
   background-color: transparent;
   color: var(--pinotcolor);
   text-align: left;
+}
+
+.trains-autos-notes {
+  background-color: transparent;
+  color: var(--pinotcolor);
+  text-align: left;
+}
+
+.trains-autos {
+  flex: 95%;
+  max-width: 85%;
+  padding: 0 7px;
+  margin-right: auto;
+  margin-left: auto;
+  color: var(--pinotcolor);
+  border-top: 2px solid var(--rieslingcolor);
+  padding-bottom: 20px;
+}
+
+.trains-autos-info {
+  padding-left: 45px;
+}
+
+
+.station, .car, .airport {
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 20px;
 }
 
 .iframe-container {
@@ -97,6 +117,10 @@
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.map-mobile {
+  display: none;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -115,7 +139,24 @@
     padding: 0 7px;
   }
 
-  .info {
-    font-size: 12px;
+  .trains-autos {
+    flex: 95%;
+    padding: 0 7px;
+    max-width: 95%;
+  }
+
+  .map-mobile {
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .map-mobile > a {
+    background-color: transparent;
+    color: var(--olive);
+    text-align: left;
+    text-decoration: underline;
+    font-weight: 600;
+   
   }
 }

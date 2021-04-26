@@ -20,14 +20,14 @@ const Lodging = () => {
             <div className="info">
               <div className="shuttle-lot">1 minute from shuttle lot</div>
               <div className="blurb">A tiny, quaint downtown area with a couple of bars and restaurants including Mason Bar where wewill be holding an after party for those who wishto attend. Is a little more “townie” than touristy.</div>
-              <Accordion defaultIndex="1" onItemClick={console.log}>
-    <AccordionItem label="A" index="1">
-      Lorem ipsum
-    </AccordionItem>
-    <AccordionItem label="B" index="2">
-      Dolor sit amet
-    </AccordionItem>
-  </Accordion>
+              {/* <Accordion defaultIndex="1" onItemClick={console.log}>
+                <AccordionItem label="A" index="1">
+                  Lorem ipsum
+                </AccordionItem>
+                <AccordionItem label="B" index="2">
+                  Dolor sit amet
+                </AccordionItem>
+              </Accordion> */}
               <div className="accordion">&nbsp;<i className="fa fa-caret-right"></i>&nbsp;RECOMMENDATIONS</div>
             </div>
           </div>
