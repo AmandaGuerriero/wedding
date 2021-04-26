@@ -19,7 +19,7 @@ const Lodging = () => {
             <div className="lodging-town">ARROYO GRANDE</div>
             <div className="lodging-info">
               <div className="lodging-shuttle-lot">1 minute from shuttle lot</div>
-              <div className="lodging-blurb">A tiny, quaint downtown area with a couple of bars and restaurants including Mason Bar where wewill be holding an after party for those who wishto attend. Is a little more “townie” than touristy.</div>
+              <div className="lodging-blurb">A tiny, quaint downtown area with a couple of bars and restaurants including Mason Bar where we will be holding an after party for those who wishto attend. Is a little more “townie” than touristy.</div>
               {/* <Accordion defaultIndex="1" onItemClick={console.log}>
                 <AccordionItem label="A" index="1">
                   Lorem ipsum

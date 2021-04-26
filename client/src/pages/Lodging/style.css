@@ -203,9 +203,11 @@
     flex: 95%;
     padding: 0 7px;
     max-width: 95%;
+    padding-left: 45px;
   }
 
   .lodging-info-bnb {
     padding-left: 45px
   }
+
 }

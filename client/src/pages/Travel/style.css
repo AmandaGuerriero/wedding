@@ -102,6 +102,12 @@
 }
 
 
+.travel-train-header {
+  display: flex;
+  flex: nowrap;
+}
+
+
 .travel-station, .travel-car, .travel-airport {
   font-size: 20px;
   font-weight: 600;
@@ -159,5 +165,9 @@
     text-align: left;
     text-decoration: underline;
     font-weight: 600;
+  }
+
+  .travel-driving-time {
+    font-size: 12px;
   }
 }

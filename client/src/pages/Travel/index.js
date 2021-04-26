@@ -74,10 +74,11 @@ const Travel = () => {
         <div className="travel-trains-autos">
           {/* Trains */}
           <div className="travel-section">
-            <img className="travel-bullet-icon" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/bullet-point.png" alt="Star icon as bullet point" />
-            <div className="travel-station">San Luis Obispo Amtrack Station</div>
+            <div className="travel-train-header">
+              <img className="travel-bullet-icon" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/bullet-point.png" alt="Star icon as bullet point" />
+              <div className="travel-station">San Luis Obispo Amtrack Station</div>
+            </div>
             <div className="travel-trains-autos-info">
-              
               <div className="travel-trains-autos-notes">If a scenic train ride is what you seek, you can board the Pacific Surfliner from Downtown LA, Burbank, or Santa Barbara up to SLO. This will add cost and time to your journey, but offers delightful views of the coast.</div>
             </div>
           </div>
