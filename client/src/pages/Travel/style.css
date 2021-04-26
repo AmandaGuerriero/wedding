@@ -1,18 +1,18 @@
 /* Travel Page Styles */
-.note {
+.travel-note {
   padding-top: 30px;
   color: var(--pinotcolor);
   font-size: 18px;
   padding-left: 20px;
 }
 
-.section-header {
+.travel-section-header {
   display: flex;
   flex-wrap: wrap;
   padding-top: 40px;
 }
 
-.section-title {
+.travel-section-title {
   font-family: 'Barcelony', serif, 'Times New Roman', Times, serif;
   font-size: 40px;
   font-weight: 600;
@@ -20,7 +20,7 @@
   padding-left: 10px;
 }
 
-.olive-branch {
+.travel-olive-branch {
   padding-left: 20px;
   margin-top: 10px;
   height: 50px;
@@ -40,7 +40,7 @@
   padding: 0 7px;
 }
 
-.text {
+.travel-text {
   margin-right: auto;
   margin-left: auto;
   max-width: 40%;
@@ -52,7 +52,7 @@
   display: block;
 }
 
-.bullet-icon {
+.travel-bullet-icon {
   height: 25px;
   margin-top: 5px;
   width: 25px;
@@ -64,28 +64,28 @@
   padding-top: 20px;
 }
 
-.airport {
+.travel-airport {
   font-size: 20px;
   font-weight: 600;
 }
 
-.driving-time {
+.travel-driving-time {
   padding-left: 20px;
 }
 
-.airport, .driving-time {
+.travel-airport, .travel-driving-time {
   background-color: transparent;
   color: var(--pinotcolor);
   text-align: left;
 }
 
-.trains-autos-notes {
+.travel-trains-autos-notes {
   background-color: transparent;
   color: var(--pinotcolor);
   text-align: left;
 }
 
-.trains-autos {
+.travel-trains-autos {
   flex: 95%;
   max-width: 85%;
   padding: 0 7px;
@@ -96,40 +96,40 @@
   padding-bottom: 20px;
 }
 
-.trains-autos-info {
+.travel-trains-autos-info {
   padding-left: 45px;
 }
 
 
-.station, .car, .airport {
+.travel-station, .travel-car, .travel-airport {
   font-size: 20px;
   font-weight: 600;
   padding-left: 20px;
 }
 
-.iframe-container {
+.travel-iframe-container {
   position: relative;
   overflow: hidden;
   width: 50%;
 }
 
-.responsive-iframe {
+.travel-responsive-iframe {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.map-mobile {
+.travel-map-mobile {
   display: none;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1045px) {
-  .iframe-container {
+  .travel-iframe-container {
     display: none;
   }
   
-  .responsive-iframe {
+  .travel-responsive-iframe {
    display: none;
   }
 
@@ -139,24 +139,23 @@
     padding: 0 7px;
   }
 
-  .trains-autos {
+  .travel-trains-autos {
     flex: 95%;
     padding: 0 7px;
     max-width: 95%;
   }
 
-  .map-mobile {
+  .travel-map-mobile {
     display: block;
     padding-top: 20px;
     text-align: center;
   }
 
-  .map-mobile > a {
+  .travel-map-mobile > a {
     background-color: transparent;
     color: var(--olive);
     text-align: left;
     text-decoration: underline;
     font-weight: 600;
-   
   }
 }
