@@ -28,11 +28,11 @@ class App extends React.Component {
   };
 
   render() {
-    // let sideDrawer;
+    let sideDrawer;
     let backdrop;
 
     if (this.state.sideDrawerOpen) {
-      // sideDrawer = <SideDrawer />;
+      sideDrawer = <SideDrawer />;
       backdrop = <BackDrop click={this.backDropClickHandler} />;
     }
     return (

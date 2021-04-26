@@ -16,6 +16,10 @@
   transform: translateX(0);
 }
 
+.side-drawer.close {
+  transform: translateX(-100%);
+}
+
 .side-drawer ul {
   height: 100%;
   list-style: none;
@@ -34,6 +38,12 @@
 }
 
 .side-drawer a {
+  text-decoration: none;
+  color: var(--pinotcolor);
+  font-size: 1.2rem;
+}
+
+.logistics-menu {
   text-decoration: none;
   color: var(--pinotcolor);
   font-size: 1.2rem;
