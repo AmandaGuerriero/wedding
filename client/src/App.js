@@ -14,6 +14,7 @@ import SideDrawer from "./components/SideDrawer";
 import BackDrop from "./components/BackDrop";
 
 class App extends React.Component {
+  
   state = {
     sideDrawerOpen: false
   };
@@ -27,7 +28,9 @@ class App extends React.Component {
     this.setState({ sideDrawerOpen: false });
   };
 
+
   render() {
+    
     let sideDrawer;
     let backdrop;
 
@@ -37,7 +40,7 @@ class App extends React.Component {
     }
     return (
     <Router>
-      <div style={{ height: "100%" }}>
+      <div>
         <Nav drawerToggleClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
