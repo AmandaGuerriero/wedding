@@ -10,7 +10,7 @@ footer {
   height: 40px;
   position: relative;
 	margin-top: -50px; /* negative value of footer height */
-	height: 50px;
+	height: 30px;
 	clear:both;
   bottom: 0;
   left: 0;
@@ -20,4 +20,11 @@ footer {
   color: var(--rieslingcolor);
   font-style: bold;
   text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  footer {
+    font-size: 3vw;
+  }
 }
