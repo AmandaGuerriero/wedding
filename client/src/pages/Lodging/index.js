@@ -7,6 +7,7 @@ const Lodging = () => {
     <main>
       <div className="lodging-note">We recommend booking your accommodations sometime this year to ensure the best price and selection. Hotels tend to be a little more expensive so if you are traveling with other friends/family we encourage you to look at Airbnb/VRBO options.</div>
       <div className="lodging-note">There is absolutely no parking at the venue and you cannot Uber directly there so a short shuttle ride will be provided from Strother Park in Arroyo Grande. If a large group of people end up staying in either Pismo Beach or SLO, we may look at providing a shuttle from there.</div>
+      <div className="lodging-note">**All ratings based on hotels.com</div>
       <div className="lodging-section-header">
         <img className="lodging-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
         <div className="lodging-section-title">Hotels</div>
@@ -25,7 +26,7 @@ const Lodging = () => {
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Agrarian Hotel</a>
+                  <a href="https://www.agrarianhotel.com/" target="_blank" className="hotel-name-link">AGRARIAN HOTEL</a>
                     <div className="hotel-rating">9.4 ★</div> 
                     <div className="hotel-price">$280-$320/night</div>
                     </div>
@@ -47,7 +48,7 @@ const Lodging = () => {
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Oxford Suites</a>
+                  <a href="https://www.oxfordsuitespismobeach.com/" target="_blank" className="hotel-name-link">OXFORD SUITES</a>
                     <div className="hotel-rating">8.6 ★</div> 
                     <div className="hotel-price">$250/night</div>
                     </div>
@@ -56,7 +57,7 @@ const Lodging = () => {
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Shore Cliffs</a>
+                  <a href="https://www.shorecliff.com/" target="_blank" className="hotel-name-link">SHORE CLIFF</a>
                     <div className="hotel-rating">9.2 ★</div> 
                     <div className="hotel-price">$360-415/night</div>
                     </div>
@@ -65,7 +66,7 @@ const Lodging = () => {
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Seacrest</a>
+                  <a href="https://www.seacrestpismo.com/" target="_blank" className="hotel-name-link">SEACREST</a>
                     <div className="hotel-rating">9.2 ★</div> 
                     <div className="hotel-price">??/night</div>
                     </div>
@@ -74,7 +75,7 @@ const Lodging = () => {
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Pismo Lighthouse Suites</a>
+                  <a href="https://www.pismolighthousesuites.com/" target="_blank" className="hotel-name-link">PISMO LIGHTHOUSE SUITES</a>
                     <div className="hotel-rating">9.4 ★</div> 
                     <div className="hotel-price">$400-550/night</div>
                     </div>
@@ -83,7 +84,7 @@ const Lodging = () => {
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Inn at the Pier</a>
+                  <a href="https://www.theinnatthepier.com/" target="_blank" className="hotel-name-link">INN AT THE PIER</a>
                     <div className="hotel-rating">8.6 ★</div> 
                     <div className="hotel-price">$500-700/night</div>
                     </div>
@@ -92,7 +93,7 @@ const Lodging = () => {
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Vespera by Marriot</a>
+                  <a href="https://www.vesperapismobeach.com/" target="_blank" className="hotel-name-link">VESPERA BY MARRIOT</a>
                     <div className="hotel-rating">8.6 ★</div> 
                     <div className="hotel-price">$600-800/night</div>
                     </div>
@@ -114,7 +115,7 @@ const Lodging = () => {
               <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Avila Village Inn</a>
+                  <a href="https://www.avilavillageinn.com/" target="_blank" className="hotel-name-link">AVILA VILLAGE INN</a>
                     <div className="hotel-rating">9.0 ★</div> 
                     <div className="hotel-price">$400-500/night</div>
                     </div>
@@ -123,9 +124,18 @@ const Lodging = () => {
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Avila La Fonda</a>
+                  <a href="https://www.avilalafonda.com/" target="_blank" className="hotel-name-link">AVILA LA FONDA</a>
                     <div className="hotel-rating">9.6 ★</div> 
                     <div className="hotel-price">$450+/night</div>
+                    </div>
+                    <div className="hotel-info">Boutique hotel located right in Pismo beach that looks really nice.</div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="https://www.hotelsavilabeach.com/rooms" target="_blank" className="hotel-name-link">INN AT AVILA</a>
+                    <div className="hotel-rating">N/A</div> 
+                    <div className="hotel-price">$390-510/night</div>
                     </div>
                     <div className="hotel-info">Boutique hotel located right in Pismo beach that looks really nice.</div>
                 </ul>
@@ -145,7 +155,7 @@ const Lodging = () => {
               <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Hampton Inn</a>
+                  <a href="https://www.hilton.com/en/hotels/smxsmhx-hampton-suites-santa-maria/" target="_blank" className="hotel-name-link">HAMPTON INN</a>
                     <div className="hotel-rating">9.2 ★</div> 
                     <div className="hotel-price">$190/night</div>
                     </div>
@@ -154,7 +164,7 @@ const Lodging = () => {
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Fairfield Inn</a>
+                  <a href="https://www.marriott.com/hotels/travel/smxfi-fairfield-inn-and-suites-santa-maria/" target="_blank" className="hotel-name-link">FAIRFIELD INN</a>
                     <div className="hotel-rating">8.6 ★</div> 
                     <div className="hotel-price">$170/night</div>
                     </div>
@@ -163,9 +173,9 @@ const Lodging = () => {
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Historical Santa Maria</a>
+                  <a href="https://www.santamariainn.com/" target="_blank" className="hotel-name-link">HISTORIC SANTA MARIA</a>
                     <div className="hotel-rating">8.0 ★</div> 
-                    <div className="hotel-price">$133/night</div>
+                    <div className="hotel-price">$150/night</div>
                     </div>
                     <div className="hotel-info">This is an old hotel right in ‘downtown’ Santa Maria. We stayed there once and while it was certainly passed its heyday, it was fine.</div>
                 </ul>
@@ -185,7 +195,16 @@ const Lodging = () => {
               <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">La Quinta</a>
+                  <a href="https://www.petitsoleilslo.com/" target="_blank" className="hotel-name-link">PETIT SOLEIL</a>
+                    <div className="hotel-rating">N/A</div> 
+                    <div className="hotel-price">$260-320/night</div>
+                    </div>
+                    <div className="hotel-info">European style B&B within easy walking distance of downtown. Looks very quaint but got decent reviews.</div>
+                </ul>
+              <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="https://www.wyndhamhotels.com/laquinta/san-luis-obispo-california/la-quinta-inn-and-suites-san-luis-obispo-downtown/overview" target="_blank" className="hotel-name-link">LA QUINTA</a>
                     <div className="hotel-rating">9.0 ★</div> 
                     <div className="hotel-price">$270/night</div>
                     </div>
@@ -194,7 +213,7 @@ const Lodging = () => {
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Butler Hotel</a>
+                  <a href="https://www.thebutlerhotel.com/" target="_blank" className="hotel-name-link">BUTLER HOTEL</a>
                     <div className="hotel-rating">N/A</div> 
                     <div className="hotel-price">$279/night</div>
                     </div>
@@ -203,7 +222,7 @@ const Lodging = () => {
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">The Kinney</a>
+                  <a href="https://www.thekinneyslo.com/" target="_blank" className="hotel-name-link">THE KINNEY</a>
                     <div className="hotel-rating">8.8 ★</div> 
                     <div className="hotel-price">$280/night</div>
                     </div>
@@ -211,26 +230,8 @@ const Lodging = () => {
                 </ul>
                 <ul className="hotel-entry">
                   <div className="hotel-header">
-                  <div>•</div>
-                  <a href="/" className="hotel-name-link">Garden Street Inn</a>
-                    <div className="hotel-rating">9.2 ★</div> 
-                    <div className="hotel-price">$350/night</div>
-                    </div>
-                    <div className="hotel-info">Upscale bed and breakfast located right in downtown SLO.</div>
-                </ul>
-                <ul className="hotel-entry">
-                  <div className="hotel-header">
-                  <div>•</div>
-                  <a href="/" className="hotel-name-link">Courtyard by Marriot</a>
-                    <div className="hotel-rating">8.8 ★</div> 
-                    <div className="hotel-price">$320/night</div>
-                    </div>
-                    <div className="hotel-info">If you have Starwood points, this is a Marriott option. It is well outside of downtown SLO and outside of the Taco Temple, it is not walking distance from anything.</div>
-                </ul>
-                <ul className="hotel-entry">
-                  <div className="hotel-header">
                     <div>•</div>
-                    <a href="/" className="hotel-name-link">Madonna Inn</a>
+                    <a href="https://www.madonnainn.com/" target="_blank" className="hotel-name-link">MADONNA INN</a>
                     <div className="hotel-rating">9.0 ★</div> 
                     <div className="hotel-price">$300-450/night</div>
                   </div>
@@ -239,7 +240,43 @@ const Lodging = () => {
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">SLO Brew Lofts</a>
+                  <a href="https://www.marriott.com/hotels/travel/sbpcy-courtyard-san-luis-obispo/" target="_blank" className="hotel-name-link">COURTYARD BY MARRIOT</a>
+                    <div className="hotel-rating">8.8 ★</div> 
+                    <div className="hotel-price">$320/night</div>
+                    </div>
+                    <div className="hotel-info">If you have Starwood points, this is a Marriott option. It is well outside of downtown SLO and outside of the Taco Temple, it is not walking distance from anything.</div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="https://www.gardenstreetinn.com/" target="_blank" className="hotel-name-link">GARDEN STREET INN</a>
+                    <div className="hotel-rating">9.2 ★</div> 
+                    <div className="hotel-price">$350/night</div>
+                    </div>
+                    <div className="hotel-info">Upscale bed and breakfast located right in downtown SLO.</div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="https://sanluiscreeklodge.com/" target="_blank" className="hotel-name-link">SAN LUIS CREEK</a>
+                    <div className="hotel-rating">9.4 ★</div> 
+                    <div className="hotel-price">$380-410/night</div>
+                    </div>
+                    <div className="hotel-info">Very small boutique hotel right just outside downtown SLO</div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="https://www.hotelcerro.com/slo-accommodation/" target="_blank" className="hotel-name-link">HOTEL CERO</a>
+                    <div className="hotel-rating">9.2 ★</div> 
+                    <div className="hotel-price">$430/night</div>
+                    </div>
+                    <div className="hotel-info">Nice boutique hotel right in downtown SLO</div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="https://www.slobrewlofts.com/" target="_blank" className="hotel-name-link">SLO BREW LOFTS</a>
                     <div className="hotel-rating">9.2 ★</div> 
                     <div className="hotel-price">$650-850/night - 2br/3br</div>
                     </div>

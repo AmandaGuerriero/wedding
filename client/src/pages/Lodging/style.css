@@ -157,6 +157,7 @@
 
 .lodging-options-links {
   background-color: var(--pinotcolor);
+  padding-top: 10px;
 }
 
 .hotel-entry {

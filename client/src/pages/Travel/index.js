@@ -5,7 +5,7 @@ const Travel = () => {
 
   return (
     <main>
-      <div className="travel-note">We recommend spending additional time exploring the area if you area able. See the Adventure page for ideas on what you can see, do, and eat/drink!</div>
+      <div className="travel-note">We recommend spending additional time exploring the area if you are able. See the Adventure page for ideas on what you can see, do, and eat/drink!</div>
       <div className="travel-section-header">
         <img className="travel-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
         <div className="travel-section-title">Planes</div>
