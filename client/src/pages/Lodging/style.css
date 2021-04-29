@@ -56,7 +56,7 @@
 .lodging-info, .lodging-info-bnb {
   display: block;
   text-align: left;
-  padding-left: 45px;
+  padding-left: 35px;
 }
 
 .lodging-bullet-icon {
@@ -125,7 +125,7 @@
   background-color: transparent;
   color: var(--pinotcolor);
   text-align: left;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .lodging-info {
@@ -215,7 +215,7 @@
 .lodging-responsive-iframe {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 50%;
 }
 
 .lodging-links {
@@ -255,17 +255,18 @@
     flex: 95%;
     padding: 0 7px;
     max-width: 95%;
-    padding-left: 45px;
+    padding-left: 35px;
   }
 
   .lodging-info-bnb {
-    padding-left: 45px
+    padding-left: 35px
   }
 
   .lodging-map-mobile {
     display: block;
     padding-top: 20px;
     text-align: center;
+    width: 100%;
   }
 
   .lodging-map-mobile > a {

@@ -51,7 +51,7 @@ const Nav = props => {
         </div>
       </div>
       <div className="header-container">
-        <div id="background"/>
+        <a href="/" id="background"/>
       </div>
     </div>
   );
