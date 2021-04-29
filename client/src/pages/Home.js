@@ -11,7 +11,7 @@ const Home = (props) => {
   const [isOpen, setIsOpen] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsOpen(!isOpen); 
+      setIsOpen(isOpen); // Set to not Open 
     }, 1000);
     return () => clearTimeout(timer);
   }, []);

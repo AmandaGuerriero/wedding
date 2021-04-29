@@ -96,14 +96,14 @@
   height: auto;
   width: auto;
   padding-bottom: 5px;
-  content:url("https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/Banner_Desktop_2.png");
+  content:url("https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/BANNER_DESKTOP_3.png");
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   #background {
   padding-bottom: 3px;
-   content: url("https://res.cloudinary.com/amandaeric/image/upload/w_768,h_170,c_limit/site-assets/Banner_Mobile_2.png"); 
+   content: url("https://res.cloudinary.com/amandaeric/image/upload/w_768,h_170,c_limit/site-assets/BANNER_MOBILE_3.png"); 
   }
 
   .navbar {
@@ -119,7 +119,7 @@
 @media screen and (max-width: 400px) {
   #background {
   padding-bottom: 3px;
-   content: url("https://res.cloudinary.com/amandaeric/image/upload/w_400,h_170,c_limit/site-assets/Banner_Mobile_2.png"); 
+   content: url("https://res.cloudinary.com/amandaeric/image/upload/w_400,h_170,c_limit/site-assets/BANNER_MOBILE_3.png"); 
   }
 
   .navbar {
