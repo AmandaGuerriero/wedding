@@ -41,9 +41,13 @@ const Nav = props => {
             activeClassName="active"
             >REGISTRY</NavLink> */}
             <NavLink 
+            to="/register-for-updates"
+            activeClassName="active"
+            >UPDATES</NavLink>
+            {/* <NavLink 
             to="/rsvp"
             activeClassName="active"
-            >RSVP</NavLink>
+            >RSVP</NavLink> */}
         </div>
       </div>
       <div className="header-container">

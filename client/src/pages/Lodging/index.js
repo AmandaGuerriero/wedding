@@ -229,11 +229,11 @@ const Lodging = () => {
                 </ul>
                 <ul className="hotel-entry">
                   <div className="hotel-header">
-                  <div>•</div>
-                  <a href="/" className="hotel-name-link">Madonna Inn</a>
+                    <div>•</div>
+                    <a href="/" className="hotel-name-link">Madonna Inn</a>
                     <div className="hotel-rating">9.0 ★</div> 
                     <div className="hotel-price">$300-450/night</div>
-                    </div>
+                  </div>
                     <div className="hotel-info">If you are looking for a grand adventure with your lodging, then look no further than the Madonna Inn as it will be one of the more unique stays of your entire life. Every room has an outrageous theme, and the bar/dining room are decorated in a way that’s best to left to experience on your own. From personal experience, we would recommend the Rock Bottom, Irish Hills, or Gypsy Rock rooms however the Cabin Still, Caveman, Yahoo, Swiss Belle, or Yosemite Rock have also piqued our interest.</div>
                 </ul>
                 <ul className="hotel-entry">

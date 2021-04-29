@@ -18,8 +18,9 @@ const sideDrawer = (props) => {
         <li className="logistics-menu">LOGISTICS</li>
               <li className="sub-li"><a href="/travel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TRAVEL</a></li>
               <li className="sub-li"><a href="/lodging">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LODGING</a></li>
-              <li className="sub-li"><a href="/lodging">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ADVENTURE</a></li>
-        <li><a href="/rsvp">RSVP</a></li>
+              <li className="sub-li"><a href="/adventure">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ADVENTURE</a></li>
+        {/* <li><a href="/rsvp">RSVP</a></li> */}
+        <li><a href="/register-for-updates">UPDATES</a></li>
       </ul>
     </nav>
   );

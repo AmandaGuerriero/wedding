@@ -44,7 +44,7 @@ function RegisterModal (props) {
       <section className="register-modal-body">
       <div className="modal-header">
       <div className="modal-updates-header">Please register your email address for updates on lodging and detailed instructions closer to the wedding. (we promise to not spam you with emails!)</div>
-      <span className="modal-close-icon" onClick={triggerSuccess}>x</span>
+      <button className="modal-close-icon" onClick={triggerSuccess}>x</button>
         </div>
         <form id="modal-contact-form" onSubmit={handleSubmit}>
           <div className="name-fields">
