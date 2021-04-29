@@ -6,14 +6,14 @@ import RegisterModal from "../components/RegisterModal";
 import DomesticPhotos from "../components/DomesticPhotos";
 import InternationalPhotos from "../components/InternationalPhotos";
 import RegisterForUpdates from "../pages/Register";
-import ReactModal from 'react-modal';
+import Modal from 'react-modal';
 
 
 const Home = (props) => {
   const [isOpen, setIsOpen] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsOpen(!isOpen);
+      setIsOpen(isOpen); // Set this off !
     }, 1000);
     return () => clearTimeout(timer);
   }, []);
@@ -21,6 +21,7 @@ const Home = (props) => {
     console.log("Closed")
     setIsOpen(!isOpen);
   }
+  
   return (
     <main>
       <div>
