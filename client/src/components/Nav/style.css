@@ -92,8 +92,8 @@
 }
 
 .reg-button {
-  position: fixed;
-  top: 20%;
+  position: absolute;
+  top: 12%;
   left: 90%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -135,6 +135,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .reg-button {
+    display: none;
+  }
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 400px) {
   #background {
@@ -149,4 +155,6 @@
   .navbar-right {
     display: none;
   }
+
+
 }
