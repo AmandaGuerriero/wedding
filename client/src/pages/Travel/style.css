@@ -4,6 +4,7 @@
   color: var(--pinotcolor);
   font-size: 18px;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 .travel-section-header {
@@ -67,11 +68,10 @@
 .travel-airport {
   font-size: 20px;
   font-weight: 600;
-  padding-left: 20px;
 }
 
 .travel-driving-time {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .travel-airport, .travel-driving-time {
@@ -98,7 +98,7 @@
 }
 
 .travel-trains-autos-info {
-  padding-left: 45px;
+  padding-left: 35px;
 }
 
 
@@ -111,7 +111,7 @@
 .travel-station, .travel-car, .travel-airport {
   font-size: 20px;
   font-weight: 600;
-  padding-left: 20px;
+  padding-left: 10px;
   color: var(--pinotcolor);
 }
 
