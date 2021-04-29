@@ -5,8 +5,8 @@ import Collapsible from 'react-collapsible';
 const Lodging = () => {
   return (
     <main>
-      <div className="lodging-note">We recommend booking your accommodations sometime this year to ensure the best price and selection. Hotels tend to be a little more expensive so if you are traveling with other friends/family we encourage you to look at Airbnb/VRBO houses.</div>
-      <div className="lodging-note">There is absolutely no parking at the venue, and you cannot uber there directly so a short shuttle ride will be provided from Strother Park in Arroyo Grande. If a large group of people end up staying in either Pismo Beach or SLO, we may also look at providing a shuttle from there.</div>
+      <div className="lodging-note">We recommend booking your accommodations sometime this year to ensure the best price and selection. Hotels tend to be a little more expensive so if you are traveling with other friends/family we encourage you to look at Airbnb/VRBO options.</div>
+      <div className="lodging-note">There is absolutely no parking at the venue and you cannot Uber directly there so a short shuttle ride will be provided from Strother Park in Arroyo Grande. If a large group of people end up staying in either Pismo Beach or SLO, we may look at providing a shuttle from there.</div>
       <div className="lodging-section-header">
         <img className="lodging-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
         <div className="lodging-section-title">Hotels</div>
@@ -41,7 +41,7 @@ const Lodging = () => {
             <div className="lodging-town">PISMO BEACH</div>
             <div className="lodging-info">
               <div className="lodging-shuttle-lot">10 minutes from shuttle lot</div>
-              <div className="lodging-blurb">A combination of swanky, grungy, and touristy, Pismo is located atop cliffs that overlook the ocean. There is a pier and a decent amount of dining options and while it certainly attracts a large variety of guests, the view is pretty spectacular.</div>
+              <div className="lodging-blurb">A combination of swanky, grungy, and touristy, Pismo is located atop cliffs that overlook the ocean. There is a pier along with numerous dining options and while it certainly attracts a large variety of guests, the view is pretty spectacular.</div>
               <Collapsible trigger="RECOMMENDATIONS" triggerWhenOpen="RECOMMENDATIONS" className="accordion fa fa-caret-right">
               <div className="lodging-options-links">
                 <ul className="hotel-entry">
@@ -56,11 +56,11 @@ const Lodging = () => {
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Shore Cliff</a>
+                  <a href="/" className="hotel-name-link">Shore Cliffs</a>
                     <div className="hotel-rating">9.2 ★</div> 
                     <div className="hotel-price">$360-415/night</div>
                     </div>
-                    <div className="hotel-info">One of the more reasonably priced hotels that is just about a mile north of downtown but is right on the cliffs. We haven’t stayed here before, but it has good reviews and offers special rates for guests at weddings. Call directly to book with the discounted wedding rate. </div>
+                    <div className="hotel-info">One of the more reasonably priced hotels on the cliffs with the drawback being that is about a mile north of downtown Pismo. We haven’t stayed here before, but it has good reviews and offers special rates for guests at weddings. Call directly to book with the discounted wedding rate.</div>
                 </ul>
                 <ul className="hotel-entry">
                   <div className="hotel-header">
@@ -108,7 +108,7 @@ const Lodging = () => {
             <div className="lodging-town">AVILA BEACH</div>
             <div className="lodging-info">
               <div className="lodging-shuttle-lot">20 minutes from shuttle lot</div>
-              <div className="lodging-blurb">A small beach town located in a little cove that is a quieter and more upscale than Pismo in terms of bars and restaurants, but it is still right on the ocean, so it draws a decent daytime beach crowd.</div>
+              <div className="lodging-blurb">A small beach town located in a little cove that is quieter and more upscale than Pismo in terms of bars and restaurants, but it is still right on the ocean, so it draws a decent daytime beach crowd.</div>
               <Collapsible trigger="RECOMMENDATIONS" triggerWhenOpen="RECOMMENDATIONS" className="accordion fa fa-caret-right">
               <div className="lodging-options-links">
               <ul className="hotel-entry">
@@ -139,7 +139,7 @@ const Lodging = () => {
             <div className="lodging-town">SANTA MARIA</div>
             <div className="lodging-info">
               <div className="lodging-shuttle-lot">20 minutes from shuttle lot</div>
-              <div className="lodging-blurb">With much more of a suburbia/chain restaurant feel, Santa Maria is located inland and while it does not boast much to do in the town itself, it does have the cheapest lodging, is close to Orcutt which has some cool bars/restaurants and is adjacent to the Santa Maria AVA.</div>
+              <div className="lodging-blurb">With much more of a suburbia feel, Santa Maria is located more inland than the rest of the options. While it does not boast much to do in the town itself, it does have the cheapest lodging, is close to Orcutt which has some cool bars/restaurants, and is adjacent to the Santa Maria AVA.</div>
               <Collapsible trigger="RECOMMENDATIONS" triggerWhenOpen="RECOMMENDATIONS" className="accordion fa fa-caret-right">
               <div className="lodging-options-links">
               <ul className="hotel-entry">
@@ -179,7 +179,7 @@ const Lodging = () => {
             <div className="lodging-town">SAN LUIS OBISPO</div>
             <div className="lodging-info">
               <div className="lodging-shuttle-lot">20 minutes from shuttle lot</div>
-              <div className="lodging-blurb">Larger college town with a delightful river walk running through it. While it is less touristy than the beach towns, it offers the widest array of dining options and should be free off all the college hooligans from Cal Poly in July.</div>
+              <div className="lodging-blurb">SLO is a college town with a delightful river walk running through it. While it is less touristy than the beach towns, it offers the widest array of dining options and should be free off all the college hooligans from Cal Poly in July.</div>
               <Collapsible trigger="RECOMMENDATIONS" triggerWhenOpen="RECOMMENDATIONS" className="accordion fa fa-caret-right">
               <div className="lodging-options-links">
               <ul className="hotel-entry">
@@ -198,7 +198,7 @@ const Lodging = () => {
                     <div className="hotel-rating">N/A</div> 
                     <div className="hotel-price">$279/night</div>
                     </div>
-                    <div className="hotel-info">This is a very small, but intriguingly affordable and trendy option in SLO that we stumbled across on the internet (it’s not on hotels.com). While not right in the main downtown, it is still walking distance most of the bars and restaurants.</div>
+                    <div className="hotel-info">This is a very small, but intriguingly trendy option in SLO that we stumbled across (it’s not on hotels.com). While it's not in the main downtown area, it is still easy walking distance most of the bars and restaurants.</div>
                 </ul>
                 <ul className="hotel-entry">
                   <div className="hotel-header">
@@ -207,7 +207,7 @@ const Lodging = () => {
                     <div className="hotel-rating">8.8 ★</div> 
                     <div className="hotel-price">$280/night</div>
                     </div>
-                    <div className="hotel-info">On the more economical side, the Kinney is a very trendy hotel a mile down the street from downtown SLO. </div>
+                    <div className="hotel-info">Another economical, yet trendy hotel a mile down the street from downtown SLO.</div>
                 </ul>
                 <ul className="hotel-entry">
                   <div className="hotel-header">
@@ -225,7 +225,7 @@ const Lodging = () => {
                     <div className="hotel-rating">8.8 ★</div> 
                     <div className="hotel-price">$320/night</div>
                     </div>
-                    <div className="hotel-info">If you are a Starwood points person, this is a Marriott option however it is well outside of downtown SLO and unless you count the Taco Temple, it is not walking distance from anything.</div>
+                    <div className="hotel-info">If you have Starwood points, this is a Marriott option. It is well outside of downtown SLO and outside of the Taco Temple, it is not walking distance from anything.</div>
                 </ul>
                 <ul className="hotel-entry">
                   <div className="hotel-header">
@@ -234,7 +234,7 @@ const Lodging = () => {
                     <div className="hotel-rating">9.0 ★</div> 
                     <div className="hotel-price">$300-450/night</div>
                   </div>
-                    <div className="hotel-info">If you are looking for a grand adventure with your lodging, then look no further than the Madonna Inn as it will be one of the more unique stays of your entire life. Every room has an outrageous theme, and the bar/dining room are decorated in a way that’s best to left to experience on your own. From personal experience, we would recommend the Rock Bottom, Irish Hills, or Gypsy Rock rooms however the Cabin Still, Caveman, Yahoo, Swiss Belle, or Yosemite Rock have also piqued our interest.</div>
+                    <div className="hotel-info">If you are looking for a grand adventure with your lodging, then look no further than the Madonna Inn. The Madonna will be one of the more unique stays of your entire life as every room has an outrageous theme and the bar/dining room are decorated in a way that’s best to left to experience on your own. From personal experience, we would recommend the Rock Bottom, Irish Hills, or Gypsy Rock rooms however the Cabin Still, Caveman, Yahoo, Swiss Belle, or Yosemite Rock have always piqued our interest. We also highly recommend their spa.</div>
                 </ul>
                 <ul className="hotel-entry">
                   <div className="hotel-header">
@@ -243,7 +243,7 @@ const Lodging = () => {
                     <div className="hotel-rating">9.2 ★</div> 
                     <div className="hotel-price">$650-850/night - 2br/3br</div>
                     </div>
-                    <div className="hotel-info">We have always been curious about these as they look really nice and are right downtown but have never had the chance to stay there. Best suited for a group of people, they are right above SLO Brew Co as well which is always a plus.</div>
+                    <div className="hotel-info">We have always been curious about these as they look really nice and are located right in the middle of downtown SLO, but we've never had the chance to stay there. They are best suited for a groups that want to stay together and are right above a brewery which is always a plus.</div>
                 </ul>
               </div>
               </Collapsible>
