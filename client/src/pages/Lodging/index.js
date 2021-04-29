@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.css';
-import Accordion  from '../../components/Accordion/index';
-import AccordionItem  from '../../components/AccordionItem/index';
+import Collapsible from 'react-collapsible';
 
 const Lodging = () => {
   return (
@@ -20,15 +19,26 @@ const Lodging = () => {
             <div className="lodging-info">
               <div className="lodging-shuttle-lot">1 minute from shuttle lot</div>
               <div className="lodging-blurb">A tiny, quaint downtown area with a couple of bars and restaurants including Mason Bar where we will be holding an after party for those who wishto attend. Is a little more “townie” than touristy.</div>
-              {/* <Accordion defaultIndex="1" onItemClick={console.log}>
-                <AccordionItem label="A" index="1">
-                  Lorem ipsum
-                </AccordionItem>
-                <AccordionItem label="B" index="2">
-                  Dolor sit amet
-                </AccordionItem>
-              </Accordion> */}
-              <div className="accordion">&nbsp;<i className="fa fa-caret-right"></i>&nbsp;RECOMMENDATIONS</div>
+              <Collapsible trigger="RECOMMENDATIONS" triggerWhenOpen="RECOMMENDATIONS" className="accordion fa fa-caret-right">
+              <div className="lodging-options-links">
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">Seacrest Hotel:</a>
+                    <div className="hotel-price">$300-$400/night</div>
+                    </div>
+                    <div className="hotel-info">1 mile north of downtown Pismo. Ocean views with a more reasonable price. We stayed once and really enjoyed it</div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">Seacrest Hotel:</a>
+                    <div className="hotel-price">$300-$400/night</div>
+                    </div>
+                    <div className="hotel-info">1 mile north of downtown Pismo. Ocean views with a more reasonable price. We stayed once and really enjoyed it</div>
+                </ul>
+              </div>
+              </Collapsible>
             </div>
           </div>
          {/* Pismo Beach */}
@@ -38,10 +48,26 @@ const Lodging = () => {
             <div className="lodging-info">
               <div className="lodging-shuttle-lot">10 minutes from shuttle lot</div>
               <div className="lodging-blurb">A part swanky, part grungy/touristy beach town atop cliffs that overlook the ocean. There is a pier and a decent amount of dining options that attract a large variety of guests. </div>
-              <div className="accordion">&nbsp;<i className="fa fa-caret-right"></i>&nbsp;RECOMMENDATIONS</div>
-              <div class="panel">
-                <p>Lorem ipsum...</p>
+              <Collapsible trigger="RECOMMENDATIONS" triggerWhenOpen="RECOMMENDATIONS" className="accordion fa fa-caret-right">
+              <div className="lodging-options-links">
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">Seacrest Hotel:</a>
+                    <div className="hotel-price">$300-$400/night</div>
+                    </div>
+                    <div className="hotel-info">1 mile north of downtown Pismo. Ocean views with a more reasonable price. We stayed once and really enjoyed it</div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">Seacrest Hotel:</a>
+                    <div className="hotel-price">$300-$400/night</div>
+                    </div>
+                    <div className="hotel-info">1 mile north of downtown Pismo. Ocean views with a more reasonable price. We stayed once and really enjoyed it</div>
+                </ul>
               </div>
+              </Collapsible>
             </div>
           </div>
         {/* Avila Beach */}
@@ -51,7 +77,26 @@ const Lodging = () => {
             <div className="lodging-info">
               <div className="lodging-shuttle-lot">10 minutes from shuttle lot</div>
               <div className="lodging-blurb">Very small beach town in a little cove that is a little quieter than Pismo in terms of bars and restaurants but it is right on the ocean so it draws a decent daytime beach crowd.</div>
-              <div className="accordion">&nbsp;<i className="fa fa-caret-right"></i>&nbsp;RECOMMENDATIONS</div>
+              <Collapsible trigger="RECOMMENDATIONS" triggerWhenOpen="RECOMMENDATIONS" className="accordion fa fa-caret-right">
+              <div className="lodging-options-links">
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">Seacrest Hotel:</a>
+                    <div className="hotel-price">$300-$400/night</div>
+                    </div>
+                    <div className="hotel-info">1 mile north of downtown Pismo. Ocean views with a more reasonable price. We stayed once and really enjoyed it</div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">Seacrest Hotel:</a>
+                    <div className="hotel-price">$300-$400/night</div>
+                    </div>
+                    <div className="hotel-info">1 mile north of downtown Pismo. Ocean views with a more reasonable price. We stayed once and really enjoyed it</div>
+                </ul>
+              </div>
+              </Collapsible>
             </div>
           </div>
         {/* San Luis Obispo */}
@@ -61,7 +106,26 @@ const Lodging = () => {
             <div className="lodging-info">
               <div className="lodging-shuttle-lot">20 minutes from shuttle lot</div>
               <div className="lodging-blurb">Larger college town with a delightful riverwalk running through town. It is less touristy than the beach towns and offers the widest array of dining options. (should be free off all the college hooligans in July)</div>
-              <div className="accordion">&nbsp;<i className="fa fa-caret-right"></i>&nbsp;RECOMMENDATIONS</div>
+              <Collapsible trigger="RECOMMENDATIONS" triggerWhenOpen="RECOMMENDATIONS" className="accordion fa fa-caret-right">
+              <div className="lodging-options-links">
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">Seacrest Hotel:</a>
+                    <div className="hotel-price">$300-$400/night</div>
+                    </div>
+                    <div className="hotel-info">1 mile north of downtown Pismo. Ocean views with a more reasonable price. We stayed once and really enjoyed it</div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">Seacrest Hotel:</a>
+                    <div className="hotel-price">$300-$400/night</div>
+                    </div>
+                    <div className="hotel-info">1 mile north of downtown Pismo. Ocean views with a more reasonable price. We stayed once and really enjoyed it</div>
+                </ul>
+              </div>
+              </Collapsible>
             </div>
           </div>
           </div>
@@ -82,8 +146,8 @@ const Lodging = () => {
           </div>
           <div className="lodging-info-bnb">
               <div className="lodging-links">
-                <div className="lodging-link"><a href="https://www.airbnb.com/wishlists/899337396?s=67&unique_share_id=53508b47-2ab9-463d-a8d0-d8d770c03425">AIRBNB LIST</a></div>
-                <div className="lodging-link"><a href="https://www.vrbo.com/tripboard/i/0b3d7027-b7ac-48dd-be2d-6c1e23748718?client=web&oc=flMXw9RpFzWkSnN46s6g3">VRBO LIST</a></div>
+                <div className="lodging-link"><a href="https://www.airbnb.com/wishlists/899337396?s=67&unique_share_id=53508b47-2ab9-463d-a8d0-d8d770c03425" target="_blank">AIRBNB LIST</a></div>
+                <div className="lodging-link"><a href="https://www.vrbo.com/tripboard/i/0b3d7027-b7ac-48dd-be2d-6c1e23748718?client=web&oc=flMXw9RpFzWkSnN46s6g3" target="_blank">VRBO LIST</a></div>
               </div>
               <div className="lodging-paragraph">**Note that some Airbnbs haven’t opened up their availability for next summer yet so if you don’t see anywhere you are ready to commit to today, there might be more might open up later in the year.</div>
             </div>

@@ -5,7 +5,7 @@ import './style.css';
 
 function RegisterModal (props) {
   const [formState, setFormState] = useState({ name: '', email: ''});
-
+  
   const [errorMessage, setErrorMessage] = useState('');
   const { name, email} = formState;
 
@@ -36,8 +36,10 @@ function RegisterModal (props) {
   return (
     <div className="modal-updates">
       <section className="register-modal-body">
+      <div className="modal-header">
+      <div className="modal-updates-header">Please register your email address for updates on lodging and detailed instructions closer to the wedding. (we promise to not spam you with emails!)</div>
       <span className="modal-close-icon" onClick={props.handleClose}>x</span>
-        <div className="modal-updates-header">Please register your email address for updates on lodging and detailed instructions closer to the wedding. (we promise to not spam you with emails!)</div>
+        </div>
         <form id="modal-contact-form" onSubmit={handleSubmit}>
           <div className="name-fields">
             <label htmlFor="name" className="modal-updates-field-name">Name:</label>

@@ -10,6 +10,12 @@
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+.modal-header {
+  display: flex;
+  flex-wrap: nowrap;
+  border-bottom: none;
+}
+
 .register-modal-body {
   background-color: var(--rieslingcolor);
   margin: 15% auto; /* 15% from the top and centered */
@@ -20,6 +26,7 @@
 
 .modal-close-icon {
   text-align: right;
+  width: 100%;
   font-size: 25px;
   color: var(--pinotcolor);
 }
@@ -30,7 +37,7 @@
 }
 
 .modal-updates-header {
-  padding: 25px 0px 25px 0px;
+  /* padding: 25px 0px 25px 0px; */
   color: var(--pinotcolor);
   font-weight: 400;
   font-size: 25px;

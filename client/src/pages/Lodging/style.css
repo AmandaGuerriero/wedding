@@ -125,13 +125,56 @@
   padding-left: 45px;
 }
 
-.accordion {
+
+/* Add Styles to Drawer */
+.Collapsible {
   background-color: var(--rieslingcolor);
   color: var(--pinotcolor);
   text-align: left;
   transition: 0.4s;
   cursor: pointer;
   font-weight: bold;
+  border: none;
+  width: 100%;
+  padding: 5px 0px 5px 0px;
+}
+
+.Collapsible__trigger {
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+.fa-caret-right {
+  padding-left: 10px;
+}
+
+.lodging-options-links {
+  background-color: var(--pinotcolor);
+}
+
+.hotel-entry {
+  color: var(--rieslingcolor);
+  padding: 10px 20px 10px 20px;
+}
+
+.hotel-name-link {
+  color: var(--rieslingcolor);
+  text-decoration: underline;
+  padding-left: 5px;
+}
+
+.hotel-header {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.hotel-price {
+  padding-left: 10px;
+  color: var(--olive);
+}
+
+.hotel-info {
+  padding-left: 20px;
 }
 
 .panel {
@@ -170,18 +213,6 @@
   padding-top: 20px;
 }
 
-.accordion-item.collapsed {
-  display: none;
-}
-
-.accordion-item.expanded {
-  display: block;
-}
-
-.accordion-button {
-  display: block;
-  width: 100%;
-}
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1045px) {
