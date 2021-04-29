@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
+import { Modal } from 'react-responsive-modal';
 import { Link, useParams } from "react-router-dom";
 import API from "../../utils/API";
 import './style.css';
@@ -8,6 +9,11 @@ function RegisterModal (props) {
   
   const [errorMessage, setErrorMessage] = useState('');
   const { name, email} = formState;
+
+  const [open, setOpen] = useState(false);
+
+  const onOpenModal = () => setOpen(true);
+  const onCloseModal = () => setOpen(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,7 +36,7 @@ function RegisterModal (props) {
   };
 
   function triggerSuccess(name) {
-    window.alert("Thanks" + name + "you are successfully registered ")
+    onCloseModal()
   }
 
   return (
@@ -38,7 +44,7 @@ function RegisterModal (props) {
       <section className="register-modal-body">
       <div className="modal-header">
       <div className="modal-updates-header">Please register your email address for updates on lodging and detailed instructions closer to the wedding. (we promise to not spam you with emails!)</div>
-      <span className="modal-close-icon" onClick={props.handleClose}>x</span>
+      <span className="modal-close-icon" onClick={triggerSuccess}>x</span>
         </div>
         <form id="modal-contact-form" onSubmit={handleSubmit}>
           <div className="name-fields">

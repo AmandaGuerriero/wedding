@@ -5,7 +5,8 @@ import Collapsible from 'react-collapsible';
 const Lodging = () => {
   return (
     <main>
-      <div className="lodging-note">We recommend booking your accomodations sometime this year to ensure the best price and selection. Hotels tend to bea little more expensive so if you are traveling with other friends/family we encourage you to look at Airbnb/VRBO houses.</div>
+      <div className="lodging-note">We recommend booking your accommodations sometime this year to ensure the best price and selection. Hotels tend to be a little more expensive so if you are traveling with other friends/family we encourage you to look at Airbnb/VRBO houses.</div>
+      <div className="lodging-note">There is absolutely no parking at the venue, and you cannot uber there directly so a short shuttle ride will be provided from Strother Park in Arroyo Grande. If a large group of people end up staying in either Pismo Beach or SLO, we may also look at providing a shuttle from there.</div>
       <div className="lodging-section-header">
         <img className="lodging-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
         <div className="lodging-section-title">Hotels</div>
@@ -18,24 +19,17 @@ const Lodging = () => {
             <div className="lodging-town">ARROYO GRANDE</div>
             <div className="lodging-info">
               <div className="lodging-shuttle-lot">1 minute from shuttle lot</div>
-              <div className="lodging-blurb">A tiny, quaint downtown area with a couple of bars and restaurants including Mason Bar where we will be holding an after party for those who wishto attend. Is a little more “townie” than touristy.</div>
+              <div className="lodging-blurb">A tiny downtown with a couple of bars and restaurants including Mason Bar where we will be holding an after party for those who wish to attend. It is a little more “townie” than touristy.</div>
               <Collapsible trigger="RECOMMENDATIONS" triggerWhenOpen="RECOMMENDATIONS" className="accordion fa fa-caret-right">
               <div className="lodging-options-links">
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Seacrest Hotel:</a>
-                    <div className="hotel-price">$300-$400/night</div>
+                  <a href="/" className="hotel-name-link">Agrarian Hotel</a>
+                    <div className="hotel-rating">9.4 ★</div> 
+                    <div className="hotel-price">$280-$320/night</div>
                     </div>
-                    <div className="hotel-info">1 mile north of downtown Pismo. Ocean views with a more reasonable price. We stayed once and really enjoyed it</div>
-                </ul>
-                <ul className="hotel-entry">
-                  <div className="hotel-header">
-                  <div>•</div>
-                  <a href="/" className="hotel-name-link">Seacrest Hotel:</a>
-                    <div className="hotel-price">$300-$400/night</div>
-                    </div>
-                    <div className="hotel-info">1 mile north of downtown Pismo. Ocean views with a more reasonable price. We stayed once and really enjoyed it</div>
+                    <div className="hotel-info">This newly renovated hotel is located right in Arroyo Grande and directly next-door to the Mason Bar. We stayed here in May and while it doesn’t come with many frills or views, it is nice, clean, and conveniently located. We have a block of hotel rooms reserved here so if you are interested into booking one of them, you can call the hotel directly and let them know you staying there for our wedding.</div>
                 </ul>
               </div>
               </Collapsible>
@@ -47,24 +41,62 @@ const Lodging = () => {
             <div className="lodging-town">PISMO BEACH</div>
             <div className="lodging-info">
               <div className="lodging-shuttle-lot">10 minutes from shuttle lot</div>
-              <div className="lodging-blurb">A part swanky, part grungy/touristy beach town atop cliffs that overlook the ocean. There is a pier and a decent amount of dining options that attract a large variety of guests. </div>
+              <div className="lodging-blurb">A combination of swanky, grungy, and touristy, Pismo is located atop cliffs that overlook the ocean. There is a pier and a decent amount of dining options and while it certainly attracts a large variety of guests, the view is pretty spectacular.</div>
               <Collapsible trigger="RECOMMENDATIONS" triggerWhenOpen="RECOMMENDATIONS" className="accordion fa fa-caret-right">
               <div className="lodging-options-links">
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Seacrest Hotel:</a>
-                    <div className="hotel-price">$300-$400/night</div>
+                  <a href="/" className="hotel-name-link">Oxford Suites</a>
+                    <div className="hotel-rating">8.6 ★</div> 
+                    <div className="hotel-price">$250/night</div>
                     </div>
-                    <div className="hotel-info">1 mile north of downtown Pismo. Ocean views with a more reasonable price. We stayed once and really enjoyed it</div>
+                    <div className="hotel-info">A more moderately priced hotel option for Pismo, but it is not on the water.  [MIGHT HAVE DISCOUNT]</div>
                 </ul>
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Seacrest Hotel:</a>
-                    <div className="hotel-price">$300-$400/night</div>
+                  <a href="/" className="hotel-name-link">Shore Cliff</a>
+                    <div className="hotel-rating">9.2 ★</div> 
+                    <div className="hotel-price">$360-415/night</div>
                     </div>
-                    <div className="hotel-info">1 mile north of downtown Pismo. Ocean views with a more reasonable price. We stayed once and really enjoyed it</div>
+                    <div className="hotel-info">One of the more reasonably priced hotels that is just about a mile north of downtown but is right on the cliffs. We haven’t stayed here before, but it has good reviews and offers special rates for guests at weddings. Call directly to book with the discounted wedding rate. </div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">Seacrest</a>
+                    <div className="hotel-rating">9.2 ★</div> 
+                    <div className="hotel-price">??/night</div>
+                    </div>
+                    <div className="hotel-info">While we can’t vouch for all the rooms, we stayed here once in a room with a sweeping ocean view, balcony, and giant jacuzzi in the room and we loved it. [Call directly to book with the discounted wedding rate.]</div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">Pismo Lighthouse Suites</a>
+                    <div className="hotel-rating">9.4 ★</div> 
+                    <div className="hotel-price">$400-550/night</div>
+                    </div>
+                    <div className="hotel-info">Another very good option if you want to stay right on the water. They don’t do wedding blocks, but they do have a special wedding rate so call directly to book with that discount.</div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">Inn at the Pier</a>
+                    <div className="hotel-rating">8.6 ★</div> 
+                    <div className="hotel-price">$500-700/night</div>
+                    </div>
+                    <div className="hotel-info">Upscale hotel right on the pier in Pismo Beach. </div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">Vespera by Marriot</a>
+                    <div className="hotel-rating">8.6 ★</div> 
+                    <div className="hotel-price">$600-800/night</div>
+                    </div>
+                    <div className="hotel-info">Very new and swanky hotel located on the water in downtown Pismo for those who have a lot of Marriot points.</div>
                 </ul>
               </div>
               </Collapsible>
@@ -75,58 +107,148 @@ const Lodging = () => {
             <img className="lodging-bullet-icon" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/bullet-point.png" alt="Star icon as bullet point" />
             <div className="lodging-town">AVILA BEACH</div>
             <div className="lodging-info">
-              <div className="lodging-shuttle-lot">10 minutes from shuttle lot</div>
-              <div className="lodging-blurb">Very small beach town in a little cove that is a little quieter than Pismo in terms of bars and restaurants but it is right on the ocean so it draws a decent daytime beach crowd.</div>
+              <div className="lodging-shuttle-lot">20 minutes from shuttle lot</div>
+              <div className="lodging-blurb">A small beach town located in a little cove that is a quieter and more upscale than Pismo in terms of bars and restaurants, but it is still right on the ocean, so it draws a decent daytime beach crowd.</div>
               <Collapsible trigger="RECOMMENDATIONS" triggerWhenOpen="RECOMMENDATIONS" className="accordion fa fa-caret-right">
               <div className="lodging-options-links">
-                <ul className="hotel-entry">
+              <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Seacrest Hotel:</a>
-                    <div className="hotel-price">$300-$400/night</div>
+                  <a href="/" className="hotel-name-link">Avila Village Inn</a>
+                    <div className="hotel-rating">9.0 ★</div> 
+                    <div className="hotel-price">$400-500/night</div>
                     </div>
-                    <div className="hotel-info">1 mile north of downtown Pismo. Ocean views with a more reasonable price. We stayed once and really enjoyed it</div>
+                    <div className="hotel-info">We stayed here once and thought it was really lovely. It’s not walking distance from anything, but it is still pretty centrally located overall.</div>
                 </ul>
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Seacrest Hotel:</a>
-                    <div className="hotel-price">$300-$400/night</div>
+                  <a href="/" className="hotel-name-link">Avila La Fonda</a>
+                    <div className="hotel-rating">9.6 ★</div> 
+                    <div className="hotel-price">$450+/night</div>
                     </div>
-                    <div className="hotel-info">1 mile north of downtown Pismo. Ocean views with a more reasonable price. We stayed once and really enjoyed it</div>
+                    <div className="hotel-info">Boutique hotel located right in Pismo beach that looks really nice.</div>
                 </ul>
               </div>
               </Collapsible>
             </div>
           </div>
-        {/* San Luis Obispo */}
+        {/* Santa Maria */}
+        <div className="lodging-section">
+            <img className="lodging-bullet-icon" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/bullet-point.png" alt="Star icon as bullet point" />
+            <div className="lodging-town">SANTA MARIA</div>
+            <div className="lodging-info">
+              <div className="lodging-shuttle-lot">20 minutes from shuttle lot</div>
+              <div className="lodging-blurb">With much more of a suburbia/chain restaurant feel, Santa Maria is located inland and while it does not boast much to do in the town itself, it does have the cheapest lodging, is close to Orcutt which has some cool bars/restaurants and is adjacent to the Santa Maria AVA.</div>
+              <Collapsible trigger="RECOMMENDATIONS" triggerWhenOpen="RECOMMENDATIONS" className="accordion fa fa-caret-right">
+              <div className="lodging-options-links">
+              <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">Hampton Inn</a>
+                    <div className="hotel-rating">9.2 ★</div> 
+                    <div className="hotel-price">$190/night</div>
+                    </div>
+                    <div className="hotel-info">Economical option right off the 101 in Santa Maria.</div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">Fairfield Inn</a>
+                    <div className="hotel-rating">8.6 ★</div> 
+                    <div className="hotel-price">$170/night</div>
+                    </div>
+                    <div className="hotel-info">Economical option right off the 101 in Santa Maria.</div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">Historical Santa Maria</a>
+                    <div className="hotel-rating">8.0 ★</div> 
+                    <div className="hotel-price">$133/night</div>
+                    </div>
+                    <div className="hotel-info">This is an old hotel right in ‘downtown’ Santa Maria. We stayed there once and while it was certainly passed its heyday, it was fine.</div>
+                </ul>
+              </div>
+              </Collapsible>
+            </div>
+          </div>
+          {/* San Luis Obispo */}
         <div className="lodging-section">
             <img className="lodging-bullet-icon" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/bullet-point.png" alt="Star icon as bullet point" />
             <div className="lodging-town">SAN LUIS OBISPO</div>
             <div className="lodging-info">
               <div className="lodging-shuttle-lot">20 minutes from shuttle lot</div>
-              <div className="lodging-blurb">Larger college town with a delightful riverwalk running through town. It is less touristy than the beach towns and offers the widest array of dining options. (should be free off all the college hooligans in July)</div>
+              <div className="lodging-blurb">Larger college town with a delightful river walk running through it. While it is less touristy than the beach towns, it offers the widest array of dining options and should be free off all the college hooligans from Cal Poly in July.</div>
               <Collapsible trigger="RECOMMENDATIONS" triggerWhenOpen="RECOMMENDATIONS" className="accordion fa fa-caret-right">
               <div className="lodging-options-links">
-                <ul className="hotel-entry">
+              <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Seacrest Hotel:</a>
-                    <div className="hotel-price">$300-$400/night</div>
+                  <a href="/" className="hotel-name-link">La Quinta</a>
+                    <div className="hotel-rating">9.0 ★</div> 
+                    <div className="hotel-price">$270/night</div>
                     </div>
-                    <div className="hotel-info">1 mile north of downtown Pismo. Ocean views with a more reasonable price. We stayed once and really enjoyed it</div>
+                    <div className="hotel-info">We stayed here a couple years back because we saw it had been newly renovated and we thought was pretty nice for a La Quinta. While it is a mile walk from downtown, it is located right next to 1865 Craft House which has yummy food and drink. We are trying to see if they have any special wedding rates so if you are thinking you want to stay here, check back for more details.</div>
                 </ul>
                 <ul className="hotel-entry">
                   <div className="hotel-header">
                   <div>•</div>
-                  <a href="/" className="hotel-name-link">Seacrest Hotel:</a>
-                    <div className="hotel-price">$300-$400/night</div>
+                  <a href="/" className="hotel-name-link">Butler Hotel</a>
+                    <div className="hotel-rating">N/A</div> 
+                    <div className="hotel-price">$279/night</div>
                     </div>
-                    <div className="hotel-info">1 mile north of downtown Pismo. Ocean views with a more reasonable price. We stayed once and really enjoyed it</div>
+                    <div className="hotel-info">This is a very small, but intriguingly affordable and trendy option in SLO that we stumbled across on the internet (it’s not on hotels.com). While not right in the main downtown, it is still walking distance most of the bars and restaurants.</div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">The Kinney</a>
+                    <div className="hotel-rating">8.8 ★</div> 
+                    <div className="hotel-price">$280/night</div>
+                    </div>
+                    <div className="hotel-info">On the more economical side, the Kinney is a very trendy hotel a mile down the street from downtown SLO. </div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">Garden Street Inn</a>
+                    <div className="hotel-rating">9.2 ★</div> 
+                    <div className="hotel-price">$350/night</div>
+                    </div>
+                    <div className="hotel-info">Upscale bed and breakfast located right in downtown SLO.</div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">Courtyard by Marriot</a>
+                    <div className="hotel-rating">8.8 ★</div> 
+                    <div className="hotel-price">$320/night</div>
+                    </div>
+                    <div className="hotel-info">If you are a Starwood points person, this is a Marriott option however it is well outside of downtown SLO and unless you count the Taco Temple, it is not walking distance from anything.</div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">Madonna Inn</a>
+                    <div className="hotel-rating">9.0 ★</div> 
+                    <div className="hotel-price">$300-450/night</div>
+                    </div>
+                    <div className="hotel-info">If you are looking for a grand adventure with your lodging, then look no further than the Madonna Inn as it will be one of the more unique stays of your entire life. Every room has an outrageous theme, and the bar/dining room are decorated in a way that’s best to left to experience on your own. From personal experience, we would recommend the Rock Bottom, Irish Hills, or Gypsy Rock rooms however the Cabin Still, Caveman, Yahoo, Swiss Belle, or Yosemite Rock have also piqued our interest.</div>
+                </ul>
+                <ul className="hotel-entry">
+                  <div className="hotel-header">
+                  <div>•</div>
+                  <a href="/" className="hotel-name-link">SLO Brew Lofts</a>
+                    <div className="hotel-rating">9.2 ★</div> 
+                    <div className="hotel-price">$650-850/night - 2br/3br</div>
+                    </div>
+                    <div className="hotel-info">We have always been curious about these as they look really nice and are right downtown but have never had the chance to stay there. Best suited for a group of people, they are right above SLO Brew Co as well which is always a plus.</div>
                 </ul>
               </div>
               </Collapsible>
             </div>
+            <div className="lodging-map-mobile"><a href="https://www.google.com/maps/d/viewer?mid=13KuUCKDzRegHkicMqn5wTJIj_JNX_3U-&ll=34.59210315853366%2C-119.52527169999999&z=9">View Hotels on a map</a></div>
           </div>
           </div>
         <div className="lodging-col lodging-iframe-container">

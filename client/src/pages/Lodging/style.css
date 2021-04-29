@@ -9,7 +9,7 @@
 .lodging-section-header {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .lodging-section-title {
@@ -163,18 +163,31 @@
   padding-left: 5px;
 }
 
+a:hover {
+  color: var(--olive);
+}
+
 .hotel-header {
   display: flex;
   flex-wrap: nowrap;
 }
 
 .hotel-price {
-  padding-left: 10px;
+  padding-left: 15px;
   color: var(--olive);
 }
 
 .hotel-info {
   padding-left: 20px;
+  font-weight: 400;
+}
+
+.hotel-rating {
+  padding-left: 15px;
+}
+
+.lodging-map-mobile {
+  display: none;
 }
 
 .panel {
@@ -239,6 +252,20 @@
 
   .lodging-info-bnb {
     padding-left: 45px
+  }
+
+  .lodging-map-mobile {
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .lodging-map-mobile > a {
+    background-color: transparent;
+    color: var(--olive);
+    /* text-align: left; */
+    text-decoration: underline;
+    font-weight: 600;
   }
 
 }
