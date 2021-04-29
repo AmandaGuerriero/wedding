@@ -91,6 +91,26 @@
   display: flex;
 }
 
+.reg-button {
+  position: fixed;
+  top: 20%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: var(--rieslingcolor);
+  color: var(--pinotcolor);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.reg-button:hover {
+  background-color: var(--olive);
+}
+
 #background {
   max-width: 100%;
   height: auto;

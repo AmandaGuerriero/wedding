@@ -52,6 +52,7 @@ const Nav = props => {
       </div>
       <div className="header-container">
         <a href="/" id="background"/>
+        <a href="/register-for-updates"><button className="reg-button">Get Updates</button></a>
       </div>
     </div>
   );

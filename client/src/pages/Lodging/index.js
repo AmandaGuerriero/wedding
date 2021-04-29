@@ -285,7 +285,7 @@ const Lodging = () => {
               </div>
               </Collapsible>
             </div>
-            <div className="lodging-map-mobile"><a href="https://www.google.com/maps/d/viewer?mid=13KuUCKDzRegHkicMqn5wTJIj_JNX_3U-&ll=34.59210315853366%2C-119.52527169999999&z=9">View Hotels on a map</a></div>
+            <div className="lodging-map-mobile"><a href="https://www.google.com/maps/d/viewer?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en&ll=35.12503049999998%2C-120.57630149999999&z=11">View Hotels on a map</a></div>
           </div>
           </div>
         <div className="lodging-col lodging-iframe-container">
