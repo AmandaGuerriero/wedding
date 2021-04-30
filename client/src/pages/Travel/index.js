@@ -60,7 +60,7 @@ const Travel = () => {
               <div className="travel-driving-time">~4 hours to Arroyo Grande via Big Sur/Highway 1</div>
             </div>
           </div>
-          <div className="travel-map-mobile"><a href="https://www.google.com/maps/d/viewer?mid=13KuUCKDzRegHkicMqn5wTJIj_JNX_3U-&ll=34.59210315853366%2C-119.52527169999999&z=9">View Airports on a map</a></div>
+          <div className="travel-map-mobile"><a href="https://www.google.com/maps/d/viewer?mid=13KuUCKDzRegHkicMqn5wTJIj_JNX_3U-&ll=34.59210315853366%2C-119.52527169999999&z=9" target="_blank">View Airports on a map</a></div>
         </div>
         <div className="travel-col travel-iframe-container">
           <iframe className="travel-responsive-iframe" src="https://www.google.com/maps/d/embed?mid=13KuUCKDzRegHkicMqn5wTJIj_JNX_3U-"></iframe>
