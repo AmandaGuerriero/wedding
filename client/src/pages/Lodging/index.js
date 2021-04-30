@@ -128,7 +128,7 @@ const Lodging = () => {
                     <div className="hotel-rating">9.6 ★</div> 
                     <div className="hotel-price">$450+/night</div>
                     </div>
-                    <div className="hotel-info">Boutique hotel located right in Pismo beach that looks really nice.</div>
+                    <div className="hotel-info">Boutique hotel located right in Avila beach that looks really nice.</div>
                 </ul>
                 <ul className="hotel-entry">
                   <div className="hotel-header">
@@ -137,7 +137,7 @@ const Lodging = () => {
                     <div className="hotel-rating">N/A</div> 
                     <div className="hotel-price">$390-510/night</div>
                     </div>
-                    <div className="hotel-info">Boutique hotel located right in Pismo beach that looks really nice.</div>
+                    <div className="hotel-info">Boutique hotel located right in Avila beach that looks really nice.</div>
                 </ul>
               </div>
               </Collapsible>
