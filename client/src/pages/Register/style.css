@@ -29,5 +29,28 @@
 
 .updates-field {
   border-color: var(--rieslingcolor);
-  width: 350px;
+  width: 300px;
+}
+
+@media screen and (max-width: 600px) { 
+  .name, .email {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .updates-field {
+    border-color: var(--rieslingcolor);
+    width: 100%;
+    align-items: center;
+  }
+
+  .updates-submit {
+   margin-top: 30px;
+  }
+
+  .updates-field-name {
+    padding-top: 25px;
+    padding-bottom: 0px;
+  }
 }

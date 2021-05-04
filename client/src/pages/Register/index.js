@@ -43,18 +43,19 @@ function UpdatesForm() {
   };
 
   function triggerSuccess(name) {
-    window.alert("Thanks" + name + "you are successfully registered ")
+    window.alert("Great! You are successfully registered for updates, thanks " + name + "!")
+    window.location.href = "/"
   }
 
   return (
     <section className="register-body">
       <div className="updates-header">Please register your email address for updates on lodging and detailed instructions closer to the wedding. (we promise to not spam you with emails!)</div>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
+      <form id="updates-contact-form" onSubmit={handleSubmit}>
+        <div className="name">
           <label htmlFor="name" className="updates-field-name">Name:</label>
           <input type="text" className="updates-field" name="name" defaultValue={name} onBlur={handleChange} />
         </div>
-        <div>
+        <div className="email">
           <label htmlFor="email" className="updates-field-name">Email address:</label>
           <input type="email" className="updates-field" name="email" defaultValue={email} onBlur={handleChange} />
         </div>
