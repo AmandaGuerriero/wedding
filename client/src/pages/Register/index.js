@@ -43,7 +43,8 @@ function UpdatesForm() {
   };
 
   function triggerSuccess(name) {
-    window.alert("Thanks" + name + "you are successfully registered ")
+    window.alert("Great! You are successfully registered for updates, thanks " + name + "!")
+    window.location.href = "/"
   }
 
   return (
