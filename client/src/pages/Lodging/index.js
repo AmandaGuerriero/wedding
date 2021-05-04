@@ -52,7 +52,7 @@ const Lodging = () => {
                     <div className="hotel-rating">8.6 ★</div> 
                     <div className="hotel-price">$250/night</div>
                     </div>
-                    <div className="hotel-info">A more moderately priced hotel option for Pismo, but it is not on the water.  [MIGHT HAVE DISCOUNT]</div>
+                    <div className="hotel-info">A more moderately priced hotel option for Pismo, but it is not on the water. Use promo code: CONGRATS for 10% off</div>
                 </ul>
                 <ul className="hotel-entry">
                   <div className="hotel-header">
