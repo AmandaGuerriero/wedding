@@ -68,7 +68,7 @@ const Lodging = () => {
                   <div>•</div>
                   <a href="https://www.seacrestpismo.com/" target="_blank" className="hotel-name-link">SEACREST</a>
                     <div className="hotel-rating">9.2 ★</div> 
-                    <div className="hotel-price">??/night</div>
+                    <div className="hotel-price">$400-550/night</div>
                     </div>
                     <div className="hotel-info">While we can’t vouch for all the rooms, we stayed here once in a room with a sweeping ocean view, balcony, and giant jacuzzi in the room and we loved it. [Call directly to book with the discounted wedding rate.]</div>
                 </ul>
