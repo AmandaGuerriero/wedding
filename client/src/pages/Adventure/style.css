@@ -1,4 +1,4 @@
-/* adventure Page Styles */
+/* Adventure Page Styles */
 .adventure-note {
   padding-top: 30px;
   color: var(--pinotcolor);
@@ -7,8 +7,7 @@
   padding-right: 20px;
 }
 
-/* adventure Header */
-
+/* Adventure Header */
 .adventure-section-header {
   display: flex;
   flex-wrap: wrap;
@@ -21,6 +20,8 @@
   font-weight: 600;
   color: var(--pinotcolor);
   padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 300px;
   border-bottom: 2px solid var(--rieslingcolor);
 }
 
@@ -33,11 +34,21 @@
 
 /* Adventure Photos */
 .adventure-picture-row {
-
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 4px;
+  margin: 5px 25px 5px 25px;
 }
 
 .adventure-image {
-  
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 7px;
+}
+
+.adventure-image img {
+  vertical-align: middle;
+  width: 100%;
 }
 
 
@@ -59,14 +70,12 @@
   margin-right: auto;
   margin-left: auto;
   max-width: 40%;
-  border-top: 2px solid var(--rieslingcolor);
   padding-bottom: 20px;
 }
 
-.adventure-info, .adventure-info-bnb {
+.adventure-info {
   display: block;
   text-align: left;
-  padding-left: 35px;
 }
 
 .adventure-bullet-icon {
@@ -84,28 +93,22 @@
   text-align: left;
 }
 
-.adventure-town {
+.adventure-summary{
   font-size: 20px;
   font-weight: 600;
   padding-left: 10px;
 }
 
-.adventure-town, .adventure-shuttle-lot, .adventure-blurb {
+.adventure-summary .adventure-description {
   background-color: transparent;
   color: var(--pinotcolor);
   text-align: left;
 }
 
-.adventure-blurb {
-  padding-bottom: 10px;
-}
-
-.adventure-shuttle-lot {
+.adventure-description {
   padding-bottom: 15px;
 }
 
-
-/* Towns & Hotels */
 .adventure-options {
   flex: 95%;
   max-width: 85%;
@@ -125,23 +128,9 @@
   font-weight: 600;
 }
 
-.adventure-paragraph {
-  background-color: transparent;
-  color: var(--pinotcolor);
-  text-align: left;
-}
-
-.adventure-paragraph-1 {
-  background-color: transparent;
-  color: var(--pinotcolor);
-  text-align: left;
-  padding-left: 10px;
-}
-
 .adventure-info {
   padding-left: 35px;
 }
-
 
 /* Add Styles to Drawer */
 .Collapsible {
@@ -154,11 +143,14 @@
   border: none;
   width: 100%;
   padding: 5px 0px 5px 0px;
+  margin-top: 15px;
 }
 
 .Collapsible__trigger {
   padding-left: 10px;
+  padding-right: 100%;
   font-weight: 600;
+  font-size: 24px;
 }
 
 .fa-caret-right {
@@ -225,7 +217,7 @@
 .adventure-responsive-iframe {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 400px;
 }
 
 .adventure-links {
@@ -238,15 +230,41 @@
   padding: 10px 0px 10px 0px;
 }
 
-.adventure-section-bnb {
-  display: flex;
-  flex: wrap;
-  padding-top: 20px;
-}
 
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1045px) {
+  .Collapsible__trigger {
+    padding-right: 80%;
+  }
+
+  .adventure-section {
+    padding-top: 10px;
+  }
+
+  /* Adventure Photos */
+  .adventure-picture-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 10px 5px 10px;
+    padding: 0px;
+  }
+
+  .adventure-image {
+    flex: 50%;
+    max-width: 50%;
+    padding: 5px 4px 5px 4px;
+  }
+
+  .adventure-image img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  .adventure-section-title {
+    padding-right: 200px;
+  }
+  
   .adventure-iframe-container {
     display: none;
   }
@@ -268,10 +286,6 @@
     padding-left: 35px;
   }
 
-  .adventure-info-bnb {
-    padding-left: 35px
-  }
-
   .adventure-map-mobile {
     display: block;
     padding-top: 20px;
@@ -281,10 +295,20 @@
 
   .adventure-map-mobile > a {
     background-color: transparent;
-    color: var(--olive);
+    color: var(--olive); 
     /* text-align: left; */
     text-decoration: underline;
     font-weight: 600;
   }
+}
 
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .adventure-section-title {
+    padding-right: 100px;
+    font-size: 30px;
+  }
+  .adventure-olive-branch {
+    padding-left: 5px;
+  }
 }
