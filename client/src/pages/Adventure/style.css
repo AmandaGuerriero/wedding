@@ -1,0 +1,290 @@
+/* adventure Page Styles */
+.adventure-note {
+  padding-top: 30px;
+  color: var(--pinotcolor);
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* adventure Header */
+
+.adventure-section-header {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.adventure-section-title {
+  font-family: 'Barcelony', serif, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--pinotcolor);
+  padding-left: 10px;
+  border-bottom: 2px solid var(--rieslingcolor);
+}
+
+.adventure-olive-branch {
+  padding-left: 20px;
+  margin-top: 10px;
+  height: 50px;
+  width: 100px;
+}
+
+/* Adventure Photos */
+.adventure-picture-row {
+
+}
+
+.adventure-image {
+  
+}
+
+
+/* adventure Rows */
+.adventure-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin: 5px 5px 5px 5px;
+}
+
+.adventure-col {
+  flex: 50%;
+  max-width: 45%;
+  padding: 0 7px;
+}
+
+.adventure-text {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 40%;
+  border-top: 2px solid var(--rieslingcolor);
+  padding-bottom: 20px;
+}
+
+.adventure-info, .adventure-info-bnb {
+  display: block;
+  text-align: left;
+  padding-left: 35px;
+}
+
+.adventure-bullet-icon {
+  height: 25px;
+  margin-top: 5px;
+  width: 25px;
+}
+
+.adventure-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  background-color: transparent;
+  color: var(--pinotcolor);
+  text-align: left;
+}
+
+.adventure-town {
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.adventure-town, .adventure-shuttle-lot, .adventure-blurb {
+  background-color: transparent;
+  color: var(--pinotcolor);
+  text-align: left;
+}
+
+.adventure-blurb {
+  padding-bottom: 10px;
+}
+
+.adventure-shuttle-lot {
+  padding-bottom: 15px;
+}
+
+
+/* Towns & Hotels */
+.adventure-options {
+  flex: 95%;
+  max-width: 85%;
+  padding: 0 7px;
+  margin-right: auto;
+  margin-left: auto;
+  color: var(--pinotcolor);
+  border-top: 2px solid var(--rieslingcolor);
+  padding-bottom: 20px;
+}
+
+.adventure-link > a {
+  background-color: transparent;
+  color: var(--olive);
+  text-align: left;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.adventure-paragraph {
+  background-color: transparent;
+  color: var(--pinotcolor);
+  text-align: left;
+}
+
+.adventure-paragraph-1 {
+  background-color: transparent;
+  color: var(--pinotcolor);
+  text-align: left;
+  padding-left: 10px;
+}
+
+.adventure-info {
+  padding-left: 35px;
+}
+
+
+/* Add Styles to Drawer */
+.Collapsible {
+  background-color: var(--rieslingcolor);
+  color: var(--pinotcolor);
+  text-align: left;
+  transition: 0.4s;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  padding: 5px 0px 5px 0px;
+}
+
+.Collapsible__trigger {
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+.fa-caret-right {
+  padding-left: 10px;
+}
+
+.adventure-options-links {
+  background-color: var(--pinotcolor);
+  padding-top: 10px;
+}
+
+.hotel-entry {
+  color: var(--rieslingcolor);
+  padding: 10px 20px 10px 20px;
+}
+
+.hotel-name-link {
+  color: var(--rieslingcolor);
+  text-decoration: underline;
+  padding-left: 5px;
+}
+
+.hotel-name-link:hover {
+  color: var(--olive);
+}
+
+.hotel-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotel-price {
+  padding-left: 15px;
+  color: var(--olive);
+}
+
+.hotel-info {
+  padding-left: 20px;
+  font-weight: 400;
+}
+
+.hotel-rating {
+  padding-left: 15px;
+}
+
+.adventure-map-mobile {
+  display: none;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.adventure-iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+}
+
+.adventure-responsive-iframe {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.adventure-links {
+  display: block;
+  padding: 10px 0px 10px 0px;
+}
+
+.adventure-link {
+  display: block;
+  padding: 10px 0px 10px 0px;
+}
+
+.adventure-section-bnb {
+  display: flex;
+  flex: wrap;
+  padding-top: 20px;
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1045px) {
+  .adventure-iframe-container {
+    display: none;
+  }
+  
+  .adventure-responsive-iframe {
+   display: none;
+  }
+
+  .adventure-col, .adventure-options {
+    flex: 95%;
+    max-width: 95%;
+    padding: 0 7px;
+  }
+
+  .adventure-info {
+    flex: 95%;
+    padding: 0 7px;
+    max-width: 95%;
+    padding-left: 35px;
+  }
+
+  .adventure-info-bnb {
+    padding-left: 35px
+  }
+
+  .adventure-map-mobile {
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .adventure-map-mobile > a {
+    background-color: transparent;
+    color: var(--olive);
+    /* text-align: left; */
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+}
