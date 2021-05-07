@@ -168,127 +168,121 @@ const Adventure = () => {
         <div className="adventure-col adventure-text">
           {/* Paso Robles */}
           <div className="adventure-section">
-            <div className="adventure-summary">Monterey, Carmel-by-the-Sea, Pebble Beach, Highway 1</div>
+            <div className="adventure-summary">Paso Robles, Templeton, and Atascadero</div>
             <div className="adventure-info">
-              <div className="adventure-description">The northern region of the Central Coast is one of one most picturesque areas of California, if not the entire US, and if you can spare the time and have not been before, we cannot recommend it enough.</div>
+              <div className="adventure-description">While this area is very pretty and there probably are some good outdoor activities you can seek out, most of our recommendations here revolve around food and drink.</div>
                 {/* SEE */}
                 <Collapsible trigger="SEE" triggerWhenOpen="SEE" className="accordion fa fa-caret-right">
                 <div className="adventure-options-links">
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">17-MILE DRIVE</div>
+                      <div className="adventure-name">FISH GAUCHO</div>
                     </div>
-                      <div className="adventure-detail">Very famous drive around the Pebble Beach peninsula with numerous beautiful ocean views and while it is only, you guessed it, 17 miles, it takes a lot at least an hour and a half to drive. Restless Sea (Mile 4) and Lone Cyprus (Mile 12) are our favorites.</div>
+                      <div className="adventure-detail">Incredible seafood place in downtown Paso.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">HIGHWAY 1</div>
+                      <div className="adventure-name">TASTE</div>
                     </div>
-                      <div className="adventure-detail">Amanda has driven it 6+ times and Eric has driven it once and run it once, and we would do it again tomorrow given the chance. It takes a long time to drive and is almost impossible to turn around on so you’ll want to stop at pretty much every vista point. It is one of the most stunningly beautiful places we’ve ever been and is a bucket-list type item.</div>
+                      <div className="adventure-detail">If you can’t decide and just want a little of everything, this is the place for you! It specializes in small plates ranging from burgers to brussels to mac n’ cheese, so you can order 2, 3, or 4 of the small bites you want. We have had food from here many times and love it every time. Has a 2nd location in SLO.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">ELEPHANT SEALS</div>
+                      <div className="adventure-name">TIN CITY</div>
                     </div>
-                      <div className="adventure-detail">If you’re driving Highway 1, this is a must stop so that you can see the hundreds of elephant seals do their thing.</div>
-                  </ul>
-                  <ul className="adventure-entry">
-                    <div className="adventure-header">
-                      <div>•</div>
-                      <div className="adventure-name">OTTERS OF MONTEREY BAY</div>
-                    </div>
-                      <div className="adventure-detail">Who doesn’t want to watch adorable creatures roll around in the water?! You can usually find them between Cannery Row and the wharf.</div>
-                  </ul>
-                  <ul className="adventure-entry">
-                    <div className="adventure-header">
-                      <div>•</div>
-                      <div className="adventure-name">HEARST CASTLE</div>
-                    </div>
-                      <div className="adventure-detail">From the guy who inspired Citizen Kane, this estate is full of excess grandeur and while it is certainly beautiful, you many want to research what it is all about before making the journey there. There were many exotic animals imported to live there, however only the zebras survived and can still sometimes be spotted in the hills today.</div>
+                      <div className="adventure-detail">A few miles south of downtown Paso, this area has a little bit of everything. With breweries, restaurants, distilleries, wineries, and ice cream shops, Tin City is a good place to spend an afternoon or just wind down after a day of wine tasting.</div>
                   </ul>
                 </div>
                 </Collapsible>
-                {/* DO */}
-                <Collapsible trigger="DO" triggerWhenOpen="DO" className="accordion fa fa-caret-right">
+                {/* WINERY */}
+                <Collapsible trigger="WINERIES" triggerWhenOpen="WINERIES" className="accordion fa fa-caret-right">
+                <div className="adventure-options-links">
+                  <div className="drinking-note">Paso is a huge AVA with over 100 different wineries where most tastings ranging from $15-30. Below are a selection of our favorites.</div>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">BIANCHI</div>
+                    </div>
+                      <div className="adventure-detail">Probably our current favorite winery, Bianchi offers a lovely outdoor setting overlooking a large koi pond and their wine is both delicious and affordable.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">STILL WATERS</div>
+                    </div>
+                      <div className="adventure-detail">Stillwaters boasts very good olive and solid wine that, while it might be the best in the region, is more than made up for by the friendly service and lovely outdoor area.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">TOOTH & NAIL</div>
+                    </div>
+                      <div className="adventure-detail">This is a castle with a moat to match. The wine is a little pricey but still pretty good. You’re really paying for the medieval experience (minus the jousting and turkey legs) but its worth it.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">BROKEN EARTH</div>
+                    </div>
+                      <div className="adventure-detail">You won’t find a place with a wider array of varietals. They also have brick oven pizza, are close to downtown Paso, and are open until 6PM.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">CALIZA</div>
+                    </div>
+                      <div className="adventure-detail">Probably some of the best wines we’ve had in the region, but the price certainly reflects the quality.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">SHALE OAK</div>
+                    </div>
+                      <div className="adventure-detail">Very sustainable and sheik building that houses a good amount of varietals at a reasonable price.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">FOUR LANTERNS</div>
+                    </div>
+                      <div className="adventure-detail">Family owned winery with very good wine.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">END OF THE DAY</div>
+                    </div>
+                      <div className="adventure-detail">Derivative of Caliza that offers very solid wine at a more reasonable price (and is located in Tin City).</div>
+                  </ul>
+                </div>
+                </Collapsible>
+                {/* Brewereis */}
+                <Collapsible trigger="BREWERIES" triggerWhenOpen="BREWERIES" className="accordion fa fa-caret-right">
                 <div className="adventure-options-links">
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">GOLF: PEBBLE BEACH, POPPY HILLS, LINKS AT SPANISH BAY, PACIFIC GROVE GOLF LINKS</div>
+                      <div className="adventure-name">FIRESTONE</div>
                     </div>
-                      <div className="adventure-detail">We’ve never tried to golf at any of these famous courses, but they all look beautiful (just very expensive)!</div>
+                      <div className="adventure-detail">A staple of the California beer scene, the main brewing facility is located in Paso and features an enormous tasting room/restaurant.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">MONTEREY BAY AQUARIUM</div>
+                      <div className="adventure-name">TENT CITY</div>
                     </div>
-                      <div className="adventure-detail">We’ve haven’t been yet but it’s supposed to be one of the better aquariums in the country.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">WHALE WATCHING</div>
+                      <div className="adventure-name">DEAD OAK</div>
                     </div>
-                      <div className="adventure-detail">Monterey is apparently one of the best places to see whales in the country and the summer months are especially good for blue and humpback whales. Amanda has been in July and saw many whales.</div>
                   </ul>
                 </div>
                 </Collapsible>
-                {/* EAT */}
-                <Collapsible trigger="EAT" triggerWhenOpen="EAT" className="accordion fa fa-caret-right">
-                <div className="adventure-options-links">
-                  <ul className="adventure-entry">
-                    <div className="adventure-header">
-                      <div>•</div>
-                      <div className="adventure-name">PANGEA (CARMEL)</div>
-                    </div>
-                      <div className="adventure-detail">Very yummy Asian-fusion place we went to a couple years ago and absolutely loved.</div>
-                  </ul>
-                  <ul className="adventure-entry">
-                    <div className="adventure-header">
-                      <div>•</div>
-                      <div className="adventure-name">KATY’S PLACE (CARMEL)</div>
-                    </div>
-                      <div className="adventure-detail">They have every kind of French Toast imaginable and they’re all amazing. Kitty and Dave went there on their honeymoon in 1983, Eric went there after a marathon in 2014, Amanda went there with her Mom and Aunt Diane over Easter of 2017, and Eric and Amanda went there after the US Open in 2019 so it’s a perennial favorite (and cash only so you know it’s good!)</div>
-                  </ul>
-                  <ul className="adventure-entry">
-                    <div className="adventure-header">
-                      <div>•</div>
-                      <div className="adventure-name">SARDINE FACTORY (MONTEREY)</div>
-                    </div>
-                      <div className="adventure-detail">Well known and very delicious seafood place we ate at a couple years ago.</div>
-                  </ul>
-                </div>
-                </Collapsible>
-                {/* DRINK */}
-                <Collapsible trigger="DRINK" triggerWhenOpen="DRINK" className="accordion fa fa-caret-right">
-              <div className="adventure-options-links">
-                <ul className="adventure-entry">
-                  <div className="adventure-header">
-                    <div>•</div>
-                    <div className="adventure-name">FIELD WORK BREWING (MONTEREY)</div>
-                  </div>
-                    <div className="adventure-detail">Went here a number of times during Eric’s work trip a couple years ago and really enjoyed their beers.</div>
-                </ul>
-                <ul className="adventure-entry">
-                  <div className="adventure-header">
-                    <div>•</div>
-                    <div className="adventure-name">CARMEL CRAFT BREWING (CARMEL)</div>
-                  </div>
-                    <div className="adventure-detail">Haven’t actually been but it looks cool</div>
-                </ul>
-                <ul className="adventure-entry">
-                  <div className="adventure-header">
-                    <div>•</div>
-                    <div className="adventure-name">WINERIES</div>
-                  </div>
-                    <div className="adventure-detail">Although we have no specific recommendations, there are a ton of tasting rooms in Carmel and some in Monterey as well.</div>
-                </ul>
-              </div>
-              </Collapsible>
               </div>
             </div>
           </div>

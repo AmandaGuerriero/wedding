@@ -142,6 +142,15 @@
   padding-top: 10px;
 }
 
+.drinking-note {
+  background-color: transparent;
+  color: var(--olive);
+  text-align: left;
+  font-weight: 600;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .adventure-entry {
   color: var(--rieslingcolor);
   padding: 10px 20px 10px 20px;
