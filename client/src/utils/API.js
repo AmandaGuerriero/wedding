@@ -22,11 +22,11 @@ export default {
 
   // Gets all registered guests to send updates
   getUpdates: function() {
-    return axios.get("/api/updates");
+    return axios.get("/api/updatesAmandaEric05300716");
   },
 
   // Registers a Person for updates
   registerUpdates: function(updatesData) {
-    return axios.post("/api/updates", updatesData);
+    return axios.post("/api/updatesAmandaEric05300716", updatesData);
   },
 };

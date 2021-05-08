@@ -27,15 +27,15 @@ const Nav = props => {
               <a href="/adventure">ADVENTURE</a>
             </div>
           </div>
-          {/* <div className="dropdown">
+          <div className="dropdown">
             <button className="dropbtn">WEDDING &nbsp;
               <i className="fa fa-caret-down"></i>
             </button>
             <div className="dropdown-content">
-              <a href="#">DETAILS</a>
-              <a href="#">SCHEDULE</a>
+              <a href="/details">DETAILS</a>
+              <a href="/schedule">SCHEDULE</a>
             </div>
-          </div>  */}
+          </div> 
           {/* <NavLink 
             to="/registry"
             activeClassName="active"

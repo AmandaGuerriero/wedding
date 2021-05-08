@@ -6,6 +6,6 @@ const updatesRoutes = require("./updates");
 router.use("/rsvp", rsvpRoutes);
 
 // RSVP routes
-router.use("/updates", updatesRoutes);
+router.use("/updatesAmandaEric05300716", updatesRoutes);
 
 module.exports = router;
