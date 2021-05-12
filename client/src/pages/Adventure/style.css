@@ -149,6 +149,7 @@
   font-weight: 600;
   padding-left: 15px;
   padding-right: 15px;
+  font-weight: 400;
 }
 
 .adventure-entry {
@@ -207,6 +208,11 @@
   padding: 10px 0px 10px 0px;
 }
 
+.adventure-town {
+  color: var(--olive);
+  padding-left: 6px;
+  font-weight: 400;
+}
 
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */

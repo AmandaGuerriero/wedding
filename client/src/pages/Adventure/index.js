@@ -7,6 +7,7 @@ const Adventure = () => {
     <main>
       <div className="adventure-note">We know this is a bit of a destination wedding for most of our guests, but we really wanted to be able to share a region of California that we love so much with everyone else. If time allows, we encourage you to take some time to explore the region that has brought us so much joy over the numerous trips we’ve taken up there.</div>
       <div className="adventure-note">Below is an extensive list of the things to see, do, eat, and drink that we hope will be helpful for you in planning your own Central Coast adventure!</div>
+      {/* Big Sur */}
       <div className="adventure-section-header">
         <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
         <div className="adventure-section-title">Big Sur</div>
@@ -152,6 +153,7 @@ const Adventure = () => {
           <iframe className="adventure-responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
         </div>
       </div>
+      {/* Paso Robles */}
       <div className="adventure-section-header">
         <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
         <div className="adventure-section-title">Paso Robles</div>
@@ -280,6 +282,270 @@ const Adventure = () => {
                       <div>•</div>
                       <div className="adventure-name">DEAD OAK</div>
                     </div>
+                  </ul>
+                </div>
+                </Collapsible>
+              </div>
+            </div>
+          </div>
+        <div className="adventure-col adventure-iframe-container">
+          <iframe className="adventure-responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
+        </div>
+      </div>
+      {/* San Luis Obispo */}
+      <div className="adventure-section-header">
+        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
+        <div className="adventure-section-title">San Luis Obispo</div>
+      </div>
+      <div>
+        <div className="adventure-picture-row">
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+        </div>
+      </div>
+      <div className="adventure-row">
+        <div className="adventure-col adventure-text">
+          {/* SLO */}
+          <div className="adventure-section">
+            <div className="adventure-summary">SLO, Edna Valley, Pismo Beach, Avila Beach, and Morro Bay</div>
+            <div className="adventure-info">
+              <div className="adventure-description">The region surrounding our venue includes a number of small towns that each has their own unique recreational options.</div>
+                {/* SEE */}
+                <Collapsible trigger="SEE" triggerWhenOpen="SEE" className="accordion fa fa-caret-right">
+                <div className="adventure-options-links">
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">SECRET GARDEN</div>
+                    </div>
+                      <div className="adventure-detail">This is a cool little spice/tea shop right along the river in SLO.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">MORRO ROCK</div>
+                    </div>
+                      <div className="adventure-detail">The defining feature of Morro Bay, this enormous rock is quite a sight to behold.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">SLO RIVERWALK</div>
+                    </div>
+                      <div className="adventure-detail">While it’s not quite the Naperville Riverwalk, this little path runs right along the river in the middle of town and is fun to walk along if you’re in the area.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">AVILA SEA CAVES/SMUGGLERS CAVE (AVILA)</div>
+                    </div>
+                      <div className="adventure-detail">This area right outside Avila beach has a couple of nice walking trails with views along with some sea caves - some of which are easier to get to than others. It is also close to Pirates Cove Beach, which beware, is a clothing optional beach.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">ELFIN FOREST (Morro Bay)</div>
+                    </div>
+                      <div className="adventure-detail">TBD</div>
+                  </ul>
+                </div>
+                </Collapsible>
+                {/* DO */}
+                <Collapsible trigger="DO" triggerWhenOpen="DO" className="accordion fa fa-caret-right">
+                <div className="adventure-options-links">
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">KAYAKING | MORRO BAY</div>
+                    </div>
+                      <div className="adventure-detail">In the shadow of Morro Rock, the bay is quite calm and allows you to kayak around seals and otters. You can also paddle out to Morro Bay State Park which is a great place for a picnic or just to relax on the beach.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">ATV ON DUNES IN PISMO</div>
+                    </div>
+                      <div className="adventure-detail">For those seeking a bit more high octane fun, you can rent ATVs and drive over the large sand dunes along the water.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">GOLF</div>
+                    </div>
+                      <div className="adventure-detail">While we’ve never actually golfed in the area, there are a number of options. My former boss had very good things to say about the Morro Bay Golf Course, but we don’t know much about the Avila Beach Golf Resort, Monarch Dunes, Cypress Ridge, and Blacklake which are also close by. </div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">HIKE THE BIG FALLS TRAIL | Arroyo Grande</div>
+                    </div>
+                      <div className="adventure-detail">TBD</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">HIKE IN MONTANA DE ORO STATE PARK MORRO BAY</div>
+                    </div>
+                      <div className="adventure-detail">TBD</div>
+                  </ul>
+                </div>
+                </Collapsible>
+                {/* EAT */}
+                <Collapsible trigger="EAT" triggerWhenOpen="EAT" className="accordion fa fa-caret-right">
+                <div className="adventure-options-links">
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">LUNA RED&nbsp;&nbsp;|</div><div className="adventure-town">SLO</div>
+                    </div>
+                      <div className="adventure-detail">Very delicious tapas place in downtown SLO.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">TASTE&nbsp;&nbsp;|</div><div className="adventure-town">SLO</div>
+                    </div>
+                      <div className="adventure-detail">If you can’t decide and just want a little of everything, this is the place for you! It specializes in small plates ranging from burgers to brussels to mac n’ cheese, so you can order 2, 3, or 4 of the small bites you want. We have had food from here many times and love it every time. Has a 2nd location in Paso.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">1865 CRAFT&nbsp;&nbsp;|</div><div className="adventure-town">SLO</div>
+                    </div>
+                      <div className="adventure-detail">We had a very yummy Valentines Day dinner and drinks at this pretty gastropub a couple years back.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">NOVO LOUNGE&nbsp;&nbsp;|</div><div className="adventure-town">SLO</div>
+                    </div>
+                      <div className="adventure-detail">Novo has a really nice outdoor patio in the back along the river in SLO and while we’ve only been here a couple times for a delicious brunch, their dinner menu looks really good too.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">FAT CAT CAFE&nbsp;&nbsp;|</div><div className="adventure-town">AVILA BEACH</div>
+                    </div>
+                      <div className="adventure-detail">Deliciously dive diner full of silly cat-themed decor.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">MASON BAR&nbsp;&nbsp;|</div><div className="adventure-town">ARROYO GRANDE</div>
+                    </div>
+                      <div className="adventure-detail">We will most likely be holding our after party here following the wedding, but recommend checking it out for a regular dinner as well. The brussel sprouts are some of the best we’ve ever had.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">COWBOY COOKIE AND CREAM |</div><div className="adventure-town">SLO</div>
+                    </div>
+                      <div className="adventure-detail">As you might imagine, they have good cookies and ice cream.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">BLUE MOON OVER AVILA&nbsp;&nbsp;|</div><div className="adventure-town">SLO</div>
+                    </div>
+                      <div className="adventure-detail">TBD</div>
+                  </ul>
+                </div>
+                </Collapsible>
+                {/* Brewereis */}
+                <Collapsible trigger="BREWERIES" triggerWhenOpen="BREWERIES" className="accordion fa fa-caret-right">
+                <div className="adventure-options-links">
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">BANG THE DRUM&nbsp;&nbsp;|</div><div className="adventure-town">SLO</div>
+                    </div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">LIBERTINE&nbsp;&nbsp;|</div><div className="adventure-town">SLO or AVILA</div>
+                    </div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">CENTRAL COAST BREWING&nbsp;&nbsp;|</div><div className="adventure-town">SLO</div>
+                    </div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">HUMDINGER&nbsp;&nbsp;|</div><div className="adventure-town">ARROYO GRANDE</div>
+                    </div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">OAK & OTTER&nbsp;&nbsp;|</div><div className="adventure-town">SLO</div>
+                    </div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">THIS DOES NOT EXIST&nbsp;&nbsp;|</div><div className="adventure-town">SLO</div>
+                    </div>
+                  </ul>
+                </div>
+                </Collapsible>
+                {/* WINERY */}
+                <Collapsible trigger="WINERIES" triggerWhenOpen="WINERIES" className="accordion fa fa-caret-right">
+                <div className="adventure-options-links">
+                  <div className="drinking-note">Edna Valley is a much smaller AVA than Paso (only about 30 wineries) and while the quality of the wine may be a bit lower, we’ve found its a more friendly atmosphere. Expect to pay $15-25 per tasting and below are our favorites.</div>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">CLAIBORNE & CHURCHILL</div>
+                    </div>
+                      <div className="adventure-detail">Claiborne & Churchill is our favorite winery of the area and was our first wine club together. It owned by a husband and wife who met at the University of Michigan and boasts good dry whites along with solid reds (Syrah, Pinot Noir, & Grenache).</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">KYNSI</div>
+                    </div>
+                      <div className="adventure-detail">On the higher end price-wise, Kynsi is mostly known for their good Pinots and has a delightful outdoor tasting area.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">CHAMISAL</div>
+                    </div>
+                      <div className="adventure-detail">Probably the most well-known winery of the area, Chamisol is a little stuffy but does have some good wine.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">SAUCELITO CANYON</div>
+                    </div>
+                      <div className="adventure-detail">Very approachable winery with friendly staff and good Zinfandels.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">WOLFF</div>
+                    </div>
+                      <div className="adventure-detail">Very large selection of varietals and sweeping views of Edna Valley. The wine is good but not great.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">EDNA VALLEY</div>
+                    </div>
+                      <div className="adventure-detail">Edna Valley probably has the widest distribution in the area and a beautiful new newest tasting room, but their wine is just OK.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">TOLOSA</div>
+                    </div>
+                      <div className="adventure-detail">Tolosa has a beautiful patio and some of their higher end wines are fantastic, but their regular tasting menu is a tad overpriced for their more standard wines.</div>
                   </ul>
                 </div>
                 </Collapsible>
