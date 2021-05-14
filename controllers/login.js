@@ -6,7 +6,7 @@ const secret = process.env.SECRET;
 
 module.exports = {
     authenticate(req, res) {
-        if (req.body.email && req.body.password) {
+        if (req.body.email && req.body.password && req.body.fieldOfDreams) {
             // Fetch user's data and verify credentials
             const user = findByEmail(req.body.email);
 
