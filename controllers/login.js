@@ -1,22 +1,27 @@
 const jwt = require('jsonwebtoken');
+const db = require("../models");
+const { findByEmail } = require('./user');
+require('dotenv').config();
+const secret = process.env.SECRET;
 
 module.exports = {
-    authenticate(request, response) {
-        if (request.body.email && request.body.password) {
+    authenticate(req, res) {
+        if (req.body.email && req.body.password) {
             // Fetch user's data and verify credentials
-            const user = getUser(request.body.email);
+            const user = findByEmail(req.body.email);
 
-            jwt.sign(user, process.env.SECRET, (error, token) => {
-                response.json({
-                    // id: user.id,
-                    token
-                });
+            let token = jwt.sign({user}, secret, { expiresIn: '24h' });
+                res.json({
+                    success: true,
+                    message: 'Authentication successful!',
+                    token: token
             });
         } else {
-            response.json({
+            res.json({
                 error: 'We\'ve couldn\'t sign you in 😔'
             });
         }
 
     }
 };
+   

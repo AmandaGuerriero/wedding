@@ -29,4 +29,8 @@ export default {
   registerUpdates: function(updatesData) {
     return axios.post("/api/updatesAmandaEric05300716", updatesData);
   },
+
+  getUser: function() {
+    return axios.get("/api/users/:email");
+  },
 };
