@@ -1,0 +1,314 @@
+/* Adventure Page Styles */
+.adventure-note {
+  padding-top: 30px;
+  color: var(--pinotcolor);
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Adventure Header */
+.adventure-section-header {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.adventure-section-title {
+  font-family: 'Barcelony', serif, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--pinotcolor);
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 300px;
+  border-bottom: 2px solid var(--rieslingcolor);
+}
+
+.adventure-olive-branch {
+  padding-left: 20px;
+  margin-top: 10px;
+  height: 50px;
+  width: 100px;
+}
+
+/* Adventure Photos */
+.adventure-picture-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 4px;
+  margin: 5px 25px 5px 10px;
+}
+
+.adventure-image {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 7px;
+}
+
+.adventure-image img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Adventure Rows */
+.adventure-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin: 5px 5px 5px 5px;
+}
+
+.adventure-col {
+  flex: 50%;
+  max-width: 45%;
+  padding: 0 7px;
+}
+
+.adventure-text {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 40%;
+  padding-bottom: 20px;
+}
+
+.adventure-info {
+  display: block;
+  text-align: left;
+}
+
+.adventure-bullet-icon {
+  height: 25px;
+  margin-top: 5px;
+  width: 25px;
+}
+
+.adventure-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  background-color: transparent;
+  color: var(--pinotcolor);
+  text-align: left;
+}
+
+.adventure-summary{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.adventure-description {
+  padding-bottom: 15px;
+}
+
+.adventure-options {
+  flex: 95%;
+  max-width: 85%;
+  padding: 0 7px;
+  margin-right: auto;
+  margin-left: auto;
+  color: var(--pinotcolor);
+  border-top: 2px solid var(--rieslingcolor);
+  padding-bottom: 20px;
+}
+
+/* Add Styles to Drawer */
+.Collapsible {
+  background-color: var(--rieslingcolor);
+  color: var(--pinotcolor);
+  text-align: left;
+  transition: 0.4s;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  padding: 5px 0px 5px 0px;
+  margin-top: 15px;
+}
+
+.Collapsible__trigger {
+  padding-left: 10px;
+  padding-right: 100%;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.fa-caret-right {
+  padding-left: 10px;
+}
+
+.adventure-options-links {
+  background-color: var(--pinotcolor);
+  padding-top: 10px;
+}
+
+.drinking-note {
+  background-color: transparent;
+  color: var(--olive);
+  text-align: left;
+  font-weight: 600;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 400;
+}
+
+.adventure-entry {
+  color: var(--rieslingcolor);
+  padding: 10px 20px 10px 20px;
+}
+
+.adventure-name {
+  color: var(--rieslingcolor);
+  /* text-decoration: underline; */
+  padding-left: 5px;
+}
+
+.adventure-header {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.adventure-detail {
+  padding-left: 10px;
+  font-weight: 400;
+}
+
+.adventure-map-mobile {
+  display: none;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.adventure-iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  padding-top: 35px;
+}
+
+.adventure-responsive-iframe {
+  position: relative;
+  width: 97%;
+  height: 90%;
+}
+
+.adventure-links {
+  display: block;
+  padding: 10px 0px 10px 0px;
+}
+
+.adventure-link {
+  display: block;
+  padding: 10px 0px 10px 0px;
+}
+
+.adventure-town {
+  color: var(--olive);
+  padding-left: 6px;
+  font-weight: 400;
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1045px) {
+  .adventure-section-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: left;
+    border-bottom: 2px solid var(--rieslingcolor);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .adventure-section-title {
+    border-bottom: none;
+  }
+  
+  .Collapsible__trigger {
+    padding-right: 80%;
+  }
+
+  .adventure-section {
+    padding-top: 10px;
+  }
+
+  /* Adventure Photos */
+  .adventure-picture-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 10px 5px 10px;
+    padding: 0px;
+  }
+
+  .adventure-image {
+    flex: 50%;
+    max-width: 50%;
+    padding: 5px 4px 5px 4px;
+  }
+
+  .adventure-image img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  .adventure-section-title {
+    padding-right: 200px;
+  }
+  
+  .adventure-iframe-container {
+    display: none;
+  }
+  
+  .adventure-responsive-iframe {
+   display: none;
+  }
+
+  .adventure-col, .adventure-options {
+    flex: 95%;
+    max-width: 95%;
+    padding: 0 7px;
+  }
+
+  .adventure-summary {
+    padding-left: 5px;
+  }
+
+  .adventure-info {
+    flex: 95%;
+    padding: 0 7px;
+    max-width: 95%;
+  }
+
+  .adventure-map-mobile {
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .adventure-map-mobile > a {
+    background-color: transparent;
+    color: var(--olive); 
+    text-decoration: underline;
+    font-weight: 600;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .adventure-section-title {
+    padding-right: 100px;
+    font-size: 30px;
+  }
+  .adventure-olive-branch {
+    padding-left: 5px;
+  }
+}

@@ -7,6 +7,8 @@ import Adventure from "./pages/Adventure"
 import Travel from "./pages/Travel/index"
 import Lodging from "./pages/Lodging/index"
 import Updates from "./pages/Register"
+import Details from "./pages/Details/index"
+import Schedule from "./pages/Schedule/index"
 import Nav from "./components/Nav";
 import Footer from "./components/Footer"
 import 'font-awesome/css/font-awesome.min.css';
@@ -51,6 +53,8 @@ class App extends React.Component {
           <Route exact path="/lodging" component={Lodging} />
           <Route exact path="/travel" component={Travel} />
           <Route exact path="/adventure" component={Adventure} />
+          <Route exact path="/details" component={Details} />
+          <Route exact path="/schedule" component={Schedule} />
           <Route exact path="/register-for-updates" component={Updates} />
         </Switch>
         <Footer/>

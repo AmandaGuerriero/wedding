@@ -16,3 +16,9 @@
   border-width: 3px 3px 0 3px;
   border-bottom: none;
 }
+
+@media screen and (max-width: 768px) {
+  .tab-list-item {
+    padding: 0.5rem 0.65rem;
+  }
+}
