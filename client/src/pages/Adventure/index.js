@@ -556,6 +556,310 @@ const Adventure = () => {
           <iframe className="adventure-responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
         </div>
       </div>
+      {/* Santa Barbara County */}
+      <div className="adventure-section-header">
+        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
+        <div className="adventure-section-title">Santa Barbara County</div>
+      </div>
+      <div>
+        <div className="adventure-picture-row">
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+        </div>
+      </div>
+      <div className="adventure-row">
+        <div className="adventure-col adventure-text">
+          {/* SLO */}
+          <div className="adventure-section">
+            <div className="adventure-summary">Los Olivos, Solvang, Orcutt, Santa Ynez and Santa Barbara</div>
+            <div className="adventure-info">
+              <div className="adventure-description">This area includes 2 AVAs and quite a wide variety of different towns.</div>
+                {/* SEE */}
+                <Collapsible trigger="SEE" triggerWhenOpen="SEE" className="accordion fa fa-caret-right">
+                <div className="adventure-options-links">
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">SANTA BARBARA</div>
+                    </div>
+                      <div className="adventure-detail">Most people have heard of Santa Barbara and we really haven’t spent too much time there so we don’t have any recommendations but there is a ton of stuff to do, eat, and drink there and worth a visit if you’ve never been.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">SOLVANG</div>
+                    </div>
+                      <div className="adventure-detail">Why wouldn’t there be a Danish-style town in the middle of California? Complete with windmills, restaurants, a lot of wine tasting rooms, and other assorted Danish stuff, Solvang is a really fun little town to spend either a couple hours in.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">LOS OLIVOS</div>
+                    </div>
+                      <div className="adventure-detail">The town of Los Olivos is basically two streets full of restaurants and wine tasting rooms right on the outskirts of the Santa Ynez AVA.</div>
+                  </ul>
+                </div>
+                </Collapsible>
+                {/* DO */}
+                <Collapsible trigger="DO" triggerWhenOpen="DO" className="accordion fa fa-caret-right">
+                <div className="adventure-options-links">
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">LAKE CACHUMA | MORRO BAY</div>
+                    </div>
+                      <div className="adventure-detail">Lake Cachuma is a half an hour away from Santa Barbara and offers camping, boating, and fishing options.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">HIKING</div>
+                    </div>
+                      <div className="adventure-detail">We haven’t done any of them, but according to the internet there are a ton of hiking options around Santa Barbara that look to offer amazing ocean views.</div>
+                  </ul>
+                </div>
+                </Collapsible>
+                {/* EAT */}
+                <Collapsible trigger="EAT" triggerWhenOpen="EAT" className="accordion fa fa-caret-right">
+                <div className="adventure-options-links">
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">ANDERSON'S SPLIT PEA SOUP&nbsp;&nbsp;|</div><div className="adventure-town">BUELLTON</div>
+                    </div>
+                      <div className="adventure-detail">Buellton is famous as being the home to Anderson’s Split Pea Soup. It's pretty good soup but probably only worth the stop if you either really like pea soup or are looking for something very ridiculous to stop at.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">ÆBLESKIVERS&nbsp;&nbsp;|</div><div className="adventure-town">SOLVANG</div>
+                    </div>
+                      <div className="adventure-detail">This danish pastry is a tasty mix between a donut hole and pancake and can be found in Solvang. The Red Viking and Solvang Brewing company both make very solid Æbleskivers.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">OLIVE OIL TASTING&nbsp;&nbsp;|</div><div className="adventure-town">LOS OLIVOS</div>
+                    </div>
+                      <div className="adventure-detail">Olive Oil Farms does good olive oil and balsamic tasting in Los Olivos and just outside of the town, Rancho Olivos does olive oil tasting with a pudgy corgi.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">CHEF RICK'S ULTIMATE FINE FOODS&nbsp;&nbsp;|</div><div className="adventure-town">ORCUTT</div>
+                    </div>
+                      <div className="adventure-detail">Despite the bizarre name, we ate here once and thought it was pretty good.</div>
+                  </ul>
+                </div>
+                </Collapsible>
+                {/* Brewereis */}
+                <Collapsible trigger="BREWERIES" triggerWhenOpen="BREWERIES" className="accordion fa fa-caret-right">
+                <div className="adventure-options-links">
+                <div className="drinking-note">There are 6-7 breweries in Santa Barbara that we have not been to yet, but are sure some of them are worth checking out.</div>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">CAPTAIN FATTY'S&nbsp;&nbsp;|</div><div className="adventure-town">GOLETA & SANTA BARBARA</div>
+                    </div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">SOLVANG BREWING&nbsp;&nbsp;|</div><div className="adventure-town">SOLVANG</div>
+                    </div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">CENTRAL COAST BREWING&nbsp;&nbsp;|</div><div className="adventure-town">SLO</div>
+                    </div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">HUMDINGER&nbsp;&nbsp;|</div><div className="adventure-town">ARROYO GRANDE</div>
+                    </div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">OAK & OTTER&nbsp;&nbsp;|</div><div className="adventure-town">SLO</div>
+                    </div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">THIS DOES NOT EXIST&nbsp;&nbsp;|</div><div className="adventure-town">SLO</div>
+                    </div>
+                  </ul>
+                </div>
+                </Collapsible>
+                {/* WINERY */}
+                <Collapsible trigger="WINERIES" triggerWhenOpen="WINERIES" className="accordion fa fa-caret-right">
+                <div className="adventure-options-links">
+                  <div className="drinking-note">The Santa Maria AVA is very small but worth the journey as it has a couple of gems in it.</div>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">CAMBRIA</div>
+                    </div>
+                      <div className="adventure-detail">Cambria is probably one of our favorite wineries and very highly recommend the trip out there.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">PRESQU'ILE</div>
+                    </div>
+                      <div className="adventure-detail">The name and place are a little pretentious but the tasting room and view are spectacular. Their wine was also pretty solid.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">FOXEN</div>
+                    </div>
+                      <div className="adventure-detail">Tasting room was nothing special but the wine was solid.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">COTTONWOOD CANYON</div>
+                    </div>
+                      <div className="adventure-detail">Tasting room was nothing special but the wine was solid.</div>
+                  </ul>
+                  <div className="drinking-note">The Santa Ynez AVA is probably in between Edna Valley and Paso in terms of price and quality of wine. We’ve gone to a few wineries here and haven’t been blown away by any of the experiences, but the wine is very solid.</div>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">SHOESTRING</div>
+                    </div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">LINCOURT</div>
+                    </div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">SUNSTONE</div>
+                    </div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">BUTTONWOOD</div>
+                    </div>
+                  </ul>
+                </div>
+                </Collapsible>
+              </div>
+            </div>
+          </div>
+        <div className="adventure-col adventure-iframe-container">
+          <iframe className="adventure-responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
+        </div>
+      </div>
+        {/* Ventura County */}
+        <div className="adventure-section-header">
+        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
+        <div className="adventure-section-title">Ventura County</div>
+      </div>
+      <div>
+        <div className="adventure-picture-row">
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+        </div>
+      </div>
+      <div className="adventure-row">
+        <div className="adventure-col adventure-text">
+          <div className="adventure-section">
+            <div className="adventure-summary">Oxnard, Ventura, Camarillo, and Channel Islands</div>
+            <div className="adventure-info">
+              <div className="adventure-description">This is at the very southern end of the Central Coast but we couldn’t leave it out because it does have a couple of really fun places to go/eat.</div>
+                {/* SEE */}
+                <Collapsible trigger="SEE" triggerWhenOpen="SEE" className="accordion fa fa-caret-right">
+                <div className="adventure-options-links">
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">CHANNEL ISLANDS</div>
+                    </div>
+                      <div className="adventure-detail">If you are spending a good amount of time in the area we highly recommend spending a day on one of the channel islands. There are numerous kayaking or scuba trips around the islands or you can just spend a couple hours on one of the islands hiking around. We did a day trip to Santa Cruz island and just hiked around for 6 hours and thoroughly enjoyed ourselves. You can also go to Santa Rosa and Anacapa, but keep in mind only Santa Rosa and Santa Cruz are home to island foxes which are just adorable.</div>
+                  </ul>
+                </div>
+                </Collapsible>
+                {/* DO */}
+                <Collapsible trigger="DO" triggerWhenOpen="DO" className="accordion fa fa-caret-right">
+                <div className="adventure-options-links">
+                <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">GOLF N' STUFF</div>
+                    </div>
+                      <div className="adventure-detail">As the name suggests, this has mutliple mini-golf adventures and an arcade.</div>
+                  </ul>
+                </div>
+                </Collapsible>
+                {/* EAT */}
+                <Collapsible trigger="EAT" triggerWhenOpen="EAT" className="accordion fa fa-caret-right">
+                <div className="adventure-options-links">
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">RUMFISH Y VINO&nbsp;&nbsp;|</div><div className="adventure-town">VENTURA</div>
+                    </div>
+                      <div className="adventure-detail">We have dined here at least 5 times on our way to and from SLO and love the food each time.</div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">PACIFIC&nbsp;&nbsp;|</div><div className="adventure-town">VENTURA</div>
+                    </div>
+                      <div className="adventure-detail">We have only gone here once so far but were blown away by the food.</div>
+                  </ul>
+                </div>
+                </Collapsible>
+                {/* Brewereis */}
+                <Collapsible trigger="BREWERIES" triggerWhenOpen="BREWERIES" className="accordion fa fa-caret-right">
+                <div className="adventure-options-links">
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">TOPA TOPA&nbsp;&nbsp;|</div><div className="adventure-town">VENTURA</div>
+                    </div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">SURF&nbsp;&nbsp;|</div><div className="adventure-town">OXNARD</div>
+                    </div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">INSTITUTION&nbsp;&nbsp;|</div><div className="adventure-town">CAMARILLO</div>
+                    </div>
+                  </ul>
+                  <ul className="adventure-entry">
+                    <div className="adventure-header">
+                      <div>•</div>
+                      <div className="adventure-name">MADEWEST&nbsp;&nbsp;|</div><div className="adventure-town">VENTURA</div>
+                    </div>
+                  </ul>
+                </div>
+                </Collapsible>
+              </div>
+            </div>
+          </div>
+        <div className="adventure-col adventure-iframe-container">
+          <iframe className="adventure-responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
+        </div>
+      </div>
     </main>
   );
 };
