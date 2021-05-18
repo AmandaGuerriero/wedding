@@ -14,10 +14,10 @@ const Adventure = () => {
       </div>
       <div>
         <div className="adventure-picture-row">
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/BIG-SUr/Coast" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/BIG-SUr/Restless" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/BIG-SUr/GolfCourse" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/BIG-SUr/LoneTree" alt="Big Sur" />
         </div>
       </div>
       <div className="adventure-row">
@@ -160,10 +160,10 @@ const Adventure = () => {
       </div>
       <div>
         <div className="adventure-picture-row">
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/PASO/Hills" alt="Paso Robles" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/PASO/Pasoport" alt="Paso Robles" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/PASO/Mitchella" alt="Paso Robles" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/PASO/Fish-Gaucho" alt="Paso Robles" />
         </div>
       </div>
       <div className="adventure-row">
@@ -299,10 +299,10 @@ const Adventure = () => {
       </div>
       <div>
         <div className="adventure-picture-row">
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/SLO/Wolff-Winery" alt="SLO" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/SLO/Pismo" alt="SLO" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/SLO/MorroBay" alt="SLO" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/SLO/SLO-riverwalk" alt="SLO" />
         </div>
       </div>
       <div className="adventure-row">
@@ -563,10 +563,10 @@ const Adventure = () => {
       </div>
       <div>
         <div className="adventure-picture-row">
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/SB/Solvang-wide" alt="Santa Barbara" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/SB/Abelskiver" alt="Santa Barbara" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/SB/Solvang-Clouds" alt="Santa Barbara" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/SB/Solvang-Windmill" alt="Santa Barbara" />
         </div>
       </div>
       <div className="adventure-row">
@@ -769,10 +769,10 @@ const Adventure = () => {
       </div>
       <div>
         <div className="adventure-picture-row">
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/VENTURA/Channel" alt="Ventura" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/VENTURA/Fox" alt="Ventura" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/VENTURA/Beer" alt="Ventura" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/VENTURA/PacificNoru" alt="Ventura" />
         </div>
       </div>
       <div className="adventure-row">

@@ -233,7 +233,7 @@
   }
   
   .Collapsible__trigger {
-    padding-right: 80%;
+    padding-right: 60%;
   }
 
   .adventure-section {
@@ -310,5 +310,9 @@
   }
   .adventure-olive-branch {
     padding-left: 5px;
+  }
+
+  .Collapsible__trigger {
+    padding-right: 60%;
   }
 }

@@ -1,5 +1,5 @@
 .side-drawer {
-  height: 60%;
+  height: 80%;
   background: var(--rieslingcolor);
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
   position: fixed;
