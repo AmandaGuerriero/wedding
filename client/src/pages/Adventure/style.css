@@ -43,12 +43,12 @@
 .adventure-image {
   flex: 25%;
   max-width: 25%;
+  height: 100%;
   padding: 0 7px;
 }
 
 .adventure-image img {
   vertical-align: middle;
-  width: 100%;
 }
 
 /* Adventure Rows */
@@ -257,6 +257,7 @@
   .adventure-image img {
     vertical-align: middle;
     width: 100%;
+    height: auto;
   }
   
   .adventure-section-title {
