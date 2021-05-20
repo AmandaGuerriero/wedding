@@ -9,7 +9,7 @@ const Adventure = () => {
       <div className="adventure-note">Below is an extensive list of the things to see, do, eat, and drink that we hope will be helpful for you in planning your own Central Coast adventure!</div>
       {/* Big Sur */}
       <div className="adventure-section-header">
-        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
+        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
         <div className="adventure-section-title">Big Sur</div>
       </div>
       <div>
@@ -150,12 +150,12 @@ const Adventure = () => {
           </div>
         <div className="lodging-map-mobile"><a href="https://www.google.com/maps/d/viewer?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en&ll=35.12503049999998%2C-120.57630149999999&z=11">View Activities on a map</a></div>
         <div className="adventure-col adventure-iframe-container">
-          <iframe className="adventure-responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
+          <iframe className="adventure-responsive-iframe" title="Big Sur Map"  src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
         </div>
       </div>
       {/* Paso Robles */}
       <div className="adventure-section-header">
-        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
+        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
         <div className="adventure-section-title">Paso Robles</div>
       </div>
       <div>
@@ -289,12 +289,12 @@ const Adventure = () => {
             </div>
           </div>
         <div className="adventure-col adventure-iframe-container">
-          <iframe className="adventure-responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
+          <iframe className="adventure-responsive-iframe" title="Paso Robles Map" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
         </div>
       </div>
       {/* San Luis Obispo */}
       <div className="adventure-section-header">
-        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
+        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
         <div className="adventure-section-title">San Luis Obispo</div>
       </div>
       <div>
@@ -553,12 +553,12 @@ const Adventure = () => {
             </div>
           </div>
         <div className="adventure-col adventure-iframe-container">
-          <iframe className="adventure-responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
+          <iframe className="adventure-responsive-iframe" title="SLO Map" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
         </div>
       </div>
       {/* Santa Barbara County */}
       <div className="adventure-section-header">
-        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
+        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
         <div className="adventure-section-title">Santa Barbara County</div>
       </div>
       <div>
@@ -759,12 +759,12 @@ const Adventure = () => {
             </div>
           </div>
         <div className="adventure-col adventure-iframe-container">
-          <iframe className="adventure-responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
+          <iframe className="adventure-responsive-iframe" title="Santa Barbara Map" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
         </div>
       </div>
         {/* Ventura County */}
         <div className="adventure-section-header">
-        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
+        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
         <div className="adventure-section-title">Ventura County</div>
       </div>
       <div>
@@ -857,7 +857,7 @@ const Adventure = () => {
             </div>
           </div>
         <div className="adventure-col adventure-iframe-container">
-          <iframe className="adventure-responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
+          <iframe className="adventure-responsive-iframe" title="Ventura Map"  src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
         </div>
       </div>
     </main>

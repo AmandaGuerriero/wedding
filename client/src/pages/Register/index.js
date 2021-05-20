@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import React, { useState} from "react";
 import API from "../../utils/API";
 import './style.css';
 
