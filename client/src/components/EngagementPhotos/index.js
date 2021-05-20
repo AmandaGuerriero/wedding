@@ -5,8 +5,8 @@ function EngagementPhotos() {
   return(
     <div>
       <p className="engagement-shoot-credit-mobile">A blend of photos from our actual engagement day in New York & our engagement photo shoot around LA (courtesy of our friends Joe Warwick & Erin Schaffner)</p>
-      <div className="row">
-      <div className="column">
+      <div className="engagement-row">
+      <div className="engagement-column">
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9567-h.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9370-h.jpg' alt='Amanda & Eric' />
@@ -29,7 +29,7 @@ function EngagementPhotos() {
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9249-h.jpg' alt='Amanda & Eric' />
         
       </div>
-      <div className="column">
+      <div className="engagement-column">
         <p className="engagement-shoot-credit">A blend of photos from our actual engagement day in New York & our engagement photo shoot around LA (courtesy of our friends Joe Warwick & Erin Schaffner)</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/20200705_181326-v.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9821-h.jpg' alt='Amanda & Eric' />
@@ -51,7 +51,7 @@ function EngagementPhotos() {
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_8673-h.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/20200705_181158-v.jpg' alt='Amanda & Eric' />
       </div>
-      <div className="column">
+      <div className="engagement-column">
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9170-h.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_8926-v.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9702-h.jpg' alt='Amanda & Eric' />
