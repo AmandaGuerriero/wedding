@@ -559,7 +559,7 @@ const Adventure = () => {
       {/* Santa Barbara County */}
       <div className="adventure-section-header">
         <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
-        <div className="adventure-section-title">Santa Barbara County</div>
+        <div className="adventure-section-title">Santa Barbara</div>
       </div>
       <div>
         <div className="adventure-picture-row">
@@ -759,7 +759,7 @@ const Adventure = () => {
             </div>
           </div>
         <div className="adventure-col adventure-iframe-container">
-          <iframe className="adventure-responsive-iframe" title="Santa Barbara Map" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
+          <iframe className="adventure-responsive-iframe" title="Santa Barbara Map" src="https://www.google.com/maps/d/embed?mid=1lLgrCHh9hUS6eeHtKnHL8aHq6glkL9Ed"></iframe>
         </div>
       </div>
         {/* Ventura County */}
