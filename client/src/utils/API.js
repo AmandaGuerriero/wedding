@@ -7,7 +7,7 @@ export default {
   },
 
   // Gets the rsvp with the given id
-  getRsvp: function(id) {
+  getRsvpById: function(id) {
     return axios.get("/api/rsvp" + id);
   },
   // Updates an rsvp with the given id - Not sure if this will work

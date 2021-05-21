@@ -1,7 +1,6 @@
 .domestic-row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
   margin: 5px 5px 5px 5px;
 }
 

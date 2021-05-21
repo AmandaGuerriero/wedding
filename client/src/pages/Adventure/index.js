@@ -9,15 +9,15 @@ const Adventure = () => {
       <div className="adventure-note">Below is an extensive list of the things to see, do, eat, and drink that we hope will be helpful for you in planning your own Central Coast adventure!</div>
       {/* Big Sur */}
       <div className="adventure-section-header">
-        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
+        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
         <div className="adventure-section-title">Big Sur</div>
       </div>
       <div>
         <div className="adventure-picture-row">
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/BIG-SUr/Coast" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/BIG-SUr/Restless" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/BIG-SUr/GolfCourse" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/BIG-SUr/LoneTree" alt="Big Sur" />
         </div>
       </div>
       <div className="adventure-row">
@@ -33,7 +33,7 @@ const Adventure = () => {
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">17-MILE DRIVE</div>
+                      <div className="adventure-name">17-MILE DRIVE&nbsp;&nbsp;|</div><div className="adventure-town">MONTEREY</div>
                     </div>
                       <div className="adventure-detail">Very famous drive around the Pebble Beach peninsula with numerous beautiful ocean views and while it is only, you guessed it, 17 miles, it takes a lot at least an hour and a half to drive. Restless Sea (Mile 4) and Lone Cyprus (Mile 12) are our favorites.</div>
                   </ul>
@@ -47,21 +47,21 @@ const Adventure = () => {
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">ELEPHANT SEALS</div>
+                      <div className="adventure-name">ELEPHANT SEALS&nbsp;&nbsp;|</div><div className="adventure-town">SAN SIMEON</div>
                     </div>
                       <div className="adventure-detail">If you’re driving Highway 1, this is a must stop so that you can see the hundreds of elephant seals do their thing.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">OTTERS OF MONTEREY BAY</div>
+                      <div className="adventure-name">OTTERS&nbsp;&nbsp;|</div><div className="adventure-town">MONTEREY</div>
                     </div>
                       <div className="adventure-detail">Who doesn’t want to watch adorable creatures roll around in the water?! You can usually find them between Cannery Row and the wharf.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">HEARST CASTLE</div>
+                      <div className="adventure-name">HEARST CASTLE&nbsp;&nbsp;|</div><div className="adventure-town">SAN SIMEON</div>
                     </div>
                       <div className="adventure-detail">From the guy who inspired Citizen Kane, this estate is full of excess grandeur and while it is certainly beautiful, you many want to research what it is all about before making the journey there. There were many exotic animals imported to live there, however only the zebras survived and can still sometimes be spotted in the hills today.</div>
                   </ul>
@@ -73,21 +73,21 @@ const Adventure = () => {
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">GOLF: PEBBLE BEACH, POPPY HILLS, LINKS AT SPANISH BAY, PACIFIC GROVE GOLF LINKS</div>
+                      <div className="adventure-name">GOLF</div>
                     </div>
-                      <div className="adventure-detail">We’ve never tried to golf at any of these famous courses, but they all look beautiful (just very expensive)!</div>
+                      <div className="adventure-detail">We’ve never tried to golf at any of these famous courses, but they all look beautiful (just very expensive)! Pebble Beach, Poppy Hills, Links at Spanish Bay, Pacific Grove Gofl Links</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">MONTEREY BAY AQUARIUM</div>
+                      <div className="adventure-name">AQUARIUM&nbsp;&nbsp;|</div><div className="adventure-town">MONTEREY</div>
                     </div>
                       <div className="adventure-detail">We’ve haven’t been yet but it’s supposed to be one of the better aquariums in the country.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">WHALE WATCHING</div>
+                      <div className="adventure-name">WHALE WATCHING&nbsp;&nbsp;|</div><div className="adventure-town">MONTEREY</div>
                     </div>
                       <div className="adventure-detail">Monterey is apparently one of the best places to see whales in the country and the summer months are especially good for blue and humpback whales. Amanda has been in July and saw many whales.</div>
                   </ul>
@@ -99,21 +99,21 @@ const Adventure = () => {
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">PANGEA (CARMEL)</div>
+                      <div className="adventure-name">PANGEA&nbsp;&nbsp;|</div><div className="adventure-town">CARMEL</div>
                     </div>
                       <div className="adventure-detail">Very yummy Asian-fusion place we went to a couple years ago and absolutely loved.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">KATY’S PLACE (CARMEL)</div>
+                      <div className="adventure-name">KATY’S PLACE&nbsp;&nbsp;|</div><div className="adventure-town">CARMEL</div>
                     </div>
                       <div className="adventure-detail">They have every kind of French Toast imaginable and they’re all amazing. Kitty and Dave went there on their honeymoon in 1983, Eric went there after a marathon in 2014, Amanda went there with her Mom and Aunt Diane over Easter of 2017, and Eric and Amanda went there after the US Open in 2019 so it’s a perennial favorite (and cash only so you know it’s good!)</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">SARDINE FACTORY (MONTEREY)</div>
+                      <div className="adventure-name">SARDINE FACTORY&nbsp;&nbsp;|</div><div className="adventure-town">MONTEREY</div>
                     </div>
                       <div className="adventure-detail">Well known and very delicious seafood place we ate at a couple years ago.</div>
                   </ul>
@@ -125,14 +125,14 @@ const Adventure = () => {
                 <ul className="adventure-entry">
                   <div className="adventure-header">
                     <div>•</div>
-                    <div className="adventure-name">FIELD WORK BREWING (MONTEREY)</div>
+                    <div className="adventure-name">FIELD WORK BREWING&nbsp;&nbsp;|</div><div className="adventure-town">MONTEREY</div>
                   </div>
                     <div className="adventure-detail">Went here a number of times during Eric’s work trip a couple years ago and really enjoyed their beers.</div>
                 </ul>
                 <ul className="adventure-entry">
                   <div className="adventure-header">
                     <div>•</div>
-                    <div className="adventure-name">CARMEL CRAFT BREWING (CARMEL)</div>
+                    <div className="adventure-name">CARMEL CRAFT BREWING&nbsp;&nbsp;|</div><div className="adventure-town">CARMEL</div>
                   </div>
                     <div className="adventure-detail">Haven’t actually been but it looks cool</div>
                 </ul>
@@ -148,22 +148,22 @@ const Adventure = () => {
               </div>
             </div>
           </div>
-        <div className="lodging-map-mobile"><a href="https://www.google.com/maps/d/viewer?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en&ll=35.12503049999998%2C-120.57630149999999&z=11">View Activities on a map</a></div>
+        <div className="lodging-map-mobile"><a href="https://www.google.com/maps/d/u/0/viewer?mid=10fOYjk8xAIbeCnrEUTtnrRkLBTIxOt8B&ll=36.43550574117006%2C-121.87890555000001&z=11" target="_blank" rel="noopener noreferrer">View recommendations on a map</a></div>
         <div className="adventure-col adventure-iframe-container">
-          <iframe className="adventure-responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
+          <iframe className="adventure-responsive-iframe" title="Big Sur Map" src="https://www.google.com/maps/d/embed?mid=10fOYjk8xAIbeCnrEUTtnrRkLBTIxOt8B&hl=en"></iframe>
         </div>
       </div>
       {/* Paso Robles */}
       <div className="adventure-section-header">
-        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
+        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
         <div className="adventure-section-title">Paso Robles</div>
       </div>
       <div>
         <div className="adventure-picture-row">
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/PASO/Hills" alt="Paso Robles" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/PASO/Pasoport" alt="Paso Robles" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/PASO/Mitchella" alt="Paso Robles" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/PASO/Fish-Gaucho" alt="Paso Robles" />
         </div>
       </div>
       <div className="adventure-row">
@@ -286,23 +286,24 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
               </div>
+              <div className="lodging-map-mobile"><a href="https://www.google.com/maps/d/u/0/viewer?mid=14GJoAqBHQv4BPbGikOa74sK5yWhaqLA1&ll=35.60582105686205%2C-120.65979145&z=12" target="_blank" rel="noopener noreferrer">View recommendations on a map</a></div>
             </div>
           </div>
         <div className="adventure-col adventure-iframe-container">
-          <iframe className="adventure-responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
+          <iframe className="adventure-responsive-iframe" title="Paso Robles Map" src="https://www.google.com/maps/d/embed?mid=14GJoAqBHQv4BPbGikOa74sK5yWhaqLA1&hl=en"></iframe>
         </div>
       </div>
       {/* San Luis Obispo */}
       <div className="adventure-section-header">
-        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
+        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
         <div className="adventure-section-title">San Luis Obispo</div>
       </div>
       <div>
         <div className="adventure-picture-row">
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/SLO/Wolff-Winery" alt="SLO" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/SLO/Pismo" alt="SLO" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/SLO/MorroBay" alt="SLO" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/SLO/SLO-riverwalk" alt="SLO" />
         </div>
       </div>
       <div className="adventure-row">
@@ -318,37 +319,37 @@ const Adventure = () => {
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">SECRET GARDEN</div>
+                      <div className="adventure-name">SECRET GARDEN&nbsp;&nbsp;|</div><div className="adventure-town">SLO</div>
                     </div>
                       <div className="adventure-detail">This is a cool little spice/tea shop right along the river in SLO.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">MORRO ROCK</div>
+                      <div className="adventure-name">MORRO ROCK&nbsp;&nbsp;|</div><div className="adventure-town">MORRO BAY</div>
                     </div>
                       <div className="adventure-detail">The defining feature of Morro Bay, this enormous rock is quite a sight to behold.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">SLO RIVERWALK</div>
+                      <div className="adventure-name">SLO RIVERWALK&nbsp;&nbsp;|</div><div className="adventure-town">SLO</div>
                     </div>
                       <div className="adventure-detail">While it’s not quite the Naperville Riverwalk, this little path runs right along the river in the middle of town and is fun to walk along if you’re in the area.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">AVILA SEA CAVES/SMUGGLERS CAVE (AVILA)</div>
+                      <div className="adventure-name">AVILA SEA CAVES/SMUGGLERS CAVE&nbsp;&nbsp;|</div><div className="adventure-town">AVILA BEACH</div>
                     </div>
                       <div className="adventure-detail">This area right outside Avila beach has a couple of nice walking trails with views along with some sea caves - some of which are easier to get to than others. It is also close to Pirates Cove Beach, which beware, is a clothing optional beach.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">ELFIN FOREST (Morro Bay)</div>
+                      <div className="adventure-name">ELFIN FOREST&nbsp;&nbsp;|</div><div className="adventure-town">MORRO BAY</div>
                     </div>
-                      <div className="adventure-detail">TBD</div>
+                      <div className="adventure-detail">Really interesting landscape. It would only take about 30 minutes to walk around this lovely area along the pathway.</div>
                   </ul>
                 </div>
                 </Collapsible>
@@ -358,14 +359,14 @@ const Adventure = () => {
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">KAYAKING | MORRO BAY</div>
+                      <div className="adventure-name">KAYAKING&nbsp;&nbsp;|</div><div className="adventure-town">MORRO BAY</div>
                     </div>
                       <div className="adventure-detail">In the shadow of Morro Rock, the bay is quite calm and allows you to kayak around seals and otters. You can also paddle out to Morro Bay State Park which is a great place for a picnic or just to relax on the beach.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">ATV ON DUNES IN PISMO</div>
+                      <div className="adventure-name">ATV ON SAND DUNES&nbsp;&nbsp;|</div><div className="adventure-town">PISMO BEACH</div>
                     </div>
                       <div className="adventure-detail">For those seeking a bit more high octane fun, you can rent ATVs and drive over the large sand dunes along the water.</div>
                   </ul>
@@ -379,16 +380,16 @@ const Adventure = () => {
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">HIKE THE BIG FALLS TRAIL | Arroyo Grande</div>
+                      <div className="adventure-name">HIKE THE BIG FALLS TRAIL&nbsp;&nbsp;|</div><div className="adventure-town">Arroyo Grande</div>
                     </div>
                       <div className="adventure-detail">TBD</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">HIKE IN MONTANA DE ORO STATE PARK MORRO BAY</div>
+                      <div className="adventure-name">HIKE IN MONTANA DE ORO STATE PARK&nbsp;&nbsp;|</div><div className="adventure-town">MORRO BAY</div>
                     </div>
-                      <div className="adventure-detail">TBD</div>
+                      <div className="adventure-detail">We kept calling this "Little Sur" as it has stunning coastline views. Unfortunately, we didn't get to hike much here, but there are no shortage of trails and even if you just wanted to drive the park, it would be worth it!</div>
                   </ul>
                 </div>
                 </Collapsible>
@@ -550,28 +551,29 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
               </div>
+              <div className="lodging-map-mobile"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1YWNYd1V0-P47Y7q_lzI4stIoBVEg14c8&ll=35.24459578575364%2C-120.72926775&z=11" target="_blank" rel="noopener noreferrer">View recommendations on a map</a></div>
             </div>
           </div>
         <div className="adventure-col adventure-iframe-container">
-          <iframe className="adventure-responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
+          <iframe className="adventure-responsive-iframe" title="SLO Map" src="https://www.google.com/maps/d/embed?mid=1YWNYd1V0-P47Y7q_lzI4stIoBVEg14c8" target="_blank" rel="noopener noreferrer"></iframe>
         </div>
       </div>
       {/* Santa Barbara County */}
       <div className="adventure-section-header">
-        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
-        <div className="adventure-section-title">Santa Barbara County</div>
+        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
+        <div className="adventure-section-title">Santa Barbara</div>
       </div>
       <div>
         <div className="adventure-picture-row">
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/SB/Solvang-wide" alt="Santa Barbara" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/SB/Abelskiver" alt="Santa Barbara" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/SB/Solvang-Clouds" alt="Santa Barbara" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/SB/Solvang-Windmill" alt="Santa Barbara" />
         </div>
       </div>
       <div className="adventure-row">
         <div className="adventure-col adventure-text">
-          {/* SLO */}
+          {/* Santa Barbara */}
           <div className="adventure-section">
             <div className="adventure-summary">Los Olivos, Solvang, Orcutt, Santa Ynez and Santa Barbara</div>
             <div className="adventure-info">
@@ -608,7 +610,7 @@ const Adventure = () => {
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">LAKE CACHUMA | MORRO BAY</div>
+                      <div className="adventure-name">LAKE CACHUMA&nbsp;&nbsp;|</div><div className="adventure-town">MORRO BAY</div>
                     </div>
                       <div className="adventure-detail">Lake Cachuma is a half an hour away from Santa Barbara and offers camping, boating, and fishing options.</div>
                   </ul>
@@ -756,23 +758,24 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
               </div>
+              <div className="lodging-map-mobile"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1lLgrCHh9hUS6eeHtKnHL8aHq6glkL9Ed&ll=34.420832100000005%2C-119.6982057&z=17" target="_blank" rel="noopener noreferrer">View recommendations on a map</a></div>
             </div>
           </div>
         <div className="adventure-col adventure-iframe-container">
-          <iframe className="adventure-responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
+          <iframe className="adventure-responsive-iframe" title="Santa Barbara Map" src="https://www.google.com/maps/d/embed?mid=1lLgrCHh9hUS6eeHtKnHL8aHq6glkL9Ed"></iframe>
         </div>
       </div>
         {/* Ventura County */}
         <div className="adventure-section-header">
-        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
+        <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
         <div className="adventure-section-title">Ventura County</div>
       </div>
       <div>
         <div className="adventure-picture-row">
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
-          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/engagement/IMG_9893-h.jpg" alt="Big Sur" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/VENTURA/Channel" alt="Ventura" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/VENTURA/Fox" alt="Ventura" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/VENTURA/Beer" alt="Ventura" />
+          <img className="adventure-image" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/adventure/VENTURA/PacificNoru" alt="Ventura" />
         </div>
       </div>
       <div className="adventure-row">
@@ -854,10 +857,11 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
               </div>
+              <div className="lodging-map-mobile"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1o4VyfiVhzzx3Tnrsjk7hbVpG37Iku6lr&ll=34.12952402809401%2C-119.48143359999999&z=10" target="_blank" rel="noopener noreferrer">View recommendations on a map</a></div>
             </div>
           </div>
         <div className="adventure-col adventure-iframe-container">
-          <iframe className="adventure-responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
+          <iframe className="adventure-responsive-iframe" title="Ventura Map" src="https://www.google.com/maps/d/embed?mid=1o4VyfiVhzzx3Tnrsjk7hbVpG37Iku6lr&hl=en"></iframe>
         </div>
       </div>
     </main>

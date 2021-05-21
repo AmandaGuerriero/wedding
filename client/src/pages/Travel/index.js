@@ -7,7 +7,7 @@ const Travel = () => {
     <main>
       <div className="travel-note">We recommend spending additional time exploring the area if you are able. See the Adventure page for ideas on what you can see, do, and eat/drink!</div>
       <div className="travel-section-header">
-        <img className="travel-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
+        <img className="travel-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
         <div className="travel-section-title">Planes</div>
       </div>
       <div className="travel-row">
@@ -63,11 +63,11 @@ const Travel = () => {
           <div className="travel-map-mobile"><a href="https://www.google.com/maps/d/viewer?mid=13KuUCKDzRegHkicMqn5wTJIj_JNX_3U-&ll=34.59210315853366%2C-119.52527169999999&z=9" target="_blank">View Airports on a map</a></div>
         </div>
         <div className="travel-col travel-iframe-container">
-          <iframe className="travel-responsive-iframe" src="https://www.google.com/maps/d/embed?mid=13KuUCKDzRegHkicMqn5wTJIj_JNX_3U-"></iframe>
+          <iframe className="travel-responsive-iframe" title="airport-map" src="https://www.google.com/maps/d/embed?mid=13KuUCKDzRegHkicMqn5wTJIj_JNX_3U-"></iframe>
         </div>
       </div>
       <div className="travel-section-header">
-        <img className="travel-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
+        <img className="travel-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
         <div className="travel-section-title">Trains</div>
       </div>
       <div className="travel-row">
@@ -86,7 +86,7 @@ const Travel = () => {
         {/* <div className="travel-col iframe-container"></div> */}
         </div>
         <div className="travel-section-header">
-          <img className="travel-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch Image" />
+          <img className="travel-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
           <div className="travel-section-title">Automobiles</div>
         <div className="travel-row ">
         <div className="travel-trains-autos">
