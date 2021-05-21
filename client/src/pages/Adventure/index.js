@@ -148,9 +148,9 @@ const Adventure = () => {
               </div>
             </div>
           </div>
-        <div className="lodging-map-mobile"><a href="https://www.google.com/maps/d/viewer?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en&ll=35.12503049999998%2C-120.57630149999999&z=11">View Activities on a map</a></div>
+        <div className="lodging-map-mobile"><a href="https://www.google.com/maps/d/u/0/viewer?mid=10fOYjk8xAIbeCnrEUTtnrRkLBTIxOt8B&ll=36.43550574117006%2C-121.87890555000001&z=11" target="_blank" rel="noopener noreferrer">View recommendations on a map</a></div>
         <div className="adventure-col adventure-iframe-container">
-          <iframe className="adventure-responsive-iframe" title="Big Sur Map"  src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
+          <iframe className="adventure-responsive-iframe" title="Big Sur Map" src="https://www.google.com/maps/d/embed?mid=10fOYjk8xAIbeCnrEUTtnrRkLBTIxOt8B&hl=en"></iframe>
         </div>
       </div>
       {/* Paso Robles */}
@@ -286,10 +286,11 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
               </div>
+              <div className="lodging-map-mobile"><a href="https://www.google.com/maps/d/u/0/viewer?mid=14GJoAqBHQv4BPbGikOa74sK5yWhaqLA1&ll=35.60582105686205%2C-120.65979145&z=12" target="_blank" rel="noopener noreferrer">View recommendations on a map</a></div>
             </div>
           </div>
         <div className="adventure-col adventure-iframe-container">
-          <iframe className="adventure-responsive-iframe" title="Paso Robles Map" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
+          <iframe className="adventure-responsive-iframe" title="Paso Robles Map" src="https://www.google.com/maps/d/embed?mid=14GJoAqBHQv4BPbGikOa74sK5yWhaqLA1&hl=en"></iframe>
         </div>
       </div>
       {/* San Luis Obispo */}
@@ -550,10 +551,11 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
               </div>
+              <div className="lodging-map-mobile"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1YWNYd1V0-P47Y7q_lzI4stIoBVEg14c8&ll=35.24459578575364%2C-120.72926775&z=11" target="_blank" rel="noopener noreferrer">View recommendations on a map</a></div>
             </div>
           </div>
         <div className="adventure-col adventure-iframe-container">
-          <iframe className="adventure-responsive-iframe" title="SLO Map" src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
+          <iframe className="adventure-responsive-iframe" title="SLO Map" src="https://www.google.com/maps/d/embed?mid=1YWNYd1V0-P47Y7q_lzI4stIoBVEg14c8" target="_blank" rel="noopener noreferrer"></iframe>
         </div>
       </div>
       {/* Santa Barbara County */}
@@ -756,6 +758,7 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
               </div>
+              <div className="lodging-map-mobile"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1lLgrCHh9hUS6eeHtKnHL8aHq6glkL9Ed&ll=34.420832100000005%2C-119.6982057&z=17" target="_blank" rel="noopener noreferrer">View recommendations on a map</a></div>
             </div>
           </div>
         <div className="adventure-col adventure-iframe-container">
@@ -854,10 +857,11 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
               </div>
+              <div className="lodging-map-mobile"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1o4VyfiVhzzx3Tnrsjk7hbVpG37Iku6lr&ll=34.12952402809401%2C-119.48143359999999&z=10" target="_blank" rel="noopener noreferrer">View recommendations on a map</a></div>
             </div>
           </div>
         <div className="adventure-col adventure-iframe-container">
-          <iframe className="adventure-responsive-iframe" title="Ventura Map"  src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
+          <iframe className="adventure-responsive-iframe" title="Ventura Map" src="https://www.google.com/maps/d/embed?mid=1o4VyfiVhzzx3Tnrsjk7hbVpG37Iku6lr&hl=en"></iframe>
         </div>
       </div>
     </main>
