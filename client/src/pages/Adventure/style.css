@@ -322,6 +322,10 @@
     padding-bottom: 10px;
   }
 
+  .adventure-image {
+    max-height: 175px;
+  }
+
   .Collapsible__trigger {
     padding-right: 100%;
   }
