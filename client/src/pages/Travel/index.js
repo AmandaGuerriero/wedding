@@ -5,7 +5,7 @@ const Travel = () => {
 
   return (
     <main>
-      <div className="travel-note">We recommend spending additional time exploring the area if you are able. See the Adventure page for ideas on what you can see, do, and eat/drink!</div>
+      <div className="travel-note">We recommend spending additional time exploring the area if you are able. See the <a href="/adventure" className="hyperlink">Adventure page</a> for ideas on what you can see, do, and eat/drink!</div>
       <div className="travel-section-header">
         <img className="travel-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
         <div className="travel-section-title">Planes</div>
@@ -97,7 +97,7 @@ const Travel = () => {
             <div className="travel-car">Rental Cars</div>
             <div className="travel-trains-autos-info">
               <div className="travel-trains-autos-notes">We recommend renting a car for the weekend as public transportation in California leaves a bit to be desired (still waiting on that high speed rail....) and while there are many places to explore within 50 miles of Arroyo Grande, everything is still very spread out.<br /><br /></div>
-              <div className="travel-trains-autos-notes">If you are traveling from Los Angeles, beware of the vaunted LA traffic as it can add considerable time to your drive especially around the 101/405 interchange, Ventura, and Santa Barbara area. Also, your GPS may try to take you on the 154 after Santa Barbara which definitely the scenic route but does not usually save time over staying on the 101.</div>
+              <div className="travel-trains-autos-notes">If you are traveling from Los Angeles, beware of the vaunted LA traffic as it can add considerable time to your drive especially around the 101/405 interchange, Ventura, and Santa Barbara area. Also, your GPS may try to take you on the 154 after Santa Barbara, which is definitely the more scenic (also more treacherous) route, however it does not usually save time over just staying on the 101.</div>
             </div>
           </div>
            {/* Rideshare */}
@@ -105,7 +105,7 @@ const Travel = () => {
             <img className="travel-bullet-icon" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/bullet-point.png" alt="Star icon as bullet point" />
             <div className="travel-car">Rideshare</div>
             <div className="travel-trains-autos-info">
-              <div className="travel-trains-autos-notes">Uber and Lyft are readily available in Pismo Beach, San Luis Obisbo, and Arroyo Grande however if you are staying off the beaten trail, it may take longer than usual to get one.</div>
+              <div className="travel-trains-autos-notes">Uber and Lyft are readily available in Pismo Beach, San Luis Obisbo, and Arroyo Grande. However, if you are staying off the beaten trail, it may take longer to get one.</div>
             </div>
           </div>
         </div>
