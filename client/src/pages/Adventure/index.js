@@ -5,10 +5,11 @@ import Collapsible from 'react-collapsible';
 const Adventure = () => {
   return (
     <main>
-      <div className="adventure-note">We know this is a bit of a destination wedding for most of our guests, but we really wanted to be able to share a region of California that we love so much with everyone else. If time allows, we encourage you to take some time to explore the region that has brought us so much joy over the numerous trips we’ve taken up there.</div>
-      <div className="adventure-note">Below is an extensive list of the things to see, do, eat, and drink that we hope will be helpful for you in planning your own Central Coast adventure!</div>
+      <div className="adventure-note">We know this is a bit of a destination wedding for most of our guests, but we really wanted to be able to share a region of California that we love so much with everyone else. If time allows, we encourage you to explore the region that has brought us so much joy over the numerous trips we’ve taken up there.</div>
+      <div className="adventure-note">Below is an extensive list of the things to see, do, eat, and drink that we hope will be helpful for you in planning your own Central Coast adventure! If you have questions or need advice on anything, we are more than happy to help, so please reach feel free to reach out directly at <a className="hyperlink" href="mailto:amandaeric2022@gmail.com">amandaeric2022@gmail.com</a></div>
+      <div className="anchor-links"><a className="hyperlink" href="#big-sur">Big Sur</a>&nbsp; | &nbsp;<a className="hyperlink" href="#paso-robles">Paso Robles</a>&nbsp; | &nbsp;<a className="hyperlink" href="#slo">San Luis Obispo</a>&nbsp; | &nbsp;<a className="hyperlink" href="#sb">Santa Barbara</a>&nbsp; | &nbsp;<a href="#ventura" className="hyperlink">Ventura</a></div>
       {/* Big Sur */}
-      <div className="adventure-section-header">
+      <div className="adventure-section-header" id="big-sur">
         <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
         <div className="adventure-section-title">Big Sur</div>
       </div>
@@ -35,14 +36,14 @@ const Adventure = () => {
                       <div>•</div>
                       <div className="adventure-name">17-MILE DRIVE&nbsp;&nbsp;|</div><div className="adventure-town">MONTEREY</div>
                     </div>
-                      <div className="adventure-detail">Very famous drive around the Pebble Beach peninsula with numerous beautiful ocean views and while it is only, you guessed it, 17 miles, it takes a lot at least an hour and a half to drive. Restless Sea (Mile 4) and Lone Cyprus (Mile 12) are our favorites.</div>
+                      <div className="adventure-detail">Very famous drive around the Pebble Beach peninsula with numerous beautiful ocean views and while it is only, you guessed it, 17 miles, it takes at least an hour and a half to drive. Restless Sea (Mile 4) and Lone Cyprus (Mile 12) are our favorites.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
                       <div className="adventure-name">HIGHWAY 1</div>
                     </div>
-                      <div className="adventure-detail">Amanda has driven it 6+ times and Eric has driven it once and run it once, and we would do it again tomorrow given the chance. It takes a long time to drive and is almost impossible to turn around on so you’ll want to stop at pretty much every vista point. It is one of the most stunningly beautiful places we’ve ever been and is a bucket-list type item.</div>
+                      <div className="adventure-detail">Amanda has driven it 6+ times, Eric has driven it once and run it once, and we would do it again tomorrow given the chance. It takes a long time to drive and is almost impossible to turn around on so you’ll want to stop at pretty much every vista point. It is one of the most stunningly beautiful places we’ve ever been and is a bucket-list type item.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -75,14 +76,14 @@ const Adventure = () => {
                       <div>•</div>
                       <div className="adventure-name">GOLF</div>
                     </div>
-                      <div className="adventure-detail">We’ve never tried to golf at any of these famous courses, but they all look beautiful (just very expensive)! Pebble Beach, Poppy Hills, Links at Spanish Bay, Pacific Grove Gofl Links</div>
+                      <div className="adventure-detail">We’ve never tried to golf at any of these famous courses, but they all look beautiful (and also very expensive)! Pebble Beach, Poppy Hills, Links at Spanish Bay, and Pacific Grove Golf Links are some options.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
                       <div className="adventure-name">AQUARIUM&nbsp;&nbsp;|</div><div className="adventure-town">MONTEREY</div>
                     </div>
-                      <div className="adventure-detail">We’ve haven’t been yet but it’s supposed to be one of the better aquariums in the country.</div>
+                      <div className="adventure-detail">We’ve haven’t been yet, but it’s supposed to be one of the better aquariums in the country.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -134,7 +135,7 @@ const Adventure = () => {
                     <div>•</div>
                     <div className="adventure-name">CARMEL CRAFT BREWING&nbsp;&nbsp;|</div><div className="adventure-town">CARMEL</div>
                   </div>
-                    <div className="adventure-detail">Haven’t actually been but it looks cool</div>
+                    <div className="adventure-detail">Haven’t actually been, but it looks cool.</div>
                 </ul>
                 <ul className="adventure-entry">
                   <div className="adventure-header">
@@ -154,7 +155,7 @@ const Adventure = () => {
         </div>
       </div>
       {/* Paso Robles */}
-      <div className="adventure-section-header">
+      <div className="adventure-section-header" id="paso-robles">
         <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
         <div className="adventure-section-title">Paso Robles</div>
       </div>
@@ -173,27 +174,27 @@ const Adventure = () => {
             <div className="adventure-summary">Paso Robles, Templeton, and Atascadero</div>
             <div className="adventure-info">
               <div className="adventure-description">While this area is very pretty and there probably are some good outdoor activities you can seek out, most of our recommendations here revolve around food and drink.</div>
-                {/* SEE */}
-                <Collapsible trigger="SEE" triggerWhenOpen="SEE" className="accordion fa fa-caret-right">
+                {/* EAT */}
+                <Collapsible trigger="EAT" triggerWhenOpen="EAT" className="accordion fa fa-caret-right">
                 <div className="adventure-options-links">
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">FISH GAUCHO</div>
+                      <div className="adventure-name">FISH GAUCHO&nbsp;&nbsp;|</div><div className="adventure-town">Paso Robles</div>
                     </div>
                       <div className="adventure-detail">Incredible seafood place in downtown Paso.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">TASTE</div>
+                      <div className="adventure-name">TASTE&nbsp;&nbsp;|</div><div className="adventure-town">Paso Robles</div>
                     </div>
                       <div className="adventure-detail">If you can’t decide and just want a little of everything, this is the place for you! It specializes in small plates ranging from burgers to brussels to mac n’ cheese, so you can order 2, 3, or 4 of the small bites you want. We have had food from here many times and love it every time. Has a 2nd location in SLO.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
-                      <div className="adventure-name">TIN CITY</div>
+                      <div className="adventure-name">TIN CITY&nbsp;&nbsp;|</div><div className="adventure-town">Paso Robles</div>
                     </div>
                       <div className="adventure-detail">A few miles south of downtown Paso, this area has a little bit of everything. With breweries, restaurants, distilleries, wineries, and ice cream shops, Tin City is a good place to spend an afternoon or just wind down after a day of wine tasting.</div>
                   </ul>
@@ -202,7 +203,7 @@ const Adventure = () => {
                 {/* WINERY */}
                 <Collapsible trigger="WINERIES" triggerWhenOpen="WINERIES" className="accordion fa fa-caret-right">
                 <div className="adventure-options-links">
-                  <div className="drinking-note">Paso is a huge AVA with over 100 different wineries where most tastings ranging from $15-30. Below are a selection of our favorites.</div>
+                  <div className="drinking-note">Paso is a huge AVA with over 100 different wineries and where most tastings range from $15-30. Below is a selection of our favorites.</div>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
@@ -215,7 +216,7 @@ const Adventure = () => {
                       <div>•</div>
                       <div className="adventure-name">STILL WATERS</div>
                     </div>
-                      <div className="adventure-detail">Stillwaters boasts very good olive and solid wine that, while it might be the best in the region, is more than made up for by the friendly service and lovely outdoor area.</div>
+                      <div className="adventure-detail">Stillwaters boasts very good olive oil and solid wine that, while it might not be the best in the region, is more than made up for by the friendly service and lovely outdoor area.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -250,7 +251,7 @@ const Adventure = () => {
                       <div>•</div>
                       <div className="adventure-name">FOUR LANTERNS</div>
                     </div>
-                      <div className="adventure-detail">Family owned winery with very good wine.</div>
+                      <div className="adventure-detail">Family owned winery with very good wine and a relaxing outdoor space.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -269,7 +270,7 @@ const Adventure = () => {
                       <div>•</div>
                       <div className="adventure-name">FIRESTONE</div>
                     </div>
-                      <div className="adventure-detail">A staple of the California beer scene, the main brewing facility is located in Paso and features an enormous tasting room/restaurant.</div>
+                      <div className="adventure-detail">A staple of the California beer scene, the main brewing facility is located in Paso and features an enormous tasting room and restaurant.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -294,7 +295,7 @@ const Adventure = () => {
         </div>
       </div>
       {/* San Luis Obispo */}
-      <div className="adventure-section-header">
+      <div className="adventure-section-header" id="slo">
         <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
         <div className="adventure-section-title">San Luis Obispo</div>
       </div>
@@ -312,7 +313,7 @@ const Adventure = () => {
           <div className="adventure-section">
             <div className="adventure-summary">SLO, Edna Valley, Pismo Beach, Avila Beach, and Morro Bay</div>
             <div className="adventure-info">
-              <div className="adventure-description">The region surrounding our venue includes a number of small towns that each has their own unique recreational options.</div>
+              <div className="adventure-description">The region surrounding our venue includes a number of small towns and each has their own unique recreational options.</div>
                 {/* SEE */}
                 <Collapsible trigger="SEE" triggerWhenOpen="SEE" className="accordion fa fa-caret-right">
                 <div className="adventure-options-links">
@@ -559,7 +560,7 @@ const Adventure = () => {
         </div>
       </div>
       {/* Santa Barbara County */}
-      <div className="adventure-section-header">
+      <div className="adventure-section-header" id="sb">
         <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
         <div className="adventure-section-title">Santa Barbara</div>
       </div>
@@ -766,7 +767,7 @@ const Adventure = () => {
         </div>
       </div>
         {/* Ventura County */}
-        <div className="adventure-section-header">
+        <div className="adventure-section-header" id="ventura">
         <img className="adventure-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
         <div className="adventure-section-title">Ventura County</div>
       </div>
