@@ -7,7 +7,7 @@ router.route("/")
   .post(updatesController.create)
 
 // Matches with "/api/updates/:email
-router.route("/:email")
+router.route("/:id")
   .delete(updatesController.delete)
 
 module.exports = router;
