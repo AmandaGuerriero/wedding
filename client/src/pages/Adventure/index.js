@@ -643,7 +643,7 @@ const Adventure = () => {
                       <div>•</div>
                       <div className="adventure-name">ANDERSON'S SPLIT PEA SOUP&nbsp;&nbsp;|</div><div className="adventure-town">BUELLTON</div>
                     </div>
-                      <div className="adventure-detail">Buellton is famous as being the home to Anderson’s Split Pea Soup. It's pretty good soup but probably only worth the stop if you either really like pea soup or are looking for something very ridiculous to stop at.</div>
+                      <div className="adventure-detail">Buellton is famous for being the home to Anderson’s Split Pea Soup. It's pretty good soup but probably only worth the stop if you either really like pea soup or are looking for a very ridiculous place to stop.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -657,7 +657,7 @@ const Adventure = () => {
                       <div>•</div>
                       <div className="adventure-name">OLIVE OIL TASTING&nbsp;&nbsp;|</div><div className="adventure-town">LOS OLIVOS</div>
                     </div>
-                      <div className="adventure-detail">Olive Oil Farms does good olive oil and balsamic tasting in Los Olivos and just outside of the town, Rancho Olivos does olive oil tasting with a pudgy corgi.</div>
+                      <div className="adventure-detail">Olive Oil Farms does good olive oil and balsamic tasting in Los Olivos while Rancho Olivos is located just outside town and features a pudgy corgi.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -695,14 +695,14 @@ const Adventure = () => {
                       <div>•</div>
                       <div className="adventure-name">CAMBRIA</div>
                     </div>
-                      <div className="adventure-detail">Cambria is probably one of our favorite wineries and very highly recommend the trip out there.</div>
+                      <div className="adventure-detail">Cambria is probably one of our favorite wineries so we very highly recommend the trip out there.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
                       <div className="adventure-name">PRESQU'ILE</div>
                     </div>
-                      <div className="adventure-detail">The name and place are a little pretentious but the tasting room and view are spectacular. Their wine was also pretty solid.</div>
+                      <div className="adventure-detail">The name and place are a little pretentious but the tasting room and views are spectacular. Their wine was also pretty solid.</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -718,7 +718,7 @@ const Adventure = () => {
                     </div>
                       <div className="adventure-detail">Tasting room was nothing special but the wine was solid.</div>
                   </ul>
-                  <div className="drinking-note">The Santa Ynez AVA is probably in between Edna Valley and Paso in terms of price and quality of wine. We’ve gone to a few wineries here and haven’t been blown away by any of the experiences, but the wine is very solid.</div>
+                  <div className="drinking-note">The Santa Ynez AVA is probably in between Edna Valley and Paso in terms of price and quality of wine. We’ve gone to a few wineries here and haven’t been blown away by any of the experiences, but the wine is very good.</div>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
@@ -819,16 +819,11 @@ const Adventure = () => {
                 {/* Brewereis */}
                 <Collapsible trigger="BREWERIES" triggerWhenOpen="BREWERIES" className="accordion fa fa-caret-right">
                 <div className="adventure-options-links">
+                  <div className="drinking-note">There are a number of breweries in the area but here are a few of our favorites.</div>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
                       <div className="adventure-name">TOPA TOPA&nbsp;&nbsp;|</div><div className="adventure-town">VENTURA</div>
-                    </div>
-                  </ul>
-                  <ul className="adventure-entry">
-                    <div className="adventure-header">
-                      <div>•</div>
-                      <div className="adventure-name">SURF&nbsp;&nbsp;|</div><div className="adventure-town">OXNARD</div>
                     </div>
                   </ul>
                   <ul className="adventure-entry">
