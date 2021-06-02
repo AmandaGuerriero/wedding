@@ -16,10 +16,10 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  delete: function(req, res) {
+  delete: function({ params }, res) {
     db.updates
-      .findOneAndDelete(req.params.emailAddress)
+      .findOneAndDelete({ _id: params.id })
       .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
+      .catch(err => res.json(err));
   }
 }

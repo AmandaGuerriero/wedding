@@ -30,6 +30,11 @@ export default {
     return axios.post("/api/updatesAmandaEric05300716", updatesData);
   },
 
+  // Deletes a user from the database
+  deleteUpdates: function(updatesData) {
+    return axios.delete("/api/updatesAmandaEric05300716/:id", updatesData);
+  },
+
   getUser: function() {
     return axios.get("/api/users/:email");
   },

@@ -12,6 +12,10 @@
   text-decoration: underline;
 }
 
+.back-to-top {
+  padding-left: 25px;
+}
+
 .anchor-links > a:hover{
   color: var(--pinotcolor);
 }
