@@ -16,6 +16,10 @@
   padding-left: 25px;
 }
 
+.back-to-top > a:hover {
+  color: var(--pinotcolor);
+}
+
 .anchor-links > a:hover{
   color: var(--pinotcolor);
 }
