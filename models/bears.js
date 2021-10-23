@@ -12,6 +12,7 @@ const bearsSchema = new Schema({
   }
 });
 
+
 const bears = mongoose.model("BEARS", bearsSchema);
 
 module.exports = bears;

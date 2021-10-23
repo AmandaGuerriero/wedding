@@ -58,7 +58,7 @@ function BearsForm() {
         </div>
         <div>
           <label htmlFor="amount">Amount:</label>
-          <input type="text" name="amount" defaultValue={amount} onBlur={handleChange} />
+          <input type="number" name="amount" defaultValue={amount} onBlur={handleChange} />
         </div>
         <button data-testid="button" type="submit">Submit</button>
       </form>
