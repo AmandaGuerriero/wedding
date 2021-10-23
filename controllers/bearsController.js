@@ -1,11 +1,11 @@
 const db = require("../models");
 
-// Defining methods for the giftController
+// Defining methods for the bearsController
 module.exports = {
   
-  // Gifts Controllers
+  // Bears Controllers
   findAll: function(req, res) {
-    db.gifts
+    db.bears
       .find(req.query)
       .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
@@ -18,21 +18,21 @@ module.exports = {
   //     .catch(err => res.status(422).json(err));
   // },
   create: function(req, res) {
-    db.gifts
+    db.bears
       .create(req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
-  },
+  }
   // update: function(req, res) {
   //   db.rsvp
   //     .findOneAndUpdate({ _id: req.params.id }, req.body)
   //     .then(dbModel => res.json(dbModel))
   //     .catch(err => res.status(422).json(err));
   // },
-  delete: function(req, res) {
-    db.rsvp
-      .findOneAndDelete(req.params.name)
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
-  }
+  // delete: function(req, res) {
+  //   db.bears
+  //     .findOneAndDelete(req.params.name)
+  //     .then(dbModel => res.json(dbModel))
+  //     .catch(err => res.status(422).json(err));
+  // }
 };

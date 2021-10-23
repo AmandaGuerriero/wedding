@@ -1,10 +1,15 @@
 const router = require("express").Router();
-const giftController = require("../../controllers/giftController");
+const bearsController = require("../../controllers/bearsController");
 
-// Matches with "/api/gifts"
-router.route("/")
-  .get(giftController.findAll)
-  .post(giftController.create);
+// Matches with "/api/bears"
+router.route("/bears")
+  .get(bearsController.findAll)
+  .post(bearsController.create);
+
+// // Matches with "/api/alaska"
+// router.route("/alaska")
+//   .get(giftController.findAll)
+//   .post(giftController.create);
 
 // Below this doesn't work - will need to fix to use
 // // Matches with "/api/gifts/:id"
