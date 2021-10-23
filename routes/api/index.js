@@ -3,6 +3,7 @@ const rsvpRoutes = require("./rsvp");
 const updatesRoutes = require("./updates");
 const loginRoutes = require("./login");
 const userRoutes = require('./user.js');
+const giftRoutes = require('./registry.js');
 
 // Updates routes
 router.use("/updatesAmandaEric05300716", updatesRoutes);
@@ -15,6 +16,9 @@ router.use("/rsvp", rsvpRoutes);
 
 // User routes
 router.use('/users', userRoutes);
+
+// Gift routes
+router.use('/gifts', giftRoutes);
 
 
 module.exports = router;

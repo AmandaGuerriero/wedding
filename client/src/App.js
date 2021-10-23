@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Rsvp from "./pages/Rsvp";
+import Registry from "./pages/Registry/index";
 import Home from "./pages/Home"
 import Story from "./pages/Story"
 import Adventure from "./pages/Adventure"
@@ -53,6 +54,7 @@ class App extends React.Component {
           <Route exact path="/lodging" component={Lodging} />
           <Route exact path="/travel" component={Travel} />
           <Route exact path="/adventure" component={Adventure} />
+          <Route exact path="/registry" component={Registry} />
           <Route exact path="/details" component={Details} />
           <Route exact path="/schedule" component={Schedule} />
           <Route exact path="/register-for-updates" component={Updates} />
