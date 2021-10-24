@@ -30,6 +30,11 @@ export default {
     return axios.post("/api/gifts/bears", bearsData);
   },
 
+  // Gets all Total Contributions
+  getTotals: function() {
+    return axios.get("/api/amounts");
+    },
+
   // Gets all registered guests to send updates
   getUpdates: function() {
     return axios.get("/api/updatesAmandaEric05300716");

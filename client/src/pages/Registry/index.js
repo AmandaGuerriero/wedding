@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Component } from "react";
 import { Link, useParams } from "react-router-dom";
 import API from "../../utils/API";
 import './style.css';
+import ProgressBar from "../../components/ProgressBar";
 
 function BearsForm() {
   const [formState, setFormState] = useState({ name: '', amount: ''});
@@ -20,6 +21,19 @@ function BearsForm() {
       console.log('Submit Form', formState);
       triggerSuccess(name, amount) 
   };
+
+  function bearTotals() {
+    API.getTotals()
+    .then(response => console.log(response.data))
+    .then(data => console.log(data))
+    .catch(err => console.log(err));
+    displayBears()
+  }
+
+  function displayBears(total) {
+    console.log(total)
+  }
+
 
   const handleChange = (e) => {
     // if (e.target.name === 'email') {
@@ -47,6 +61,8 @@ function BearsForm() {
     window.location.href = "/"
   }
 
+  bearTotals()
+
   return (
     <section>
       <h1>Help us see the Bears</h1>
@@ -62,6 +78,7 @@ function BearsForm() {
         </div>
         <button data-testid="button" type="submit">Submit</button>
       </form>
+      <ProgressBar/>
     </section>
   );
 }
