@@ -22,7 +22,7 @@ export default {
 
   // Gets all Bear Contributions
   getBears: function() {
-  return axios.get("/api/gifts/bears");
+    return axios.get("/api/gifts/bears");
   },
 
   // Saves an rsvp to the database
@@ -33,7 +33,7 @@ export default {
   // Gets all Total Contributions
   getTotals: function() {
     return axios.get("/api/amounts");
-    },
+  },
 
   // Gets all registered guests to send updates
   getUpdates: function() {

@@ -5,6 +5,13 @@ import './style.css';
 import ProgressBar from "../../components/ProgressBar";
 
 function BearsForm() {
+
+  class App extends Component{
+    constructor(props) {
+      super(props);
+      this.state = {response: null};
+    }
+  }
   const [formState, setFormState] = useState({ name: '', amount: ''});
 
   const [errorMessage, setErrorMessage] = useState('');
@@ -22,18 +29,17 @@ function BearsForm() {
       triggerSuccess(name, amount) 
   };
 
-  function bearTotals() {
+  async function bearTotals() {
     API.getTotals()
-    .then(response => console.log(response.data))
-    .then(data => console.log(data))
-    .catch(err => console.log(err));
-    displayBears()
-  }
-
-  function displayBears(total) {
-    console.log(total)
-  }
-
+    .then(response => {
+      console.log(response.data.[0].totalBears)
+      let totalBears = response.data.[0].totalBears
+      // this.setState({ response });
+    })
+    .catch(error => {
+      console.log(error)
+    })
+}
 
   const handleChange = (e) => {
     // if (e.target.name === 'email') {
@@ -79,6 +85,7 @@ function BearsForm() {
         <button data-testid="button" type="submit">Submit</button>
       </form>
       <ProgressBar/>
+      {/* <Component data={this.state.response.[0].totaBears} /> */}
     </section>
   );
 }
