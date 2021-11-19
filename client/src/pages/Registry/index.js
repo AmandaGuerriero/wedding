@@ -13,6 +13,7 @@ function BearsForm() {
     }
   }
   const [formState, setFormState] = useState({ name: '', amount: ''});
+  const [bears, setBears] = useState(null);
 
   const [errorMessage, setErrorMessage] = useState('');
   const { name, amount} = formState;
@@ -29,17 +30,30 @@ function BearsForm() {
       triggerSuccess(name, amount) 
   };
 
-  async function bearTotals() {
-    API.getTotals()
-    .then(response => {
-      console.log(response.data.[0].totalBears)
-      let totalBears = response.data.[0].totalBears
-      // this.setState({ response });
-    })
-    .catch(error => {
-      console.log(error)
-    })
-}
+  useEffect(() => {
+    bearTotals();
+
+    // we will use async/await to fetch this data
+    async function bearTotals() {
+      const response = await fetch("http://localhost:3000/api/amounts");
+      const data = await response.json();
+
+      // store the data into our books variable
+      setBears(data) ;
+    }
+  }, []);
+
+//   async function bearTotals() {
+//     API.getTotals()
+//     .then(response => {
+//       // console.log(response.data.[0].totalBears)
+//       // let totalBears = response.data.[0].totalBears
+//         setBears(response.data);
+//     })
+//     .catch(error => {
+//       console.log(error)
+//     })
+// }
 
   const handleChange = (e) => {
     // if (e.target.name === 'email') {
@@ -64,10 +78,9 @@ function BearsForm() {
 
   function triggerSuccess(name) {
     window.alert("Thank you," + name + "!" + "We are so excited to visit the bears!")
-    window.location.href = "/"
+    window.location.href = "/registry"
   }
 
-  bearTotals()
 
   return (
     <section>
@@ -85,7 +98,19 @@ function BearsForm() {
         <button data-testid="button" type="submit">Submit</button>
       </form>
       <ProgressBar/>
-      {/* <Component data={this.state.response.[0].totaBears} /> */}
+         {/* display books from the API */}
+    {bears && (
+      <div className="bears">
+
+        {/* loop over the books */}
+        {bears.map((bear, index) => (
+          <div key={index}>
+            <h2>{bear.totalBears}</h2>
+          </div>
+        ))}
+
+      </div>
+    )}
     </section>
   );
 }
