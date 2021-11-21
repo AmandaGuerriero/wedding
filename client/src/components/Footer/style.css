@@ -7,11 +7,10 @@
 
 /* Footer Styling */
 footer {
-  height: 40px;
   position: relative;
 	margin-top: -50px; /* negative value of footer height */
-	height: 30px;
-	clear:both;
+	height: 60px;
+	clear: both;
   bottom: 0;
   left: 0;
   position: fixed;
@@ -20,6 +19,14 @@ footer {
   color: var(--rieslingcolor);
   font-style: bold;
   text-align: center;
+}
+
+made-with-love{
+  font-size: 3vw;
+}
+
+browser-support {
+  font-size: 8px;
 }
 
 /* Responsive Styles */
