@@ -97,15 +97,16 @@ function BearsForm() {
         </div>
         <button data-testid="button" type="submit">Submit</button>
       </form>
-      <ProgressBar/>
+      {/* <ProgressBar/> */}
          {/* display books from the API */}
     {bears && (
       <div className="bears">
 
-        {/* loop over the books */}
+        {/* Bear Exeperience Progress */}
         {bears.map((bear, index) => (
           <div key={index}>
-            <h2>{bear.totalBears}</h2>
+            <ProgressBar value={bear.totalBears} max={900}/>
+            <div>${bear.totalBears} out of $900</div>
           </div>
         ))}
 
