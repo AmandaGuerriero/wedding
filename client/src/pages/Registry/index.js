@@ -4,7 +4,7 @@ import API from "../../utils/API";
 import './style.css';
 import ProgressBar from "../../components/ProgressBar";
 
-function BearsForm() {
+function GiftsForm() {
 
   class App extends Component{
     constructor(props) {
@@ -12,14 +12,15 @@ function BearsForm() {
       this.state = {response: null};
     }
   }
-  const [formState, setFormState] = useState({ name: '', amount: ''});
+  const [formState, setFormState] = useState({ name: '', amount: '', what: ''});
   const [bears, setBears] = useState(null);
 
   const [errorMessage, setErrorMessage] = useState('');
-  const { name, amount} = formState;
+  const { name, amount, what} = formState;
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (e.target.what === '') {
       API.saveBears({
         name: formState.name,
         amount: formState.amount
@@ -27,14 +28,15 @@ function BearsForm() {
         .then(response => response.json())
         .catch(err => console.log(err));
       console.log('Submit Form', formState);
-      triggerSuccess(name, amount) 
+      triggerSuccess(name, amount)
+    }
   };
 
   useEffect(() => {
-    bearTotals();
+    giftTotals();
 
     // we will use async/await to fetch this data
-    async function bearTotals() {
+    async function giftTotals() {
       const response = await fetch("http://localhost:3000/api/amounts");
       const data = await response.json();
 
@@ -43,17 +45,6 @@ function BearsForm() {
     }
   }, []);
 
-//   async function bearTotals() {
-//     API.getTotals()
-//     .then(response => {
-//       // console.log(response.data.[0].totalBears)
-//       // let totalBears = response.data.[0].totalBears
-//         setBears(response.data);
-//     })
-//     .catch(error => {
-//       console.log(error)
-//     })
-// }
 
   const handleChange = (e) => {
     // if (e.target.name === 'email') {
@@ -97,6 +88,10 @@ function BearsForm() {
             <label htmlFor="amount">Amount:</label>
             <input type="number" name="amount" defaultValue={amount} onBlur={handleChange} />
           </div>
+          <div>
+            <label htmlFor="radio">What:</label>
+            <input type="radio" name="radio" defaultValue={what} onBlur={handleChange} />
+          </div>
           <button data-testid="button" type="submit">Submit</button>
         </form>
       {/* display Bears from the API */}
@@ -111,10 +106,21 @@ function BearsForm() {
           ))}
         </div>
       )}
+      {bears && (
+        <div className="bears">
+          {/* Bear Exeperience Progress */}
+          {bears.map((bear, index) => (
+            <div key={index}>
+              <ProgressBar value={bear.totalTracy} max={900}/>
+              <div>${bear.totalTracy} out of $900</div>
+            </div>
+          ))}
+        </div>
+      )}
         </div>
       </div>
     </section>
   );
 }
 
-export default BearsForm;
+export default GiftsForm;
