@@ -84,34 +84,35 @@ function BearsForm() {
 
   return (
     <section>
-      <h1>Help us see the Bears</h1>
-      <h2>in Alaska</h2>
-      <form id="bears-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="amount">Amount:</label>
-          <input type="number" name="amount" defaultValue={amount} onBlur={handleChange} />
-        </div>
-        <button data-testid="button" type="submit">Submit</button>
-      </form>
-      {/* <ProgressBar/> */}
-         {/* display books from the API */}
-    {bears && (
-      <div className="bears">
-
-        {/* Bear Exeperience Progress */}
-        {bears.map((bear, index) => (
-          <div key={index}>
-            <ProgressBar value={bear.totalBears} max={900}/>
-            <div>${bear.totalBears} out of $900</div>
+      <div className="gifts-container">
+        <div className="bear-container gift">
+        <h1>Help us see the Bears</h1>
+        <h2>in Alaska</h2>
+        <form id="bears-form" onSubmit={handleSubmit}>
+          <div>
+            <label htmlFor="name">Name:</label>
+            <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
           </div>
-        ))}
-
+          <div>
+            <label htmlFor="amount">Amount:</label>
+            <input type="number" name="amount" defaultValue={amount} onBlur={handleChange} />
+          </div>
+          <button data-testid="button" type="submit">Submit</button>
+        </form>
+      {/* display Bears from the API */}
+      {bears && (
+        <div className="bears">
+          {/* Bear Exeperience Progress */}
+          {bears.map((bear, index) => (
+            <div key={index}>
+              <ProgressBar value={bear.totalBears} max={900}/>
+              <div>${bear.totalBears} out of $900</div>
+            </div>
+          ))}
+        </div>
+      )}
+        </div>
       </div>
-    )}
     </section>
   );
 }
