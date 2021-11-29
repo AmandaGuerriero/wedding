@@ -9,18 +9,25 @@ function GiftsForm() {
   class App extends Component{
     constructor(props) {
       super(props);
-      this.state = {response: null};
+      this.state = {option: "bears"};
     }
   }
-  const [formState, setFormState] = useState({ name: '', amount: '', what: ''});
+  const [formState, setFormState] = useState({ name: '', amount: '', what: '', });
   const [bears, setBears] = useState(null);
 
   const [errorMessage, setErrorMessage] = useState('');
   const { name, amount, what} = formState;
 
+  const options = [
+    {
+      label: "Bears",
+      value: "bears"
+    }
+  ]
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (e.target.what === '') {
+    if (e.target.option === 'bears') {
       API.saveBears({
         name: formState.name,
         amount: formState.amount
@@ -88,10 +95,11 @@ function GiftsForm() {
             <label htmlFor="amount">Amount:</label>
             <input type="number" name="amount" defaultValue={amount} onBlur={handleChange} />
           </div>
-          <div>
-            <label htmlFor="radio">What:</label>
-            <input type="radio" name="radio" defaultValue={what} onBlur={handleChange} />
-          </div>
+          <select>
+             {options.map((option) => (
+              <option value={option.value} onBlur={handleChange}>{option.label}</option>
+          ))}
+          </select>
           <button data-testid="button" type="submit">Submit</button>
         </form>
       {/* display Bears from the API */}
@@ -111,8 +119,8 @@ function GiftsForm() {
           {/* Bear Exeperience Progress */}
           {bears.map((bear, index) => (
             <div key={index}>
-              <ProgressBar value={bear.totalTracy} max={900}/>
-              <div>${bear.totalTracy} out of $900</div>
+              <ProgressBar value={bear.totalTracy} max={360}/>
+              <div>${bear.totalTracy} out of $360</div>
             </div>
           ))}
         </div>
