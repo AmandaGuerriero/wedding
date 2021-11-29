@@ -1,0 +1,18 @@
+* {box-sizing:border-box}
+.progress-bar {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  background-color: var(--rieslingcolor);
+  border-radius: .5rem;
+  border: 1px solid #333;
+}
+
+.filler {
+  background-color: var(--pinotcolor);
+  height: 100%;
+  border-radius: inherit;
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+}
