@@ -4,12 +4,20 @@ const Schema = mongoose.Schema;
 const bearsSchema = new Schema({
   name: { 
     type: String, 
-    required: true 
+    required: false 
   },
   amount: { 
     type: Number,
-    required: true
-  }
+    required: false
+  },
+  tracyName: { 
+    type: String,
+    required: false
+  },
+  tracyAmount: { 
+    type: Number,
+    required: false
+  },
 });
 
 

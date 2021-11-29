@@ -10,14 +10,19 @@ module.exports = {
             "_id": null,
             "totalBears": {
                 "$sum": "$amount"
+            },
+            "totalTracy": {
+                "$sum": "$tracyAmount"
             }
         }
-    }, {
+    }, 
+    {
         "$project": {
             "_id": 0
         }
-    }]).then(response => {
+    }])
+    .then(response => {
         res.status(200).send(response)
     }).catch(e => res.status(400).send())
-}
+  }
 }
