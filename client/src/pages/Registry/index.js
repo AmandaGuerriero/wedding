@@ -41,7 +41,7 @@ function GiftsForm() {
         .then(response => response.json())
         .catch(err => console.log(err));
       console.log('Submit Form', formState);
-      // triggerSuccess(name, amount)
+      triggerSuccess(nameTracy, amountTracy)
     }
   };
 
@@ -68,7 +68,7 @@ function GiftsForm() {
 
   const handleChangeTracy = (e) => {
     if (!errorMessage) {
-      setFormState({ ...formState, [e.target.nameTracy]: e.target.value });
+      setFormState({ ...formState, [e.target.name]: e.target.value });
       console.log('Handle Form', formState);
     }
   };
@@ -122,7 +122,7 @@ function GiftsForm() {
         <form id="tracy-form" onSubmit={handleSubmitTracy}>
           <div>
             <label htmlFor="name">Name:</label>
-            <input type="text" name="nameTracy" defaultValue={name} onBlur={handleChangeTracy} />
+            <input type="text" name="nameTracy" defaultValue={nameTracy} onBlur={handleChangeTracy} />
           </div>
           <div>
             <label htmlFor="name">Amount:</label>
