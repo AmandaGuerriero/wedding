@@ -109,7 +109,7 @@
 
 .lodging-link > a {
   background-color: transparent;
-  color: var(--olive);
+  color: var(--mediumpurple);
   text-align: left;
   text-decoration: underline;
   font-weight: 600;
@@ -173,7 +173,7 @@
 }
 
 .hotel-name-link:hover {
-  color: var(--olive);
+  color: var(--mediumpurple);
 }
 
 .hotel-header {
@@ -183,7 +183,7 @@
 
 .hotel-price {
   padding-left: 15px;
-  color: var(--olive);
+  color: var(--mediumpurple);
 }
 
 .hotel-info {
@@ -277,7 +277,7 @@
 
   .lodging-map-mobile > a {
     background-color: transparent;
-    color: var(--olive);
+    color: var(--mediumpurple);
     /* text-align: left; */
     text-decoration: underline;
     font-weight: 600;
