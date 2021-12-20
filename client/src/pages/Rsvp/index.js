@@ -68,17 +68,25 @@ function RsvpForm() {
                 <input type="text" name="stay" placeholder=" accomodation (if known)"defaultValue={stay} onBlur={handleChange} />
               </div>
             </div>
-            <div id="rsvp-reply-container" className="rsvp-container">
-              <h1>Testing</h1>
-              <div className="rsvp-reply">
-                <input type="radio" id="accept1" name="reply" value="accept1" onBlur={handleChange} />
-                <label htmlFor="accept1">accepts with gusto</label>
+            <div className="checkRadioContainer rsvp-replay-container">
+              <div className="options">
+                <label title="item1">
+                  <input type="radio" name="foo" value="0" /> 
+                  accepts with gusto
+                  <img />
+                </label>
+                <label title="item2">
+                  <input type="radio" name="foo" value="1" />
+                  accepts with indifference
+                  <img />
+                </label>   
+                <label title="item3">
+                  <input type="radio" name="foo" value="2" />
+                  declines with glee
+                  <img />
+                </label>
               </div>
-              <div className="rsvp-reply">
-                <input type="radio" id="accept2" name="reply" value="accept2" onBlur={handleChange} />
-                <label htmlFor="accept1">accepts with indifference</label>
               </div>
-            </div>
           </div>
           <button data-testid="button" type="submit">Submit</button>
         </form>

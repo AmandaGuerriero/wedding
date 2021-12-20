@@ -54,13 +54,40 @@ input {
   border-color: var(--pinotcolor)
 }
 
-#rsvp-reply-container {
+#rsvp-reply-container, div.options {
   text-align: right;
   margin-right: 15px;
   width: 100%;
 }
 
-.rsvp-reply {
+/* .rsvp-reply {
   display: flex;
+} */
+
+div.options > label > input {
+	visibility: hidden;
 }
 
+div.options > label {
+	display: block;
+	margin: 0 0 0 -10px;
+	padding: 0 0 20px 0;  
+  font-size: 25px;
+	height: 35px;
+	width: 100%;
+}
+
+div.options > label > img {
+	display: inline-block;
+	padding: 0px;
+	height:30px;
+	width:30px;
+	background: none;
+}
+
+div.options > label > input:checked +img {  
+	background: url(http://cdn1.iconfinder.com/data/icons/onebit/PNG/onebit_34.png);
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size:30px 30px;
+}
