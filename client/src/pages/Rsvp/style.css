@@ -1,0 +1,66 @@
+#rsvp-border {
+  max-width: 80%;
+  max-height: auto;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px black solid;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+#rsvp-header {
+  text-align: center;
+  color: var(--pinotcolor);
+  background-color: transparent;
+  /* font-family: 'Barcelony', serif, 'Times New Roman', Times, serif; */
+}
+
+.rsvp-respond {
+  font-size: 7.5vw;
+  font-style: italic;
+}
+
+.rsvp-when {
+  font-size: 6.5vw;
+  margin-top: -15px;
+  font-style: italic;
+}
+
+#rsvp-who {
+  display: flex
+}
+
+.rsvp-container {
+  flex: 1;
+  width: 100%;
+}
+
+#rsvp-info-container {
+  text-align: left;
+  margin-left: 15px;
+  width: 100%;
+}
+
+.rsvp-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 90%;
+  font-weight: 400;
+  font-style: italic;
+  border-color: var(--pinotcolor)
+}
+
+#rsvp-reply-container {
+  text-align: right;
+  margin-right: 15px;
+  width: 100%;
+}
+
+.rsvp-reply {
+  display: flex;
+}
+
