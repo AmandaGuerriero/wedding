@@ -1,5 +1,5 @@
 #rsvp-border {
-  max-width: 80%;
+  max-width: 60%;
   max-height: auto;
   width: auto;
   margin-left: auto;
@@ -17,12 +17,12 @@
 }
 
 .rsvp-respond {
-  font-size: 7.5vw;
+  font-size: 5.5vw;
   font-style: italic;
 }
 
 .rsvp-when {
-  font-size: 6.5vw;
+  font-size: 4.5vw;
   margin-top: -15px;
   font-style: italic;
 }
@@ -54,34 +54,37 @@ input {
   border-color: var(--pinotcolor)
 }
 
-#rsvp-reply-container, div.options {
+#rsvp-reply-container {
   text-align: right;
   margin-right: 15px;
   width: 100%;
+  display: inline;
 }
 
-/* .rsvp-reply {
-  display: flex;
-} */
+div.options {
+  text-align: right;
+  margin-right: 15px;
+  width: 100%;
+  display: inline;
+}
 
 div.options > label > input {
 	visibility: hidden;
 }
 
 div.options > label {
-	display: block;
+	/* display: block; */
 	margin: 0 0 0 -10px;
-	padding: 0 0 20px 0;  
-  font-size: 25px;
-	height: 35px;
+  font-size: 16px;
+	height: 15px;
 	width: 100%;
 }
 
 div.options > label > img {
 	display: inline-block;
 	padding: 0px;
-	height:30px;
-	width:30px;
+	height: 30px;
+	width: 30px;
 	background: none;
 }
 

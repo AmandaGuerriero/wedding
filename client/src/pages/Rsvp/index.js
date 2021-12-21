@@ -68,21 +68,26 @@ function RsvpForm() {
                 <input type="text" name="stay" placeholder=" accomodation (if known)"defaultValue={stay} onBlur={handleChange} />
               </div>
             </div>
-            <div className="checkRadioContainer rsvp-replay-container">
+            <div className="rsvp-replay-container rsvp-container">
               <div className="options">
-                <label title="item1">
+                <label title="item1" className="rsvp-reply">
                   <input type="radio" name="foo" value="0" /> 
                   accepts with gusto
                   <img />
                 </label>
-                <label title="item2">
+                <label title="item2" className="rsvp-reply">
                   <input type="radio" name="foo" value="1" />
                   accepts with indifference
                   <img />
                 </label>   
-                <label title="item3">
+                <label title="item3" className="rsvp-reply">
                   <input type="radio" name="foo" value="2" />
-                  declines with glee
+                  declines with glee  
+                  <img />
+                </label>
+                <label title="item4" className="rsvp-reply">
+                  <input type="radio" name="foo" value="3" />
+                  declines with remorse
                   <img />
                 </label>
               </div>
