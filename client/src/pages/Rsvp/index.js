@@ -72,28 +72,50 @@ function RsvpForm() {
               <div className="options">
                 <label title="item1" className="rsvp-reply">
                   <input type="radio" name="foo" value="0" /> 
-                  accepts with gusto
+                  accepts with gusto &nbsp;
                   <img />
                 </label>
                 <label title="item2" className="rsvp-reply">
                   <input type="radio" name="foo" value="1" />
-                  accepts with indifference
+                  accepts with indifference &nbsp;
                   <img />
                 </label>   
                 <label title="item3" className="rsvp-reply">
                   <input type="radio" name="foo" value="2" />
-                  declines with glee  
+                  declines with glee &nbsp;
                   <img />
                 </label>
                 <label title="item4" className="rsvp-reply">
                   <input type="radio" name="foo" value="3" />
-                  declines with remorse
+                  declines with remorse &nbsp;
                   <img />
                 </label>
               </div>
               </div>
           </div>
+          <div id="rsvp-food">
+            <div id="food-options">
+            <div className="food-container">
+                <label title="food1">
+                  <input type="radio" name="foo" value="4" /> 
+                  tri-tip & chicken
+                  <img />
+                </label>
+                <label title="food2">
+                  <input type="radio" name="foo" value="5" />
+                  salmon
+                  <img />
+                </label>   
+                <label title="food3">
+                  <input type="radio" name="foo" value="6" />
+                  vegan paella
+                  <img />
+                </label>
+              </div>
+            </div>
           <button data-testid="button" type="submit">Submit</button>
+          </div>
+          
         </form>
       </div>
     </section>
