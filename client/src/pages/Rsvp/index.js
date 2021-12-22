@@ -4,42 +4,54 @@ import API from "../../utils/API";
 import './style.css';
 
 function RsvpForm() {
-  const [formState, setFormState] = useState({ name: '', email: '', stay: ''});
+  const [formState, setFormState] = useState({ name: '', email: '', stay: '', attendDetails: '', food: '', diet: ''});
+  const [rsvp, setRsvp] = useState(null);
 
   const [errorMessage, setErrorMessage] = useState('');
-  const { name, email, stay} = formState;
+  const { name, email, stay, attendDetails, food, diet} = formState;
 
   const handleSubmit = (e) => {
     e.preventDefault();
       API.saveRsvp({
         name: formState.name,
-        email: formState.email
+        emailAddress: formState.email,
+        // How to get this attending state?
+        // attending:
+        attendDetails: formState.attendDetails,
+        accom: formState.stay,
+        food: formState.food,
+        diet: formState.diet
       })
         .then(response => response.json())
         .catch(err => console.log(err));
-      console.log('Submit Form', formState);    
+      console.log('Submit Form', formState);  
+      triggerSuccess(name, email)  
   };
 
+  useEffect(() => {
+    rsvpResponse();
+
+    // we will use async/await to fetch this data
+    async function rsvpResponse() {
+      const response = await fetch("http://localhost:3000/api/rsvp");
+      const data = await response.json();
+
+      // store the data into our DB
+      setRsvp(data) ;
+    }
+  }, []);
+
   const handleChange = (e) => {
-    // if (e.target.name === 'email') {
-    //   const isValid = validateEmail(e.target.value);
-    //   if (!isValid) {
-    //     setErrorMessage('Your email is invalid.');
-    //   } else {
-    //     setErrorMessage('');
-    //   }
-    // } else {
-    //   if (!e.target.value.length) {
-    //     setErrorMessage(`${e.target.name} is required.`);
-    //   } else {
-    //     setErrorMessage('');
-    //   }
-    // }
     if (!errorMessage) {
       setFormState({ ...formState, [e.target.name]: e.target.value });
       console.log('Handle Form', formState);
     }
   };
+
+  function triggerSuccess(name) {
+    window.alert("Thank you," + name + "!" + "If you need to make any modifications, please use" + {email} + "as your email address.")
+    window.location.href = "/registry"
+  }
 
   return (
     <section>
@@ -60,12 +72,12 @@ function RsvpForm() {
               <div className="rsvp-info">
                 <label htmlFor="email"></label>
                 {/* Change name = to something meaningful */}
-                <input type="email" name="email" placeholder=" email@gmail.com"defaultValue={email} onBlur={handleChange} />
+                <input type="email" name="email" placeholder=" email@gmail.com" defaultValue={email} onBlur={handleChange} />
               </div>
               <div className="rsvp-info">
                 <label htmlFor="stay"></label>
                 {/* Change name = to something meaningful */}
-                <input type="text" name="stay" placeholder=" accomodation (if known)"defaultValue={stay} onBlur={handleChange} />
+                <input type="text" name="stay" placeholder=" accomodation (if known)" defaultValue={stay} onBlur={handleChange} />
               </div>
             </div>
             <div className="rsvp-replay-container rsvp-container">

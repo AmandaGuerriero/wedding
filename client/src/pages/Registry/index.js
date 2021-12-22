@@ -53,7 +53,7 @@ function GiftsForm() {
       const response = await fetch("http://localhost:3000/api/amounts");
       const data = await response.json();
 
-      // store the data into our books variable
+      // store the data into our DB
       setBears(data) ;
     }
   }, []);
