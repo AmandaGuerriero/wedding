@@ -70,7 +70,7 @@ div.options {
   /* width: 100%; */
 }
 
-div.options > label > input, div.food-container > label > input:checked +img {
+div.options > label > input, div.food-container > label > input {
 	visibility: hidden;
 }
 
@@ -81,7 +81,7 @@ div.options > label {
 	width: 95%;
 }
 
-div.options > label > img, div.food-container > label > input:checked +img {
+div.options > label > img, div.food-container > label > img {
 	display: inline-block;
 	padding: 0px;
 	height: 30px;
@@ -95,4 +95,25 @@ div.options > label > input:checked +img, div.food-container > label > input:che
 	background-position:center center;
 	background-size:30px 30px;
   background-color: var(--rieslingcolor);
+}
+
+#rsvp-food {
+  display: block;
+  text-align: center;
+}
+
+.food-options {
+  display: inline-block;
+}
+
+div.food-container > label {
+	margin: 0 0 0 -20px;
+  font-size: 16px;
+	height: 5px;
+}
+
+
+div.food-container {
+  color: var(--mediumpurple);
+  /* display: inline-grid; */
 }

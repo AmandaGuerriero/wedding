@@ -115,7 +115,6 @@ function RsvpForm() {
             </div>
           <button data-testid="button" type="submit">Submit</button>
           </div>
-          
         </form>
       </div>
     </section>
