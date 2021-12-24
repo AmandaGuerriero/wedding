@@ -13,6 +13,9 @@ module.exports = {
             },
             "totalTracy": {
                 "$sum": "$tracyAmount"
+            },
+            "totalHawaii": {
+                "$sum": "$hawaiiAmount"
             }
         }
     }, 
