@@ -84,23 +84,22 @@ function GiftsForm() {
       <div className="gifts-container">
         {/* Bears Gift */}
         <div className="bear-container gift">
-        <h1>Help us see the Bears</h1>
-        <h2>in Alaska</h2>
+          <div className="gift-title">
+            GRIZZLY BEAR VIEWING EXCURSION IN ANCHORAGE
+          </div>
+          <div className="gift-icon">
+
+          </div>
         <form id="bears-form" onSubmit={handleSubmit}>
-          <div>
+          <div className="gift-name">
             <label htmlFor="name">Name:</label>
             <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
           </div>
-          <div>
+          <div className="gift-amount">
             <label htmlFor="amount">Amount:</label>
             <input type="number" name="amount" defaultValue={amount} onBlur={handleChange} />
           </div>
-          {/* <select>
-             {options.map((option) => (
-              <option value={option.value} onBlur={handleChange}>{option.label}</option>
-          ))}
-          </select> */}
-          <button data-testid="button" type="submit">Submit</button>
+          <button data-testid="button" type="submit" className="gift-submit">Submit</button>
         </form>
       {/* display Bears from the API */}
       {bears && (

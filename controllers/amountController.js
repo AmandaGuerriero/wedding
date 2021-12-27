@@ -8,14 +8,41 @@ module.exports = {
     db.bears.aggregate([{
         "$group": {
             "_id": null,
+            "totalAlaska": {
+                "$sum": "$alaskaAmount"
+            },
             "totalBears": {
                 "$sum": "$amount"
             },
             "totalTracy": {
                 "$sum": "$tracyAmount"
             },
+            "totalKayak": {
+                "$sum": "$kayakAmount"
+            },
+            "totalTram": {
+                "$sum": "$tramAmount"
+            },
+            "totalSalmon": {
+                "$sum": "$salmonAmount"
+            },
             "totalHawaii": {
                 "$sum": "$hawaiiAmount"
+            },
+            "totalPoke": {
+                "$sum": "$pokeAmount"
+            },
+            "totalBeer": {
+                "$sum": "$beerAmount"
+            },
+            "totalSnorkel": {
+                "$sum": "$snorkelAmount"
+            },
+            "totalMamas": {
+                "$sum": "$mamasAmount"
+            },
+            "totalWailea": {
+                "$sum": "$waileaAmount"
             }
         }
     }, 
