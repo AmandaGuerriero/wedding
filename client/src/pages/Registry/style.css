@@ -13,12 +13,21 @@
 }
 
 .gift {
-  background: var(--mediumpurple);
-  border: 2px solid;
+  background-size: contain;
+  border: 2px solid var(--pinotcolor);
   padding: 20px;
   width: 400px;
 }
 
 .gift-icon {
-  text-align: center;
+  position:relative;
+  left:50%;
+  transform:translate(-50%);
+  height: 30%;
+  width: 30%;
+}
+
+.bear-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');
+  
 }
