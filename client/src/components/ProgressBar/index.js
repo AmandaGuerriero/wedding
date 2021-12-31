@@ -8,13 +8,12 @@ const Container = styled.div`
     appearance: none;
 
     ::-webkit-progress-bar {
-      height: 20px;
-      border-radius: 10px;
-      background-color: #eee;
+      height: 30px;
+      background-color: #42003E;
     }
 
     ::-webkit-progress-value {
-      height: 20px;
+      height: 30px;
       border-radius: 0px;
       background-color: ${props => props.color};
     }
@@ -23,12 +22,14 @@ const Container = styled.div`
 `;
 
 const ProgressBar = (props) => {
-  const {value, max, color, width} = props;
+  const {value, max, color, width, label} = props;
   return (
-    <Container color={color} width={width}>
-      <progress value={value} max={max} />
+      <div>
+      <Container color={color} width={width}>
+        <progress value={value} label={label} max={max}/>
+      </Container>
       <span>{Math.round((value / max) * 100)}%</span>
-    </Container>
+      </div>
   )
 };
 
@@ -36,13 +37,14 @@ ProgressBar.propTypes = {
   value: PropTypes.number.isRequired,
   max: PropTypes.number,
   color: PropTypes.string,
-  width: PropTypes.string
+  width: PropTypes.string,
+  label: PropTypes.string
 };
 
 // Sets the Default prop values
 ProgressBar.defaultProps = {
-  color: '#42003E',
-  width: '150px'
+  color: '#E9CB6D',
+  width: '100%'
 };
 
 

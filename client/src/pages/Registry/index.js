@@ -95,9 +95,11 @@ function GiftsForm() {
         <div className="bears">
           {/* Bear Exeperience Progress */}
           {bears.map((bear, index) => (
-            <div key={index}>
+            <div className="progress" key={index}>
+              <div className="bar">
               <ProgressBar value={bear.totalBears} max={900}/>
-              <div>${bear.totalBears} out of $900</div>
+              </div>
+              <div className="gift-totals">${bear.totalBears} out of $900</div>
             </div>
           ))}
         </div>
