@@ -12,6 +12,10 @@
   border: 1px solid rgb(138, 134, 134);
 }
 
+label {
+  margin-top: -25px;
+}
+
 .filler {
   background-color: var(--rieslingcolor);
   height: 100%;

@@ -11,11 +11,11 @@ function GiftsForm() {
       super(props);
     }
   }
-  const [formState, setFormState] = useState({ name: '', amount: '', nameTracy: '', amountTracy: '' });
+  const [formState, setFormState] = useState({ name: '', amount: '', nameTracy: '', amountTracy: '', nameKayak: '', amountKayak: ''  });
   const [bears, setBears] = useState(null);
 
   const [errorMessage, setErrorMessage] = useState('');
-  const { name, amount, nameTracy, amountTracy} = formState;
+  const { name, amount, nameTracy, amountTracy, nameKayak, amountKayak} = formState;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -42,6 +42,20 @@ function GiftsForm() {
         .catch(err => console.log(err));
       console.log('Submit Form', formState);
       triggerSuccess(nameTracy, amountTracy)
+    }
+  };
+
+  const handleSubmitKayak = (e) => {
+    e.preventDefault();
+    if (e.target.nameKayak != null) {
+      API.saveBears({
+        kayakName: formState.nameKayak,
+        kayakAmount: formState.amountKayak
+      })
+        .then(response => response.json())
+        .catch(err => console.log(err));
+      console.log('Submit Form', formState);
+      triggerSuccess(nameKayak, amountKayak)
     }
   };
 
@@ -73,6 +87,13 @@ function GiftsForm() {
     }
   };
 
+  const handleChangeKayak = (e) => {
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+      console.log('Handle Form', formState);
+    }
+  };
+
   function triggerSuccess(name) {
     window.alert("Thank you," + name + "!")
     window.location.href = "/registry"
@@ -82,66 +103,77 @@ function GiftsForm() {
   return (
     <section>
       <div className="gifts-container">
-        {/* Bears Gift */}
+      {/* Bears Gift */}
         <div className="bear-container gift">
-          <div className="gift-title">
-            GRIZZLY BEAR VIEWING EXCURSION IN ANCHORAGE
-          </div>
-          <div>
-           <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/BEARS.png' alt='Grizzly Bear' />
-          </div>
-      {/* display Bears from the API */}
-      {bears && (
-        <div className="bears">
-          {/* Bear Exeperience Progress */}
-          {bears.map((bear, index) => (
-            <div className="progress" key={index}>
-              <div className="bar">
-              <ProgressBar value={bear.totalBears} max={900}/>
+            <div className="gift-title">
+              GRIZZLY BEAR VIEWING EXCURSION IN ANCHORAGE
+            </div>
+            <div>
+            <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/BEARS.png' alt='Grizzly Bear' />
+            </div>
+        {/* Display Bears from the API */}
+        {bears && (
+          <div className="bears">
+            {/* Bears Exeperience Progress */}
+            {bears.map((bear, index) => (
+              <div key={index}>
+                <ProgressBar value={bear.totalBears} max={900}/>
+                <div className="amounts-display">
+                  <div className="amount-given">${bear.totalBears}</div> 
+                  <div className="total-amount">$900</div>
+                </div>
               </div>
-              <div className="gift-totals">${bear.totalBears} out of $900</div>
+            ))}
+          </div>
+        )}
+        {/* Submit Bears */}
+          <form id="bears-form" onSubmit={handleSubmit}>
+            <div className="gift-name">
+              <input type="text" name="name" defaultValue={name} placeholder="name" onBlur={handleChange} />
             </div>
-          ))}
-        </div>
-      )}
-        <form id="bears-form" onSubmit={handleSubmit}>
-          <div className="gift-name">
-            <label htmlFor="name">Name:</label>
-            <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-          </div>
-          <div className="gift-amount">
-            <label htmlFor="amount">Amount:</label>
-            <input type="number" name="amount" defaultValue={amount} onBlur={handleChange} />
-          </div>
-          <button data-testid="button" type="submit" className="gift-submit">Submit</button>
-        </form>
-      </div>
-      {/* Tracy Arm Gift */}
-      <div className="tracy-container gift">
-        <h1>Help us go to Tracy Arm</h1>
-        <h2>in Alaska</h2>
-        <form id="tracy-form" onSubmit={handleSubmitTracy}>
-          <div>
-            <label htmlFor="name">Name:</label>
-            <input type="text" name="nameTracy" defaultValue={nameTracy} onBlur={handleChangeTracy} />
-          </div>
-          <div>
-            <label htmlFor="name">Amount:</label>
-            <input type="number" name="amountTracy" defaultValue={amountTracy} onBlur={handleChangeTracy} />
-          </div>
-          <button data-testid="button" type="submit">Submit</button>
-        </form>
-      {bears && (
-        <div className="bears">
-          {/* Tracy Arm Exeperience Progress */}
-          {bears.map((bear, index) => (
-            <div key={index}>
-              <ProgressBar value={bear.totalTracy} max={360}/>
-              <div>${bear.totalTracy} out of $360</div>
+            <div className="amount-submit">
+              <div className="gift-amount">
+                <input type="number" name="amount" defaultValue={amount} placeholder="$0.00" onBlur={handleChange} />
+              </div>
+              <button data-testid="button" type="submit" className="gift-submit">submit</button>
             </div>
-          ))}
+          </form>
         </div>
-      )}
+      {/* Kayak Gift */}
+        <div className="kayak-container gift">
+          <div className="gift-title">
+              FJORD KAYAKING <br /> TOUR IN SEWARD
+            </div>
+            <div>
+            <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/KAYAK.png' alt='Kayak' />
+            </div>
+        {/* Display Kayak from the API */}
+        {bears && (
+          <div className="bears">
+            {/* Kayak Exeperience Progress */}
+            {bears.map((bear, index) => (
+              <div key={index}>
+              <ProgressBar value={bear.totalKayak} max={900}/>
+                <div className="amounts-display">
+                  <div className="amount-given">${bear.totalKayak}</div> 
+                  <div className="total-amount">$900</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+        {/* Submit Kayak */}
+        <form id="kayak-form" onSubmit={handleSubmitKayak}>
+        <div className="gift-name">
+              <input type="text" name="nameKayak" defaultValue={nameTracy} placeholder="name" onBlur={handleChangeKayak} />
+            </div>
+            <div className="amount-submit">
+              <div className="gift-amount">
+                <input type="number" name="amountKayak" defaultValue={amountTracy} placeholder="$0.00" onBlur={handleChangeKayak} />
+              </div>
+              <button data-testid="button" type="submit" className="gift-submit">submit</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>

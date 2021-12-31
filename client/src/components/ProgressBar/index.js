@@ -22,13 +22,13 @@ const Container = styled.div`
 `;
 
 const ProgressBar = (props) => {
-  const {value, max, color, width, label} = props;
+  const {value, max, color, width} = props;
   return (
       <div>
-      <Container color={color} width={width}>
-        <progress value={value} label={label} max={max}/>
-      </Container>
-      <span>{Math.round((value / max) * 100)}%</span>
+        <Container color={color} width={width}>
+          <progress value={value} max={max}/>
+        </Container>
+        {/* <div>{Math.round((value / max) * 100)}%</div> */}
       </div>
   )
 };
@@ -38,13 +38,13 @@ ProgressBar.propTypes = {
   max: PropTypes.number,
   color: PropTypes.string,
   width: PropTypes.string,
-  label: PropTypes.string
+  label: PropTypes.number
 };
 
 // Sets the Default prop values
 ProgressBar.defaultProps = {
   color: '#E9CB6D',
-  width: '100%'
+  width: '80%'
 };
 
 
