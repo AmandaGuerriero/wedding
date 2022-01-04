@@ -43,7 +43,10 @@ module.exports = {
             },
             "totalWailea": {
                 "$sum": "$waileaAmount"
-            }
+            },
+            "fullAlaska": {
+                "$sum": "$kayakAmount"
+            },
         }
     }, 
     {

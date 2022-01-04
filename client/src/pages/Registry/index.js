@@ -343,7 +343,6 @@ function GiftsForm() {
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
         </form>
-      
       </div>
       {/* Poke Gift */}
       <div className="poke-container gift">
@@ -705,7 +704,7 @@ function GiftsForm() {
           </div>
         </form>
       </div>
-    {/* Snorkel Gift */}
+      {/* Snorkel Gift */}
       <div className="snorkel-container gift">
         <div className="gift-title">
             SNORKELING TOUR <br /> IN MAUI
@@ -740,6 +739,25 @@ function GiftsForm() {
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
         </form>
+      </div>
+      {/* DONATIONS */}
+      <div className="donation-container">
+      {/* Hawaii Gift */}
+      <div className="snorkel-container gift">
+        <div className="gift-title">
+            AMANDA & ERIC <br /> ARE DONATING <br /> XX Amount
+          </div>
+      {/* Display Hawaii Donations from API */}
+      {bears && (
+        <div className="bears">
+          {bears.map((bear, index) => (
+            <div key={index}>
+            <div>{Math.round((bear.fullAlaska) * .0716)}</div>
+            </div>
+          ))}
+        </div>
+      )}
+        </div>
       </div>
     </div>
     </section>
