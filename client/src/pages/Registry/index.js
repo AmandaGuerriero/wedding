@@ -11,11 +11,11 @@ function GiftsForm() {
       super(props);
     }
   }
-  const [formState, setFormState] = useState({ name: '', amount: '', nameTracy: '', amountTracy: '', nameKayak: '', amountKayak: '', namePoke: '', amountPoke: '', nameMamas: '', amountMamas: '', nameHawaii: '', amountHawaii: '', nameWailea: '', amountWailea: '', nameSalmon: '', amountSalmon: ''  });
+  const [formState, setFormState] = useState({ name: '', amount: '', nameTracy: '', amountTracy: '', nameKayak: '', amountKayak: '', namePoke: '', amountPoke: '', nameMamas: '', amountMamas: '', nameHawaii: '', amountHawaii: '', nameWailea: '', amountWailea: '', nameSalmon: '', amountSalmon: '', nameAlaska: '', amountAlaska: '', nameBeer: '', amountBeer: '', nameTram: '', amountTram: '', nameSnorkel: '', amountSnorkel: '' });
   const [bears, setBears] = useState(null);
 
   const [errorMessage, setErrorMessage] = useState('');
-  const { name, amount, nameTracy, amountTracy, nameKayak, amountKayak, namePoke, amountPoke, nameMamas, amountMamas, nameHawaii, amountHawaii, nameWailea, amountWailea, nameSalmon, amountSalmon} = formState;
+  const { name, amount, nameTracy, amountTracy, nameKayak, amountKayak, namePoke, amountPoke, nameMamas, amountMamas, nameHawaii, amountHawaii, nameWailea, amountWailea, nameSalmon, amountSalmon, nameAlaska, amountAlaska, nameBeer, amountBeer, nameTram, amountTram, nameSnorkel, amountSnorkel, } = formState;
 
   
 
@@ -208,6 +208,94 @@ function GiftsForm() {
     }
   };
 
+  //Handle Alaska
+  const handleSubmitAlaska = (e) => {
+    e.preventDefault();
+    if (e.target.nameAlaska != null) {
+      API.saveBears({
+        alaskaName: formState.nameAlaska,
+        alaskaAmount: formState.amountAlaska
+      })
+        .then(response => response.json())
+        .catch(err => console.log(err));
+      console.log('Submit Form', formState);
+      triggerSuccess(nameAlaska, amountAlaska)
+    }
+  };
+
+  const handleChangeAlaska = (e) => {
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+      console.log('Handle Form', formState);
+    }
+  };
+
+  //Handle Beer
+  const handleSubmitBeer = (e) => {
+    e.preventDefault();
+    if (e.target.nameBeer != null) {
+      API.saveBears({
+        beerName: formState.nameBeer,
+        beerAmount: formState.amountBeer
+      })
+        .then(response => response.json())
+        .catch(err => console.log(err));
+      console.log('Submit Form', formState);
+      triggerSuccess(nameBeer, amountBeer)
+    }
+  };
+
+  const handleChangeBeer = (e) => {
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+      console.log('Handle Form', formState);
+    }
+  };
+
+  //Handle Tramway
+  const handleSubmitTram = (e) => {
+    e.preventDefault();
+    if (e.target.nameTram != null) {
+      API.saveBears({
+        tramName: formState.nameTram,
+        tramAmount: formState.amountTram
+      })
+        .then(response => response.json())
+        .catch(err => console.log(err));
+      console.log('Submit Form', formState);
+      triggerSuccess(nameTram, amountTram)
+    }
+  };
+
+  const handleChangeTram = (e) => {
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+      console.log('Handle Form', formState);
+    }
+  };
+
+  //Handle Snorkeling
+  const handleSubmitSnorkel = (e) => {
+    e.preventDefault();
+    if (e.target.nameSnorkel != null) {
+      API.saveBears({
+        snorkelName: formState.nameSnorkel,
+        snorkelAmount: formState.amountSnorkel
+      })
+        .then(response => response.json())
+        .catch(err => console.log(err));
+      console.log('Submit Form', formState);
+      triggerSuccess(nameSnorkel, amountSnorkel)
+    }
+  };
+
+  const handleChangeSnorkel = (e) => {
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+      console.log('Handle Form', formState);
+    }
+  };
+
   // Trigger Success
   function triggerSuccess(name) {
     window.alert("Thank you," + name + "!")
@@ -242,6 +330,7 @@ function GiftsForm() {
           ))}
         </div>
       )}
+      </div>
       {/* Submit Kayak */}
       <form id="kayak-form" onSubmit={handleSubmitKayak}>
       <div className="gift-name">
@@ -254,7 +343,7 @@ function GiftsForm() {
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
         </form>
-      </div>
+      
       </div>
       {/* Poke Gift */}
       <div className="poke-container gift">
@@ -368,7 +457,7 @@ function GiftsForm() {
       <div className="hawaii-container gift">
         <div className="gift-title">
             DINNER AT MAMA'S <br /> FISH HOUSE IN MAUI
-          </div>
+        </div>
           <div>
           <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/HAWAII.png' alt='Hawaii' />
           </div>
@@ -508,7 +597,151 @@ function GiftsForm() {
           </div>
         </form>
       </div>
+      {/* Alaska Gift */}
+      <div className="alaska-container gift">
+      <div className="gift-title">
+          6 NIGHT STATY <br /> IN ALASKA
+        </div>
+        <div>
+        <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/ALASKA.png' alt='Alaska' />
+        </div>
+    {/* Display Alaska from the API */}
+    {bears && (
+      <div className="bears">
+        {/* Alaska Exeperience Progress */}
+        {bears.map((bear, index) => (
+          <div key={index}>
+          <ProgressBar value={bear.totalAlaska} max={1500}/>
+            <div className="amounts-display">
+              <div className="amount-given">${bear.totalAlaska}</div> 
+              <div className="total-amount">$1500</div>
+            </div>
+          </div>
+        ))}
       </div>
+    )}
+    {/* Submit Alaska */}
+    <form id="alaska-form" onSubmit={handleSubmitAlaska}>
+    <div className="gift-name">
+          <input type="text" name="nameAlaska" defaultValue={nameAlaska} placeholder="name" onBlur={handleChangeAlaska} />
+        </div>
+        <div className="amount-submit">
+          <div className="gift-amount">
+            <input type="number" name="amountAlaska" defaultValue={amountAlaska} placeholder="$0.00" onBlur={handleChangeAlaska} />
+          </div>
+          <button data-testid="button" type="submit" className="gift-submit">submit</button>
+        </div>
+      </form>
+      </div>
+      {/* Beer Gift */}
+      <div className="beer-container gift">
+          <div className="gift-title">
+            KOHOLA & MAUI <br /> BREWING COMPANY BEER
+          </div>
+          <div>
+          <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/BEER.png' alt='Glass of Beer' />
+          </div>
+      {/* Display Beer from the API */}
+      {bears && (
+        <div className="bears">
+          {/* Bears Exeperience Progress */}
+          {bears.map((bear, index) => (
+            <div key={index}>
+              <ProgressBar value={bear.totalBeer} max={75}/>
+              <div className="amounts-display">
+                <div className="amount-given">${bear.totalBeer}</div> 
+                <div className="total-amount">$75</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+      {/* Submit Beer */}
+        <form id="beer-form" onSubmit={handleSubmitBeer}>
+          <div className="gift-name">
+            <input type="text" name="nameBeer" defaultValue={nameBeer} placeholder="name" onBlur={handleChangeBeer} />
+          </div>
+          <div className="amount-submit">
+            <div className="gift-amount">
+              <input type="number" name="amountBeer" defaultValue={amountBeer} placeholder="$0.00" onBlur={handleChangeBeer} />
+            </div>
+            <button data-testid="button" type="submit" className="gift-submit">submit</button>
+          </div>
+        </form>
+      </div>
+      {/* Tramway Gift */}
+      <div className="tram-container gift">
+        <div className="gift-title">
+            MOUNT ROBERTS <br /> TRAMWAY IN ANCHORAGE
+          </div>
+          <div>
+            <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TRAM.png' alt='Tram' />
+          </div>
+      {/* Display Tram from the API */}
+      {bears && (
+        <div className="bears">
+          {/* Tramway Exeperience Progress */}
+          {bears.map((bear, index) => (
+            <div key={index}>
+            <ProgressBar value={bear.totalTram} max={100}/>
+              <div className="amounts-display">
+                <div className="amount-given">${bear.totalTram}</div> 
+                <div className="total-amount">$100</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+      {/* Submit Tram */}
+      <form id="tram-form" onSubmit={handleSubmitTram}>
+      <div className="gift-name">
+            <input type="text" name="nameTram" defaultValue={nameTram} placeholder="name" onBlur={handleChangeTram} />
+          </div>
+          <div className="amount-submit">
+            <div className="gift-amount">
+              <input type="number" name="amountTram" defaultValue={amountTram} placeholder="$0.00" onBlur={handleChangeTram} />
+            </div>
+            <button data-testid="button" type="submit" className="gift-submit">submit</button>
+          </div>
+        </form>
+      </div>
+    {/* Snorkel Gift */}
+      <div className="snorkel-container gift">
+        <div className="gift-title">
+            SNORKELING TOUR <br /> IN MAUI
+          </div>
+          <div>
+          <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/SNORKEL.png' alt='Snorkeling' />
+        </div>
+      {/* Display Snorkel from the API */}
+      {bears && (
+        <div className="bears">
+          {/* Snorkel Exeperience Progress */}
+          {bears.map((bear, index) => (
+            <div key={index}>
+            <ProgressBar value={bear.totalSnorkel} max={300}/>
+              <div className="amounts-display">
+                <div className="amount-given">${bear.totalSnorkel}</div> 
+                <div className="total-amount">$300</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+      {/* Submit Snorkel */}
+      <form id="snorkel-form" onSubmit={handleSubmitSnorkel}>
+      <div className="gift-name">
+            <input type="text" name="nameSnorkel" defaultValue={nameSnorkel} placeholder="name" onBlur={handleChangeSnorkel} />
+          </div>
+          <div className="amount-submit">
+            <div className="gift-amount">
+              <input type="number" name="amountSnorkel" defaultValue={amountSnorkel} placeholder="$0.00" onBlur={handleChangeSnorkel} />
+            </div>
+            <button data-testid="button" type="submit" className="gift-submit">submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
     </section>
   );
 }

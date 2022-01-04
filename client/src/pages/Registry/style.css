@@ -46,12 +46,22 @@
   margin-top: 15px;
 }
 
-.gift-amount {
-  width: 30%;
+.gift-name {
+  width: 80%;
+  align-items: center;
 }
 
 .amount-submit {
   display: flex;
+  text-align: center;
+  align-items: flex-end;
+}
+
+.gift-amount {
+  width: 50%;
+  padding-left: 7px;
+  padding-right: 5px;
+  
 }
 
 .gift-submit {
@@ -87,11 +97,11 @@
 }
 
 .zelle-match-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-4.png');  
 }
 
 .zola-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-3.png');  
 }
 
 .kayak-container {
@@ -103,15 +113,15 @@
 }
 
 .tracy-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-3.png');  
 }
 
 .mamas-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-2.png');  
 }
 
 .hawaii-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-4.png');  
 }
 
 .bear-container {
