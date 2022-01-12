@@ -16,11 +16,7 @@
   padding-left: 25px;
 }
 
-.back-to-top > a:hover {
-  color: var(--hovercolor);
-}
-
-.anchor-links > a:hover{
+.back-to-top > a:hover, .hyperlink:hover, .anchor-links > a:hover {
   color: var(--hovercolor);
 }
 
@@ -43,7 +39,7 @@
   font-family: 'Barcelony', serif, 'Times New Roman', Times, serif;
   font-size: 40px;
   font-weight: 600;
-  color: var(--pinotcolor);
+  color: var(--mediumpurple);
   padding-left: 10px;
   padding-bottom: 10px;
   padding-right: 300px;
@@ -234,7 +230,7 @@
 }
 
 .adventure-town {
-  color: var(--mediumpurple);
+  color: var(--hovercolor);
   padding-left: 6px;
   font-weight: 400;
 }

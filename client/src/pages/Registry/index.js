@@ -305,6 +305,7 @@ function GiftsForm() {
 
   return (
     <section>
+      <h1>Coming Soon</h1>
       <div className="gifts-container">
       {/* Kayak Gift */}
       <div className="kayak-container gift">
