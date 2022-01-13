@@ -1,0 +1,119 @@
+#rsvp-border {
+  max-width: 60%;
+  max-height: auto;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px black solid;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+#rsvp-header {
+  text-align: center;
+  color: var(--pinotcolor);
+  background-color: transparent;
+  /* font-family: 'Barcelony', serif, 'Times New Roman', Times, serif; */
+}
+
+.rsvp-respond {
+  font-size: 5.5vw;
+  font-style: italic;
+}
+
+.rsvp-when {
+  font-size: 4.5vw;
+  margin-top: -15px;
+  font-style: italic;
+}
+
+#rsvp-who {
+  display: flex
+}
+
+.rsvp-container {
+  flex: 1;
+  width: 100%;
+}
+
+#rsvp-info-container {
+  text-align: left;
+  margin-left: 15px;
+  width: 100%;
+}
+
+.rsvp-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 90%;
+  font-weight: 400;
+  font-style: italic;
+  border-color: var(--pinotcolor);
+  color: var(--pinotcolor);
+  /* Need Placeholder Color */
+}
+
+#rsvp-reply-container {
+  text-align: right;
+  margin-right: 15px;
+  width: 100%;
+  display: inline;
+}
+
+div.options {
+  text-align: right;
+  margin-right: 15px;
+  color: var(--mediumpurple);
+  /* width: 100%; */
+}
+
+div.options > label > input, div.food-container > label > input {
+	visibility: hidden;
+}
+
+div.options > label {
+	margin: 0 0 0 -20px;
+  font-size: 16px;
+	height: 5px;
+	width: 95%;
+}
+
+div.options > label > img, div.food-container > label > img {
+	display: inline-block;
+	padding: 0px;
+	height: 30px;
+	width: 30px;
+	background: none;
+}
+
+div.options > label > input:checked +img, div.food-container > label > input:checked +img  {  
+  background: url(http://cdn1.iconfinder.com/data/icons/onebit/PNG/onebit_34.png);
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size:30px 30px;
+  background-color: var(--rieslingcolor);
+}
+
+#rsvp-food {
+  display: block;
+  text-align: center;
+}
+
+.food-options {
+  display: inline-block;
+}
+
+div.food-container > label {
+	margin: 0 0 0 -20px;
+  font-size: 16px;
+	height: 5px;
+}
+
+
+div.food-container {
+  color: var(--mediumpurple);
+  /* display: inline-grid; */
+}

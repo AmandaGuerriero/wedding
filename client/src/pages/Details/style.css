@@ -1,0 +1,162 @@
+.details-section-header {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.details-section-title {
+  font-family: 'Barcelony', serif, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--mediumpurple);
+  padding-left: 10px;
+}
+
+.details-olive-branch {
+  padding-left: 20px;
+  margin-top: 10px;
+  height: 50px;
+  width: 100px;
+}
+
+/* Details Rows */
+.details-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin: 5px 5px 5px 5px;
+}
+
+.details-col {
+  flex: 50%;
+  max-width: 45%;
+  padding: 0 7px;
+}
+.details-text {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 40%;
+  border-top: 2px solid var(--rieslingcolor);
+  padding-bottom: 20px;
+}
+
+.details-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  background-color: transparent;
+  color: var(--pinotcolor);
+  text-align: left;
+}
+
+.details-info {
+  display: block;
+  padding-left: 30px;
+}
+
+.details-bullet-icon {
+  height: 25px;
+  margin-top: 5px;
+  width: 25px;
+}
+
+.details-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.details-name {
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 5px;
+  background-color: transparent;
+  color: var(--pinotcolor);
+  text-align: left;
+}
+
+.details-date-block {
+  display: block;
+  padding-top: 20px;
+}
+
+.details-date, .details-time {
+  font-size: 18px;
+  font-weight: 600;
+  background-color: transparent;
+  color: var(--pinotcolor);
+  text-align: left;
+}
+
+.details-address {
+  font-size: 18px;
+}
+
+.details-name, .details-address {
+  background-color: transparent;
+  color: var(--pinotcolor);
+  text-align: left;
+}
+
+.details-details {
+  color: var(--pinotcolor);
+  font-weight: 400;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.casitas-disclaimer {
+  color: red;
+  font-weight: 800;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.details-shuttle {
+  text-decoration: underline;
+  padding-top: 20px;
+}
+
+.details-shuttle-location {
+  font-weight: 600;
+  
+}
+
+.details-note2 {
+  padding-top: 20px;
+}
+
+.details-image > img {
+  vertical-align: middle;
+  width: 75%;
+  padding: 8px 0px 8px 0px;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1045px) {
+
+  .details-col, .lodging-options {
+    flex: 95%;
+    max-width: 95%;
+    padding: 0 7px;
+  }
+
+  .details-info {
+    flex: 95%;
+    padding: 0 7px;
+    max-width: 95%;
+    padding-left: 35px;
+  }
+
+  .details-image > img {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 0px 8px 0px;
+  }
+
+  .details-note1 {
+    padding-bottom: 15px;
+  }
+}

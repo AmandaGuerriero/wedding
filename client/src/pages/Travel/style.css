@@ -14,7 +14,7 @@
 }
 
 .hyperlink {
-  color: var(--olive);
+  color: var(--mediumpurple);
   text-decoration: underline;
 }
 
@@ -22,7 +22,7 @@
   font-family: 'Barcelony', serif, 'Times New Roman', Times, serif;
   font-size: 40px;
   font-weight: 600;
-  color: var(--pinotcolor);
+  color: var(--mediumpurple);
   padding-left: 10px;
 }
 
@@ -166,7 +166,7 @@
 
   .travel-map-mobile > a {
     background-color: transparent;
-    color: var(--olive);
+    color: var(--mediumpurple);
     text-align: left;
     text-decoration: underline;
     font-weight: 600;

@@ -8,7 +8,7 @@
 }
 
 .hyperlink {
-  color: var(--olive);
+  color: var(--mediumpurple);
   text-decoration: underline;
 }
 
@@ -16,12 +16,8 @@
   padding-left: 25px;
 }
 
-.back-to-top > a:hover {
-  color: var(--pinotcolor);
-}
-
-.anchor-links > a:hover{
-  color: var(--pinotcolor);
+.back-to-top > a:hover, .hyperlink:hover, .anchor-links > a:hover {
+  color: var(--hovercolor);
 }
 
 .anchor-links {
@@ -43,7 +39,7 @@
   font-family: 'Barcelony', serif, 'Times New Roman', Times, serif;
   font-size: 40px;
   font-weight: 600;
-  color: var(--pinotcolor);
+  color: var(--mediumpurple);
   padding-left: 10px;
   padding-bottom: 10px;
   padding-right: 300px;
@@ -169,7 +165,7 @@
 
 .drinking-note {
   background-color: transparent;
-  color: var(--olive);
+  color: var(--mediumpurple);
   text-align: left;
   font-weight: 600;
   padding-left: 15px;
@@ -234,7 +230,7 @@
 }
 
 .adventure-town {
-  color: var(--olive);
+  color: var(--hovercolor);
   padding-left: 6px;
   font-weight: 400;
 }
@@ -330,7 +326,7 @@
 
   .adventure-map-mobile > a {
     background-color: transparent;
-    color: var(--olive); 
+    color: var(--mediumpurple); 
     text-decoration: underline;
     font-weight: 600;
   }

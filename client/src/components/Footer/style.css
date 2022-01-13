@@ -1,21 +1,16 @@
 
-/* Global Styling */
-:root {
-  --rieslingcolor: #4e2526;
-  --pinotcolor: #d8be85;
-}
 
 /* Footer Styling */
 footer {
   position: relative;
 	margin-top: -50px; /* negative value of footer height */
-	height: 60px;
+	height: 30px;
 	clear: both;
   bottom: 0;
   left: 0;
   position: fixed;
   width: 100vw;
-  background-color: var(--pinotcolor);
+  background-color: var(--footercolor);
   color: var(--rieslingcolor);
   font-style: bold;
   text-align: center;

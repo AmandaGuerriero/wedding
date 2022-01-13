@@ -16,7 +16,7 @@
 .navbar a {
   float: left;
   font-size: 16px;
-  color: var(--pinotcolor);
+  color: var(--footercolor);
   padding: 7px 16px;
   text-decoration: none;
 }
@@ -30,7 +30,7 @@
   font-weight: bold;
   border: none;
   outline: none;
-  color: var(--pinotcolor);
+  color: var(--footercolor);
   padding: 7px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -39,20 +39,20 @@
 
 .navbar a:hover {
   color: var(--rieslingcolor);
-  background-color: var(--pinotcolor);
+  background-color: var(--footercolor);
   text-decoration: none;
   transition: 0.3s;
 }
 
 .dropdown:hover, .dropbtn:hover, .dropbtn a:hover, .dropdown a {
   color: var(--rieslingcolor);
-  background-color: var(--pinotcolor);
+  background-color: var(--footercolor);
   transition: 0.3s;
 }
 
 .dropdown:hover > .dropbtn {
   color: var(--rieslingcolor);
-  background-color: var(--pinotcolor);
+  background-color: var(--footercolor);
 }
 
 .dropdown-content {
@@ -79,7 +79,7 @@
 .dropdown-content a:hover {
   background-color: var(--rieslingcolor);
   text-decoration: none;
-  color: var(--pinotcolor);
+  color: var(--footercolor);
 }
 
 .dropdown:hover .dropdown-content {
@@ -98,7 +98,7 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: var(--rieslingcolor);
-  color: var(--pinotcolor);
+  color: var(--footercolor);
   font-size: 16px;
   font-weight: 600;
   padding: 12px 24px;
@@ -108,7 +108,7 @@
 }
 
 .reg-button:hover {
-  background-color: var(--olive);
+  background-color: var(--mediumpurple);
 }
 
 #background {

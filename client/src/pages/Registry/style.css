@@ -1,0 +1,164 @@
+.gifts-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 20px 20px 20px;
+}
+
+.gift {
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 4px solid var(--pinotcolor);
+  flex: 25%;
+  aspect-ratio: 1 / 1; 
+  padding: 0 7px;
+}
+
+.gift-title {
+  font-size: 17px;
+  font-style: italic;
+  text-align: center;
+  padding: 20px 20px 0 20px;
+  color: var(--pinotcolor);
+}
+
+.gift-icon {
+  position:relative;
+  left:50%;
+  transform:translate(-50%);
+  height: 25%;
+  width: 25%;
+}
+
+.bears {
+  display: block;
+}
+
+.gift-area {
+  max-width: 70%;
+  text-align: center;
+  align-items: center;
+  display: block;
+  left:50%;
+  transform:translate(20%);
+}
+
+.gift-name, .gift-amount {
+  margin-top: 15px;
+}
+
+.gift-name {
+  width: 80%;
+  align-items: center;
+}
+
+.amount-submit {
+  display: flex;
+  text-align: center;
+  align-items: flex-end;
+}
+
+.gift-amount {
+  width: 50%;
+  padding-left: 7px;
+  padding-right: 5px;
+}
+
+.gift-submit {
+  background-color: var(--rieslingcolor);
+  font-style: italic;
+  border: none;
+  height: 30px;
+  align-self: flex-end;
+}
+
+.donation-container {
+  grid: 12;
+}
+
+/* Below Progress Bar */
+.amounts-display {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  width: 100%;
+  align-content: space-between;
+}
+
+.amount-given {
+  display: flex;
+  padding-right: 200px;
+}
+
+.total-amount {
+  display: flex;
+  text-align: right;
+}
+
+/* Backgrounds */
+.venmo-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+}
+
+.zelle-match-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-4.png');  
+}
+
+.zola-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-3.png');  
+}
+
+.kayak-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-2.png');  
+}
+
+.poke-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+}
+
+.tracy-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-3.png');  
+}
+
+.mamas-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-2.png');  
+}
+
+.hawaii-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-4.png');  
+}
+
+.bear-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+}
+
+.wailea-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+}
+
+.salmon-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+}
+
+.alaska-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+}
+
+.beer-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+}
+
+.tramway-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+}
+
+.snorkel-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+}
+
+.alaska-match-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+}
+
+.hawaii-match-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+}

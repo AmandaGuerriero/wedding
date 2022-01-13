@@ -27,23 +27,18 @@ const Nav = props => {
               <a href="/adventure">ADVENTURE</a>
             </div>
           </div>
-          <div className="dropdown">
-            <button className="dropbtn">WEDDING &nbsp;
-              <i className="fa fa-caret-down"></i>
-            </button>
-            <div className="dropdown-content">
-              <a href="/details">DETAILS</a>
-              <a href="/schedule">SCHEDULE</a>
-            </div>
-          </div> 
+          <NavLink 
+            to="/details"
+            activeClassName="active"
+            >EVENT DETAILS</NavLink> 
           {/* <NavLink 
             to="/registry"
             activeClassName="active"
             >REGISTRY</NavLink> */}
-            <NavLink 
+            {/* <NavLink 
             to="/register-for-updates"
             activeClassName="active"
-            >UPDATES</NavLink>
+            >UPDATES</NavLink> */}
             {/* <NavLink 
             to="/rsvp"
             activeClassName="active"

@@ -6,18 +6,19 @@ const rsvpSchema = new Schema({
     type: String, 
     required: true 
   },
-  attending: { 
-    type: Boolean
-  },
-  accom: {
-    type: String
-  },
-  otherAccom: {
-    type: String
-  },
   emailAddress: {
     type: String,
     required: true
+  },
+  attending: { 
+    type: Boolean,
+    required: true 
+  },
+  attendDetails: {
+    type: String
+  },
+  accom: {
+    type: String
   },
   food: {
     type: String
