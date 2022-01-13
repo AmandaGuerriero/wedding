@@ -112,9 +112,11 @@
 }
 
 #background {
-  max-width: 100%;
+  /* max-width: 100%; */
   max-height: 200px;
-  width: auto;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
   /* align-items: flex-start; */
   padding-bottom: 5px;
   content:url("https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/BANNER_DESKTOP_3.png");

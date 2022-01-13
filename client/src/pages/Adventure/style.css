@@ -64,12 +64,13 @@
 .adventure-image {
   flex: 25%;
   max-width: 25%;
-  height: 100%;
+  max-height: 300px;
   padding: 0 7px;
 }
 
 .adventure-image img {
   vertical-align: middle;
+  object-fit: contain;
 }
 
 /* Adventure Rows */
@@ -145,6 +146,7 @@
   width: 100%;
   padding: 5px 0px 5px 0px;
   margin-top: 15px;
+  max-width: 600px;
 }
 
 .Collapsible__trigger {
@@ -152,6 +154,7 @@
   padding-right: 100%;
   font-weight: 600;
   font-size: 24px;
+  width: 100%;
 }
 
 .fa-caret-right {

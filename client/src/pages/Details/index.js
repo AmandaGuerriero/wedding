@@ -61,12 +61,12 @@ const Details = () => {
                   <div className="details-shuttle">STAYING IN THE HOTEL BLOCK:</div>
                   <div className="details-shuttle-location">Agrarian Hotel<br />325 E Branch St<br />Arroyo Grande, CA 93420</div>
                   <div className="details-details">
-                    <div className="details-note1">Shuttles start running from the hotel at ?:??PM and then back to the hotel around 8:30PM. Please do not take this shuttle if you are not staying at the Agrarian.</div>
+                    <div className="details-note1">Shuttles start running from the hotel around 2:30PM and then back to the hotel around 8:30PM. Please do not take this shuttle if you are not staying at the Agrarian.</div>
                   </div>
                   <div className="details-shuttle">ALL OTHER GUESTS:</div>
                   <div className="details-shuttle-location">Strother Park<br />1150 Huasna Rd<br />Arroyo Grande, CA 93420</div>
                   <div className="details-details">
-                    <div className="details-note1">Shuttles start running from the park at ?:??PM and then back to the park around 8:30PM. If you decide to go to straight to the afterparty following the reception and Uber back to your hotel/Airbnb at the end of the night, you are able to leave your car in the park overnight.</div>
+                    <div className="details-note1">Shuttles start running from the park around 2:30PM and then back to the park around 8:30PM. If you decide to go to straight to the afterparty following the reception and Uber back to your hotel/Airbnb at the end of the night, you are able to leave your car in the park overnight.</div>
                   </div>
               </div>
             </div>
