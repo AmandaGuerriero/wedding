@@ -311,10 +311,10 @@ function GiftsForm() {
       <div className="kayak-container gift">
         <div className="gift-title">
             FJORD KAYAKING <br /> TOUR IN SEWARD
-          </div>
-          <div>
+        </div>
+        <div>
           <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/KAYAK.png' alt='Kayak' />
-          </div>
+        </div>
       <div className="gift-area">
       {/* Display Kayak from the API */}
       {bears && (
@@ -331,10 +331,10 @@ function GiftsForm() {
           ))}
         </div>
       )}
-      </div>
       {/* Submit Kayak */}
       <form id="kayak-form" onSubmit={handleSubmitKayak}>
-      <div className="gift-name">
+        <div className="gift-inputs">
+          <div className="gift-name">
             <input type="text" name="nameKayak" defaultValue={nameKayak} placeholder="name" onBlur={handleChangeKayak} />
           </div>
           <div className="amount-submit">
@@ -343,8 +343,10 @@ function GiftsForm() {
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
+    </div>
+  </div>
       {/* Poke Gift */}
       <div className="poke-container gift">
         <div className="gift-title">
