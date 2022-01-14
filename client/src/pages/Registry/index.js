@@ -630,7 +630,7 @@ function GiftsForm() {
       {/* Alaska Gift */}
       <div className="alaska-container gift">
       <div className="gift-title">
-          6 NIGHT STATY <br /> IN ALASKA
+          6 NIGHT STAY <br /> IN ALASKA
         </div>
         <div>
         <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/ALASKA.png' alt='Alaska' />
@@ -799,7 +799,7 @@ function GiftsForm() {
         <div className="bears">
           {bears.map((bear, index) => (
             <div key={index}>
-            <div>{Math.round((bear.fullAlaska) * .0716)}</div>
+            <div>{Math.round((bear.totalAlaska + bear.totalBears + bear.totalTracy + bear.totalTram + bear.totalSalmon + bear.totalKayak) * .0716)}</div>
             </div>
           ))}
         </div>
