@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import API from "../../utils/API";
 import './style.css';
 import ProgressBar from "../../components/ProgressBar";
+import ProgressBarDark from "../../components/ProgressBarDark";
 
 function GiftsForm() {
 
@@ -13,6 +14,8 @@ function GiftsForm() {
   }
   const [formState, setFormState] = useState({ name: '', amount: '', nameTracy: '', amountTracy: '', nameKayak: '', amountKayak: '', namePoke: '', amountPoke: '', nameMamas: '', amountMamas: '', nameHawaii: '', amountHawaii: '', nameWailea: '', amountWailea: '', nameSalmon: '', amountSalmon: '', nameAlaska: '', amountAlaska: '', nameBeer: '', amountBeer: '', nameTram: '', amountTram: '', nameSnorkel: '', amountSnorkel: '' });
   const [bears, setBears] = useState(null);
+  const mediumpurple = "#A869A8"
+  const lightpurple = "#AA69A8"
 
   const [errorMessage, setErrorMessage] = useState('');
   const { name, amount, nameTracy, amountTracy, nameKayak, amountKayak, namePoke, amountPoke, nameMamas, amountMamas, nameHawaii, amountHawaii, nameWailea, amountWailea, nameSalmon, amountSalmon, nameAlaska, amountAlaska, nameBeer, amountBeer, nameTram, amountTram, nameSnorkel, amountSnorkel, } = formState;
@@ -322,7 +325,7 @@ function GiftsForm() {
           {/* Kayak Exeperience Progress */}
           {bears.map((bear, index) => (
             <div key={index}>
-            <ProgressBar value={bear.totalKayak} max={900}/>
+            <ProgressBar className="example" value={bear.totalKayak} max={900} />
               <div className="amounts-display">
                 <div className="amount-given">${bear.totalKayak}</div> 
                 <div className="total-amount">$900</div>
@@ -335,11 +338,11 @@ function GiftsForm() {
       <form id="kayak-form" onSubmit={handleSubmitKayak}>
         <div className="gift-inputs">
           <div className="gift-name">
-            <input type="text" name="nameKayak" defaultValue={nameKayak} placeholder="name" onBlur={handleChangeKayak} />
+            <input type="text" className="light-box" name="nameKayak" defaultValue={nameKayak} placeholder="name" onBlur={handleChangeKayak} />
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" name="amountKayak" defaultValue={amountKayak} placeholder="$0.00" onBlur={handleChangeKayak} />
+              <input type="number" className="light-box" name="amountKayak" defaultValue={amountKayak} placeholder="$0.00" onBlur={handleChangeKayak} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -362,7 +365,7 @@ function GiftsForm() {
           {/* Poke Exeperience Progress */}
           {bears.map((bear, index) => (
             <div key={index}>
-            <ProgressBar value={bear.totalPoke} max={125}/>
+            <ProgressBarDark value={bear.totalPoke} max={125}/>
               <div className="amounts-display">
                 <div className="amount-given">${bear.totalPoke}</div> 
                 <div className="total-amount">$125</div>
@@ -375,11 +378,11 @@ function GiftsForm() {
       <form id="poke-form" onSubmit={handleSubmitPoke}>
         <div className="gift-inputs">
           <div className="gift-name">
-            <input type="text" name="namePoke" defaultValue={namePoke} placeholder="name" onBlur={handleChangePoke} />
+            <input type="text" className="dark-box" name="namePoke" defaultValue={namePoke} placeholder="name" onBlur={handleChangePoke} />
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" name="amountPoke" defaultValue={amountPoke} placeholder="$0.00" onBlur={handleChangePoke} />
+              <input type="number" className="dark-box" name="amountPoke" defaultValue={amountPoke} placeholder="$0.00" onBlur={handleChangePoke} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -415,11 +418,11 @@ function GiftsForm() {
       <form id="tracy-form" onSubmit={handleSubmitTracy}>
         <div className="gift-inputs">
           <div className="gift-name">
-            <input type="text" name="nameTracy" defaultValue={nameTracy} placeholder="name" onBlur={handleChangeTracy} />
+            <input type="text" className="light-box" name="nameTracy" defaultValue={nameTracy} placeholder="name" onBlur={handleChangeTracy} />
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" name="amountTracy" defaultValue={amountTracy} placeholder="$0.00" onBlur={handleChangeTracy} />
+              <input type="number" className="light-box" name="amountTracy" defaultValue={amountTracy} placeholder="$0.00" onBlur={handleChangeTracy} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -442,7 +445,7 @@ function GiftsForm() {
           {/* Mamas Exeperience Progress */}
           {bears.map((bear, index) => (
             <div key={index}>
-            <ProgressBar value={bear.totalMamas} max={400}/>
+            <ProgressBarDark value={bear.totalMamas} max={400}/>
               <div className="amounts-display">
                 <div className="amount-given">${bear.totalMamas}</div> 
                 <div className="total-amount">$400</div>
@@ -455,11 +458,11 @@ function GiftsForm() {
       <form id="mamas-form" onSubmit={handleSubmitMamas}>
         <div className="gift-inputs">
           <div className="gift-name">
-            <input type="text" name="nameMamas" defaultValue={nameMamas} placeholder="name" onBlur={handleChangeMamas} />
+            <input type="text" className="dark-box" name="nameMamas" defaultValue={nameMamas} placeholder="name" onBlur={handleChangeMamas} />
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" name="amountMamas" defaultValue={amountMamas} placeholder="$0.00" onBlur={handleChangeMamas} />
+              <input type="number" className="dark-box" name="amountMamas" defaultValue={amountMamas} placeholder="$0.00" onBlur={handleChangeMamas} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -482,7 +485,7 @@ function GiftsForm() {
           {/* Hawaii Exeperience Progress */}
           {bears.map((bear, index) => (
             <div key={index}>
-            <ProgressBar value={bear.totalHawaii} max={3000}/>
+            <ProgressBarDark value={bear.totalHawaii} max={3000}/>
               <div className="amounts-display">
                 <div className="amount-given">${bear.totalHawaii}</div> 
                 <div className="total-amount">$3000</div>
@@ -495,11 +498,11 @@ function GiftsForm() {
       <form id="hawaii-form" onSubmit={handleSubmitHawaii}>
         <div className="gift-inputs">
           <div className="gift-name">
-            <input type="text" name="nameHawaii" defaultValue={nameHawaii} placeholder="name" onBlur={handleChangeHawaii} />
+            <input type="text" className="dark-box" name="nameHawaii" defaultValue={nameHawaii} placeholder="name" onBlur={handleChangeHawaii} />
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" name="amountHawaii" defaultValue={amountHawaii} placeholder="$0.00" onBlur={handleChangeHawaii} />
+              <input type="number" className="dark-box" name="amountHawaii" defaultValue={amountHawaii} placeholder="$0.00" onBlur={handleChangeHawaii} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -535,11 +538,11 @@ function GiftsForm() {
         <form id="bears-form" onSubmit={handleSubmit}>
         <div className="gift-inputs">
           <div className="gift-name">
-            <input type="text" name="name" defaultValue={name} placeholder="name" onBlur={handleChange} />
+            <input type="text" className="light-box" name="name" defaultValue={name} placeholder="name" onBlur={handleChange} />
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" name="amount" defaultValue={amount} placeholder="$0.00" onBlur={handleChange} />
+              <input type="number" className="light-box" name="amount" defaultValue={amount} placeholder="$0.00" onBlur={handleChange} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -562,7 +565,7 @@ function GiftsForm() {
           {/* Wailea Exeperience Progress */}
           {bears.map((bear, index) => (
             <div key={index}>
-            <ProgressBar value={bear.totalWailea} max={300}/>
+            <ProgressBarDark value={bear.totalWailea} max={300}/>
               <div className="amounts-display">
                 <div className="amount-given">${bear.totalWailea}</div> 
                 <div className="total-amount">$300</div>
@@ -575,11 +578,11 @@ function GiftsForm() {
       <form id="wailea-form" onSubmit={handleSubmitWailea}>
         <div className="gift-inputs">
           <div className="gift-name">
-            <input type="text" name="nameWailea" defaultValue={nameWailea} placeholder="name" onBlur={handleChangeWailea} />
+            <input type="text" className="dark-box" name="nameWailea" defaultValue={nameWailea} placeholder="name" onBlur={handleChangeWailea} />
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" name="amountWailea" defaultValue={amountWailea} placeholder="$0.00" onBlur={handleChangeWailea} />
+              <input type="number" className="dark-box" name="amountWailea" defaultValue={amountWailea} placeholder="$0.00" onBlur={handleChangeWailea} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -615,11 +618,11 @@ function GiftsForm() {
       <form id="salmon-form" onSubmit={handleSubmitSalmon}>
       <div className="gift-inputs">
       <div className="gift-name">
-            <input type="text" name="nameSalmon" defaultValue={nameSalmon} placeholder="name" onBlur={handleChangeSalmon} />
+            <input type="text" className="light-box" name="nameSalmon" defaultValue={nameSalmon} placeholder="name" onBlur={handleChangeSalmon} />
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" name="amountSalmon" defaultValue={amountSalmon} placeholder="$0.00" onBlur={handleChangeSalmon} />
+              <input type="number" className="light-box" name="amountSalmon" defaultValue={amountSalmon} placeholder="$0.00" onBlur={handleChangeSalmon} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -655,11 +658,11 @@ function GiftsForm() {
     <form id="alaska-form" onSubmit={handleSubmitAlaska}>
     <div className="gift-inputs">
     <div className="gift-name">
-          <input type="text" name="nameAlaska" defaultValue={nameAlaska} placeholder="name" onBlur={handleChangeAlaska} />
+          <input type="text" className="light-box" name="nameAlaska" defaultValue={nameAlaska} placeholder="name" onBlur={handleChangeAlaska} />
         </div>
         <div className="amount-submit">
           <div className="gift-amount">
-            <input type="number" name="amountAlaska" defaultValue={amountAlaska} placeholder="$0.00" onBlur={handleChangeAlaska} />
+            <input type="number" className="light-box" name="amountAlaska" defaultValue={amountAlaska} placeholder="$0.00" onBlur={handleChangeAlaska} />
           </div>
           <button data-testid="button" type="submit" className="gift-submit">submit</button>
         </div>
@@ -682,7 +685,7 @@ function GiftsForm() {
           {/* Bears Exeperience Progress */}
           {bears.map((bear, index) => (
             <div key={index}>
-              <ProgressBar value={bear.totalBeer} max={75}/>
+              <ProgressBarDark value={bear.totalBeer} max={75}/>
               <div className="amounts-display">
                 <div className="amount-given">${bear.totalBeer}</div> 
                 <div className="total-amount">$75</div>
@@ -695,11 +698,11 @@ function GiftsForm() {
         <form id="beer-form" onSubmit={handleSubmitBeer}>
         <div className="gift-inputs">
           <div className="gift-name">
-            <input type="text" name="nameBeer" defaultValue={nameBeer} placeholder="name" onBlur={handleChangeBeer} />
+            <input type="text" className="dark-box" name="nameBeer" defaultValue={nameBeer} placeholder="name" onBlur={handleChangeBeer} />
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" name="amountBeer" defaultValue={amountBeer} placeholder="$0.00" onBlur={handleChangeBeer} />
+              <input type="number" className="dark-box" name="amountBeer" defaultValue={amountBeer} placeholder="$0.00" onBlur={handleChangeBeer} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -735,11 +738,11 @@ function GiftsForm() {
       <form id="tram-form" onSubmit={handleSubmitTram}>
         <div className="gift-inputs">
           <div className="gift-name">
-            <input type="text" name="nameTram" defaultValue={nameTram} placeholder="name" onBlur={handleChangeTram} />
+            <input type="text" className="light-box" name="nameTram" defaultValue={nameTram} placeholder="name" onBlur={handleChangeTram} />
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" name="amountTram" defaultValue={amountTram} placeholder="$0.00" onBlur={handleChangeTram} />
+              <input type="number" className="light-box" name="amountTram" defaultValue={amountTram} placeholder="$0.00" onBlur={handleChangeTram} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -762,7 +765,7 @@ function GiftsForm() {
           {/* Snorkel Exeperience Progress */}
           {bears.map((bear, index) => (
             <div key={index}>
-            <ProgressBar value={bear.totalSnorkel} max={300}/>
+            <ProgressBarDark value={bear.totalSnorkel} max={300}/>
               <div className="amounts-display">
                 <div className="amount-given">${bear.totalSnorkel}</div> 
                 <div className="total-amount">$300</div>

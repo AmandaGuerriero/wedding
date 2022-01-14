@@ -1,0 +1,26 @@
+* {
+  box-sizing:border-box;
+  text-align: center;
+}
+
+.progress-bar {
+  position: relative;
+  height: 20px;
+  /* width: 80%; */
+  background-color: var(--rieslingcolor);
+  border-radius: .5rem;
+  border: 1px solid rgb(138, 134, 134);
+}
+
+label {
+  margin-top: -25px;
+}
+
+.filler {
+  background-color: var(--rieslingcolor);
+  height: 100%;
+  border-radius: inherit;
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+}

@@ -2,12 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   margin: 20px 20px 20px 20px;
+  border: 6px solid var(--footercolor);
 }
 
 .gift {
   background-repeat: no-repeat;
   background-size: contain;
-  border: 4px solid var(--pinotcolor);
+  border: 9px solid var(--footercolor);
   flex: 25%;
   aspect-ratio: 1 / 1; 
   padding: 0 7px;
@@ -21,12 +22,13 @@
   font-style: italic;
   text-align: center;
   padding: 20px 20px 0 20px;
-  color: var(--pinotcolor);
+  color: var(--footercolor);
+  font-weight: 800;
 }
 
 .gift-icon {
   position:relative;
-  left:50%;
+  left: 50%;
   transform:translate(-50%);
   height: 25%;
   width: 25%;
@@ -57,9 +59,28 @@
 }
 
 .gift-name > input {
+  padding-left: 5px;
+  border: none;
   width: 100%;
 }
 
+input.light-box, textarea {
+  background-color: var(--hovercolor);
+  color: var(--footercolor)
+}
+
+input.dark-box, textarea {
+  background-color: var(--darkerpurple);
+  color: var(--footercolor)
+}
+
+input.light-box::placeholder, input.dark-box::placeholder {
+  color: var(--footercolor);
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
 
 .amount-submit {
   display: flex;
@@ -71,11 +92,15 @@
   padding-right: 5px;
 }
 
+.gift-amount > input {
+  border: none;
+  text-align: center
+}
+
 .gift-submit {
   background-color: var(--rieslingcolor);
   font-style: italic;
   border: none;
-  height: 30px;
   width: 40%;
   margin-left: auto;
 }
@@ -92,12 +117,16 @@
 .amount-given {
   text-align: left;
   padding-top: 10px;
+  font-weight: 900;
+  color: var(--footercolor);
 }
 
 .total-amount {
   text-align: right;
   padding-top: 10px;
   margin-left: auto;
+  font-weight: 900;
+  color: var(--footercolor);
 }
 
 /* Backgrounds */
@@ -123,11 +152,11 @@
 }
 
 .tracy-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-3.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-2.png');  
 }
 
 .mamas-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-2.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
 }
 
 .hawaii-container {
@@ -135,19 +164,19 @@
 }
 
 .bear-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-3.png');  
 }
 
 .wailea-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-4.png');  
 }
 
 .salmon-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-3.png');  
 }
 
 .alaska-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-2.png');  
 }
 
 .beer-container {
@@ -155,7 +184,7 @@
 }
 
 .tramway-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-2.png');  
 }
 
 .snorkel-container {
@@ -175,7 +204,7 @@
   .gift {
     background-repeat: no-repeat;
     background-size: contain;
-    border: 4px solid var(--pinotcolor);
+    border: 4px solid var(--footercolor);
     flex: 33%;
     aspect-ratio: 1 / 1; 
     padding: 0 7px;
@@ -189,7 +218,7 @@
   .gift {
     background-repeat: no-repeat;
     background-size: contain;
-    border: 4px solid var(--pinotcolor);
+    border: 4px solid var(--footercolor);
     flex: 50%;
     aspect-ratio: 1 / 1; 
     padding: 0 7px;
@@ -204,7 +233,7 @@
   .gift {
     background-repeat: no-repeat;
     background-size: contain;
-    border: 4px solid var(--pinotcolor);
+    border: 4px solid var(--footercolor);
     flex: 100%;
     aspect-ratio: 1 / 1; 
     padding: 0 7px;
