@@ -355,6 +355,7 @@ function GiftsForm() {
           <div>
           <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/POKE.png' alt='Poke Bowl' />
           </div>
+      <div className="gift-area">
       {/* Display Poke from the API */}
       {bears && (
         <div className="bears">
@@ -372,7 +373,8 @@ function GiftsForm() {
       )}
       {/* Submit Poke */}
       <form id="poke-form" onSubmit={handleSubmitPoke}>
-      <div className="gift-name">
+        <div className="gift-inputs">
+          <div className="gift-name">
             <input type="text" name="namePoke" defaultValue={namePoke} placeholder="name" onBlur={handleChangePoke} />
           </div>
           <div className="amount-submit">
@@ -381,8 +383,10 @@ function GiftsForm() {
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
-        </form>
+        </div>
+      </form>
       </div>
+    </div>
       {/* Tracy Arm Gift */}
       <div className="tracy-container gift">
         <div className="gift-title">
@@ -391,6 +395,7 @@ function GiftsForm() {
           <div>
           <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/KAYAK.png' alt='Boat' />
           </div>
+      <div className="gift-area">
       {/* Display Tracy from the API */}
       {bears && (
         <div className="bears">
@@ -408,7 +413,8 @@ function GiftsForm() {
       )}
       {/* Submit Tracy */}
       <form id="tracy-form" onSubmit={handleSubmitTracy}>
-      <div className="gift-name">
+        <div className="gift-inputs">
+          <div className="gift-name">
             <input type="text" name="nameTracy" defaultValue={nameTracy} placeholder="name" onBlur={handleChangeTracy} />
           </div>
           <div className="amount-submit">
@@ -417,7 +423,9 @@ function GiftsForm() {
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
+          </div>
         </form>
+        </div>
       </div>
       {/* Mamas Gift */}
       <div className="mamas-container gift">
@@ -427,6 +435,7 @@ function GiftsForm() {
           <div>
           <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/MAMAS.png' alt='Plate' />
           </div>
+          <div className="gift-area">
       {/* Display Mamas from the API */}
       {bears && (
         <div className="bears">
@@ -444,7 +453,8 @@ function GiftsForm() {
       )}
       {/* Submit Mamas */}
       <form id="mamas-form" onSubmit={handleSubmitMamas}>
-      <div className="gift-name">
+        <div className="gift-inputs">
+          <div className="gift-name">
             <input type="text" name="nameMamas" defaultValue={nameMamas} placeholder="name" onBlur={handleChangeMamas} />
           </div>
           <div className="amount-submit">
@@ -453,7 +463,9 @@ function GiftsForm() {
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
+        </div>
         </form>
+      </div>
       </div>
       {/* Hawaii Gift */}
       <div className="hawaii-container gift">
@@ -463,6 +475,7 @@ function GiftsForm() {
           <div>
           <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/HAWAII.png' alt='Hawaii' />
           </div>
+      <div className="gift-area">
       {/* Display Hawaii from the API */}
       {bears && (
         <div className="bears">
@@ -480,7 +493,8 @@ function GiftsForm() {
       )}
       {/* Submit Hawaii */}
       <form id="hawaii-form" onSubmit={handleSubmitHawaii}>
-      <div className="gift-name">
+        <div className="gift-inputs">
+          <div className="gift-name">
             <input type="text" name="nameHawaii" defaultValue={nameHawaii} placeholder="name" onBlur={handleChangeHawaii} />
           </div>
           <div className="amount-submit">
@@ -489,7 +503,9 @@ function GiftsForm() {
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
+          </div>
         </form>
+        </div>
       </div>
       {/* Bears Gift */}
       <div className="bear-container gift">
@@ -497,8 +513,9 @@ function GiftsForm() {
             GRIZZLY BEAR VIEWING <br /> EXCURSION IN ANCHORAGE
           </div>
           <div>
-          <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/BEARS.png' alt='Grizzly Bear' />
+            <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/BEARS.png' alt='Grizzly Bear' />
           </div>
+      <div className="gift-area">
       {/* Display Bears from the API */}
       {bears && (
         <div className="bears">
@@ -516,6 +533,7 @@ function GiftsForm() {
       )}
       {/* Submit Bears */}
         <form id="bears-form" onSubmit={handleSubmit}>
+        <div className="gift-inputs">
           <div className="gift-name">
             <input type="text" name="name" defaultValue={name} placeholder="name" onBlur={handleChange} />
           </div>
@@ -525,7 +543,9 @@ function GiftsForm() {
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
+          </div>
         </form>
+        </div>
       </div>
       {/* Wailea Gift */}
       <div className="wailea-container gift">
@@ -535,6 +555,7 @@ function GiftsForm() {
           <div>
           <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/MAMAS.png' alt='Plate' />
           </div>
+      <div className="gift-area">    
       {/* Display Wailea from the API */}
       {bears && (
         <div className="bears">
@@ -552,7 +573,8 @@ function GiftsForm() {
       )}
       {/* Submit Wailea */}
       <form id="wailea-form" onSubmit={handleSubmitWailea}>
-      <div className="gift-name">
+        <div className="gift-inputs">
+          <div className="gift-name">
             <input type="text" name="nameWailea" defaultValue={nameWailea} placeholder="name" onBlur={handleChangeWailea} />
           </div>
           <div className="amount-submit">
@@ -561,7 +583,9 @@ function GiftsForm() {
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
+          </div>
         </form>
+      </div>
       </div>
       {/* Salmon Gift */}
       <div className="salmon-container gift">
@@ -571,6 +595,7 @@ function GiftsForm() {
           <div>
           <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/SALMON.png' alt='Salmon' />
           </div>
+      <div className="gift-area">
       {/* Display Salmon from the API */}
       {bears && (
         <div className="bears">
@@ -588,6 +613,7 @@ function GiftsForm() {
       )}
       {/* Submit Salmon */}
       <form id="salmon-form" onSubmit={handleSubmitSalmon}>
+      <div className="gift-inputs">
       <div className="gift-name">
             <input type="text" name="nameSalmon" defaultValue={nameSalmon} placeholder="name" onBlur={handleChangeSalmon} />
           </div>
@@ -597,7 +623,9 @@ function GiftsForm() {
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
+          </div>
         </form>
+        </div>
       </div>
       {/* Alaska Gift */}
       <div className="alaska-container gift">
@@ -607,6 +635,7 @@ function GiftsForm() {
         <div>
         <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/ALASKA.png' alt='Alaska' />
         </div>
+    <div className="gift-area">
     {/* Display Alaska from the API */}
     {bears && (
       <div className="bears">
@@ -624,6 +653,7 @@ function GiftsForm() {
     )}
     {/* Submit Alaska */}
     <form id="alaska-form" onSubmit={handleSubmitAlaska}>
+    <div className="gift-inputs">
     <div className="gift-name">
           <input type="text" name="nameAlaska" defaultValue={nameAlaska} placeholder="name" onBlur={handleChangeAlaska} />
         </div>
@@ -633,7 +663,9 @@ function GiftsForm() {
           </div>
           <button data-testid="button" type="submit" className="gift-submit">submit</button>
         </div>
+        </div>
       </form>
+      </div>
       </div>
       {/* Beer Gift */}
       <div className="beer-container gift">
@@ -643,6 +675,7 @@ function GiftsForm() {
           <div>
           <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/BEER.png' alt='Glass of Beer' />
           </div>
+      <div className="gift-area">
       {/* Display Beer from the API */}
       {bears && (
         <div className="bears">
@@ -660,6 +693,7 @@ function GiftsForm() {
       )}
       {/* Submit Beer */}
         <form id="beer-form" onSubmit={handleSubmitBeer}>
+        <div className="gift-inputs">
           <div className="gift-name">
             <input type="text" name="nameBeer" defaultValue={nameBeer} placeholder="name" onBlur={handleChangeBeer} />
           </div>
@@ -669,16 +703,19 @@ function GiftsForm() {
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
+          </div>
         </form>
+        </div>
       </div>
       {/* Tramway Gift */}
-      <div className="tram-container gift">
+      <div className="tramway-container gift">
         <div className="gift-title">
             MOUNT ROBERTS <br /> TRAMWAY IN ANCHORAGE
           </div>
           <div>
             <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TRAM.png' alt='Tram' />
           </div>
+      <div className="gift-area">
       {/* Display Tram from the API */}
       {bears && (
         <div className="bears">
@@ -696,7 +733,8 @@ function GiftsForm() {
       )}
       {/* Submit Tram */}
       <form id="tram-form" onSubmit={handleSubmitTram}>
-      <div className="gift-name">
+        <div className="gift-inputs">
+          <div className="gift-name">
             <input type="text" name="nameTram" defaultValue={nameTram} placeholder="name" onBlur={handleChangeTram} />
           </div>
           <div className="amount-submit">
@@ -705,7 +743,9 @@ function GiftsForm() {
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
+          </div>
         </form>
+      </div>
       </div>
       {/* Snorkel Gift */}
       <div className="snorkel-container gift">
@@ -713,8 +753,9 @@ function GiftsForm() {
             SNORKELING TOUR <br /> IN MAUI
           </div>
           <div>
-          <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/SNORKEL.png' alt='Snorkeling' />
+          <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/SNORKLE.png' alt='Snorkeling' />
         </div>
+      <div className="gift-area">
       {/* Display Snorkel from the API */}
       {bears && (
         <div className="bears">
@@ -732,6 +773,7 @@ function GiftsForm() {
       )}
       {/* Submit Snorkel */}
       <form id="snorkel-form" onSubmit={handleSubmitSnorkel}>
+      <div className="gift-inputs">
       <div className="gift-name">
             <input type="text" name="nameSnorkel" defaultValue={nameSnorkel} placeholder="name" onBlur={handleChangeSnorkel} />
           </div>
@@ -741,7 +783,9 @@ function GiftsForm() {
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
+          </div>
         </form>
+      </div>
       </div>
       {/* DONATIONS */}
       <div className="donation-container">
