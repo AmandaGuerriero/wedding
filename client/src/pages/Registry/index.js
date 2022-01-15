@@ -310,6 +310,30 @@ function GiftsForm() {
     <section>
       {/* <h1>Coming Soon</h1> */}
       <div className="gifts-container">
+      <div className="zola-container gift">
+        <img className="zola" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/ZOLA1.png" />
+      </div>
+      <div className="venmo-container gift">
+        <img className="venmo" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/VENMO.png" />
+      </div>
+      <div className="zelle-container gift">
+        <img className="zelle" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/KAYAK.png" />
+      </div>
+      <div className="charity-container gift">
+      <div className="gift-title">
+            AMANDA & ERIC <br /> ARE DONATING <br /> XX Amount
+          </div>
+      {/* Display Hawaii Donations from API */}
+      {bears && (
+        <div className="bears">
+          {bears.map((bear, index) => (
+            <div key={index}>
+            <div>{Math.round((bear.totalAlaska + bear.totalBears + bear.totalTracy + bear.totalTram + bear.totalSalmon + bear.totalKayak) * .0716)}</div>
+            </div>
+          ))}
+        </div>
+      )}
+      </div>
       {/* Kayak Gift */}
       <div className="kayak-container gift">
         <div className="gift-title">
@@ -396,7 +420,7 @@ function GiftsForm() {
             TRACY ARM FJORD <br /> TOUR IN JUNEAU
           </div>
           <div>
-          <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/KAYAK.png' alt='Boat' />
+          <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/BOAT.png' alt='Boat' />
           </div>
       <div className="gift-area">
       {/* Display Tracy from the API */}
@@ -789,25 +813,6 @@ function GiftsForm() {
           </div>
         </form>
       </div>
-      </div>
-      {/* DONATIONS */}
-      <div className="donation-container">
-      {/* Hawaii Gift */}
-      <div className="snorkel-container gift">
-        <div className="gift-title">
-            AMANDA & ERIC <br /> ARE DONATING <br /> XX Amount
-          </div>
-      {/* Display Hawaii Donations from API */}
-      {bears && (
-        <div className="bears">
-          {bears.map((bear, index) => (
-            <div key={index}>
-            <div>{Math.round((bear.totalAlaska + bear.totalBears + bear.totalTracy + bear.totalTram + bear.totalSalmon + bear.totalKayak) * .0716)}</div>
-            </div>
-          ))}
-        </div>
-      )}
-        </div>
       </div>
     </div>
     </section>
