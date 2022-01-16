@@ -67,6 +67,15 @@
   padding-top: 4px;
 }
 
+.zola-link > a {
+  color: var(--footercolor)
+}
+
+.zola-link > a:hover {
+  color: var(--mediumpurple);
+  text-decoration: none;
+}
+
 /* Venmo */
 .venmo-info  {
   max-width: 75%;
