@@ -311,13 +311,19 @@ function GiftsForm() {
       {/* <h1>Coming Soon</h1> */}
       <div className="gifts-container">
       <div className="zola-container gift">
-        <img className="zola" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/ZOLA1.png" />
+        <div className="zola-info">
+          <img className="zola" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/ZOLA1.png" />
+        </div>
       </div>
       <div className="venmo-container gift">
         <img className="venmo" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/VENMO.png" />
       </div>
       <div className="zelle-container gift">
-        <img className="zelle" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/KAYAK.png" />
+        <div className="zelle-info">
+        <img className="zelle" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/ZELLE1.png" />
+          <div className="zelle-send">PLEASE DIRECT ANY <br />ZELLE CONTRIBUTIONS TO:</div>
+          <div className="zelle-email">amandaguerriero@yahoo.com</div>
+        </div>
       </div>
       <div className="charity-container gift">
       <div className="gift-title">
