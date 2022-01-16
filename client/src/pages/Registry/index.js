@@ -27,7 +27,7 @@ function GiftsForm() {
 
     // we will use async/await to fetch this data
     async function giftTotals() {
-      const response = await fetch("http://localhost:3000/api/amounts");
+      const response = await fetch("https://www.amandaeric2022.com/api/amounts");
       const data = await response.json();
 
       // store the data into our DB
