@@ -1,16 +1,28 @@
+.registry-note {
+  padding-top: 30px;
+  color: var(--pinotcolor);
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .gifts-container {
   display: flex;
   flex-wrap: wrap;
   margin: 20px 20px 20px 20px;
+  border: 6px solid var(--footercolor);
 }
 
 .gift {
-  background-size: contain;
   background-repeat: no-repeat;
-  border: 4px solid var(--pinotcolor);
+  background-size: contain;
+  border: 9px solid var(--footercolor);
   flex: 25%;
   aspect-ratio: 1 / 1; 
   padding: 0 7px;
+  max-width: 80%;
+  align-content: center;
+  align-items: center;
 }
 
 .gift-title {
@@ -18,28 +30,188 @@
   font-style: italic;
   text-align: center;
   padding: 20px 20px 0 20px;
-  color: var(--pinotcolor);
+  color: var(--footercolor);
+  font-weight: 800;
 }
 
 .gift-icon {
   position:relative;
-  left:50%;
-  transform:translate(-50%);
+  left: 50%;
+  transform: translate(-50%);
   height: 25%;
   width: 25%;
 }
 
+/* Top Row */
+
+/* Zola */
+.zola-info  {
+  max-width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zola-info > img {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 100%;
+  vertical-align: middle;
+  position: relative;
+  transform: translateY(20%);
+}
+
+.zola-link {
+  width: 85%;
+  height: 30px;
+  background-color: var(--rieslingcolor);
+  margin-left: auto;
+  position: relative;
+  transform: translateY(110%);
+  font-weight: 600;
+  color: var(--footercolor);
+  margin-right: 10px;
+  padding-top: 4px;
+}
+
+.zola-link > a {
+  color: var(--footercolor)
+}
+
+.zola-link > a:hover {
+  color: var(--mediumpurple);
+  text-decoration: none;
+}
+
+/* Venmo */
+.venmo-info  {
+  max-width: 75%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}
+
+.venmo-info > img {
+  width: 80%;
+  vertical-align: middle;
+  position: relative;
+  top: 100%;
+  transform: translateY(25%);
+}
+
+/* Zelle */
+.zelle-info  {
+  max-width: 85%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zelle-info > img {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 100%;
+  margin-bottom: -15px;
+  transform: translateY(10%);
+}
+
+.zelle-send, .zelle-email {
+  color: var(--footercolor);
+  font-size: 17px;
+}
+
+.zelle-email {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 19px;
+  margin-top: -5px;
+}
+
+/* Donations */
+.contribution-container {
+  max-width: 85%;
+  text-align: center;
+  margin-left: auto;
+}
+
+.charity-title {
+  font-size: 14px;
+  text-align: center;
+  color: var(--footercolor);
+  line-height: 17px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  width: 75%;
+  margin-left: 10px;
+}
+
+.charities {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--footercolor);
+  line-height: 18px;
+  width: 80%;
+}
+
+.icon-charity-container {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5px;
+  margin-bottom: 15px;
+  margin-left: -30px;
+}
+
+.alaska-contribution {
+  width: 70px;
+  height: 30px;
+  background-color: var(--rieslingcolor);
+  font-weight: 600;
+  color: var(--footecolor);
+  padding-top: 3px;
+  text-align: center;
+  font-style: italic;
+  margin-left: 5px;
+}
+
+.hawaii-contribution {
+  width: 70px;
+  height: 30px;
+  background-color: var(--rieslingcolor);
+  font-weight: 600;
+  color: var(--footercolor);
+  padding-top: 3px;
+  text-align: center;
+  font-style: italic;
+  margin-left: 5px;
+}
+
+.charity-icon {
+  height: 25%;
+  width: 25%;
+}
+
+
+/* Experiences */
 .bears {
   display: block;
 }
 
 .gift-area {
   max-width: 70%;
-  text-align: center;
-  align-items: center;
   display: block;
   left:50%;
-  transform:translate(20%);
+  transform: translate(20%);
+}
+
+.gift-inputs {
+  display: block;
+  width: 100%;
 }
 
 .gift-name, .gift-amount {
@@ -47,28 +219,54 @@
 }
 
 .gift-name {
-  width: 80%;
-  align-items: center;
+  width: 100%;
+}
+
+.gift-name > input {
+  padding-left: 5px;
+  border: none;
+  width: 100%;
+}
+
+input.light-box, textarea {
+  background-color: var(--hovercolor);
+  color: var(--footercolor)
+}
+
+input.dark-box, textarea {
+  background-color: var(--darkerpurple);
+  color: var(--footercolor)
+}
+
+input.light-box::placeholder, input.dark-box::placeholder {
+  color: var(--footercolor);
+}
+
+input:focus::placeholder {
+  color: transparent;
 }
 
 .amount-submit {
   display: flex;
-  text-align: center;
   align-items: flex-end;
 }
 
 .gift-amount {
   width: 50%;
-  padding-left: 7px;
   padding-right: 5px;
+}
+
+.gift-amount > input {
+  border: none;
+  text-align: center
 }
 
 .gift-submit {
   background-color: var(--rieslingcolor);
   font-style: italic;
   border: none;
-  height: 30px;
-  align-self: flex-end;
+  width: 40%;
+  margin-left: auto;
 }
 
 .donation-container {
@@ -78,37 +276,43 @@
 /* Below Progress Bar */
 .amounts-display {
   display: flex;
-  flex-direction: row;
-  padding-top: 10px;
-  width: 100%;
-  align-content: space-between;
 }
 
 .amount-given {
-  display: flex;
-  padding-right: 200px;
+  text-align: left;
+  padding-top: 10px;
+  font-weight: 900;
+  color: var(--footercolor);
 }
 
 .total-amount {
-  display: flex;
   text-align: right;
+  padding-top: 10px;
+  margin-left: auto;
+  font-weight: 900;
+  color: var(--footercolor);
 }
 
 /* Backgrounds */
-.venmo-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
-}
-
-.zelle-match-container {
+.zola-container {
   background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-4.png');  
 }
 
-.zola-container {
+.venmo-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-3.png');  
+}
+
+.zelle-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-4.png');  
+}
+
+.charity-container {
   background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-3.png');  
 }
 
 .kayak-container {
   background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-2.png');  
+  object-fit: contain;
 }
 
 .poke-container {
@@ -116,11 +320,11 @@
 }
 
 .tracy-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-3.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-2.png');  
 }
 
 .mamas-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-2.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
 }
 
 .hawaii-container {
@@ -128,19 +332,19 @@
 }
 
 .bear-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-3.png');  
 }
 
 .wailea-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-4.png');  
 }
 
 .salmon-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-3.png');  
 }
 
 .alaska-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-2.png');  
 }
 
 .beer-container {
@@ -148,17 +352,80 @@
 }
 
 .tramway-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-2.png');  
 }
 
 .snorkel-container {
   background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
 }
 
-.alaska-match-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+/* Responsive */
+@media screen and (max-width: 1275px) {
+  .gifts-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 20px 20px 20px;
+    border: 6px solid var(--footercolor);
+  }
+  
+  .gift {
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 9px solid var(--footercolor);
+    flex: 33%;
+    aspect-ratio: 1 / 1; 
+    padding: 0 7px;
+    max-width: 80%;
+    align-content: center;
+    align-items: center;
+  }
+
+  .snorkel-container {
+    max-width: 33%;
+  }
 }
 
-.hawaii-match-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+@media screen and (max-width: 950px) {
+  .gifts-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 20px 20px 20px;
+    border: 6px solid var(--footercolor);
+  }
+  
+  .gift {
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 9px solid var(--footercolor);
+    flex: 50%;
+    aspect-ratio: 1 / 1; 
+    padding: 0 7px;
+    max-width: 80%;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .gifts-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+    justify-content: center;
+    border: none;
+  }
+  
+  .gift {
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 9px solid var(--footercolor);
+    flex: 100%;
+    aspect-ratio: 1 / 1; 
+    padding: 0 7px;
+    max-width: 80%;
+    align-content: center;
+    align-items: center;
+  }
 }

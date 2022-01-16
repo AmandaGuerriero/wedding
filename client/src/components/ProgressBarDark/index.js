@@ -9,7 +9,7 @@ const Container = styled.div`
 
     ::-webkit-progress-bar {
       height: 30px;
-      background-color: #D0A5CD;
+      background-color: #AA69A8;
     }
 
     ::-webkit-progress-value {
