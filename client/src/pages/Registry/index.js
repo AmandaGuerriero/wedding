@@ -316,7 +316,9 @@ function GiftsForm() {
         </div>
       </div>
       <div className="venmo-container gift">
-        <img className="venmo" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/VENMO.png" />
+        <div className="venmo-info">
+          <img className="venmo" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/VENMO.png" />
+        </div>
       </div>
       <div className="zelle-container gift">
         <div className="zelle-info">

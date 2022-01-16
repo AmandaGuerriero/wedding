@@ -51,6 +51,23 @@
   width: 100%;
 }
 
+/* Venmo */
+.venmo-info  {
+  max-width: 75%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}
+
+.venmo-info > img {
+  width: 100%;
+  vertical-align: middle;
+  position: relative;
+  top: 100%;
+  transform: translateY(10%);
+}
+
 /* Zelle */
 .zelle-info  {
   max-width: 85%;
@@ -79,12 +96,6 @@
   margin-top: -5px;
 }
 
-.venmo {
-  height: auto;
-  width: 75%;
-  display: block;
-  margin: auto;
-}
 
 /* Experiences */
 .bears {
