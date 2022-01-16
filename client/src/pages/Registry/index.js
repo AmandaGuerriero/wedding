@@ -27,11 +27,11 @@ function GiftsForm() {
 
     // we will use async/await to fetch this data
     async function giftTotals() {
-      const response = await fetch("https://www.amandaeric2022.com/api/amounts");
+      const response = await fetch("http://localhost:3000/api/amounts");
       const data = await response.json();
 
       // store the data into our DB
-      setBears(data) ;
+      setBears(data);
     }
   }, []);
 
@@ -301,7 +301,7 @@ function GiftsForm() {
 
   // Trigger Success
   function triggerSuccess(name) {
-    window.alert("Thank you," + name + "!")
+    window.alert("Thank you so much for your contribution toward making our honeymoon fun and special!")
     window.location.href = "/registry"
   }
 
@@ -378,6 +378,7 @@ function GiftsForm() {
           <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/KAYAK.png' alt='Kayak' />
         </div>
       <div className="gift-area">
+      {/* <div className="gift-fullfilled">FULFILLED!</div> */}
       {/* Display Kayak from the API */}
       {bears && (
         <div className="bears">
@@ -407,8 +408,8 @@ function GiftsForm() {
           </div>
         </div>
       </form>
-    </div>
-  </div>
+    </div> 
+  </div> 
       {/* Poke Gift */}
       <div className="poke-container gift">
         <div className="gift-title">
@@ -837,11 +838,11 @@ function GiftsForm() {
       <form id="snorkel-form" onSubmit={handleSubmitSnorkel}>
       <div className="gift-inputs">
       <div className="gift-name">
-            <input type="text" name="nameSnorkel" defaultValue={nameSnorkel} placeholder="name" onBlur={handleChangeSnorkel} />
+            <input type="text" className="dark-box" name="nameSnorkel" defaultValue={nameSnorkel} placeholder="name" onBlur={handleChangeSnorkel} />
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" name="amountSnorkel" defaultValue={amountSnorkel} placeholder="$0.00" onBlur={handleChangeSnorkel} />
+              <input type="number" className="dark-box" name="amountSnorkel" defaultValue={amountSnorkel} placeholder="$0.00" onBlur={handleChangeSnorkel} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>

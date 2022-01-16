@@ -135,7 +135,7 @@
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1045px) {
 
-  .details-col, .lodging-options {
+  .details-col, .details-options {
     flex: 95%;
     max-width: 95%;
     padding: 0 7px;
@@ -158,5 +158,26 @@
 
   .details-note1 {
     padding-bottom: 15px;
+  }
+
+  .details-section-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+  }
+  
+  .details-section-title {
+    font-family: 'Barcelony', serif, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--mediumpurple);
+    padding-left: 10px;
+  }
+  
+  .details-olive-branch {
+    padding-left: 20px;
+    margin-top: 10px;
+    height: 40px;
+    width: 100px;
   }
 }
