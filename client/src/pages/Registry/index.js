@@ -313,6 +313,7 @@ function GiftsForm() {
       <div className="zola-container gift">
         <div className="zola-info">
           <img className="zola" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/ZOLA1.png" />
+          <div className="zola-link">VISIT REGISTRY</div>
         </div>
       </div>
       <div className="venmo-container gift">

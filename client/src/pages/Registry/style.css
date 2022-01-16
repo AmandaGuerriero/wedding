@@ -38,7 +38,7 @@
 
 /* Zola */
 .zola-info  {
-  max-width: 70%;
+  max-width: 80%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -49,6 +49,22 @@
   margin-left: auto;
   text-align: center;
   width: 100%;
+  vertical-align: middle;
+  position: relative;
+  transform: translateY(20%);
+}
+
+.zola-link {
+  width: 85%;
+  height: 30px;
+  background-color: var(--rieslingcolor);
+  margin-left: auto;
+  position: relative;
+  transform: translateY(110%);
+  font-weight: 600;
+  color: var(--footercolor);
+  margin-right: 10px;
+  padding-top: 4px;
 }
 
 /* Venmo */
@@ -81,7 +97,8 @@
   margin-left: auto;
   text-align: center;
   width: 100%;
-  margin-bottom: -30px;
+  margin-bottom: -15px;
+  transform: translateY(10%);
 }
 
 .zelle-send, .zelle-email {
@@ -194,15 +211,19 @@ input:focus::placeholder {
 }
 
 /* Backgrounds */
+.zola-container {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-4.png');  
+}
+
 .venmo-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-3.png');  
 }
 
 .zelle-container {
   background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-4.png');  
 }
 
-.zola-container {
+.charity-container {
   background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-3.png');  
 }
 
@@ -252,10 +273,6 @@ input:focus::placeholder {
 }
 
 .snorkel-container {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
-}
-
-.charity-container {
   background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TILE-1.png');  
 }
 
