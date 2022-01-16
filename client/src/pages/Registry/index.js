@@ -309,6 +309,8 @@ function GiftsForm() {
   return (
     <section>
       {/* <h1>Coming Soon</h1> */}
+      <div className="registry-note">In addition to a few more traditional registry items, you can also make a contribution to some of the activies on our honeymoon to Alaska & Hawaii.</div>
+      <div className="registry-note">These contributions are not connected to any online service (since they all take a percentage of the gifts for themselves), so in addition to traditional checks, we have a Venmo QR code and Zelle info listed below. We just ask you to indicate what you are contributing to below to help us keep track of the gifts!</div>
       <div className="gifts-container">
       <div className="zola-container gift">
         <div className="zola-info">
@@ -329,19 +331,43 @@ function GiftsForm() {
         </div>
       </div>
       <div className="charity-container gift">
-      <div className="gift-title">
-            AMANDA & ERIC <br /> ARE DONATING <br /> XX Amount
+        <div className="contribution-container">
+          <div className="charity-title">
+            AMANDA & ERIC ARE MATCHING <b>7.16%</b> OF ALL HONEYMOON CONTRIBUTIONS AND DONATING TO:
           </div>
-      {/* Display Hawaii Donations from API */}
-      {bears && (
-        <div className="bears">
-          {bears.map((bear, index) => (
-            <div key={index}>
-            <div>{Math.round((bear.totalAlaska + bear.totalBears + bear.totalTracy + bear.totalTram + bear.totalSalmon + bear.totalKayak) * .0716)}</div>
+          <div className="charities hawaii-charity">
+              CONSERVATION COUNCIL FOR HAWAII
+          </div>
+          <div className="icon-charity-container">
+          <img className="charity-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TREE.png' alt='Palm Tree' />
+           {/* Display Hawaii Donations from API */}
+          {bears && (
+            <div className="bears">
+              {bears.map((bear, index) => (
+                <div key={index}>
+                <div className="hawaii-contribution">$ {Math.round((bear.totalHawaii + bear.totalBeer + bear.totalPoke + bear.totalWailea + bear.totalSnorkel + bear.totalMamas) * .0716)}</div>
+                </div>
+              ))}
             </div>
-          ))}
+          )}
+          </div>
+          <div className="charities alaska-charity">
+              ALASKA WILDLIFE ALLIANCE
+          </div>
+          <div className="icon-charity-container">
+          <img className="charity-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/BEARS.png' alt='Polar Bear' />
+          {/* Display Hawaii Donations from API */}
+          {bears && (
+            <div className="bears">
+              {bears.map((bear, index) => (
+                <div key={index}>
+                <div className="alaska-contribution">$ {Math.round((bear.totalAlaska + bear.totalBears + bear.totalTracy + bear.totalTram + bear.totalSalmon + bear.totalKayak) * .0716)}</div>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
-      )}
+      </div>
       </div>
       {/* Kayak Gift */}
       <div className="kayak-container gift">
