@@ -333,7 +333,7 @@ function GiftsForm() {
       <div className="charity-container gift">
         <div className="contribution-container">
           <div className="charity-title">
-            AMANDA & ERIC ARE MATCHING <b>7.16%</b> OF ALL HONEYMOON CONTRIBUTIONS AND DONATING TO:
+            WE ARE MATCHING <b>7.16%</b> OF HONEYMOON CONTRIBUTIONS AND DONATING TO:
           </div>
           <div className="charities hawaii-charity">
               CONSERVATION COUNCIL FOR HAWAII

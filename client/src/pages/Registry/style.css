@@ -138,20 +138,21 @@
 }
 
 .charity-title {
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   color: var(--footercolor);
-  line-height: 21px;
+  line-height: 17px;
   margin-bottom: 10px;
-  margin-top: 5px;
-  width: 80%;
+  margin-top: 40px;
+  width: 75%;
+  margin-left: 10px;
 }
 
 .charities {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--footercolor);
-  line-height: 21px;
+  line-height: 18px;
   width: 80%;
 }
 
@@ -162,9 +163,8 @@
   align-items: center;
   justify-content: center;
   margin-top: -5px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 15px;
+  margin-left: -30px;
 }
 
 .alaska-contribution {
@@ -172,10 +172,11 @@
   height: 30px;
   background-color: var(--rieslingcolor);
   font-weight: 600;
-  color: var(--footercolor);
+  color: var(--footecolor);
   padding-top: 3px;
   text-align: center;
   font-style: italic;
+  margin-left: 5px;
 }
 
 .hawaii-contribution {
@@ -187,6 +188,7 @@
   padding-top: 3px;
   text-align: center;
   font-style: italic;
+  margin-left: 5px;
 }
 
 .charity-icon {
@@ -358,11 +360,18 @@ input:focus::placeholder {
 }
 
 /* Responsive */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1275px) {
+  .gifts-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 20px 20px 20px;
+    border: 6px solid var(--footercolor);
+  }
+  
   .gift {
     background-repeat: no-repeat;
     background-size: contain;
-    border: 4px solid var(--footercolor);
+    border: 9px solid var(--footercolor);
     flex: 33%;
     aspect-ratio: 1 / 1; 
     padding: 0 7px;
@@ -370,13 +379,24 @@ input:focus::placeholder {
     align-content: center;
     align-items: center;
   }
+
+  .snorkel-container {
+    max-width: 33%;
+  }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
+  .gifts-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 20px 20px 20px;
+    border: 6px solid var(--footercolor);
+  }
+  
   .gift {
     background-repeat: no-repeat;
     background-size: contain;
-    border: 4px solid var(--footercolor);
+    border: 9px solid var(--footercolor);
     flex: 50%;
     aspect-ratio: 1 / 1; 
     padding: 0 7px;
@@ -388,15 +408,24 @@ input:focus::placeholder {
 
 
 @media screen and (max-width: 600px) {
+  .gifts-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+    justify-content: center;
+    border: none;
+  }
+  
   .gift {
     background-repeat: no-repeat;
     background-size: contain;
-    border: 4px solid var(--footercolor);
+    border: 9px solid var(--footercolor);
     flex: 100%;
     aspect-ratio: 1 / 1; 
     padding: 0 7px;
     max-width: 80%;
-    margin-right: auto;
-    margin-left: auto;
+    align-content: center;
+    align-items: center;
   }
 }
