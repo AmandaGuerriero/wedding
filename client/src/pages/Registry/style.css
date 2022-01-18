@@ -10,15 +10,15 @@
   display: flex;
   flex-wrap: wrap;
   margin: 20px 20px 20px 20px;
+  border: 9px solid var(--footercolor);
 }
 
 .gift {
-  background-repeat: no-repeat;
-  background-size: contain;
-  outline: 15px solid var(--footercolor);
+  background-size: 100%;
+  min-height: 325px;
+  border: 9px solid var(--footercolor);
   flex: 25%;
   aspect-ratio: 1 / 1; 
-  padding: 0 7px;
   max-width: 80%;
   align-content: center;
   align-items: center;
@@ -74,11 +74,16 @@
   padding-top: 4px;
 }
 
+.zola-link:hover {
+  background-color: var(--footercolor);
+}
+
 .zola-link > a {
   color: var(--footercolor)
 }
 
 .zola-link > a:hover {
+  background-color: var(--footercolor);
   color: var(--mediumpurple);
   text-decoration: none;
 }
@@ -97,7 +102,7 @@
   vertical-align: middle;
   position: relative;
   top: 100%;
-  transform: translateY(25%);
+  transform: translateY(20%);
 }
 
 /* Zelle */
@@ -112,9 +117,9 @@
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  width: 100%;
-  margin-bottom: -15px;
-  transform: translateY(10%);
+  width: 80%;
+  margin-bottom: 10px;
+  transform: translateY(20%);
 }
 
 .zelle-send {
@@ -371,17 +376,11 @@ input:focus::placeholder {
 
 /* Responsive */
 @media screen and (max-width: 1350px) {
-  .contribution-container {
-    padding-top: 35px;
-  }
-}
-
-/* Responsive */
-@media screen and (max-width: 1275px) {
   .gifts-container {
     display: flex;
     flex-wrap: wrap;
     margin: 20px 20px 20px 20px;
+    border: 0px;
   }
   
   .gift {
@@ -390,7 +389,6 @@ input:focus::placeholder {
     outline: 15px solid var(--footercolor);
     flex: 33%;
     aspect-ratio: 1 / 1; 
-    padding: 0 7px;
     max-width: 80%;
     align-content: center;
     align-items: center;
@@ -402,11 +400,12 @@ input:focus::placeholder {
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1015px) {
   .gifts-container {
     display: flex;
     flex-wrap: wrap;
     margin: 20px 20px 20px 20px;
+    border: 0px;
   }
   
   .gift {
@@ -428,14 +427,14 @@ input:focus::placeholder {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .gifts-container {
     display: flex;
     flex-wrap: wrap;
     margin: 20px 20px 20px 20px;
     text-align: center;
     justify-content: center;
-    border: none;
+    border: 0px;
   }
   
   .gift {
@@ -446,9 +445,6 @@ input:focus::placeholder {
     max-width: 93%;
     align-content: center;
     align-items: center;
-  }
-
-  .gift {
     min-height: 325px;
   }
 
