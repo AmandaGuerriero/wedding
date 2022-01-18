@@ -312,7 +312,7 @@ function GiftsForm() {
       <div className="gifts-container">
       <div className="zola-container gift">
         <div className="zola-info">
-          <img className="zola" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/ZOLA1.png" />
+          <img className="zola" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/ZOLA2.png" />
           <div className="zola-link"><a href="https://www.zola.com/registry/guerriolenwedding2022" target="_blank">VISIT REGISTRY</a></div>
         </div>
       </div>

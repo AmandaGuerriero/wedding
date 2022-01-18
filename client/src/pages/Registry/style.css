@@ -49,13 +49,14 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
 }
 
 .zola-info > img {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  width: 100%;
+  width: 80%;
   vertical-align: middle;
   position: relative;
   transform: translateY(20%);
@@ -72,6 +73,7 @@
   font-weight: 600;
   color: var(--footercolor);
   padding-top: 4px;
+  margin-top: 20px;
 }
 
 .zola-link:hover {
@@ -445,7 +447,7 @@ input:focus::placeholder {
     max-width: 93%;
     align-content: center;
     align-items: center;
-    min-height: 325px;
+    min-height: 300px;
   }
 
   .gift-icon {
@@ -480,4 +482,30 @@ input:focus::placeholder {
     align-content: center;
     align-items: center;
   }
+
+  .contribution-container {
+    max-width: 85%;
+    text-align: center;
+    margin-left: auto;
+    padding-top: 30px;
+  }
+  
+  .charity-title {
+    font-size: 14px;
+    text-align: center;
+    color: var(--footercolor);
+    line-height: 17px;
+    margin-bottom: 10px;
+    width: 75%;
+    margin-left: 10px;
+  }
+  
+  .charities {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--footercolor);
+    line-height: 18px;
+    width: 80%;
+  }
+  
 }
