@@ -5,8 +5,8 @@ import Collapsible from 'react-collapsible';
 const Lodging = () => {
   return (
     <main>
-      <div className="lodging-note">We recommend booking your accommodations sometime this year to ensure the best price and selection. Hotels tend to be a little more expensive, so if you are traveling with other friends/family we encourage you to look at Airbnb/VRBO options.</div>
-      <div className="lodging-note">There is absolutely no parking at the venue and you cannot Uber directly there so a short shuttle ride will be provided from Strother Park in Arroyo Grande. If a large group of people end up staying in either Pismo Beach or SLO, we may look at providing a shuttle from there.</div>
+      <div className="lodging-note">We recommend booking your accommodations ASAP to ensure the best price and selection. Hotels tend to be a little more expensive, so if you are traveling with other friends/family, please take a look at Airbnb/VRBO options.</div>
+      <div className="lodging-note">There is absolutely no parking at the venue and you cannot Uber directly there, so a short shuttle ride will be provided from the Agrarian (for those staying at the hotel) and Strother Park in Arroyo Grande.</div>
       <div className="lodging-note">**All ratings based on hotels.com</div>
       <div className="lodging-section-header">
         <img className="lodging-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
