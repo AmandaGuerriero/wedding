@@ -63,14 +63,14 @@
 
 .zola-link {
   width: 85%;
+  margin-left: auto;
+  margin-right: auto;
   height: 30px;
   background-color: var(--rieslingcolor);
-  margin-left: auto;
   position: relative;
   transform: translateY(110%);
   font-weight: 600;
   color: var(--footercolor);
-  margin-right: 10px;
   padding-top: 4px;
 }
 
@@ -117,12 +117,13 @@
   transform: translateY(10%);
 }
 
-.zelle-send, .zelle-email {
+.zelle-send {
   color: var(--footercolor);
   font-size: 17px;
 }
 
 .zelle-email {
+  color: var(--footercolor);
   font-weight: 600;
   font-style: italic;
   font-size: 19px;
@@ -422,7 +423,8 @@ input:focus::placeholder {
 
   .snorkel-container {
     visibility: visible;
-    flex: 50%
+    flex: 50%;
+    max-height: 600px;
   }
 }
 
@@ -437,13 +439,11 @@ input:focus::placeholder {
   }
   
   .gift {
-    background-repeat: no-repeat;
     background-size: contain;
     outline: 15px solid var(--footercolor);
     flex: 100%;
     aspect-ratio: 1 / 1; 
-    padding: 0 7px;
-    max-width: 80%;
+    max-width: 93%;
     align-content: center;
     align-items: center;
   }
@@ -452,11 +452,32 @@ input:focus::placeholder {
     position:relative;
     left: -7%;
     transform: translate(25%);
-    height: 25%;
-    width: 25%;
+    height: 20%;
+    width: 20%;
   }
 
   .gift-amount {
     margin-left: -5px;
+  }
+
+  .gift {
+    height: 100%;
+    width: 100%;
+  }
+  .zelle-email {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: -5px;
+  }
+
+  .snorkel-container {
+    background-size: contain;
+    outline: 15px solid var(--footercolor);
+    flex: 100%;
+    aspect-ratio: 1 / 1; 
+    max-width: 93%;
+    align-content: center;
+    align-items: center;
   }
 }
