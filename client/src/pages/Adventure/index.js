@@ -273,18 +273,18 @@ const Adventure = () => {
                     </div>
                       <div className="adventure-detail">A staple of the California beer scene, the main brewing facility is located in Paso and features an enormous tasting room and restaurant.</div>
                   </ul>
-                  <ul className="adventure-entry">
+                  {/* <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
                       <div className="adventure-name">TENT CITY</div>
                     </div>
-                  </ul>
-                  <ul className="adventure-entry">
+                  </ul> */}
+                  {/* <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
                       <div className="adventure-name">DEAD OAK</div>
                     </div>
-                  </ul>
+                  </ul> */}
                 </div>
                 </Collapsible>
               </div>
@@ -439,7 +439,7 @@ const Adventure = () => {
                       <div>•</div>
                       <div className="adventure-name">MASON BAR&nbsp;&nbsp;|</div><div className="adventure-town">ARROYO GRANDE</div>
                     </div>
-                      <div className="adventure-detail">We will most likely be holding the after party here following the reception, but recommend checking it out for a regular dinner as well. The brussel sprouts are some of the best we’ve ever had.</div>
+                      <div className="adventure-detail">We will be holding the after party here, but recommend checking it out for a regular dinner as well. The Brussels sprouts are some of the best we've ever had and the rest of the food is amazing as well!</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">

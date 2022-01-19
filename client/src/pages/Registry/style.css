@@ -101,9 +101,13 @@ a > .zola-link {
   margin-top: 20px;
 }
 
-a:hover {
+a > .zola-link:hover {
   background-color: var(--footercolor);
   color: var(--mediumpurple);
+  text-decoration: none;
+}
+
+a:hover {
   text-decoration: none;
 }
 

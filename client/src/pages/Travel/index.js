@@ -97,7 +97,8 @@ const Travel = () => {
             <div className="travel-car">Rental Cars</div>
             <div className="travel-trains-autos-info">
               <div className="travel-trains-autos-notes">We recommend renting a car for the weekend as public transportation in California leaves a bit to be desired (still waiting on that high speed rail....) and while there are many places to explore within 50 miles of Arroyo Grande, everything is still very spread out.<br /><br /></div>
-              <div className="travel-trains-autos-notes">If you are traveling from Los Angeles, beware of the vaunted LA traffic as it can add considerable time to your drive especially around the 101/405 interchange, Ventura, and Santa Barbara area. Also, your GPS may try to take you on the 154 after Santa Barbara, which is definitely the more scenic (also more treacherous) route, however it does not usually save time over just staying on the 101.</div>
+              <div className="travel-trains-autos-notes">If you rent a car and are traveling from Los Angeles, beware of the Southern California traffic as it can add considerable time to your drive especially in the LA, Ventura, and Santa Barbara areas.<br /><br /></div>
+              <div className="travel-trains-autos-notes">Also, if your GPS tries to take you on shortcut on the 154 after Santa Barbara we would recommend just staying on the 101. While the 154 is a bit more scenic, it's a two-lane mountain road and doesn't really save you much time.</div>
             </div>
           </div>
            {/* Rideshare */}
