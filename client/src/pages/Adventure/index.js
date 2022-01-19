@@ -29,7 +29,7 @@ const Adventure = () => {
             <div className="adventure-info">
               <div className="adventure-description">The northern region of the Central Coast is one of the most picturesque areas of California, if not the entire US. If you can spare the time and have not been before, we cannot recommend it enough.</div>
                 {/* SEE */}
-                <Collapsible trigger="SEE" triggerWhenOpen="SEE" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ SEE" triggerWhenOpen="➞ SEE" >
                 <div className="adventure-options-links">
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -69,7 +69,7 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
                 {/* DO */}
-                <Collapsible trigger="DO" triggerWhenOpen="DO" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ DO" triggerWhenOpen="➞ DO" >
                 <div className="adventure-options-links">
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -95,7 +95,7 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
                 {/* EAT */}
-                <Collapsible trigger="EAT" triggerWhenOpen="EAT" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ EAT" triggerWhenOpen="➞ EAT" >
                 <div className="adventure-options-links">
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -121,7 +121,7 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
                 {/* DRINK */}
-                <Collapsible trigger="DRINK" triggerWhenOpen="DRINK" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ DRINK" triggerWhenOpen="➞ DRINK" >
               <div className="adventure-options-links">
                 <ul className="adventure-entry">
                   <div className="adventure-header">
@@ -176,7 +176,7 @@ const Adventure = () => {
             <div className="adventure-info">
               <div className="adventure-description">While this area is very pretty and there probably are some good outdoor activities you can seek out, most of our recommendations here revolve around food and drink.</div>
                 {/* EAT */}
-                <Collapsible trigger="EAT" triggerWhenOpen="EAT" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ EAT" triggerWhenOpen="➞ EAT" >
                 <div className="adventure-options-links">
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -202,7 +202,7 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
                 {/* WINERY */}
-                <Collapsible trigger="WINERIES" triggerWhenOpen="WINERIES" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ WINERIES" triggerWhenOpen="➞ WINERIES" >
                 <div className="adventure-options-links">
                   <div className="drinking-note">Paso is a huge AVA with over 100 different wineries where most tastings range from $15-30. Below is a selection of our favorites.</div>
                   <ul className="adventure-entry">
@@ -264,7 +264,7 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
                 {/* Brewereis */}
-                <Collapsible trigger="BREWERIES" triggerWhenOpen="BREWERIES" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ BREWERIES" triggerWhenOpen="➞ BREWERIES" >
                 <div className="adventure-options-links">
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -273,18 +273,18 @@ const Adventure = () => {
                     </div>
                       <div className="adventure-detail">A staple of the California beer scene, the main brewing facility is located in Paso and features an enormous tasting room and restaurant.</div>
                   </ul>
-                  <ul className="adventure-entry">
+                  {/* <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
                       <div className="adventure-name">TENT CITY</div>
                     </div>
-                  </ul>
-                  <ul className="adventure-entry">
+                  </ul> */}
+                  {/* <ul className="adventure-entry">
                     <div className="adventure-header">
                       <div>•</div>
                       <div className="adventure-name">DEAD OAK</div>
                     </div>
-                  </ul>
+                  </ul> */}
                 </div>
                 </Collapsible>
               </div>
@@ -317,7 +317,7 @@ const Adventure = () => {
             <div className="adventure-info">
               <div className="adventure-description">The region surrounding our venue includes a number of small towns and each has their own unique recreational options.</div>
                 {/* SEE */}
-                <Collapsible trigger="SEE" triggerWhenOpen="SEE" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ SEE" triggerWhenOpen="➞ SEE" >
                 <div className="adventure-options-links">
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -357,7 +357,7 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
                 {/* DO */}
-                <Collapsible trigger="DO" triggerWhenOpen="DO" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ DO" triggerWhenOpen="➞ DO" >
                 <div className="adventure-options-links">
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -397,7 +397,7 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
                 {/* EAT */}
-                <Collapsible trigger="EAT" triggerWhenOpen="EAT" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ EAT" triggerWhenOpen="➞ EAT" >
                 <div className="adventure-options-links">
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -439,7 +439,7 @@ const Adventure = () => {
                       <div>•</div>
                       <div className="adventure-name">MASON BAR&nbsp;&nbsp;|</div><div className="adventure-town">ARROYO GRANDE</div>
                     </div>
-                      <div className="adventure-detail">We will most likely be holding the after party here following the reception, but recommend checking it out for a regular dinner as well. The brussel sprouts are some of the best we’ve ever had.</div>
+                      <div className="adventure-detail">We will be holding the after party here, but recommend checking it out for a regular dinner as well. The Brussels sprouts are some of the best we've ever had and the rest of the food is amazing as well!</div>
                   </ul>
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -465,7 +465,7 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
                 {/* Brewereis */}
-                <Collapsible trigger="BREWERIES" triggerWhenOpen="BREWERIES" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ BREWERIES" triggerWhenOpen="➞ BREWERIES" >
                 <div className="adventure-options-links">
                 <div className="drinking-note">None of these breweries are head and shoulders above the rest but they are all very solid.</div>
                   <ul className="adventure-entry">
@@ -507,7 +507,7 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
                 {/* WINERY */}
-                <Collapsible trigger="WINERIES" triggerWhenOpen="WINERIES" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ WINERIES" triggerWhenOpen="➞ WINERIES" >
                 <div className="adventure-options-links">
                   <div className="drinking-note">Edna Valley is a much smaller AVA than Paso (only about 30 wineries) and while the quality of the wine may be a bit lower, we’ve found its a more friendly atmosphere. Expect to pay $15-25 per tasting and below are our favorites.</div>
                   <ul className="adventure-entry">
@@ -591,7 +591,7 @@ const Adventure = () => {
             <div className="adventure-info">
               <div className="adventure-description">This area includes 2 AVAs and quite a wide variety of different towns.</div>
                 {/* SEE */}
-                <Collapsible trigger="SEE" triggerWhenOpen="SEE" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ SEE" triggerWhenOpen="➞ SEE" >
                 <div className="adventure-options-links">
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -617,7 +617,7 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
                 {/* DO */}
-                <Collapsible trigger="DO" triggerWhenOpen="DO" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ DO" triggerWhenOpen="➞ DO" >
                 <div className="adventure-options-links">
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -636,7 +636,7 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
                 {/* EAT */}
-                <Collapsible trigger="EAT" triggerWhenOpen="EAT" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ EAT" triggerWhenOpen="➞ EAT" >
                 <div className="adventure-options-links">
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -669,7 +669,7 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
                 {/* Brewereis */}
-                <Collapsible trigger="BREWERIES" triggerWhenOpen="BREWERIES" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ BREWERIES" triggerWhenOpen="➞ BREWERIES" >
                 <div className="adventure-options-links">
                 <div className="drinking-note">There are 6-7 breweries in Santa Barbara that we have not been to yet, but are sure some of them are worth checking out.</div>
                   <ul className="adventure-entry">
@@ -687,7 +687,7 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
                 {/* WINERY */}
-                <Collapsible trigger="WINERIES" triggerWhenOpen="WINERIES" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ WINERIES" triggerWhenOpen="➞ WINERIES" >
                 <div className="adventure-options-links">
                   <div className="drinking-note">The Santa Maria AVA is very small but worth the journey as it has a couple of gems in it.</div>
                   <ul className="adventure-entry">
@@ -774,7 +774,7 @@ const Adventure = () => {
             <div className="adventure-info">
               <div className="adventure-description">This is at the very southern end of the Central Coast but we couldn’t leave it out because it does have a couple of really fun places to go/eat.</div>
                 {/* SEE */}
-                <Collapsible trigger="SEE" triggerWhenOpen="SEE" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ SEE" triggerWhenOpen="➞ SEE" >
                 <div className="adventure-options-links">
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -786,7 +786,7 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
                 {/* DO */}
-                <Collapsible trigger="DO" triggerWhenOpen="DO" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ DO" triggerWhenOpen="➞ DO" >
                 <div className="adventure-options-links">
                 <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -798,7 +798,7 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
                 {/* EAT */}
-                <Collapsible trigger="EAT" triggerWhenOpen="EAT" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ EAT" triggerWhenOpen="➞ EAT" >
                 <div className="adventure-options-links">
                   <ul className="adventure-entry">
                     <div className="adventure-header">
@@ -817,7 +817,7 @@ const Adventure = () => {
                 </div>
                 </Collapsible>
                 {/* Brewereis */}
-                <Collapsible trigger="BREWERIES" triggerWhenOpen="BREWERIES" className="accordion fa fa-caret-right">
+                <Collapsible trigger="↓ BREWERIES" triggerWhenOpen="➞ BREWERIES" >
                 <div className="adventure-options-links">
                   <div className="drinking-note">There are a number of breweries in the area but here are a few of our favorites.</div>
                   <ul className="adventure-entry">

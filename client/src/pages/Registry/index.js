@@ -307,13 +307,15 @@ function GiftsForm() {
   return (
     <section>
       {/* <h1>Coming Soon</h1> */}
-      <div className="registry-note">In addition to a few more traditional registry items, you can also make a contribution to some of the activies on our honeymoon to Alaska & Hawaii.</div>
-      <div className="registry-note">These contributions are not connected to any online service (since they all take a percentage of the gifts for themselves), so in addition to traditional checks, we have a Venmo QR code and Zelle info listed below. We just ask you to indicate what you are contributing to below to help us keep track of the gifts!</div>
+      <div className="registry-note">In addition to a few of the more standard registry items on Zola, you can also make a contribution to some of the activities on our honeymoon to Alaska & Hawaii with these two steps:</div>
+      <div className="registry-note1"><b>1. Choose an available activity/amount and use either Venmo (scan QR code), Zelle, or a traditional check for the donation.</b></div>
+      <div className="registry-note2"><b>2. Please enter your name and amount on the corresponding activity tile and then click SUBMIT so we can keep track of all the gifts!</b></div>
+      <div className="registry-note-disclaimer">(We chose not to go through an online service for these donations because they all take a cut of each contribution)</div>
       <div className="gifts-container">
       <div className="zola-container gift">
         <div className="zola-info">
           <img className="zola" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/ZOLA2.png" />
-          <div className="zola-link"><a href="https://www.zola.com/registry/guerriolenwedding2022" target="_blank">VISIT REGISTRY</a></div>
+          <a href="https://www.zola.com/registry/guerriolenwedding2022" target="_blank"><div className="zola-link">VISIT REGISTRY</div></a>
         </div>
       </div>
       <div className="venmo-container gift">
@@ -400,7 +402,7 @@ function GiftsForm() {
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" className="light-box" name="amountKayak" defaultValue={amountKayak} placeholder="$0.00" onBlur={handleChangeKayak} />
+              <input type="number" className="light-box" name="amountKayak" defaultValue={amountKayak} placeholder="$0" onBlur={handleChangeKayak} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -440,7 +442,7 @@ function GiftsForm() {
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" className="dark-box" name="amountPoke" defaultValue={amountPoke} placeholder="$0.00" onBlur={handleChangePoke} />
+              <input type="number" className="dark-box" name="amountPoke" defaultValue={amountPoke} placeholder="$0" onBlur={handleChangePoke} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -480,7 +482,7 @@ function GiftsForm() {
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" className="light-box" name="amountTracy" defaultValue={amountTracy} placeholder="$0.00" onBlur={handleChangeTracy} />
+              <input type="number" className="light-box" name="amountTracy" defaultValue={amountTracy} placeholder="$0" onBlur={handleChangeTracy} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -520,7 +522,7 @@ function GiftsForm() {
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" className="dark-box" name="amountMamas" defaultValue={amountMamas} placeholder="$0.00" onBlur={handleChangeMamas} />
+              <input type="number" className="dark-box" name="amountMamas" defaultValue={amountMamas} placeholder="$0" onBlur={handleChangeMamas} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -531,7 +533,7 @@ function GiftsForm() {
       {/* Hawaii Gift */}
       <div className="hawaii-container gift">
         <div className="gift-title">
-            DINNER AT MAMA'S <br /> FISH HOUSE IN MAUI
+          5 NIGHT STAY <br /> IN MAUI
         </div>
           <div>
           <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/HAWAII.png' alt='Hawaii' />
@@ -560,7 +562,7 @@ function GiftsForm() {
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" className="dark-box" name="amountHawaii" defaultValue={amountHawaii} placeholder="$0.00" onBlur={handleChangeHawaii} />
+              <input type="number" className="dark-box" name="amountHawaii" defaultValue={amountHawaii} placeholder="$0" onBlur={handleChangeHawaii} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -600,7 +602,7 @@ function GiftsForm() {
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" className="light-box" name="amount" defaultValue={amount} placeholder="$0.00" onBlur={handleChange} />
+              <input type="number" className="light-box" name="amount" defaultValue={amount} placeholder="$0" onBlur={handleChange} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -640,7 +642,7 @@ function GiftsForm() {
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" className="dark-box" name="amountWailea" defaultValue={amountWailea} placeholder="$0.00" onBlur={handleChangeWailea} />
+              <input type="number" className="dark-box" name="amountWailea" defaultValue={amountWailea} placeholder="$0" onBlur={handleChangeWailea} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -680,7 +682,7 @@ function GiftsForm() {
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" className="light-box" name="amountSalmon" defaultValue={amountSalmon} placeholder="$0.00" onBlur={handleChangeSalmon} />
+              <input type="number" className="light-box" name="amountSalmon" defaultValue={amountSalmon} placeholder="$0" onBlur={handleChangeSalmon} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -720,7 +722,7 @@ function GiftsForm() {
         </div>
         <div className="amount-submit">
           <div className="gift-amount">
-            <input type="number" className="light-box" name="amountAlaska" defaultValue={amountAlaska} placeholder="$0.00" onBlur={handleChangeAlaska} />
+            <input type="number" className="light-box" name="amountAlaska" defaultValue={amountAlaska} placeholder="$0" onBlur={handleChangeAlaska} />
           </div>
           <button data-testid="button" type="submit" className="gift-submit">submit</button>
         </div>
@@ -760,7 +762,7 @@ function GiftsForm() {
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" className="dark-box" name="amountBeer" defaultValue={amountBeer} placeholder="$0.00" onBlur={handleChangeBeer} />
+              <input type="number" className="dark-box" name="amountBeer" defaultValue={amountBeer} placeholder="$0" onBlur={handleChangeBeer} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -800,7 +802,7 @@ function GiftsForm() {
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" className="light-box" name="amountTram" defaultValue={amountTram} placeholder="$0.00" onBlur={handleChangeTram} />
+              <input type="number" className="light-box" name="amountTram" defaultValue={amountTram} placeholder="$0" onBlur={handleChangeTram} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
@@ -840,7 +842,7 @@ function GiftsForm() {
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" className="dark-box" name="amountSnorkel" defaultValue={amountSnorkel} placeholder="$0.00" onBlur={handleChangeSnorkel} />
+              <input type="number" className="dark-box" name="amountSnorkel" defaultValue={amountSnorkel} placeholder="$0" onBlur={handleChangeSnorkel} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
