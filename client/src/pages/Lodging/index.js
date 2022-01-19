@@ -21,7 +21,7 @@ const Lodging = () => {
             <div className="lodging-info">
               <div className="lodging-shuttle-lot">1 minute from shuttle lot</div>
               <div className="lodging-blurb">A tiny downtown with a couple of bars and restaurants including Mason Bar where we will be holding an after party for those who wish to attend. It is a little more “townie” than touristy.</div>
-              <Collapsible trigger="RECOMMENDATIONS" triggerWhenOpen="RECOMMENDATIONS" className="accordion fa fa-caret-right">
+              <Collapsible trigger="↓ OPTIONS" triggerWhenOpen="➞ OPTIONS" >
               <div className="lodging-options-links">
                 <ul className="hotel-entry">
                   <div className="hotel-header">
@@ -43,7 +43,7 @@ const Lodging = () => {
             <div className="lodging-info">
               <div className="lodging-shuttle-lot">10 minutes from shuttle lot</div>
               <div className="lodging-blurb">A combination of swanky, grungy, and touristy, Pismo is located atop cliffs that overlook the ocean. There is a pier along with numerous dining options and while it certainly attracts a large variety of guests, the view is pretty spectacular.</div>
-              <Collapsible trigger="RECOMMENDATIONS" triggerWhenOpen="RECOMMENDATIONS" className="accordion fa fa-caret-right">
+              <Collapsible trigger="↓ OPTIONS" triggerWhenOpen="➞ OPTIONS" >
               <div className="lodging-options-links">
                 <ul className="hotel-entry">
                   <div className="hotel-header">
@@ -110,7 +110,7 @@ const Lodging = () => {
             <div className="lodging-info">
               <div className="lodging-shuttle-lot">20 minutes from shuttle lot</div>
               <div className="lodging-blurb">A small beach town located in a little cove that is quieter and more upscale than Pismo in terms of bars and restaurants, but it is still right on the ocean, so it draws a decent daytime beach crowd.</div>
-              <Collapsible trigger="RECOMMENDATIONS" triggerWhenOpen="RECOMMENDATIONS" className="accordion fa fa-caret-right">
+              <Collapsible trigger="↓ OPTIONS" triggerWhenOpen="➞ OPTIONS" >
               <div className="lodging-options-links">
               <ul className="hotel-entry">
                   <div className="hotel-header">
@@ -150,7 +150,7 @@ const Lodging = () => {
             <div className="lodging-info">
               <div className="lodging-shuttle-lot">20 minutes from shuttle lot</div>
               <div className="lodging-blurb">With much more of a suburbia feel, Santa Maria is located more inland than the rest of the options. While it does not boast much to do in the town itself, it does have the cheapest lodging, is close to Orcutt which has some cool bars/restaurants, and is adjacent to the Santa Maria AVA.</div>
-              <Collapsible trigger="RECOMMENDATIONS" triggerWhenOpen="RECOMMENDATIONS" className="accordion fa fa-caret-right">
+              <Collapsible trigger="↓ OPTIONS" triggerWhenOpen="➞ OPTIONS" >
               <div className="lodging-options-links">
               <ul className="hotel-entry">
                   <div className="hotel-header">
@@ -190,7 +190,7 @@ const Lodging = () => {
             <div className="lodging-info">
               <div className="lodging-shuttle-lot">20 minutes from shuttle lot</div>
               <div className="lodging-blurb">SLO is a college town with a delightful river walk running through it. While it is less touristy than the beach towns and further from the ocean, it offers the widest array of dining options and should be free of all the college hooligans from Cal Poly in July.</div>
-              <Collapsible trigger="RECOMMENDATIONS" triggerWhenOpen="RECOMMENDATIONS" className="accordion fa fa-caret-right">
+              <Collapsible trigger="↓ OPTIONS" triggerWhenOpen="➞ OPTIONS" >
               <div className="lodging-options-links">
               <ul className="hotel-entry">
                   <div className="hotel-header">

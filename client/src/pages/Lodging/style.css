@@ -144,17 +144,12 @@
   font-weight: bold;
   border: none;
   width: 100%;
-  padding: 5px 0px 5px 0px;
 }
 
 .Collapsible__trigger {
   padding-left: 10px;
   font-weight: 600;
-  padding-right: 100%;
-}
-
-.fa-caret-right {
-  padding-left: 10px;
+  padding-right: 55%;
 }
 
 .lodging-options-links {
@@ -239,8 +234,12 @@
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1045px) {
+  .Collapsible {
+    width: 100%;
+  }
+
   .Collapsible__trigger {
-    padding-right: 13%;
+    padding-right: 65%;
     font-size: 20px;
   }
   
