@@ -409,6 +409,7 @@ input:focus::placeholder {
   color: var(--footercolor);
   height: 30px;
   padding-top: 3px;
+  font-weight: 600;
 }
 
 /* Responsive */
