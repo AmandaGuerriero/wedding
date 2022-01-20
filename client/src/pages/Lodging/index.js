@@ -289,6 +289,7 @@ const Lodging = () => {
           </div>
           </div>
         <div className="lodging-col lodging-iframe-container">
+        <div className="map-link">If you are having trouble with the map, click <a href="https://www.google.com/maps/d/u/0/viewer?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en&ll=35.11759215185838%2C-120.46963057538544&z=11" target="_blank">here.</a></div>
           <iframe className="lodging-responsive-iframe" title="Hotel Map"  src="https://www.google.com/maps/d/embed?mid=1z5UcYpc_Be-fVbqVHDH7CmKRF7PVyicV&hl=en"></iframe>
         </div>
       </div>

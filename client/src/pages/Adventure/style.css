@@ -217,6 +217,7 @@
   height: 95%;
 }
 
+
 .adventure-links {
   display: block;
   padding: 10px 0px 10px 0px;
@@ -231,6 +232,31 @@
   color: var(--hovercolor);
   padding-left: 6px;
   font-weight: 400;
+}
+
+.map-link {
+  font-size: 14px;
+  visibility: visible;
+  color: var(--pinotcolor);
+}
+.map-link > a {
+  color: var(--mediumpurple);
+  text-decoration: underline;
+}
+
+.map-link > a:hover {
+  color: var(--hovercolor);
+}
+
+.overlay {
+  background:transparent; 
+  position:relative; 
+  pointer-events: none;
+  width:640px;
+  height:480px; /* your iframe height */
+  top:480px;  /* your iframe height */
+  margin-top:-480px;  /* your iframe height */
+  z-index: auto;
 }
 
 
@@ -295,7 +321,7 @@
     padding-right: 200px;
   }
   
-  .adventure-iframe-container {
+  .adventure-iframe-container, .map-link {
     display: none;
   }
   

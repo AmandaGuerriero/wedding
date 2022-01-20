@@ -132,6 +132,20 @@
   height: 100%;
 }
 
+.airport-link {
+  font-size: 14px;
+  visibility: visible;
+  color: var(--pinotcolor);
+}
+.airport-link > a {
+  color: var(--mediumpurple);
+  text-decoration: underline;
+}
+
+.airport-link > a:hover {
+  color: var(--hovercolor);
+}
+
 .travel-map-mobile {
   display: none;
 }

@@ -151,6 +151,7 @@ const Adventure = () => {
           </div>
         <div className="lodging-map-mobile"><a href="https://www.google.com/maps/d/u/0/viewer?mid=10fOYjk8xAIbeCnrEUTtnrRkLBTIxOt8B&ll=36.43550574117006%2C-121.87890555000001&z=11" target="_blank" rel="noopener noreferrer">View recommendations on a map</a></div>
         <div className="adventure-col adventure-iframe-container">
+        <div className="map-link">If you are having trouble with the map, click <a href="https://www.google.com/maps/d/u/0/viewer?mid=10fOYjk8xAIbeCnrEUTtnrRkLBTIxOt8B&hl=en&ll=36.14983451003921%2C-121.55899029999999&z=9" target="_blank">here.</a></div>
           <iframe className="adventure-responsive-iframe" title="Big Sur Map" src="https://www.google.com/maps/d/embed?mid=10fOYjk8xAIbeCnrEUTtnrRkLBTIxOt8B&hl=en"></iframe>
         </div>
       </div>
@@ -292,6 +293,7 @@ const Adventure = () => {
             </div>
           </div>
         <div className="adventure-col adventure-iframe-container">
+          <div className="map-link">If you are having trouble with the map, click <a href="https://www.google.com/maps/d/u/0/viewer?mid=14GJoAqBHQv4BPbGikOa74sK5yWhaqLA1&hl=en&ll=35.568973351881496%2C-120.66500794999999&z=12" target="_blank">here.</a></div>
           <iframe className="adventure-responsive-iframe" title="Paso Robles Map" src="https://www.google.com/maps/d/embed?mid=14GJoAqBHQv4BPbGikOa74sK5yWhaqLA1&hl=en"></iframe>
         </div>
       </div>
@@ -566,6 +568,7 @@ const Adventure = () => {
             </div>
           </div>
         <div className="adventure-col adventure-iframe-container">
+          <div className="map-link">If you are having trouble with the map, click <a href="https://www.google.com/maps/d/u/0/viewer?mid=1YWNYd1V0-P47Y7q_lzI4stIoBVEg14c8&ll=35.20092294207814%2C-120.70043849999999&z=11" target="_blank">here.</a></div>
           <iframe className="adventure-responsive-iframe" title="SLO Map" src="https://www.google.com/maps/d/embed?mid=1YWNYd1V0-P47Y7q_lzI4stIoBVEg14c8" target="_blank" rel="noopener noreferrer"></iframe>
         </div>
       </div>
@@ -750,6 +753,7 @@ const Adventure = () => {
             </div>
           </div>
         <div className="adventure-col adventure-iframe-container">
+          <div className="map-link">If you are having trouble with the map, click <a href="https://www.google.com/maps/d/u/0/viewer?mid=1lLgrCHh9hUS6eeHtKnHL8aHq6glkL9Ed&ll=34.66160111634897%2C-120.14395355&z=10" target="_blank">here.</a></div>
           <iframe className="adventure-responsive-iframe" title="Santa Barbara Map" src="https://www.google.com/maps/d/embed?mid=1lLgrCHh9hUS6eeHtKnHL8aHq6glkL9Ed"></iframe>
         </div>
       </div>
@@ -845,8 +849,9 @@ const Adventure = () => {
             </div>
           </div>
         <div className="adventure-col adventure-iframe-container">
-          <iframe className="adventure-responsive-iframe" title="Ventura Map" src="https://www.google.com/maps/d/embed?mid=1o4VyfiVhzzx3Tnrsjk7hbVpG37Iku6lr&hl=en"></iframe>
-        </div>
+          <div className="map-link">If you are having trouble with the map, click <a href="https://www.google.com/maps/d/u/0/viewer?mid=1o4VyfiVhzzx3Tnrsjk7hbVpG37Iku6lr&hl=en&ll=34.12952402809403%2C-119.48143359999999&z=10" target="_blank">here.</a></div>
+            <iframe className="adventure-responsive-iframe" title="Ventura Map" src="https://www.google.com/maps/d/embed?mid=1o4VyfiVhzzx3Tnrsjk7hbVpG37Iku6lr&hl=en"></iframe>
+          </div>
       </div>
       <div className="back-to-top"><a className="hyperlink" href="#top">Back to Top</a></div>
     </main>
