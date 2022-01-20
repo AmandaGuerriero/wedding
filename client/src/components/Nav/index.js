@@ -31,10 +31,10 @@ const Nav = props => {
             to="/details"
             activeClassName="active"
             >EVENT DETAILS</NavLink> 
-          {/* <NavLink 
+          <NavLink 
             to="/registry"
             activeClassName="active"
-            >REGISTRY</NavLink> */}
+            >REGISTRY</NavLink>
             {/* <NavLink 
             to="/register-for-updates"
             activeClassName="active"

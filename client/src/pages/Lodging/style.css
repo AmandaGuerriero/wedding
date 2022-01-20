@@ -231,6 +231,20 @@
   padding-top: 20px;
 }
 
+.map-link {
+  font-size: 14px;
+  visibility: visible;
+  color: var(--pinotcolor);
+}
+.map-link > a {
+  color: var(--mediumpurple);
+  text-decoration: underline;
+}
+
+.map-link > a:hover {
+  color: var(--hovercolor);
+}
+
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1045px) {
@@ -239,11 +253,11 @@
   }
 
   .Collapsible__trigger {
-    padding-right: 65%;
+    padding-right: 42%;
     font-size: 20px;
   }
   
-  .lodging-iframe-container {
+  .lodging-iframe-container, .map-link {
     display: none;
   }
   

@@ -19,6 +19,7 @@ const sideDrawer = (props) => {
               <li className="sub-li"><a href="/lodging">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LODGING</a></li>
               <li className="sub-li"><a href="/adventure">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ADVENTURE</a></li>
         <li><a href="/details">EVENT DETAILS</a></li>
+        <li><a href="/registry">REGISTRY</a></li>
         {/* <li><a href="/rsvp">RSVP</a></li> */}
       </ul>
     </nav>
