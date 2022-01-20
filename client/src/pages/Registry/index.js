@@ -819,10 +819,9 @@ function GiftsForm() {
           <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/SNORKLE.png' alt='Snorkeling' />
         </div>
       <div className="gift-area">
-      {/* Display Snorkel from the API */}
-      {bears && (
+      <div className="gift-fullfilled">FULFILLED!</div>
+      {/* {bears && (
         <div className="bears">
-          {/* Snorkel Exeperience Progress */}
           {bears.map((bear, index) => (
             <div key={index}>
             <ProgressBarDark value={bear.totalSnorkel} max={300}/>
@@ -833,9 +832,9 @@ function GiftsForm() {
             </div>
           ))}
         </div>
-      )}
+      )} */}
       {/* Submit Snorkel */}
-      <form id="snorkel-form" onSubmit={handleSubmitSnorkel}>
+      {/* <form id="snorkel-form" onSubmit={handleSubmitSnorkel}>
       <div className="gift-inputs">
       <div className="gift-name">
             <input type="text" className="dark-box" name="nameSnorkel" defaultValue={nameSnorkel} placeholder="name" onBlur={handleChangeSnorkel} />
@@ -847,8 +846,8 @@ function GiftsForm() {
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
           </div>
-        </form>
-      </div>
+        </form> */}
+      </div> 
       </div>
     </div>
     </section>
