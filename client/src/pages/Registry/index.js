@@ -659,11 +659,12 @@ function GiftsForm() {
           <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/SALMON.png' alt='Salmon' />
           </div>
       <div className="gift-area">
+      <div className="gift-fullfilled">FULFILLED!</div>
       {/* Display Salmon from the API */}
-      {bears && (
-        <div className="bears">
+      {/* {bears && (
+        <div className="bears"> */}
           {/* Salmon Exeperience Progress */}
-          {bears.map((bear, index) => (
+          {/* {bears.map((bear, index) => (
             <div key={index}>
             <ProgressBar value={bear.totalSalmon} max={400}/>
               <div className="amounts-display">
@@ -673,9 +674,9 @@ function GiftsForm() {
             </div>
           ))}
         </div>
-      )}
+      )} */}
       {/* Submit Salmon */}
-      <form id="salmon-form" onSubmit={handleSubmitSalmon}>
+      {/* <form id="salmon-form" onSubmit={handleSubmitSalmon}>
       <div className="gift-inputs">
       <div className="gift-name">
             <input type="text" className="light-box" name="nameSalmon" defaultValue={nameSalmon} placeholder="name" onBlur={handleChangeSalmon} />
@@ -687,7 +688,7 @@ function GiftsForm() {
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
           </div>
-        </form>
+        </form> */}
         </div>
       </div>
       {/* Alaska Gift */}
