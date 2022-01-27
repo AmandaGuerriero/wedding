@@ -419,11 +419,12 @@ function GiftsForm() {
           <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/POKE.png' alt='Poke Bowl' />
           </div>
       <div className="gift-area">
+      <div className="gift-fullfilled">FULFILLED!</div>
       {/* Display Poke from the API */}
-      {bears && (
-        <div className="bears">
+      {/* {bears && (
+        <div className="bears"> */}
           {/* Poke Exeperience Progress */}
-          {bears.map((bear, index) => (
+          {/* {bears.map((bear, index) => (
             <div key={index}>
             <ProgressBarDark value={bear.totalPoke} max={125}/>
               <div className="amounts-display">
@@ -431,11 +432,10 @@ function GiftsForm() {
                 <div className="total-amount">$125</div>
               </div>
             </div>
-          ))}
-        </div>
-      )}
+          ))} 
+        </div> */}
       {/* Submit Poke */}
-      <form id="poke-form" onSubmit={handleSubmitPoke}>
+      {/* <form id="poke-form" onSubmit={handleSubmitPoke}>
         <div className="gift-inputs">
           <div className="gift-name">
             <input type="text" className="dark-box" name="namePoke" defaultValue={namePoke} placeholder="name" onBlur={handleChangePoke} />
@@ -447,7 +447,7 @@ function GiftsForm() {
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
         </div>
-      </form>
+      </form> */}
       </div>
     </div>
       {/* Tracy Arm Gift */}
