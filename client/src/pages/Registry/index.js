@@ -410,46 +410,46 @@ function GiftsForm() {
       </form>
     </div> 
   </div> 
-      {/* Poke Gift */}
-      <div className="poke-container gift">
-        <div className="gift-title">
-            EATING ALL THE <br /> POKE MAUI HAS
+      {/* Beer Gift */}
+      <div className="beer-container gift">
+          <div className="gift-title">
+            KOHOLA & MAUI <br /> BREWING COMPANY BEER
           </div>
           <div>
-          <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/POKE.png' alt='Poke Bowl' />
+          <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/BEER.png' alt='Glass of Beer' />
           </div>
       <div className="gift-area">
-      <div className="gift-fullfilled">FULFILLED!</div>
-      {/* Display Poke from the API */}
-      {/* {bears && (
-        <div className="bears"> */}
-          {/* Poke Exeperience Progress */}
-          {/* {bears.map((bear, index) => (
+      {/* Display Beer from the API */}
+      {bears && (
+        <div className="bears">
+          {/* Bears Exeperience Progress */}
+          {bears.map((bear, index) => (
             <div key={index}>
-            <ProgressBarDark value={bear.totalPoke} max={125}/>
+              <ProgressBarDark value={bear.totalBeer} max={75}/>
               <div className="amounts-display">
-                <div className="amount-given">${bear.totalPoke}</div> 
-                <div className="total-amount">$125</div>
+                <div className="amount-given">${bear.totalBeer}</div> 
+                <div className="total-amount">$75</div>
               </div>
             </div>
-          ))} 
-        </div> */}
-      {/* Submit Poke */}
-      {/* <form id="poke-form" onSubmit={handleSubmitPoke}>
+          ))}
+        </div>
+      )}
+      {/* Submit Beer */}
+        <form id="beer-form" onSubmit={handleSubmitBeer}>
         <div className="gift-inputs">
           <div className="gift-name">
-            <input type="text" className="dark-box" name="namePoke" defaultValue={namePoke} placeholder="name" onBlur={handleChangePoke} />
+            <input type="text" className="dark-box" name="nameBeer" defaultValue={nameBeer} placeholder="name" onBlur={handleChangeBeer} />
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" className="dark-box" name="amountPoke" defaultValue={amountPoke} placeholder="$0" onBlur={handleChangePoke} />
+              <input type="number" className="dark-box" name="amountBeer" defaultValue={amountBeer} placeholder="$0" onBlur={handleChangeBeer} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
+          </div>
+        </form>
         </div>
-      </form> */}
       </div>
-    </div>
       {/* Tracy Arm Gift */}
       <div className="tracy-container gift">
         <div className="gift-title">
@@ -650,46 +650,45 @@ function GiftsForm() {
         </form>
       </div>
       </div>
-      {/* Salmon Gift */}
-      <div className="salmon-container gift">
+      {/* Tramway Gift */}
+      <div className="tramway-container gift">
         <div className="gift-title">
-            EATING ALL THE <br /> SALMON ALASKA HAS
+            MOUNT ROBERTS <br /> TRAMWAY IN ANCHORAGE
           </div>
           <div>
-          <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/SALMON.png' alt='Salmon' />
+            <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TRAM.png' alt='Tram' />
           </div>
       <div className="gift-area">
-      <div className="gift-fullfilled">FULFILLED!</div>
-      {/* Display Salmon from the API */}
-      {/* {bears && (
-        <div className="bears"> */}
-          {/* Salmon Exeperience Progress */}
-          {/* {bears.map((bear, index) => (
+      {/* Display Tram from the API */}
+      {bears && (
+        <div className="bears">
+          {/* Tramway Exeperience Progress */}
+          {bears.map((bear, index) => (
             <div key={index}>
-            <ProgressBar value={bear.totalSalmon} max={400}/>
+            <ProgressBar value={bear.totalTram} max={100}/>
               <div className="amounts-display">
-                <div className="amount-given">${bear.totalSalmon}</div> 
-                <div className="total-amount">$400</div>
+                <div className="amount-given">${bear.totalTram}</div> 
+                <div className="total-amount">$100</div>
               </div>
             </div>
           ))}
         </div>
-      )} */}
-      {/* Submit Salmon */}
-      {/* <form id="salmon-form" onSubmit={handleSubmitSalmon}>
-      <div className="gift-inputs">
-      <div className="gift-name">
-            <input type="text" className="light-box" name="nameSalmon" defaultValue={nameSalmon} placeholder="name" onBlur={handleChangeSalmon} />
+      )}
+      {/* Submit Tram */}
+      <form id="tram-form" onSubmit={handleSubmitTram}>
+        <div className="gift-inputs">
+          <div className="gift-name">
+            <input type="text" className="light-box" name="nameTram" defaultValue={nameTram} placeholder="name" onBlur={handleChangeTram} />
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" className="light-box" name="amountSalmon" defaultValue={amountSalmon} placeholder="$0" onBlur={handleChangeSalmon} />
+              <input type="number" className="light-box" name="amountTram" defaultValue={amountTram} placeholder="$0" onBlur={handleChangeTram} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
           </div>
-        </form> */}
-        </div>
+        </form>
+      </div>
       </div>
       {/* Alaska Gift */}
       <div className="alaska-container gift">
@@ -731,85 +730,87 @@ function GiftsForm() {
       </form>
       </div>
       </div>
-      {/* Beer Gift */}
-      <div className="beer-container gift">
-          <div className="gift-title">
-            KOHOLA & MAUI <br /> BREWING COMPANY BEER
-          </div>
-          <div>
-          <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/BEER.png' alt='Glass of Beer' />
-          </div>
-      <div className="gift-area">
-      {/* Display Beer from the API */}
-      {bears && (
-        <div className="bears">
-          {/* Bears Exeperience Progress */}
-          {bears.map((bear, index) => (
-            <div key={index}>
-              <ProgressBarDark value={bear.totalBeer} max={75}/>
-              <div className="amounts-display">
-                <div className="amount-given">${bear.totalBeer}</div> 
-                <div className="total-amount">$75</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
-      {/* Submit Beer */}
-        <form id="beer-form" onSubmit={handleSubmitBeer}>
-        <div className="gift-inputs">
-          <div className="gift-name">
-            <input type="text" className="dark-box" name="nameBeer" defaultValue={nameBeer} placeholder="name" onBlur={handleChangeBeer} />
-          </div>
-          <div className="amount-submit">
-            <div className="gift-amount">
-              <input type="number" className="dark-box" name="amountBeer" defaultValue={amountBeer} placeholder="$0" onBlur={handleChangeBeer} />
-            </div>
-            <button data-testid="button" type="submit" className="gift-submit">submit</button>
-          </div>
-          </div>
-        </form>
-        </div>
-      </div>
-      {/* Tramway Gift */}
-      <div className="tramway-container gift">
+      {/* Poke Gift */}
+      <div className="poke-container gift">
         <div className="gift-title">
-            MOUNT ROBERTS <br /> TRAMWAY IN ANCHORAGE
+            EATING ALL THE <br /> POKE MAUI HAS
           </div>
           <div>
-            <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TRAM.png' alt='Tram' />
+          <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/POKE.png' alt='Poke Bowl' />
           </div>
       <div className="gift-area">
-      {/* Display Tram from the API */}
-      {bears && (
-        <div className="bears">
-          {/* Tramway Exeperience Progress */}
-          {bears.map((bear, index) => (
+      <div className="gift-fullfilled">FULFILLED!</div>
+      {/* Display Poke from the API */}
+      {/* {bears && (
+        <div className="bears"> */}
+          {/* Poke Exeperience Progress */}
+          {/* {bears.map((bear, index) => (
             <div key={index}>
-            <ProgressBar value={bear.totalTram} max={100}/>
+            <ProgressBarDark value={bear.totalPoke} max={125}/>
               <div className="amounts-display">
-                <div className="amount-given">${bear.totalTram}</div> 
-                <div className="total-amount">$100</div>
+                <div className="amount-given">${bear.totalPoke}</div> 
+                <div className="total-amount">$125</div>
+              </div>
+            </div>
+          ))} 
+        </div> */}
+      {/* Submit Poke */}
+      {/* <form id="poke-form" onSubmit={handleSubmitPoke}>
+        <div className="gift-inputs">
+          <div className="gift-name">
+            <input type="text" className="dark-box" name="namePoke" defaultValue={namePoke} placeholder="name" onBlur={handleChangePoke} />
+          </div>
+          <div className="amount-submit">
+            <div className="gift-amount">
+              <input type="number" className="dark-box" name="amountPoke" defaultValue={amountPoke} placeholder="$0" onBlur={handleChangePoke} />
+            </div>
+            <button data-testid="button" type="submit" className="gift-submit">submit</button>
+          </div>
+        </div>
+      </form> */}
+      </div>
+    </div>
+      
+      {/* Salmon Gift */}
+      <div className="salmon-container gift">
+        <div className="gift-title">
+            EATING ALL THE <br /> SALMON ALASKA HAS
+          </div>
+          <div>
+          <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/SALMON.png' alt='Salmon' />
+          </div>
+      <div className="gift-area">
+      <div className="gift-fullfilled">FULFILLED!</div>
+      {/* Display Salmon from the API */}
+      {/* {bears && (
+        <div className="bears"> */}
+          {/* Salmon Exeperience Progress */}
+          {/* {bears.map((bear, index) => (
+            <div key={index}>
+            <ProgressBar value={bear.totalSalmon} max={400}/>
+              <div className="amounts-display">
+                <div className="amount-given">${bear.totalSalmon}</div> 
+                <div className="total-amount">$400</div>
               </div>
             </div>
           ))}
         </div>
-      )}
-      {/* Submit Tram */}
-      <form id="tram-form" onSubmit={handleSubmitTram}>
-        <div className="gift-inputs">
-          <div className="gift-name">
-            <input type="text" className="light-box" name="nameTram" defaultValue={nameTram} placeholder="name" onBlur={handleChangeTram} />
+      )} */}
+      {/* Submit Salmon */}
+      {/* <form id="salmon-form" onSubmit={handleSubmitSalmon}>
+      <div className="gift-inputs">
+      <div className="gift-name">
+            <input type="text" className="light-box" name="nameSalmon" defaultValue={nameSalmon} placeholder="name" onBlur={handleChangeSalmon} />
           </div>
           <div className="amount-submit">
             <div className="gift-amount">
-              <input type="number" className="light-box" name="amountTram" defaultValue={amountTram} placeholder="$0" onBlur={handleChangeTram} />
+              <input type="number" className="light-box" name="amountSalmon" defaultValue={amountSalmon} placeholder="$0" onBlur={handleChangeSalmon} />
             </div>
             <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
           </div>
-        </form>
-      </div>
+        </form> */}
+        </div>
       </div>
       {/* Snorkel Gift */}
       <div className="snorkel-container gift">
