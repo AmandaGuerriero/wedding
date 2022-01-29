@@ -1,12 +1,23 @@
-#rsvp-border {
-  max-width: 60%;
-  max-height: auto;
+.outline {
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/RSVP-BORDER-ASSET-01_fjoqov.png');  
+  background-position: center;
+  background-size: contain;
+  height: 1200px;
+  width: 800px;
+  background-repeat: no-repeat;
+  background-position: initial;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rsvp-border {
+  max-width: 80%;
   width: auto;
   margin-left: auto;
   margin-right: auto;
-  border: 2px black solid;
   padding-bottom: 25px;
   margin-bottom: 25px;
+  padding-top: 120px;
 }
 
 #rsvp-header {
@@ -17,14 +28,12 @@
 }
 
 .rsvp-respond {
-  font-size: 5.5vw;
-  font-style: italic;
+  font-size: 60px;
 }
 
 .rsvp-when {
-  font-size: 4.5vw;
+  font-size: 40px;
   margin-top: -15px;
-  font-style: italic;
 }
 
 #rsvp-who {
@@ -50,9 +59,13 @@
 input {
   width: 90%;
   font-weight: 400;
-  font-style: italic;
-  border-color: var(--pinotcolor);
+  border: 1px solid var(--pinotcolor);
   color: var(--pinotcolor);
+  /* Need Placeholder Color */
+}
+
+input::placeholder {
+  color: var(--hovercolor);
   /* Need Placeholder Color */
 }
 
@@ -63,38 +76,48 @@ input {
   display: inline;
 }
 
-div.options {
+div.rsvp-options {
   text-align: right;
   margin-right: 15px;
   color: var(--mediumpurple);
-  /* width: 100%; */
 }
 
-div.options > label > input, div.food-container > label > input {
+div.rsvp-options > label > input, div.food-container > label > input {
 	visibility: hidden;
 }
 
-div.options > label {
+div.rsvp-options > label {
 	margin: 0 0 0 -20px;
   font-size: 16px;
-	height: 5px;
+  line-height: 16px;
 	width: 95%;
 }
 
-div.options > label > img, div.food-container > label > img {
+div.rsvp-options > label > img {
 	display: inline-block;
 	padding: 0px;
-	height: 30px;
-	width: 30px;
+	height: 20px;
+	width: 20px;
 	background: none;
 }
 
-div.options > label > input:checked +img, div.food-container > label > input:checked +img  {  
-  background: url(http://cdn1.iconfinder.com/data/icons/onebit/PNG/onebit_34.png);
+div.rsvp-options > label > input:checked +img, div.food-container > label > input:checked +img  {  
+  background-image:url('https://iconsplace.com/wp-content/uploads/_icons/800080/256/png/letter-x-icon-13-256.png');  
+  color: var(--pinotcolor);
+  border: 1px solid var(--pinotcolor);
+  text-align: center;
 	background-repeat: no-repeat;
 	background-position:center center;
-	background-size:30px 30px;
+	background-size:25px 25px;
   background-color: var(--rieslingcolor);
+}
+
+div.rsvp-options > input[type="radio"]:checked {
+  content: 'x';
+}
+
+div.rsvp-options > label > option:checked {
+  color: var(--pinotcolor)
 }
 
 #rsvp-food {

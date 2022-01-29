@@ -56,7 +56,8 @@ function RsvpForm() {
   return (
     <section>
       {/* <h1> Coming Soon </h1> */}
-      <div id="rsvp-border">
+      <div className="outline">
+      <div className="rsvp-border">
         <div id="rsvp-header">
           <div className="rsvp-respond">please respond by:</div>
           <div className="rsvp-when">the 16th of May</div>
@@ -80,8 +81,8 @@ function RsvpForm() {
                 <input type="text" name="stay" placeholder=" accomodation (if known)" defaultValue={stay} onBlur={handleChange} />
               </div>
             </div>
-            <div className="rsvp-replay-container rsvp-container">
-              <div className="options">
+            <div className="rsvp-reply-container rsvp-container">
+              <div className="rsvp-options">
                 <label title="item1" className="rsvp-reply">
                   <input type="radio" name="foo" value="0" /> 
                   accepts with gusto &nbsp;
@@ -128,6 +129,7 @@ function RsvpForm() {
           <button data-testid="button" type="submit">Submit</button>
           </div>
         </form>
+      </div>
       </div>
     </section>
   );
