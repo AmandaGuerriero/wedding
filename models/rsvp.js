@@ -11,8 +11,7 @@ const rsvpSchema = new Schema({
     required: true
   },
   attending: { 
-    type: Boolean,
-    required: true 
+    type: String
   },
   attendDetails: {
     type: String

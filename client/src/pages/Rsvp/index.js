@@ -5,28 +5,13 @@ import './style.css';
 
 function RsvpForm() {
   const [formState, setFormState] = useState({ name: '', email: '', stay: '', attendDetails: '', food: '', diet: ''});
+  const [selectionState, setSelectionState] = React.useState('test');
   const [rsvp, setRsvp] = useState(null);
 
   const [errorMessage, setErrorMessage] = useState('');
-  const { name, email, stay, attendDetails, food, diet} = formState;
+  const {name, email, stay, attendDetails, food, diet} = formState;
+  const {attending} = selectionState;
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-      API.saveRsvp({
-        name: formState.name,
-        emailAddress: formState.email,
-        // How to get this attending state?
-        // attending:
-        attendDetails: formState.attendDetails,
-        accom: formState.stay,
-        food: formState.food,
-        diet: formState.diet
-      })
-        .then(response => response.json())
-        .catch(err => console.log(err));
-      console.log('Submit Form', formState);  
-      triggerSuccess(name, email)  
-  };
 
   useEffect(() => {
     rsvpResponse();
@@ -41,6 +26,25 @@ function RsvpForm() {
     }
   }, []);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (e.target.name !=null) {
+      API.saveRsvp({
+        name: formState.name,
+        emailAddress: formState.email,
+        attending: selectionState.attending,
+        attendDetails: formState.attendDetails,
+        accom: formState.stay,
+        food: formState.food,
+        diet: formState.diet
+      })
+        .then(response => response.json())
+        .catch(err => console.log(err));
+      console.log('Submit Form', formState);  
+      triggerSuccess(name, email)
+    }
+  };
+
   const handleChange = (e) => {
     if (!errorMessage) {
       setFormState({ ...formState, [e.target.name]: e.target.value });
@@ -48,14 +52,20 @@ function RsvpForm() {
     }
   };
 
+  const handleRSVPChange = (e) => {
+    if (!errorMessage) {
+      setSelectionState(e.target.value);
+      console.log('Handle Form', selectionState);
+    }
+  };
+
   function triggerSuccess(name) {
-    window.alert("Thank you," + name + "!" + "If you need to make any modifications, please use" + {email} + "as your email address.")
-    window.location.href = "/registry"
+    window.alert("Thank you so much for your contribution toward making our honeymoon fun and special!")
+    window.location.href = "/rsvp"
   }
 
   return (
     <section>
-      {/* <h1> Coming Soon </h1> */}
       <div className="outline">
       <div className="rsvp-border">
         <div id="rsvp-header">
@@ -84,22 +94,22 @@ function RsvpForm() {
             <div className="rsvp-reply-container rsvp-container">
               <div className="rsvp-options">
                 <label title="item1" className="rsvp-reply">
-                  <input type="radio" name="foo" value="0" /> 
+                  <input type="radio" name="selection" value="0" defaultValue={attending} checked={selectionState === 'accepts with gusto'} onChange={handleRSVPChange} onBlur={handleChange}/> 
                   accepts with gusto &nbsp;
                   <img />
                 </label>
                 <label title="item2" className="rsvp-reply">
-                  <input type="radio" name="foo" value="1" />
+                  <input type="radio" name="selection" value="1" defaultValue={attending} onBlur={handleRSVPChange}/>
                   accepts with indifference &nbsp;
                   <img />
                 </label>   
                 <label title="item3" className="rsvp-reply">
-                  <input type="radio" name="foo" value="2" />
+                  <input type="radio" name="selection" value="2" defaultValue={attending} onBlur={handleRSVPChange}/>
                   declines with glee &nbsp;
                   <img />
                 </label>
                 <label title="item4" className="rsvp-reply">
-                  <input type="radio" name="foo" value="3" />
+                  <input type="radio" name="selection" value="3" defaultValue={attending} onBlur={handleRSVPChange}/>
                   declines with remorse &nbsp;
                   <img />
                 </label>
@@ -126,7 +136,12 @@ function RsvpForm() {
                 </label>
               </div>
             </div>
-          <button data-testid="button" type="submit">Submit</button>
+            <div className="diet">
+            <label htmlFor="diet"></label>
+                {/* Change name = to something meaningful */}
+                <input type="text" name="diet" placeholder="allergy/dietary concerns" defaultValue={stay} onBlur={handleChange} />
+            </div>
+          <button data-testid="button" type="submit" className="rsvp-submit">Submit</button>
           </div>
         </form>
       </div>
