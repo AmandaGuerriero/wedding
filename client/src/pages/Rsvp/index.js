@@ -6,11 +6,13 @@ import './style.css';
 function RsvpForm() {
   const [formState, setFormState] = useState({ name: '', email: '', stay: '', attending: '', attendDetails: '', food: '', diet: ''});
   const [selectionState, setSelectionState] = useState({attending: ''});
+  const [foodState, setFoodState] = useState({food: ''});
   const [rsvp, setRsvp] = useState(null);
 
   const [errorMessage, setErrorMessage] = useState('');
-  const {name, email, stay, attendDetails, food, diet} = formState;
+  const {name, email, stay, attendDetails, diet} = formState;
   const {attending} = selectionState;
+  const {food} = foodState;
 
 
   useEffect(() => {
@@ -35,7 +37,7 @@ function RsvpForm() {
         attending: selectionState,
         attendDetails: formState.attendDetails,
         accom: formState.stay,
-        food: formState.food,
+        food: foodState,
         diet: formState.diet
       })
         .then(response => response.json())
@@ -56,6 +58,11 @@ function RsvpForm() {
       setSelectionState(e.target.value);
       console.log('Handle Form', selectionState);
   };
+
+  const handleFoodChange = (e) => {
+    setFoodState(e.target.value);
+    console.log('Handle Form', foodState);
+};
 
 
   function triggerSuccess(name) {
@@ -118,21 +125,34 @@ function RsvpForm() {
           <div id="rsvp-food">
             <div id="food-options">
             <div className="food-container">
+                <div className="food">
                 <label title="food1">
-                  <input type="radio" name="foo" value="4" /> 
+                <input type="radio" name="food" value="tri-tip & chicken" checked={foodState === 'tri-tip & chicken'} onChange={handleFoodChange}/>
                   tri-tip & chicken
                   <img />
                 </label>
+                </div>
+                <div className="food">
                 <label title="food2">
-                  <input type="radio" name="foo" value="5" />
+                <input type="radio" name="food" value="salmon" checked={foodState === 'salmon'} onChange={handleFoodChange}/>
                   salmon
                   <img />
                 </label>   
+                </div>
+                <div className="food">
                 <label title="food3">
-                  <input type="radio" name="foo" value="6" />
-                  vegan paella
+                <input type="radio" name="food" value="veggie" checked={foodState === 'veggie'} onChange={handleFoodChange}/>
+                  Vegetarian
                   <img />
                 </label>
+                </div>
+                <div className="food">
+                <label title="food4">
+                <input type="radio" name="food" value="vegan" checked={foodState === 'vegan'} onChange={handleFoodChange}/>
+                  Vegan
+                  <img />
+                </label>
+                </div>
               </div>
             </div>
             <div className="diet">
