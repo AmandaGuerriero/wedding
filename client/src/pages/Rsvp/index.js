@@ -4,15 +4,17 @@ import API from "../../utils/API";
 import './style.css';
 
 function RsvpForm() {
-  const [formState, setFormState] = useState({ name: '', email: '', stay: '', attending: '', attendDetails: '', food: '', diet: ''});
+  const [formState, setFormState] = useState({ name: '', name2: '', email: '', stay: '', attending: '', attendDetails: '', food: '', food2: '', diet: ''});
   const [selectionState, setSelectionState] = useState({attending: ''});
   const [foodState, setFoodState] = useState({food: ''});
+  const [food2State, setFood2State] = useState({food2: ''});
   const [rsvp, setRsvp] = useState(null);
 
   const [errorMessage, setErrorMessage] = useState('');
   const {name, email, stay, attendDetails, diet} = formState;
   const {attending} = selectionState;
   const {food} = foodState;
+  const {food2} = foodState;
 
 
   useEffect(() => {
@@ -33,11 +35,13 @@ function RsvpForm() {
     if (e.target.name !=null) {
       API.saveRsvp({
         name: formState.name,
+        name2: formState.name2,
         emailAddress: formState.email,
         attending: selectionState,
         attendDetails: formState.attendDetails,
         accom: formState.stay,
         food: foodState,
+        food2: food2State,
         diet: formState.diet
       })
         .then(response => response.json())
@@ -62,7 +66,12 @@ function RsvpForm() {
   const handleFoodChange = (e) => {
     setFoodState(e.target.value);
     console.log('Handle Form', foodState);
-};
+  };
+
+  const handleFood2Change = (e) => {
+    setFood2State(e.target.value);
+    console.log('Handle Form', food2State);
+  };
 
 
   function triggerSuccess(name) {

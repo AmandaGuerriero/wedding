@@ -6,6 +6,10 @@ const rsvpSchema = new Schema({
     type: String, 
     required: true 
   },
+  name2: { 
+    type: String, 
+    required: true 
+  },
   emailAddress: {
     type: String,
     required: true
@@ -20,6 +24,9 @@ const rsvpSchema = new Schema({
     type: String
   },
   food: {
+    type: String
+  },
+  food2: {
     type: String
   },
   diet: {
