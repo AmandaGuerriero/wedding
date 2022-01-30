@@ -4,8 +4,8 @@ import API from "../../utils/API";
 import './style.css';
 
 function RsvpForm() {
-  const [formState, setFormState] = useState({ name: '', email: '', stay: '', attendDetails: '', food: '', diet: ''});
-  const [selectionState, setSelectionState] = React.useState('test');
+  const [formState, setFormState] = useState({ name: '', email: '', stay: '', attending: '', attendDetails: '', food: '', diet: ''});
+  const [selectionState, setSelectionState] = useState({attending: ''});
   const [rsvp, setRsvp] = useState(null);
 
   const [errorMessage, setErrorMessage] = useState('');
@@ -32,7 +32,7 @@ function RsvpForm() {
       API.saveRsvp({
         name: formState.name,
         emailAddress: formState.email,
-        attending: selectionState.attending,
+        attending: selectionState,
         attendDetails: formState.attendDetails,
         accom: formState.stay,
         food: formState.food,
@@ -53,11 +53,10 @@ function RsvpForm() {
   };
 
   const handleRSVPChange = (e) => {
-    if (!errorMessage) {
       setSelectionState(e.target.value);
       console.log('Handle Form', selectionState);
-    }
   };
+
 
   function triggerSuccess(name) {
     window.alert("Thank you so much for your contribution toward making our honeymoon fun and special!")
@@ -94,22 +93,22 @@ function RsvpForm() {
             <div className="rsvp-reply-container rsvp-container">
               <div className="rsvp-options">
                 <label title="item1" className="rsvp-reply">
-                  <input type="radio" name="selection" value="0" defaultValue={attending} checked={selectionState === 'accepts with gusto'} onChange={handleRSVPChange} onBlur={handleChange}/> 
+                  <input type="radio" name="selection" value="accepts with gusto" checked={selectionState === 'accepts with gusto'} onChange={handleRSVPChange}/> 
                   accepts with gusto &nbsp;
                   <img />
                 </label>
                 <label title="item2" className="rsvp-reply">
-                  <input type="radio" name="selection" value="1" defaultValue={attending} onBlur={handleRSVPChange}/>
+                  <input type="radio" name="selection" value="accepts with indifference" checked={selectionState === 'accepts with indifference'} onChange={handleRSVPChange}/>
                   accepts with indifference &nbsp;
                   <img />
                 </label>   
                 <label title="item3" className="rsvp-reply">
-                  <input type="radio" name="selection" value="2" defaultValue={attending} onBlur={handleRSVPChange}/>
+                  <input type="radio" name="selection" value="declines with glee" checked={selectionState === 'declines with glee'} onChange={handleRSVPChange}/>
                   declines with glee &nbsp;
                   <img />
                 </label>
                 <label title="item4" className="rsvp-reply">
-                  <input type="radio" name="selection" value="3" defaultValue={attending} onBlur={handleRSVPChange}/>
+                  <input type="radio" value="declines with remorse" checked={selectionState === 'declines with remorse'} onChange={handleRSVPChange}/>
                   declines with remorse &nbsp;
                   <img />
                 </label>
@@ -139,7 +138,7 @@ function RsvpForm() {
             <div className="diet">
             <label htmlFor="diet"></label>
                 {/* Change name = to something meaningful */}
-                <input type="text" name="diet" placeholder="allergy/dietary concerns" defaultValue={stay} onBlur={handleChange} />
+                <input type="text" name="diet" placeholder="allergy/dietary concerns" defaultValue={diet} onBlur={handleChange} />
             </div>
           <button data-testid="button" type="submit" className="rsvp-submit">Submit</button>
           </div>
