@@ -162,11 +162,11 @@ div.food-container {
   display: inline-flex;
   flex-direction: column-reverse;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .food > label > img {
-  margin-bottom: -30px;
+  margin-bottom: -40px;
 }
 
 

@@ -153,9 +153,9 @@ function RsvpForm() {
                   </div>
                   <div className="food">
                   <label title="food2">
+                  <img />
                   <input type="radio" name="food" value="salmon" checked={foodState === 'salmon'} onChange={handleFoodChange}/>
                     salmon
-                    <img />
                   </label>   
                   </div>
                   <div className="food">
