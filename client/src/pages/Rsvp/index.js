@@ -11,7 +11,7 @@ function RsvpForm() {
   const [rsvp, setRsvp] = useState(null);
 
   const [errorMessage, setErrorMessage] = useState('');
-  const {name, email, stay, attendDetails, diet} = formState;
+  const {name, name2, email, stay, attendDetails, diet} = formState;
   const {attending} = selectionState;
   const {food} = foodState;
   const {food2} = foodState;
@@ -93,7 +93,12 @@ function RsvpForm() {
               <div className="rsvp-info">
                 <label htmlFor="name"></label>
                 {/* Change name = to something meaningful */}
-                <input type="text" name="name" placeholder=" person(s)" defaultValue={name} onBlur={handleChange} />
+                <input type="text" name="name" placeholder=" guest 1" defaultValue={name} onBlur={handleChange} />
+              </div>
+              <div className="rsvp-info">
+                <label htmlFor="name2"></label>
+                {/* Change name = to something meaningful */}
+                <input type="text" name="name2" placeholder=" guest 2 (if applicable)" defaultValue={name2} onBlur={handleChange} />
               </div>
               <div className="rsvp-info">
                 <label htmlFor="email"></label>
@@ -134,33 +139,39 @@ function RsvpForm() {
           <div id="rsvp-food">
             <div id="food-options">
             <div className="food-container">
-                <div className="food">
-                <label title="food1">
-                <input type="radio" name="food" value="tri-tip & chicken" checked={foodState === 'tri-tip & chicken'} onChange={handleFoodChange}/>
-                  tri-tip & chicken
-                  <img />
-                </label>
-                </div>
-                <div className="food">
-                <label title="food2">
-                <input type="radio" name="food" value="salmon" checked={foodState === 'salmon'} onChange={handleFoodChange}/>
-                  salmon
-                  <img />
-                </label>   
-                </div>
-                <div className="food">
-                <label title="food3">
-                <input type="radio" name="food" value="veggie" checked={foodState === 'veggie'} onChange={handleFoodChange}/>
-                  Vegetarian
-                  <img />
-                </label>
-                </div>
-                <div className="food">
-                <label title="food4">
-                <input type="radio" name="food" value="vegan" checked={foodState === 'vegan'} onChange={handleFoodChange}/>
-                  Vegan
-                  <img />
-                </label>
+              <label htmlFor="name1"></label>
+                <div className="food-choice-guest1">
+                  {/* <div className="guest-1 food">
+                    <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+                  </div> */}
+                  <div className="food">
+                      <label title="food1">
+                      <img />
+                      <input type="radio" name="food" value="tri-tip & chicken" checked={foodState === 'tri-tip & chicken'} onChange={handleFoodChange}/>
+                      tri-tip & chicken
+                      </label>
+                  </div>
+                  <div className="food">
+                  <label title="food2">
+                  <input type="radio" name="food" value="salmon" checked={foodState === 'salmon'} onChange={handleFoodChange}/>
+                    salmon
+                    <img />
+                  </label>   
+                  </div>
+                  <div className="food">
+                  <label title="food3">
+                  <input type="radio" name="food" value="veggie" checked={foodState === 'veggie'} onChange={handleFoodChange}/>
+                    vegetarian
+                    <img />
+                  </label>
+                  </div>
+                  <div className="food">
+                  <label title="food4">
+                  <input type="radio" name="food" value="vegan" checked={foodState === 'vegan'} onChange={handleFoodChange}/>
+                    vegan
+                    <img />
+                  </label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -169,7 +180,7 @@ function RsvpForm() {
                 {/* Change name = to something meaningful */}
                 <input type="text" name="diet" placeholder="allergy/dietary concerns" defaultValue={diet} onBlur={handleChange} />
             </div>
-          <button data-testid="button" type="submit" className="rsvp-submit">Submit</button>
+          <button data-testid="button" type="submit" className="rsvp-submit">SUBMIT</button>
           </div>
         </form>
       </div>

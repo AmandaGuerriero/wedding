@@ -48,12 +48,13 @@
 #rsvp-info-container {
   text-align: left;
   margin-left: 15px;
+  margin-top: 2px;
   width: 100%;
 }
 
 .rsvp-info {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 14px;
+  line-height: 16px;
 }
 
 input {
@@ -86,6 +87,10 @@ div.rsvp-options > label > input, div.food > label > input {
 	visibility: hidden;
 }
 
+div.food > label > input {
+  border-top: -20px;
+}
+
 div.rsvp-options > label {
 	margin: 0 0 0 -20px;
   font-size: 16px;
@@ -93,14 +98,19 @@ div.rsvp-options > label {
 	width: 95%;
 }
 
-div.rsvp-options > label > img, div.food > label > input > img {
+div.rsvp-options > label > img, div.food > label > img {
 	padding: 0px;
 	height: 20px;
 	width: 20px;
 	background: none;
 }
 
-div.rsvp-options > label > input[type="radio"]:checked +img, div.food > label > input:checked +img  {  
+div.food > label {
+  text-align: center;
+}
+
+
+div.rsvp-options > label > input[type="radio"]:checked +img, div.food > label > input[type="radio"]:checked +img {  
   background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/X-icon.png');  
   color: var(--pinotcolor);
   border: 1px solid var(--pinotcolor);
@@ -127,17 +137,38 @@ div.rsvp-options > label > option:checked, div.food > label > option:checked {
 div.food-container > label {
   font-size: 16px;
 	height: 5px;
-  padding: 10px;
+  padding: 5px;
 }
 
 div.food-container {
   color: var(--mediumpurple);
 }
 
+.food-choice-guest1 {
+  text-align: left;
+}
+
+.guest-1 > label {
+  width: 50px;
+  font-size: 40px;
+  text-align: left; 
+}
+
+.guest-1 {
+  border-style: none;
+}
+
 .food {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column-reverse;
+  align-items: center;
   padding: 20px;
 }
+
+.food > label > img {
+  margin-bottom: -30px;
+}
+
 
 .diet {
   padding-top: 20px;
@@ -150,8 +181,8 @@ div.food-container {
 
 .rsvp-submit {
   background-color: var(--rieslingcolor);
-  color: var(--pinotcolor);
-  font-weight: 600;
+  color: var(--footercolor);
+  font-weight: 700;
   border: none;
   width: 30%;
   margin-left: auto;
