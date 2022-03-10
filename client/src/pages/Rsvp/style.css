@@ -27,6 +27,13 @@
   /* font-family: 'Barcelony', serif, 'Times New Roman', Times, serif; */
 }
 
+.divider-line {
+  margin-top: 30px;
+  border-top: 1px solid var(--rieslingcolor);
+  width: 95%;
+  margin: auto;
+}
+
 .rsvp-respond {
   font-size: 60px;
 }
@@ -48,13 +55,14 @@
 #rsvp-info-container {
   text-align: left;
   margin-left: 15px;
-  margin-top: 2px;
+  margin-top: 0px;
   width: 100%;
+  padding-bottom: 35px;
 }
 
 .rsvp-info {
-  margin-top: 14px;
-  line-height: 16px;
+  margin-top: 18px;
+  line-height: 24px;
 }
 
 input {
@@ -98,7 +106,7 @@ div.rsvp-options > label {
 	width: 95%;
 }
 
-div.rsvp-options > label > img, div.food > label > img {
+div.rsvp-options > label > img.square-checkbox, div.food > label > img.square-checkbox {
 	padding: 0px;
 	height: 20px;
 	width: 20px;
@@ -110,7 +118,7 @@ div.food > label {
 }
 
 
-div.rsvp-options > label > input[type="radio"]:checked +img, div.food > label > input[type="radio"]:checked +img {  
+div.rsvp-options > label > input[type="radio"]:checked +img.square-checkbox, div.food > label > input[type="radio"]:checked +img.square-checkbox {  
   background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/X-icon.png');  
   color: var(--pinotcolor);
   border: 1px solid var(--pinotcolor);
@@ -163,21 +171,53 @@ div.food-container {
   flex-direction: column-reverse;
   align-items: center;
   padding: 10px;
+  margin: auto;
+  text-align: center;
 }
 
-.food > label > img {
+.food-label {
+  margin: auto;
+}
+
+.food > label > img.square-checkbox {
   margin-bottom: -40px;
 }
 
 
 .diet {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .diet > input {
   width: 60%;
 }
+
+div.other-event-options > label > input {
+	visibility: hidden;
+}
+
+div.other-event-options > label > img.circle-checkbox {
+  -webkit-appearance:none;
+    width:20px;
+    height:20px;
+    border:1px solid darkgray;
+    border-radius:50%;
+    outline:none;
+    box-shadow:0 0 5px 0px gray inset; 
+}
+
+div.other-event-options > label > input[type="radio"]:checked +img.circle-checkbox {  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/X-icon.png');  
+  color: var(--pinotcolor);
+  border: 1px solid var(--pinotcolor);
+  text-align: center;
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size:15px 15px;
+  background-color: var(--rieslingcolor);
+}
+
 
 .rsvp-submit {
   background-color: var(--rieslingcolor);
@@ -194,4 +234,8 @@ div.food-container {
   cursor: pointer;
   font-weight: 600;
   transition: .3s;
+}
+
+.per-guest {
+ color: var(--footercolor); 
 }

@@ -4,17 +4,19 @@ import API from "../../utils/API";
 import './style.css';
 
 function RsvpForm() {
-  const [formState, setFormState] = useState({ name: '', name2: '', email: '', stay: '', attending: '', attendDetails: '', food: '', food2: '', diet: ''});
+  const [formState, setFormState] = useState({ name: '', email: '', stay: '', diet: ''});
   const [selectionState, setSelectionState] = useState({attending: ''});
   const [foodState, setFoodState] = useState({food: ''});
-  const [food2State, setFood2State] = useState({food2: ''});
+  const [welcomeState, setWelcomeState] = useState({welcome: ''});
+  const [breakfastState, setBreakfastState] = useState({breakfast: ''});
   const [rsvp, setRsvp] = useState(null);
 
   const [errorMessage, setErrorMessage] = useState('');
-  const {name, name2, email, stay, attendDetails, diet} = formState;
+  const {name, email, stay, diet} = formState;
   const {attending} = selectionState;
   const {food} = foodState;
-  const {food2} = foodState;
+  const {welcome} = welcomeState;
+  const {breakfast} = breakfastState;
 
 
   useEffect(() => {
@@ -35,14 +37,13 @@ function RsvpForm() {
     if (e.target.name !=null) {
       API.saveRsvp({
         name: formState.name,
-        name2: formState.name2,
         emailAddress: formState.email,
         attending: selectionState,
-        attendDetails: formState.attendDetails,
         accom: formState.stay,
+        diet: formState.diet,
         food: foodState,
-        food2: food2State,
-        diet: formState.diet
+        welcome: welcomeState,
+        breakfast: breakfastState
       })
         .then(response => response.json())
         .catch(err => console.log(err));
@@ -68,14 +69,18 @@ function RsvpForm() {
     console.log('Handle Form', foodState);
   };
 
-  const handleFood2Change = (e) => {
-    setFood2State(e.target.value);
-    console.log('Handle Form', food2State);
+  const handleWelcomeChange = (e) => {
+    setWelcomeState(e.target.value);
+    console.log('Handle Form', welcomeState);
   };
 
+  const handleBreakfastChange = (e) => {
+    setBreakfastState(e.target.value);
+    console.log('Handle Form', breakfastState);
+  };
 
   function triggerSuccess(name) {
-    window.alert("Thank you so much for your contribution toward making our honeymoon fun and special!")
+    window.alert("Thanks!")
     window.location.href = "/rsvp"
   }
 
@@ -93,12 +98,7 @@ function RsvpForm() {
               <div className="rsvp-info">
                 <label htmlFor="name"></label>
                 {/* Change name = to something meaningful */}
-                <input type="text" name="name" placeholder=" guest 1" defaultValue={name} onBlur={handleChange} />
-              </div>
-              <div className="rsvp-info">
-                <label htmlFor="name2"></label>
-                {/* Change name = to something meaningful */}
-                <input type="text" name="name2" placeholder=" guest 2 (if applicable)" defaultValue={name2} onBlur={handleChange} />
+                <input type="text" name="name" placeholder=" guest" defaultValue={name} onBlur={handleChange} />
               </div>
               <div className="rsvp-info">
                 <label htmlFor="email"></label>
@@ -114,73 +114,96 @@ function RsvpForm() {
             <div className="rsvp-reply-container rsvp-container">
               <div className="rsvp-options">
                 <label title="item1" className="rsvp-reply">
-                  <input type="radio" name="selection" value="accepts with gusto" checked={selectionState === 'accepts with gusto'} onChange={handleRSVPChange}/> 
+                  <input type="radio" value="accepts with gusto" checked={selectionState === 'accepts with gusto'} onChange={handleRSVPChange}/> 
                   accepts with gusto &nbsp;
-                  <img />
+                  <img className="square-checkbox" />
                 </label>
                 <label title="item2" className="rsvp-reply">
-                  <input type="radio" name="selection" value="accepts with indifference" checked={selectionState === 'accepts with indifference'} onChange={handleRSVPChange}/>
+                  <input type="radio" value="accepts with indifference" checked={selectionState === 'accepts with indifference'} onChange={handleRSVPChange}/>
                   accepts with indifference &nbsp;
-                  <img />
+                  <img className="square-checkbox" />
                 </label>   
                 <label title="item3" className="rsvp-reply">
-                  <input type="radio" name="selection" value="declines with glee" checked={selectionState === 'declines with glee'} onChange={handleRSVPChange}/>
+                  <input type="radio" value="declines with glee" checked={selectionState === 'declines with glee'} onChange={handleRSVPChange}/>
                   declines with glee &nbsp;
-                  <img />
+                  <img className="square-checkbox" />
                 </label>
                 <label title="item4" className="rsvp-reply">
                   <input type="radio" value="declines with remorse" checked={selectionState === 'declines with remorse'} onChange={handleRSVPChange}/>
                   declines with remorse &nbsp;
-                  <img />
+                  <img className="square-checkbox" />
                 </label>
               </div>
               </div>
           </div>
+          <div className="divider-line"></div>
           <div id="rsvp-food">
             <div id="food-options">
             <div className="food-container">
-              <label htmlFor="name1"></label>
-                <div className="food-choice-guest1">
-                  {/* <div className="guest-1 food">
-                    <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-                  </div> */}
                   <div className="food">
                       <label title="food1">
-                      <img />
-                      <input type="radio" name="food" value="tri-tip & chicken" checked={foodState === 'tri-tip & chicken'} onChange={handleFoodChange}/>
+                      <input type="radio" className="food-label" value="tri-tip & chicken" checked={foodState === 'tri-tip & chicken'} onChange={handleFoodChange}/>
                       tri-tip & chicken
+                      <img className="square-checkbox" />
                       </label>
                   </div>
                   <div className="food">
-                  <label title="food2">
-                  <img />
-                  <input type="radio" name="food" value="salmon" checked={foodState === 'salmon'} onChange={handleFoodChange}/>
-                    salmon
-                  </label>   
+                    <label title="food2">
+                    <input type="radio" value="salmon" checked={foodState === 'salmon'} onChange={handleFoodChange}/>
+                      salmon
+                      <img className="square-checkbox" />
+                    </label>   
                   </div>
                   <div className="food">
-                  <label title="food3">
-                  <input type="radio" name="food" value="veggie" checked={foodState === 'veggie'} onChange={handleFoodChange}/>
-                    vegetarian
-                    <img />
-                  </label>
+                    <label title="food3">
+                    <input type="radio" value="veggie" checked={foodState === 'veggie'} onChange={handleFoodChange}/>
+                      vegetarian
+                      <img className="square-checkbox" />
+                    </label>
                   </div>
                   <div className="food">
-                  <label title="food4">
-                  <input type="radio" name="food" value="vegan" checked={foodState === 'vegan'} onChange={handleFoodChange}/>
-                    vegan
-                    <img />
-                  </label>
+                    <label title="food4">
+                    <input type="radio" value="vegan" checked={foodState === 'vegan'} onChange={handleFoodChange}/>
+                      vegan
+                      <img className="square-checkbox" />
+                    </label>
                   </div>
-                </div>
               </div>
             </div>
             <div className="diet">
             <label htmlFor="diet"></label>
-                {/* Change name = to something meaningful */}
                 <input type="text" name="diet" placeholder="allergy/dietary concerns" defaultValue={diet} onBlur={handleChange} />
             </div>
+            <div className="divider-line"></div>
+            <div className="other-event-options">
+                {/* Welcome */}
+                plan to attend welcome party
+                <label title="welcomeY" className="welcome-selection">
+                  <input type="radio" value="yes" checked={welcomeState === 'yes'} onChange={handleWelcomeChange}/> 
+                  yes &nbsp;
+                  <img className="circle-checkbox" />
+                </label>
+                <label title="welcomeN" className="welcome-selection">
+                  <input type="radio" value="no" checked={welcomeState === 'no'} onChange={handleWelcomeChange}/> 
+                  no &nbsp;
+                  <img className="circle-checkbox" />
+                </label>
+                <br />
+                {/* Breakfast */}
+                plan to attend sendoff breakfast
+                <label title="breakfastY" className="breakfast-selection">
+                  <input type="radio" value="yes" checked={breakfastState === 'yes'} onChange={handleBreakfastChange}/> 
+                  &nbsp;
+                  <img className="circle-checkbox" />
+                </label>
+                <label title="breakfastN" className="breakfast-selection">
+                  <input type="radio" value="no" checked={breakfastState === 'no'} onChange={handleBreakfastChange}/> 
+                  &nbsp;
+                  <img className="circle-checkbox" />
+                </label>
+            </div>
           <button data-testid="button" type="submit" className="rsvp-submit">SUBMIT</button>
+          <div className="per-guest">please fill out one form per guest</div>
           </div>
         </form>
       </div>
