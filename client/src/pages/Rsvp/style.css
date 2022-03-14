@@ -1,5 +1,5 @@
 .outline {
-  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/RSVP-BORDER-ASSET-01-01_ltnddo.png');  
+  background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/BORDER-ASSET-FINAL-01_uyykod.png');  
   background-position: center;
   background-size: contain;
   height: 1200px;
@@ -193,6 +193,19 @@ div.food-container {
   width: 60%;
 }
 
+
+div.other-event-options {
+	display: flex;
+}
+
+div.choices, div.other-event-options {
+	display: flex;
+  align-items: right;
+  justify-content: right;
+  width: 80%;
+}
+
+
 div.other-event-options > label > input {
 	visibility: hidden;
 }
@@ -218,6 +231,9 @@ div.other-event-options > label > input[type="radio"]:checked +img.circle-checkb
   background-color: var(--rieslingcolor);
 }
 
+.plan-text {
+  color: var(--footercolor);
+}
 
 .rsvp-submit {
   background-color: var(--rieslingcolor);

@@ -175,30 +175,36 @@ function RsvpForm() {
                 <input type="text" name="diet" placeholder="allergy/dietary concerns" defaultValue={diet} onBlur={handleChange} />
             </div>
             <div className="divider-line"></div>
+            <div className="choices">
+                  <div className="yes">yes &nbsp;</div>
+                  <div className="no">no &nbsp;</div>
+                </div>
             <div className="other-event-options">
                 {/* Welcome */}
-                plan to attend welcome party
+                <div className="plan-text">plan to attend welcome party &nbsp;</div>
                 <label title="welcomeY" className="welcome-selection">
                   <input type="radio" value="yes" checked={welcomeState === 'yes'} onChange={handleWelcomeChange}/> 
-                  yes &nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;
                   <img className="circle-checkbox" />
                 </label>
                 <label title="welcomeN" className="welcome-selection">
                   <input type="radio" value="no" checked={welcomeState === 'no'} onChange={handleWelcomeChange}/> 
-                  no &nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;
                   <img className="circle-checkbox" />
                 </label>
                 <br />
+              </div>
+              <div className="other-event-options">
                 {/* Breakfast */}
-                plan to attend sendoff breakfast
+                <div className="plan-text">plan to attend sendoff breakfast</div>
                 <label title="breakfastY" className="breakfast-selection">
                   <input type="radio" value="yes" checked={breakfastState === 'yes'} onChange={handleBreakfastChange}/> 
-                  &nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;
                   <img className="circle-checkbox" />
                 </label>
                 <label title="breakfastN" className="breakfast-selection">
                   <input type="radio" value="no" checked={breakfastState === 'no'} onChange={handleBreakfastChange}/> 
-                  &nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;
                   <img className="circle-checkbox" />
                 </label>
             </div>
