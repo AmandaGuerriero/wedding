@@ -178,10 +178,10 @@ function RsvpForm() {
             <div className="choices">
                   <div className="yes">yes &nbsp;</div>
                   <div className="no">no &nbsp;</div>
-                </div>
+            </div>
             <div className="other-event-options">
                 {/* Welcome */}
-                <div className="plan-text">plan to attend welcome party &nbsp;</div>
+                <div className="plan-text plan-text-welcome">plan to attend welcome party &nbsp;</div>
                 <label title="welcomeY" className="welcome-selection">
                   <input type="radio" value="yes" checked={welcomeState === 'yes'} onChange={handleWelcomeChange}/> 
                   &nbsp;&nbsp;&nbsp;&nbsp;
@@ -196,7 +196,7 @@ function RsvpForm() {
               </div>
               <div className="other-event-options">
                 {/* Breakfast */}
-                <div className="plan-text">plan to attend sendoff breakfast</div>
+                <div className="plan-text plan-text-breakfast">plan to attend sendoff breakfast</div>
                 <label title="breakfastY" className="breakfast-selection">
                   <input type="radio" value="yes" checked={breakfastState === 'yes'} onChange={handleBreakfastChange}/> 
                   &nbsp;&nbsp;&nbsp;&nbsp;
