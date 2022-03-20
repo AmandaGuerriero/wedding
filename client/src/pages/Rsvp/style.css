@@ -34,6 +34,14 @@
   margin: auto;
 }
 
+.divider-line-1 {
+  margin-top: 30px;
+  border-top: 1px solid var(--rieslingcolor);
+  width: 95%;
+  margin: auto;
+  margin-bottom: -30px;
+}
+
 .rsvp-respond {
   font-size: 60px;
 }
@@ -173,14 +181,12 @@ div.food-container {
   padding: 10px;
   margin: auto;
   text-align: center;
-}
-
-.food-label {
-  margin: auto;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .food > label > img.square-checkbox {
-  margin-bottom: -40px;
+  margin-bottom: -120px;
 }
 
 
@@ -284,4 +290,5 @@ div.other-event-options > label > input[type="radio"]:checked +img.circle-checkb
 
 .per-guest {
  color: var(--footercolor); 
+ margin-top: 10px;
 }

@@ -136,35 +136,35 @@ function RsvpForm() {
               </div>
               </div>
           </div>
-          <div className="divider-line"></div>
+          <div className="divider-line-1"></div>
           <div id="rsvp-food">
             <div id="food-options">
             <div className="food-container">
                   <div className="food">
+                      tri-tip & chicken
                       <label title="food1">
                       <input type="radio" className="food-label" value="tri-tip & chicken" checked={foodState === 'tri-tip & chicken'} onChange={handleFoodChange}/>
-                      tri-tip & chicken
-                      <img className="square-checkbox" />
+                       <img className="square-checkbox" />
                       </label>
                   </div>
                   <div className="food">
-                    <label title="food2">
-                    <input type="radio" value="salmon" checked={foodState === 'salmon'} onChange={handleFoodChange}/>
                       salmon
+                      <label title="food2">
+                      <input type="radio" value="salmon" checked={foodState === 'salmon'} onChange={handleFoodChange}/>  
                       <img className="square-checkbox" />
                     </label>   
                   </div>
                   <div className="food">
-                    <label title="food3">
-                    <input type="radio" value="veggie" checked={foodState === 'veggie'} onChange={handleFoodChange}/>
                       vegetarian
+                      <label title="food3">
+                      <input type="radio" value="veggie" checked={foodState === 'veggie'} onChange={handleFoodChange}/>
                       <img className="square-checkbox" />
                     </label>
                   </div>
                   <div className="food">
-                    <label title="food4">
-                    <input type="radio" value="vegan" checked={foodState === 'vegan'} onChange={handleFoodChange}/>
                       vegan
+                      <label title="food4">
+                      <input type="radio" value="vegan" checked={foodState === 'vegan'} onChange={handleFoodChange}/>
                       <img className="square-checkbox" />
                     </label>
                   </div>
