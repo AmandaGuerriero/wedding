@@ -292,3 +292,26 @@ div.other-event-options > label > input[type="radio"]:checked +img.circle-checkb
  color: var(--footercolor); 
  margin-top: 10px;
 }
+
+@media screen and (max-width: 875px) {
+  .outline {
+    background-image: none;
+  }
+
+  #rsvp-header {
+    text-align: left;
+  }
+
+  #rsvp-who, #rsvp-info-container, #rsvp-reply-container {
+    display: block;
+  }
+  
+  .rsvp-options > label {
+    text-align: left;
+    align-items: left;
+  }
+
+  .rsvp-info > input {
+    align-items: left;
+  }
+}
