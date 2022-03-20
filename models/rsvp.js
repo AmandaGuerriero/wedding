@@ -11,10 +11,6 @@ const rsvpSchema = new Schema({
     required: true
   },
   attending: { 
-    type: Boolean,
-    required: true 
-  },
-  attendDetails: {
     type: String
   },
   accom: {
@@ -25,6 +21,12 @@ const rsvpSchema = new Schema({
   },
   diet: {
     type: String
+  },
+  welcome: {
+    type: Boolean
+  },
+  breakfast: {
+    type: Boolean
   }
 });
 

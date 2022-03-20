@@ -8,12 +8,12 @@ const Details = () => {
       {/* BTD */}
       <div className="details-section-header">
         <img className="details-olive-branch" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/olive-branch.png" alt="Olive Branch" />
-        <div className="details-section-title">Welcome Event</div>
+        <div className="details-section-title">Welcome Party</div>
         <div className="details-row">
           <div className="details-col details-text">
             <div className="details-section">
               <img className="details-bullet-icon" src="https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/bullet-point.png" alt="Star icon as bullet point" />
-              <div className="details-name">TBD</div>
+              {/* <div className="details-name">TBD</div>
               <div className="details-info">
                 <div className="details-address">Near San Luis Obispo</div>
                   <div className="details-date-block">
@@ -23,8 +23,8 @@ const Details = () => {
                   <div className="details-details">
                     <div className="details-note1">We will have some bar food available, but we recommend eating dinner beforehand.</div>
                   </div> 
-                </div>
-              {/* <div className="details-name">BANG THE DRUM BREWERY</div>
+                </div> */}
+              <div className="details-name">BANG THE DRUM BREWERY</div>
               <div className="details-info">
                 <div className="details-address">1150 Laurel Ln Suite 130 <br />San Luis Obispo, CA 93401</div>
                   <div className="details-date-block">
@@ -35,7 +35,7 @@ const Details = () => {
                     <div className="details-note1">Take a left into the industrial park off Laurel Drive (before you reach Camden Lane) and follow the signs for the brewery to the back corner of the park.</div>
                     <div className="details-note2">While we will have some bar food available, we recommend eating dinner beforehand.</div>
                   </div> 
-              </div> */}
+              </div>
             </div>
           </div>
           <div className="details-col details-image">
