@@ -305,7 +305,17 @@ div.other-event-options > label > input[type="radio"]:checked +img.circle-checkb
   #rsvp-who, #rsvp-info-container, #rsvp-reply-container {
     display: block;
   }
+
+  #rsvp-info-container {
+    margin-left: 0px;
+  }
   
+  .rsvp-options {
+    width: 80%;
+    margin-left: -25px;
+    margin-top: -30px;
+  }
+
   .rsvp-options > label {
     text-align: left;
     align-items: left;
@@ -313,5 +323,15 @@ div.other-event-options > label > input[type="radio"]:checked +img.circle-checkb
 
   .rsvp-info > input {
     align-items: left;
+  }
+  
+  .divider-line, .divider-line-1 {
+    text-align: left;
+    margin: 0px;
+    margin-top: 10px;
+  }
+
+  .food-options {
+    margin-top: -50px;
   }
 }
