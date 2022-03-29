@@ -169,6 +169,30 @@ function RsvpForm() {
                     </label>
                   </div>
               </div>
+            <div className="food-container-mobile">
+            <div className="food-options-mobile">
+                <label title="item1" className="food-reply-mobile">
+                  <input type="radio" value="tri-tip & chicken" checked={foodState === 'tri-tip & chicken'} onChange={handleFoodChange}/>
+                  tri-tip & chicken &nbsp;
+                  <img className="square-checkbox-mobile" />
+                </label>
+                <label title="item2" className="food-reply-mobile">
+                <input type="radio" value="salmon" checked={foodState === 'salmon'} onChange={handleFoodChange}/>  
+                  salmon &nbsp;
+                  <img className="square-checkbox-mobile" />
+                </label>   
+                <label title="item3" className="food-reply-mobile">
+                <input type="radio" value="veggie" checked={foodState === 'veggie'} onChange={handleFoodChange}/>
+                  vegetarian &nbsp;
+                  <img className="square-checkbox-mobile" />
+                </label>
+                <label title="item4" className="food-reply-mobile">
+                <input type="radio" value="vegan" checked={foodState === 'vegan'} onChange={handleFoodChange}/>
+                  vegan &nbsp;
+                  <img className="square-checkbox-mobile" />
+                </label>
+              </div>
+            </div>
             </div>
             <div className="diet">
             <label htmlFor="diet"></label>
