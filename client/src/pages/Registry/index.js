@@ -650,46 +650,6 @@ function GiftsForm() {
         </form>
       </div>
       </div>
-      {/* Tramway Gift */}
-      <div className="tramway-container gift">
-        <div className="gift-title">
-            MOUNT ROBERTS <br /> TRAMWAY IN ANCHORAGE
-          </div>
-          <div>
-            <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TRAM.png' alt='Tram' />
-          </div>
-      <div className="gift-area">
-      {/* Display Tram from the API */}
-      {bears && (
-        <div className="bears">
-          {/* Tramway Exeperience Progress */}
-          {bears.map((bear, index) => (
-            <div key={index}>
-            <ProgressBar value={bear.totalTram} max={100}/>
-              <div className="amounts-display">
-                <div className="amount-given">${bear.totalTram}</div> 
-                <div className="total-amount">$100</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
-      {/* Submit Tram */}
-      <form id="tram-form" onSubmit={handleSubmitTram}>
-        <div className="gift-inputs">
-          <div className="gift-name">
-            <input type="text" className="light-box" name="nameTram" defaultValue={nameTram} placeholder="name" onBlur={handleChangeTram} />
-          </div>
-          <div className="amount-submit">
-            <div className="gift-amount">
-              <input type="number" className="light-box" name="amountTram" defaultValue={amountTram} placeholder="$0" onBlur={handleChangeTram} />
-            </div>
-            <button data-testid="button" type="submit" className="gift-submit">submit</button>
-          </div>
-          </div>
-        </form>
-      </div>
-      </div>
       {/* Alaska Gift */}
       <div className="alaska-container gift">
       <div className="gift-title">
@@ -728,6 +688,47 @@ function GiftsForm() {
         </div>
         </div>
       </form>
+      </div>
+      </div>
+            {/* Tramway Gift */}
+            <div className="tramway-container gift">
+        <div className="gift-title">
+            MOUNT ROBERTS <br /> TRAMWAY IN ANCHORAGE
+          </div>
+          <div>
+            <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/TRAM.png' alt='Tram' />
+          </div>
+      <div className="gift-area">
+      <div className="gift-fullfilled">FULFILLED!</div>
+      {/* Display Tram from the API */}
+      {/* {bears && (
+        <div className="bears"> */}
+          {/* Tramway Exeperience Progress */}
+          {/* {bears.map((bear, index) => (
+            <div key={index}>
+            <ProgressBar value={bear.totalTram} max={100}/>
+              <div className="amounts-display">
+                <div className="amount-given">${bear.totalTram}</div> 
+                <div className="total-amount">$100</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )} */}
+      {/* Submit Tram */}
+      {/* <form id="tram-form" onSubmit={handleSubmitTram}>
+        <div className="gift-inputs">
+          <div className="gift-name">
+            <input type="text" className="light-box" name="nameTram" defaultValue={nameTram} placeholder="name" onBlur={handleChangeTram} />
+          </div>
+          <div className="amount-submit">
+            <div className="gift-amount">
+              <input type="number" className="light-box" name="amountTram" defaultValue={amountTram} placeholder="$0" onBlur={handleChangeTram} />
+            </div>
+            <button data-testid="button" type="submit" className="gift-submit">submit</button>
+          </div>
+          </div>
+        </form> */}
       </div>
       </div>
       {/* Poke Gift */}

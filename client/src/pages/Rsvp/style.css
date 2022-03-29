@@ -294,6 +294,10 @@ div.other-event-options > label > input[type="radio"]:checked +img.circle-checkb
  margin-top: 10px;
 }
 
+.food-container-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 875px) {
   .outline {
     background-image: none;
@@ -303,7 +307,38 @@ div.other-event-options > label > input[type="radio"]:checked +img.circle-checkb
     text-align: left;
   }
 
-  #rsvp-who, #rsvp-info-container, #rsvp-reply-container {
+  .rsvp-respond, .rsvp-when {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+
+  .rsvp-border {
+    max-width: 100%;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+
+  input {
+    width: 40%;
+  }
+
+  div.rsvp-options, div.food-options-mobile{
+    width: 60%;
+    text-align: left;
+    margin-left: -160px;
+    padding-top: 10px;
+  }
+
+  div.diet {
+    margin-left: -110px;
+    width: 70%;
+  }
+  
+  div.food-container {
+    display: none;
+  }
+
+  #rsvp-who, #rsvp-info-container, #rsvp-reply-container, #food-options {
     display: block;
   }
 
@@ -311,13 +346,13 @@ div.other-event-options > label > input[type="radio"]:checked +img.circle-checkb
     margin-left: 0px;
   }
   
-  .rsvp-options {
+  .rsvp-options, .food-container {
     width: 80%;
     margin-left: -25px;
     margin-top: -30px;
   }
 
-  .rsvp-options > label {
+  .rsvp-options > label, .food-options-mobile > label {
     text-align: left;
     align-items: left;
   }
@@ -333,6 +368,63 @@ div.other-event-options > label > input[type="radio"]:checked +img.circle-checkb
   }
 
   .food-options {
-    margin-top: -50px;
+    margin-top: 0px;
+  }
+
+  .food-container {
+    margin-top: -10px;
+    padding-top: -100px;
+  }
+
+  .food-container-mobile {
+    display: block;
+  }
+
+  .food-reply-mobile {
+    text-align: right;
+    margin-right: 15px;
+    color: var(--mediumpurple);
+  }
+
+  div.food-options-mobile > label > input {
+    visibility: hidden;
+  }
+
+  div.food-options-mobile > label {
+    margin: 0 0 0 -20px;
+    font-size: 16px;
+    line-height: 16px;
+    width: 95%;
+  }
+
+  div.food-options-mobile > label > input[type="radio"]:checked +img.square-checkbox-mobile {  
+    background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/x-icon.png');  
+    color: var(--pinotcolor);
+    border: 1px solid var(--pinotcolor);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size:15px 15px;
+    background-color: var(--rieslingcolor);
+  }
+
+  div.food-options-mobile > label > img.square-checkbox-mobile {
+    padding: 0px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid var(--mediumpurple);
+    background: none;
+  }
+
+  .choices, .other-event-options {
+    margin-left: -300px;
+  }
+
+  .plan-text-welcome {
+    text-align: left;
+  }
+
+  .rsvp-submit, .per-guest {
+    margin-left: -550px;
   }
 }
