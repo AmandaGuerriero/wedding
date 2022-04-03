@@ -2,7 +2,7 @@
   background-image:url('https://res.cloudinary.com/amandaeric/image/upload/f_auto/site-assets/BORDER-ASSET-FINAL-01_uyykod.png');  
   background-position: center;
   background-size: contain;
-  height: 1200px;
+  height: 900px;
   width: 800px;
   background-repeat: no-repeat;
   background-position: initial;
@@ -301,6 +301,7 @@ div.other-event-options > label > input[type="radio"]:checked +img.circle-checkb
 @media screen and (max-width: 875px) {
   .outline {
     background-image: none;
+    height: auto;
   }
 
   #rsvp-header {
@@ -365,6 +366,7 @@ div.other-event-options > label > input[type="radio"]:checked +img.circle-checkb
     text-align: left;
     margin: 0px;
     margin-top: 10px;
+    width: 360px;
   }
 
   .food-options {
@@ -418,6 +420,7 @@ div.other-event-options > label > input[type="radio"]:checked +img.circle-checkb
 
   .choices, .other-event-options {
     margin-left: -300px;
+    text-rendering: optimizeLegibility;
   }
 
   .plan-text-welcome {
@@ -425,6 +428,6 @@ div.other-event-options > label > input[type="radio"]:checked +img.circle-checkb
   }
 
   .rsvp-submit, .per-guest {
-    margin-left: -550px;
+    margin-left: -450px;
   }
 }
