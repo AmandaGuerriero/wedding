@@ -49,7 +49,10 @@ function RsvpForm() {
         .catch(err => console.log(err));
       console.log('Submit Form', formState);  
       triggerSuccess(name, email)
-    }
+    } 
+    //else {
+    //   triggerError()
+    // }
   };
 
   const handleChange = (e) => {
@@ -83,6 +86,10 @@ function RsvpForm() {
     window.alert("Thanks!")
     window.location.href = "/rsvp"
   }
+
+  // function triggerError() {
+  //   window.alert("Please input your name,")
+  // }
 
   return (
     <section>

@@ -111,6 +111,18 @@
   background-color: var(--mediumpurple);
 }
 
+a.switch-highlight {
+  background-color: var(--footercolor);
+  color: var(--rieslingcolor);
+  margin-left: 1px;
+}
+
+a.switch-highlight:hover {
+  background-color: var(--mediumpurple);
+  color: var(--footercolor);
+  margin-left: 1px;
+}
+
 #background {
   /* max-width: 100%; */
   max-height: 200px;
