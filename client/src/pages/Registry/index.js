@@ -450,45 +450,45 @@ function GiftsForm() {
         </form>
         </div>
       </div>
-      {/* Tracy Arm Gift */}
-      <div className="tracy-container gift">
-        <div className="gift-title">
-            TRACY ARM FJORD <br /> TOUR IN JUNEAU
-          </div>
-          <div>
-          <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/BOAT.png' alt='Boat' />
-          </div>
-      <div className="gift-area">
-      {/* Display Tracy from the API */}
-      {bears && (
-        <div className="bears">
-          {/* Tracy Exeperience Progress */}
-          {bears.map((bear, index) => (
-            <div key={index}>
-            <ProgressBar value={bear.totalTracy} max={360}/>
-              <div className="amounts-display">
-                <div className="amount-given">${bear.totalTracy}</div> 
-                <div className="total-amount">$360</div>
-              </div>
-            </div>
-          ))}
+      {/* Alaska Gift */}
+      <div className="alaska-container gift">
+      <div className="gift-title">
+          6 NIGHT STAY <br /> IN ALASKA
         </div>
-      )}
-      {/* Submit Tracy */}
-      <form id="tracy-form" onSubmit={handleSubmitTracy}>
-        <div className="gift-inputs">
-          <div className="gift-name">
-            <input type="text" className="light-box" name="nameTracy" defaultValue={nameTracy} placeholder="name" onBlur={handleChangeTracy} />
-          </div>
-          <div className="amount-submit">
-            <div className="gift-amount">
-              <input type="number" className="light-box" name="amountTracy" defaultValue={amountTracy} placeholder="$0" onBlur={handleChangeTracy} />
-            </div>
-            <button data-testid="button" type="submit" className="gift-submit">submit</button>
-          </div>
-          </div>
-        </form>
+        <div>
+        <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/ALASKA.png' alt='Alaska' />
         </div>
+    <div className="gift-area">
+    {/* Display Alaska from the API */}
+    {bears && (
+      <div className="bears">
+        {/* Alaska Exeperience Progress */}
+        {bears.map((bear, index) => (
+          <div key={index}>
+          <ProgressBar value={bear.totalAlaska} max={1500}/>
+            <div className="amounts-display">
+              <div className="amount-given">${bear.totalAlaska}</div> 
+              <div className="total-amount">$1500</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+    {/* Submit Alaska */}
+    <form id="alaska-form" onSubmit={handleSubmitAlaska}>
+    <div className="gift-inputs">
+    <div className="gift-name">
+          <input type="text" className="light-box" name="nameAlaska" defaultValue={nameAlaska} placeholder="name" onBlur={handleChangeAlaska} />
+        </div>
+        <div className="amount-submit">
+          <div className="gift-amount">
+            <input type="number" className="light-box" name="amountAlaska" defaultValue={amountAlaska} placeholder="$0" onBlur={handleChangeAlaska} />
+          </div>
+          <button data-testid="button" type="submit" className="gift-submit">submit</button>
+        </div>
+        </div>
+      </form>
+      </div>
       </div>
       {/* Mamas Gift */}
       <div className="mamas-container gift">
@@ -650,48 +650,49 @@ function GiftsForm() {
         </form>
       </div>
       </div>
-      {/* Alaska Gift */}
-      <div className="alaska-container gift">
-      <div className="gift-title">
-          6 NIGHT STAY <br /> IN ALASKA
-        </div>
-        <div>
-        <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/ALASKA.png' alt='Alaska' />
-        </div>
-    <div className="gift-area">
-    {/* Display Alaska from the API */}
-    {bears && (
-      <div className="bears">
-        {/* Alaska Exeperience Progress */}
-        {bears.map((bear, index) => (
-          <div key={index}>
-          <ProgressBar value={bear.totalAlaska} max={1500}/>
-            <div className="amounts-display">
-              <div className="amount-given">${bear.totalAlaska}</div> 
-              <div className="total-amount">$1500</div>
+      {/* Tracy Arm Gift */}
+      <div className="tracy-container gift">
+        <div className="gift-title">
+            TRACY ARM FJORD <br /> TOUR IN JUNEAU
+          </div>
+          <div>
+          <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/BOAT.png' alt='Boat' />
+          </div>
+      <div className="gift-area">
+      <div className="gift-fullfilled">FULFILLED!</div>
+      {/* Display Tracy from the API */}
+      {/* {bears && (
+        <div className="bears"> */}
+          {/* Tracy Exeperience Progress */}
+          {/* {bears.map((bear, index) => (
+            <div key={index}>
+            <ProgressBar value={bear.totalTracy} max={360}/>
+              <div className="amounts-display">
+                <div className="amount-given">${bear.totalTracy}</div> 
+                <div className="total-amount">$360</div>
+              </div>
             </div>
+          ))}
+        </div>
+      )} */}
+      {/* Submit Tracy */}
+      {/* <form id="tracy-form" onSubmit={handleSubmitTracy}>
+        <div className="gift-inputs">
+          <div className="gift-name">
+            <input type="text" className="light-box" name="nameTracy" defaultValue={nameTracy} placeholder="name" onBlur={handleChangeTracy} />
           </div>
-        ))}
-      </div>
-    )}
-    {/* Submit Alaska */}
-    <form id="alaska-form" onSubmit={handleSubmitAlaska}>
-    <div className="gift-inputs">
-    <div className="gift-name">
-          <input type="text" className="light-box" name="nameAlaska" defaultValue={nameAlaska} placeholder="name" onBlur={handleChangeAlaska} />
-        </div>
-        <div className="amount-submit">
-          <div className="gift-amount">
-            <input type="number" className="light-box" name="amountAlaska" defaultValue={amountAlaska} placeholder="$0" onBlur={handleChangeAlaska} />
+          <div className="amount-submit">
+            <div className="gift-amount">
+              <input type="number" className="light-box" name="amountTracy" defaultValue={amountTracy} placeholder="$0" onBlur={handleChangeTracy} />
+            </div>
+            <button data-testid="button" type="submit" className="gift-submit">submit</button>
           </div>
-          <button data-testid="button" type="submit" className="gift-submit">submit</button>
+          </div>
+        </form> */}
         </div>
-        </div>
-      </form>
-      </div>
-      </div>
-            {/* Tramway Gift */}
-            <div className="tramway-container gift">
+      </div> 
+      {/* Tramway Gift */}
+        <div className="tramway-container gift">
         <div className="gift-title">
             MOUNT ROBERTS <br /> TRAMWAY IN ANCHORAGE
           </div>
