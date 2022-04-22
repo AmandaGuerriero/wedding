@@ -98,6 +98,7 @@ function RsvpForm() {
         <div id="rsvp-header">
           <div className="rsvp-respond">please respond by:</div>
           <div className="rsvp-when">the 16th of May</div>
+          <div className="rsvp-note">Avoid responding from mobile phone, if possible</div>
         </div>
         <form id="rsvp-form" onSubmit={handleSubmit}>
           <div id="rsvp-who">
