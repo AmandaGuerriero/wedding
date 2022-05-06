@@ -7,8 +7,7 @@ const rsvpSchema = new Schema({
     required: true 
   },
   emailAddress: {
-    type: String,
-    required: true
+    type: String
   },
   attending: { 
     type: String
