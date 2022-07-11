@@ -410,86 +410,6 @@ function GiftsForm() {
       </form>
     </div> 
   </div> 
-  {/* Wailea Gift */}
-  <div className="wailea-container gift">
-        <div className="gift-title">
-            DINNER AT HOTEL <br /> WAILEA IN MAUI
-          </div>
-          <div>
-          <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/MAMAS.png' alt='Plate' />
-          </div>
-      <div className="gift-area">    
-      {/* Display Wailea from the API */}
-      {bears && (
-        <div className="bears">
-          {/* Wailea Exeperience Progress */}
-          {bears.map((bear, index) => (
-            <div key={index}>
-            <ProgressBarDark value={bear.totalWailea} max={300}/>
-              <div className="amounts-display">
-                <div className="amount-given">${bear.totalWailea}</div> 
-                <div className="total-amount">$300</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
-      {/* Submit Wailea */}
-      <form id="wailea-form" onSubmit={handleSubmitWailea}>
-        <div className="gift-inputs">
-          <div className="gift-name">
-            <input type="text" className="dark-box" name="nameWailea" defaultValue={nameWailea} placeholder="name" onBlur={handleChangeWailea} />
-          </div>
-          <div className="amount-submit">
-            <div className="gift-amount">
-              <input type="number" className="dark-box" name="amountWailea" defaultValue={amountWailea} placeholder="$0" onBlur={handleChangeWailea} />
-            </div>
-            <button data-testid="button" type="submit" className="gift-submit">submit</button>
-          </div>
-          </div>
-        </form>
-      </div>
-      </div>
-      {/* Alaska Gift */}
-      <div className="alaska-container gift">
-      <div className="gift-title">
-          6 NIGHT STAY <br /> IN ALASKA
-        </div>
-        <div>
-        <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/ALASKA.png' alt='Alaska' />
-        </div>
-    <div className="gift-area">
-    {/* Display Alaska from the API */}
-    {bears && (
-      <div className="bears">
-        {/* Alaska Exeperience Progress */}
-        {bears.map((bear, index) => (
-          <div key={index}>
-          <ProgressBar value={bear.totalAlaska} max={1500}/>
-            <div className="amounts-display">
-              <div className="amount-given">${bear.totalAlaska}</div> 
-              <div className="total-amount">$1500</div>
-            </div>
-          </div>
-        ))}
-      </div>
-    )}
-    {/* Submit Alaska */}
-    <form id="alaska-form" onSubmit={handleSubmitAlaska}>
-    <div className="gift-inputs">
-    <div className="gift-name">
-          <input type="text" className="light-box" name="nameAlaska" defaultValue={nameAlaska} placeholder="name" onBlur={handleChangeAlaska} />
-        </div>
-        <div className="amount-submit">
-          <div className="gift-amount">
-            <input type="number" className="light-box" name="amountAlaska" defaultValue={amountAlaska} placeholder="$0" onBlur={handleChangeAlaska} />
-          </div>
-          <button data-testid="button" type="submit" className="gift-submit">submit</button>
-        </div>
-        </div>
-      </form>
-      </div>
-      </div>
       {/* Mamas Gift */}
       <div className="mamas-container gift">
         <div className="gift-title">
@@ -528,6 +448,46 @@ function GiftsForm() {
           </div>
         </div>
         </form>
+      </div>
+      </div>
+       {/* Alaska Gift */}
+       <div className="alaska-container gift">
+      <div className="gift-title">
+          6 NIGHT STAY <br /> IN ALASKA
+        </div>
+        <div>
+        <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/ALASKA.png' alt='Alaska' />
+        </div>
+    <div className="gift-area">
+    {/* Display Alaska from the API */}
+    {bears && (
+      <div className="bears">
+        {/* Alaska Exeperience Progress */}
+        {bears.map((bear, index) => (
+          <div key={index}>
+          <ProgressBar value={bear.totalAlaska} max={1500}/>
+            <div className="amounts-display">
+              <div className="amount-given">${bear.totalAlaska}</div> 
+              <div className="total-amount">$1500</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+    {/* Submit Alaska */}
+    <form id="alaska-form" onSubmit={handleSubmitAlaska}>
+    <div className="gift-inputs">
+    <div className="gift-name">
+          <input type="text" className="light-box" name="nameAlaska" defaultValue={nameAlaska} placeholder="name" onBlur={handleChangeAlaska} />
+        </div>
+        <div className="amount-submit">
+          <div className="gift-amount">
+            <input type="number" className="light-box" name="amountAlaska" defaultValue={amountAlaska} placeholder="$0" onBlur={handleChangeAlaska} />
+          </div>
+          <button data-testid="button" type="submit" className="gift-submit">submit</button>
+        </div>
+        </div>
+      </form>
       </div>
       </div>
       {/* Hawaii Gift */}
@@ -609,6 +569,47 @@ function GiftsForm() {
           </div>
         </form>
         </div>
+      </div>
+      {/* Wailea Gift */}
+  <div className="wailea-container gift">
+        <div className="gift-title">
+            DINNER AT HOTEL <br /> WAILEA IN MAUI
+          </div>
+          <div>
+          <img className="gift-icon" src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/registry/MAMAS.png' alt='Plate' />
+          </div>
+      <div className="gift-area">   
+      <div className="gift-fullfilled">FULFILLED!</div> 
+      {/* Display Wailea from the API */}
+      {/* {bears && (
+        <div className="bears"> */}
+          {/* Wailea Exeperience Progress */}
+          {/* {bears.map((bear, index) => (
+            <div key={index}>
+            <ProgressBarDark value={bear.totalWailea} max={300}/>
+              <div className="amounts-display">
+                <div className="amount-given">${bear.totalWailea}</div> 
+                <div className="total-amount">$300</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )} */}
+      {/* Submit Wailea */}
+      {/* <form id="wailea-form" onSubmit={handleSubmitWailea}>
+        <div className="gift-inputs">
+          <div className="gift-name">
+            <input type="text" className="dark-box" name="nameWailea" defaultValue={nameWailea} placeholder="name" onBlur={handleChangeWailea} />
+          </div>
+          <div className="amount-submit">
+            <div className="gift-amount">
+              <input type="number" className="dark-box" name="amountWailea" defaultValue={amountWailea} placeholder="$0" onBlur={handleChangeWailea} />
+            </div>
+            <button data-testid="button" type="submit" className="gift-submit">submit</button>
+          </div>
+          </div>
+        </form> */}
+      </div> 
       </div>
       {/* Beer Gift */}
       <div className="beer-container gift">
