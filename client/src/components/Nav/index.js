@@ -17,7 +17,7 @@ const Nav = props => {
             to="/story"
             activeClassName="active"
             >OUR STORY</NavLink>
-          <div className="dropdown">
+          {/* <div className="dropdown">
             <button className="dropbtn">LOGISTICS	&nbsp;
             <i className="fa fa-caret-down"></i>
             </button>
@@ -34,7 +34,7 @@ const Nav = props => {
           <NavLink 
             to="/registry"
             activeClassName="active"
-            >REGISTRY</NavLink>
+            >REGISTRY</NavLink> */}
             {/* <NavLink 
             to="/register-for-updates"
             activeClassName="active"

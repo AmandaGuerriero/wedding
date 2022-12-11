@@ -3,6 +3,7 @@ import Tabs from "../components/Tabs";
 import EngagementPhotos from "../components/EngagementPhotos";
 import DomesticPhotos from "../components/DomesticPhotos";
 import InternationalPhotos from "../components/InternationalPhotos";
+import WelcomePhotos from "../components/WelcomePhotos";
 
 
 const Home = (props) => {
@@ -12,6 +13,9 @@ const Home = (props) => {
         {!isOpen && <RegisterModal />}
       </div> */}
       <Tabs> 
+      <div label="Welcome Event"> 
+         <WelcomePhotos />
+       </div> 
       <div label="Engagement Photos"> 
          <EngagementPhotos />
        </div> 
@@ -23,6 +27,7 @@ const Home = (props) => {
        </div> 
      </Tabs> 
     </main>
+    
   );
 };
 
