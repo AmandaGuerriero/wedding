@@ -4,6 +4,7 @@ import EngagementPhotos from "../components/EngagementPhotos";
 import DomesticPhotos from "../components/DomesticPhotos";
 import InternationalPhotos from "../components/InternationalPhotos";
 import WelcomePhotos from "../components/WelcomePhotos";
+import Videos from "./Videos";
 
 
 const Home = (props) => {
@@ -24,6 +25,9 @@ const Home = (props) => {
        </div> 
        <div label="International Photos"> 
          <InternationalPhotos />
+       </div> 
+       <div label="Videos"> 
+         <Videos />
        </div> 
      </Tabs> 
     </main>
