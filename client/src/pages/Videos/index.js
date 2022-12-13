@@ -1,5 +1,6 @@
 import React from 'react';
 import Tabs from "../../components/Tabs"; 
+import './style.css';
 
 
 const Videos = (props) => {
@@ -9,16 +10,25 @@ const Videos = (props) => {
         {!isOpen && <RegisterModal />}
       </div> */}
       <Tabs> 
-      <div label="First Dance"> 
-          <div class="container">
-            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/yd4A_j1flMo"></iframe>
+      <div label="Ceremony"> 
+          <div className="container">
+            <iframe className="responsive-iframe" src="https://www.youtube.com/embed/yd4A_j1flMo"></iframe>
           </div>
        </div> 
-      <div label="Engagement Photos"> 
-         
+      <div label="First Dance"> 
+      <div className="container">
+            <iframe className="responsive-iframe" src="https://www.youtube.com/embed/yd4A_j1flMo"></iframe>
+          </div>
        </div> 
-       <div label="International Photos"> 
-         
+       <div label="Toasts"> 
+          <div className="container">
+            <iframe className="responsive-iframe" src="https://www.youtube.com/embed/yd4A_j1flMo"></iframe>
+          </div>
+        </div> 
+       <div label="Dancing"> 
+          <div className="container">
+            <iframe className="responsive-iframe" src="https://www.youtube.com/embed/yd4A_j1flMo"></iframe>
+          </div>
        </div> 
      </Tabs> 
     </main>

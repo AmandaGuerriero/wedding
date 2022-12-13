@@ -1,14 +1,14 @@
 import React from "react";
 import './style.css';
 
-function WelcomePhotos() {
+function WeddingPhotos() {
   return(
     <div>
       <div className="button-area">
-        <a href="https://bit.ly/3Yg9mde" target="_blank"><button className="google-photos" onclick="https://bit.ly/3Yg9mde">View on Google Photos (to download or order)</button></a>
+        <a href="https://bit.ly/3Yg9mde" target="_blank"><button className="google-photos" onclick="https://bit.ly/3Yg9mde">View All on Google Photos (to download or order)</button></a>
       </div>
-      <div className="welcome-row">
-      <div className="welcome-column">
+      <div className="wedding-row">
+      <div className="wedding-column">
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/welcome/welcome-1.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/welcome/welcome-3.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/welcome/welcome-9.jpg' alt='Amanda & Eric' />
@@ -33,8 +33,8 @@ function WelcomePhotos() {
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/welcome/welcome-63.jpg' alt='Amanda & Eric' />
         
       </div>
-      <div className="welcome-column">
-        <p className="welcome-shoot-credit">Welcome Event at Bang the Drum Brewery on Friday, July 15th.</p>
+      <div className="wedding-column">
+        <p className="wedding-shoot-credit">Highlights from our Wedding Day at Casitas in Arroyo Grande, CA</p>
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/welcome/welcome-2.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/welcome/welcome-5.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/welcome/welcome-8.jpg' alt='Amanda & Eric' />
@@ -58,7 +58,7 @@ function WelcomePhotos() {
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/welcome/welcome-65.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/welcome/welcome-64.jpg' alt='Amanda & Eric' />
       </div>
-      <div className="welcome-column">
+      <div className="wedding-column">
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/welcome/welcome-2a.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/welcome/welcome-4.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/welcome/welcome-7.jpg' alt='Amanda & Eric' />
@@ -86,4 +86,4 @@ function WelcomePhotos() {
   )
 }
 
-export default WelcomePhotos;
+export default WeddingPhotos;

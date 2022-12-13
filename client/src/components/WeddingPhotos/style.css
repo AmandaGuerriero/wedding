@@ -47,42 +47,42 @@ a:hover {
   text-decoration: none;
 }
 
-.welcome-row {
+.wedding-row {
   display: flex;
   flex-wrap: wrap;
   margin: 5px -10px 5px 5px;
 }
 
 /* Create three equal columns that sits next to each other */
-.welcome-column {
+.wedding-column {
   flex: 33%;
   max-width: 33%;
   padding: 0 7px;
 }
 
-.welcome-column img {
+.wedding-column img {
   vertical-align: middle;
   width: 100%;
   padding: 8px 0px 8px 0px;
 }
 
-.welcome-shoot-credit {
+.wedding-shoot-credit {
   font-size: 1.85vw;
   color: var(--pinotcolor);
   background-color: transparent;
   text-align: center;
 }
 
-.welcome-shoot-credit-mobile {
+.wedding-shoot-credit-mobile {
   display: none;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
-  .welcome-row {
+  .wedding-row {
     margin-right: 5px;
   }
-  .welcome-column {
+  .wedding-column {
     flex: 50%;
     max-width: 50%;
   }
@@ -90,14 +90,14 @@ a:hover {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .welcome-column {
+  .wedding-column {
     flex: 100%;
     max-width: 100%;
   }
-  .welcome-shoot-credit {
+  .wedding-shoot-credit {
     display: none;
   }
-  .welcome-shoot-credit-mobile {
+  .wedding-shoot-credit-mobile {
     display: block;
     font-size: 18px;
     color: var(--pinotcolor);
