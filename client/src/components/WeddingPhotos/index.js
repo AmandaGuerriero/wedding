@@ -21,25 +21,29 @@ function WeddingPhotos() {
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/portrait-1.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/portrait-3.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/cocktail-4.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/people-9.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/us-1.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/us-4.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/us-7.jpg' alt='Amanda & Eric' />
-
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dance-1.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dance-4.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/reception-1.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/reception-2.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-1.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-4.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-7.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-13.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-19.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-22.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-14.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-25.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-28.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-16.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-31.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-34.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/people-3.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/people-6.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/port-1.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-35.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-36.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-39.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-42.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-45.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-48.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-51.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-54.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-57.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-60.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-63.jpg' alt='Amanda & Eric' />
-        
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/port-3.jpg' alt='Amanda & Eric' />
       </div>
       <div className="wedding-column">
         <p className="wedding-shoot-credit">Highlights from our Wedding Day at Casitas in Arroyo Grande, CA</p>
@@ -56,19 +60,28 @@ function WeddingPhotos() {
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/cocktail-5.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/us-3.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/us-5.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/reception-4.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/us-6.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dance-2.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dance-5.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/reception-3.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-3.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-5.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-11.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-10.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-17.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-20.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-23.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-25a.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-25c.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-35.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-26.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-29.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-33.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/people-1.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/people-4.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/people-7.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/port-2.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-38.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-41.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-44.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-47.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-50.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-53.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-56.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-59.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-62.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-65.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-64.jpg' alt='Amanda & Eric' />
+        
       </div>
       <div className="wedding-column">
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/before-2.jpg' alt='Amanda & Eric' />
@@ -86,24 +99,26 @@ function WeddingPhotos() {
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/portrait-4.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/cocktail-3.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/us-2.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/us-6.jpg' alt='Amanda & Eric' />
         <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/us-8.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/reception-3.jpg' alt='Amanda & Eric' />
-
-
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/port-3.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-28.jpeg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-31.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-34.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-37.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-40.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-43.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-46.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-49.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-52.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-55.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-58.jpg' alt='Amanda & Eric' />
-        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/wedding-61.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/us-7.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dance-3.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/reception-4.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-6.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-8.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-9.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-12.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-15.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-18.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-24.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-25b.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-27.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-30.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-32.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-21.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-37.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/dancing-36.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/people-2.jpg' alt='Amanda & Eric' />
+        <img src='https://res.cloudinary.com/amandaeric/image/upload/f_auto/wedding-photos/wedding/people-5.jpg' alt='Amanda & Eric' />
       </div>
     </div>  
   </div>

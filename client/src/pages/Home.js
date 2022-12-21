@@ -3,6 +3,7 @@ import Tabs from "../components/Tabs";
 import WelcomePhotos from "../components/WelcomePhotos";
 import WeddingPhotos from "../components/WeddingPhotos";
 import Videos from "./Videos";
+import HoneymoonPhotos from '../components/Honeymoon';
 
 
 const Home = (props) => {
@@ -12,6 +13,9 @@ const Home = (props) => {
         {!isOpen && <RegisterModal />}
       </div> */}
       <Tabs> 
+       <div label="Honeymoon"> 
+         <HoneymoonPhotos />
+       </div> 
       <div label="Wedding"> 
          <WeddingPhotos />
        </div> 
