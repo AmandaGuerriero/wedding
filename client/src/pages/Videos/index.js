@@ -12,7 +12,7 @@ const Videos = (props) => {
       <Tabs> 
       <div label="Ceremony"> 
           <div className="container">
-            <iframe className="responsive-iframe" src="https://www.youtube.com/embed/yd4A_j1flMo"></iframe>
+            <iframe className="responsive-iframe" src="https://www.youtube.com/embed/Get4M7Z8oNA"></iframe>
           </div>
        </div> 
       <div label="First Dance"> 
