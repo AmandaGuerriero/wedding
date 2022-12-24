@@ -1,0 +1,110 @@
+
+.button-area {
+  width: 40%;
+  margin: auto;
+}
+.google-photos {
+  display: flex;
+  background-color: var(--rieslingcolor);
+  font-weight: 500;
+  color: var(--pinotcolor);
+  text-align: center;
+  margin: auto;
+  padding: 12px;
+  padding-left: 40px;
+  padding-right: 40px; 
+  margin-bottom: 20px;
+}
+
+a > .google-photos {
+  background-color: var(--rieslingcolor);
+  font-weight: 600;
+  color: var(--footercolor);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+a > .google-photos:hover {
+  background-color: var(--rieslingcolor);
+  color: var(--pinotcolor);
+  text-decoration: none;
+  padding: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.google-photos:hover {
+  background-color: var(--rieslingcolor);
+  color: var(--pinotcolor);
+  transition: .3s;
+  text-decoration: none;
+}
+
+.wedding-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px -10px 5px 5px;
+}
+
+/* Create three equal columns that sits next to each other */
+.wedding-column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 7px;
+}
+
+.wedding-column img {
+  vertical-align: middle;
+  width: 100%;
+  padding: 8px 0px 8px 0px;
+}
+
+.wedding-shoot-credit {
+  font-size: 1.85vw;
+  color: var(--pinotcolor);
+  background-color: transparent;
+  text-align: center;
+}
+
+.wedding-shoot-credit-mobile {
+  display: none;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .wedding-row {
+    margin-right: 5px;
+  }
+  .wedding-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .wedding-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .wedding-shoot-credit {
+    display: none;
+  }
+  .wedding-shoot-credit-mobile {
+    display: block;
+    font-size: 18px;
+    color: var(--pinotcolor);
+    background-color: transparent;
+    text-align: center;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
