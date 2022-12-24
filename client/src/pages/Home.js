@@ -13,11 +13,11 @@ const Home = (props) => {
         {!isOpen && <RegisterModal />}
       </div> */}
       <Tabs> 
-       <div label="Honeymoon"> 
-         <HoneymoonPhotos />
-       </div> 
       <div label="Wedding"> 
          <WeddingPhotos />
+       </div> 
+       <div label="Honeymoon"> 
+         <HoneymoonPhotos />
        </div> 
       <div label="Welcome Event"> 
          <WelcomePhotos />

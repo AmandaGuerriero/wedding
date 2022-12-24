@@ -20,7 +20,7 @@ const Videos = (props) => {
             <iframe className="responsive-iframe" src="https://www.youtube.com/embed/yd4A_j1flMo"></iframe>
           </div>
        </div> 
-       <div label="Toasts"> 
+       {/* <div label="Toasts"> 
           <div className="container">
             <iframe className="responsive-iframe" src="https://www.youtube.com/embed/x2uAcgFJuWg"></iframe>
           </div>
@@ -29,7 +29,7 @@ const Videos = (props) => {
           <div className="container">
             <iframe className="responsive-iframe" src="https://www.youtube.com/embed/yd4A_j1flMo"></iframe>
           </div>
-       </div> 
+       </div>  */}
      </Tabs> 
     </main>
     
