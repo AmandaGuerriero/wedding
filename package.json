@@ -19,6 +19,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "case-sensitive-paths-webpack-plugin": "^2.4.0",
     "concurrently": "^4.1.0",
     "nodemon": "^1.18.7"
   },
